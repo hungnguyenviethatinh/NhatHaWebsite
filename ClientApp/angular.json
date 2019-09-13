@@ -30,6 +30,12 @@
             "styles": [
               "node_modules/bootstrap/scss/bootstrap.scss",
               "node_modules/font-awesome/scss/font-awesome.scss",
+              "src/assets/css/icons/icomoon/styles.css",
+              "src/assets/css/icons/material/icons.css",
+              "src/assets/css/bootstrap_limitless.min.css",
+              "src/assets/css/layout.min.css",
+              "src/assets/css/components.min.css",
+              "src/assets/css/colors.min.css",
               "src/styles.scss"
             ],
             "scripts": [
