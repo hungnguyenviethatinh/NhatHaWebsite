@@ -7,13 +7,10 @@ import { HeaderComponent } from './components/shared/header/header.component';
 import { FooterComponent } from './components/shared/footer/footer.component';
 import { LayoutComponent } from './components/shared/layout/layout.component';
 import { HomeComponent } from './components/home/home.component';
-import { OurCompanyComponent } from './components/our-company/our-company.component';
 import { ServicesComponent } from './components/services/services.component';
 import { ProductsComponent } from './components/products/products.component';
 import { ProjectsComponent } from './components/projects/projects.component';
 import { PartnersComponent } from './components/partners/partners.component';
-import { SupportsComponent } from './components/supports/supports.component';
-import { ContactUsComponent } from './components/contact-us/contact-us.component';
 import { OurVisionComponent } from './components/our-company/our-vision/our-vision.component';
 import { OurEquipComponent } from './components/our-company/our-equip/our-equip.component';
 import { SoftwaresComponent } from './components/supports/softwares/softwares.component';
@@ -29,13 +26,10 @@ import { NotFoundComponent } from './components/not-found/not-found.component';
     FooterComponent,
     LayoutComponent,
     HomeComponent,
-    OurCompanyComponent,
     ServicesComponent,
     ProductsComponent,
     ProjectsComponent,
     PartnersComponent,
-    SupportsComponent,
-    ContactUsComponent,
     OurVisionComponent,
     OurEquipComponent,
     SoftwaresComponent,
