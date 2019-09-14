@@ -18,6 +18,7 @@ import { CaseStudiesComponent } from './components/supports/case-studies/case-st
 import { ContactInfoComponent } from './components/contact-us/contact-info/contact-info.component';
 import { JobCareerComponent } from './components/contact-us/job-career/job-career.component';
 import { NotFoundComponent } from './components/not-found/not-found.component';
+import { SidebarComponent } from './components/shared/sidebar/sidebar.component';
 
 @NgModule({
   declarations: [
@@ -36,7 +37,8 @@ import { NotFoundComponent } from './components/not-found/not-found.component';
     CaseStudiesComponent,
     ContactInfoComponent,
     JobCareerComponent,
-    NotFoundComponent
+    NotFoundComponent,
+    SidebarComponent
   ],
   imports: [
     BrowserModule,

@@ -1,1 +1,23 @@
-/* You can add global styles to this file, and also import other style files */
+body {
+    padding-top: 12.00006rem;
+    -webkit-font-smoothing: antialiased;
+}
+
+app-root, app-home {
+    display: flex;
+    flex-grow: 1;
+}
+
+app-layout {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.text-nhatha-primary {
+    color: #4F81BD;
+}
+
+.text-nhatha-secondary {
+    color: #86A7D4;
+}
