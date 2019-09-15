@@ -1,0 +1,28 @@
+.my-engineering-location{
+    background-color: #007bff;
+}
+
+.my-card-deck{
+    margin-top: 50px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.my-card{
+    background: transparent;
+}
+.my-card img{
+    //width: 18vw;
+    //height: 18vw;
+    background-position: center center;
+    background-repeat: no-repeat; 
+}
+.my-card p{
+    text-align: center;
+}
+.carousel-inner img {
+    width: 100vw;
+    height: 120vh;
+    background-position: center center;
+    background-repeat: no-repeat; 
+    object-fit: cover;
+}
