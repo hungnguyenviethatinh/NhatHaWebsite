@@ -1,4 +1,7 @@
 import { Component } from '@angular/core';
+import * as AOS from 'aos';
+
+AOS.init();
 
 @Component({
   selector: 'app-root',
