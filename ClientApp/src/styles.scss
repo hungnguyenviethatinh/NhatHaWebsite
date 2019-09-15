@@ -11,7 +11,7 @@ body {
             flex: 1;
             app-home, 
             app-ourvision, app-ourequip, 
-            app-partners, 
+            app-partners, app-projects,
             app-softwares, app-casestudies,
             app-contactinfo, app-jobcareer {
                 @extend app-root;
