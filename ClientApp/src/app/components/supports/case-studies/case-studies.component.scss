@@ -1,0 +1,11 @@
+#casestudies {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    .banner {
+        width: 100%;
+    }
+    .card {
+        margin-bottom: 0;
+    }
+}

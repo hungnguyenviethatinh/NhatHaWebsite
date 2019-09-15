@@ -1,0 +1,11 @@
+#softwares {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    .banner {
+        width: 100%;
+    }
+    h5 {
+        color: #4F81BD;
+    }
+}

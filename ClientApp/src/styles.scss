@@ -1,23 +1,30 @@
 body {
-    padding-top: 12.00006rem;
+    background-color: #f6f6f6;
     -webkit-font-smoothing: antialiased;
-}
-
-app-root, app-home {
-    display: flex;
-    flex-grow: 1;
-}
-
-app-layout {
-    display: flex;
-    flex-direction: column;
-    flex: 1;
-}
-
-.text-nhatha-primary {
-    color: #4F81BD;
-}
-
-.text-nhatha-secondary {
-    color: #86A7D4;
+    
+    app-root {
+        display: flex;
+        flex-grow: 1;
+        app-layout {
+            display: flex;
+            flex-direction: column;
+            flex: 1;
+            app-home, 
+            app-ourvision, app-ourequip, 
+            app-partners, 
+            app-softwares, app-casestudies,
+            app-contactinfo, app-jobcareer {
+                @extend app-root;
+            }
+        }
+    }
+    
+    .text-nhatha-primary {
+        color: #4F81BD;
+    }
+    
+    .text-nhatha-secondary {
+        color: #86A7D4;
+    }
+    
 }
