@@ -24,40 +24,44 @@
             }
         }
     }
-}
-
-.bg-footer-primary {
-    background: #5B9BD5;
-    h6 {
-        text-align: center;
-        margin-bottom: 0;
+    .bg-footer-primary {
+        // background: #5B9BD5;
+        background: #fff;
+        h6 {
+            color: #4F81BD;
+            text-align: center;
+            margin-bottom: 0;
+        }
     }
-}
-
-.bg-footer-dark {
-    background: #595959;
-    h5 {
-        color: #ada2a2;
-        // text-align: left;
-    }
-    ul {
-        list-style-position: inside;
-        margin: 0;
-        padding: 0;
-        > li {
-            list-style-type: none;
-            padding: 0;
+    .bg-footer-dark {
+        // background: #595959;
+        background: #fff;
+        h5 {
+            // color: #ada2a2;
+            color: #4F81BD;
             // text-align: left;
-            > a {
-                color: #ada2a2;
+        }
+        ul {
+            list-style-position: inside;
+            margin: 0;
+            padding: 0;
+            > li {
+                list-style-type: none;
+                padding: 0;
+                // text-align: left;
+                > a {
+                    // color: #ada2a2;
+                    color: #4F81BD;
+                }
+            }
+        }
+        div > a {
+            padding: .25rem;
+            > img {
+                width: 100px;
+                height: auto;
             }
         }
     }
-    div > a {
-        padding: .25rem;
-        > img {
-            width: 100px;
-            height: auto;
-        }
-    }
+    
 }
