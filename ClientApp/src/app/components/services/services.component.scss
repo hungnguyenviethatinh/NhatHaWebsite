@@ -1,0 +1,34 @@
+
+.carousel-inner img {
+    width: 100vw;
+    height: 120vh;
+    background-position: center center;
+    background-repeat: no-repeat; 
+    object-fit: cover;
+}
+.my-card-deck{
+    margin:2vw;
+}
+.my-card{
+    margin-left: 5vw !important;
+    margin-right: 5vw !important;
+    width: calc((100% - 34vw) / 3);
+    height: auto;
+    flex: none !important;
+    box-shadow: none;
+}
+.my-card img{
+    width: 100%;
+    height: auto;
+}
+.my-card-deck p,h5{
+    text-align: center;
+}
+
+.my-card2{
+    margin-left: 17vw !important;
+    width: calc((100% - 34vw) / 3);
+    height: auto;
+    flex: none !important;
+    box-shadow: none;
+}
