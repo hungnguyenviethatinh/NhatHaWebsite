@@ -1,0 +1,42 @@
+@text-blue: #096dd9;
+@text-white: #ffffff;
+@text-black: #314659;
+@bg-white: #ffffff;
+@bg-blue: #096dd9;
+
+.main-container {
+    padding: 0;
+    background: #fff;
+    min-height: 500px;
+    overflow: hidden;
+    position: relative;
+
+    #contact-us {
+        position: relative;
+        background: @bg-white;
+
+        .contact-us-wrap {
+            padding: 3rem 10rem;
+            position: relative;
+
+            .contact-us {
+                margin-bottom: 24px;
+
+                h3 {
+                    color: @text-blue;
+                    font-weight: bold;
+                    font-size: 17px;
+                    text-align: justify;
+                }
+
+                a {
+                    color: @text-black;
+
+                    i {
+                        margin-right: 10px;
+                    }
+                }
+            }
+        }
+    }
+}

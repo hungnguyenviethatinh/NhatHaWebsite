@@ -1,0 +1,28 @@
+<nz-carousel nzEffect="fade" nzDots="{{banners.length > 1 ? true : false}}" nzAutoPlay>
+    <div nz-carousel-content *ngFor="let banner of banners">
+        <img [src]="banner.img" alt="Đối tác của chúng tôi">
+        <h1 nz-title>{{banner.caption}}</h1>
+    </div>
+</nz-carousel>
+<div class="main-container">
+    <div class="clearfix" id="job-career">
+        <div class="job-career-wrap">
+            <section>
+                <div class="job-career" nz-row nzType="flex" nzJustify="space-between" nzAlign="top">
+                    <div nz-col nzXs="24" nzSm="24" nzMd="6">
+                        <img [src]="hr.img" alt="Tìm kiếm nhân tài">
+                    </div>
+                    <div nz-col nzXs="24" nzSm="24" nzMd="16">
+                        <article nz-typography>
+                            <h3 nz-title>{{hr.poster.title}}</h3>
+                            <p nz-paragraph *ngFor="let content of hr.poster.contents">
+                                {{content}}
+                            </p>
+                            <button nz-button nzType="primary">Các cơ hội hiện tại</button>
+                        </article>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+</div>

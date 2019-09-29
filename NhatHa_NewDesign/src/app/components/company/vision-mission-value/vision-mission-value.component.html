@@ -1,0 +1,71 @@
+<nz-carousel nzEffect="fade" nzDots="{{banners.length > 1 ? true : false}}" nzAutoPlay>
+    <div nz-carousel-content *ngFor="let banner of banners">
+        <img [src]="banner" alt="Tầm nhìn - Sứ mệnh - Giá trị">
+    </div>
+</nz-carousel>
+<div class="main-container">
+    <div class="clearfix" id="vision">
+        <div class="vision-wrap">
+            <section>
+                <h3 nz-title>Tầm nhìn</h3>
+                <nz-divider></nz-divider>
+                <div class="vision" nz-row nzType="flex" nzJustify="space-between" nzAlign="top" *ngFor="let vision of visions">
+                    <div nz-col nzXs="24" nzSm="24" nzMd="6">
+                        <img [src]="vision.img" alt="Tầm nhìn của chúng tôi">
+                    </div>
+                    <div nz-col nzXs="24" nzSm="24" nzMd="16">
+                        <article nz-typography>
+                            <ul>
+                                <li *ngFor="let content of vision.contents">
+                                    <p nz-paragraph>{{content}}</p>
+                                </li>
+                            </ul>
+                        </article>
+                    </div>
+                </div>
+            </section>
+        </div>
+    <div class="clearfix" id="mission">
+        <div class="mission-wrap">
+            <section>
+                <h3 nz-title>Sứ mệnh</h3>
+                <nz-divider></nz-divider>
+                <div class="mission" nz-row nzType="flex" nzJustify="space-between" nzAlign="top" *ngFor="let mission of missions">
+                    <div nz-col nzXs="24" nzSm="24" nzMd="6">
+                        <img [src]="mission.img" alt="Sứ mệnh của chúng tôi">
+                    </div>
+                    <div nz-col nzXs="24" nzSm="24" nzMd="16">
+                        <article nz-typography>
+                            <ul>
+                                <li *ngFor="let content of mission.contents">
+                                    <p nz-paragraph>{{content}}</p>
+                                </li>
+                            </ul>
+                        </article>
+                    </div>
+                </div>
+            </section>
+        </div>
+    <div class="clearfix" id="value">
+        <div class="value-wrap">
+            <section>
+                <h3 nz-title>Giá trị</h3>
+                <nz-divider></nz-divider>
+                <div class="value" nz-row nzType="flex" nzJustify="space-between" nzAlign="top" *ngFor="let value of values">
+                    <div nz-col nzXs="24" nzSm="24" nzMd="6">
+                        <img [src]="value.img" alt="Giá trị của chúng tôi">
+                    </div>
+                    <div nz-col nzXs="24" nzSm="24" nzMd="16">
+                        <article nz-typography>
+                            <ul>
+                                <li *ngFor="let content of value.contents">
+                                    <p nz-paragraph>{{content}}</p>
+                                </li>
+                            </ul>
+                        </article>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+</div>

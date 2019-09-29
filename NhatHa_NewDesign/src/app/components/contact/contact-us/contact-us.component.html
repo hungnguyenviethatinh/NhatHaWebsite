@@ -1,0 +1,91 @@
+<div class="main-container">
+    <div class="clearfix" id="contact-us">
+        <div class="contact-us-wrap">
+            <div class="contact-us" nz-row nzType="flex" nzJustify="space-between" nzAlign="top">
+                <div nz-col nzXs="24" nzSm="24" nzMd="11">
+                    <div class="contact-us-info">
+                        <h3>CÔNG TY TNHH THƯƠNG MẠI KỸ THUẬT NHẬT HẠ</h3>
+                        <div nz-col nzSpan="24">
+                            <a href="">
+                                <i nz-icon nzType="global" nzTheme="outline"></i>
+                                Tầng 4, Tòa nhà Thủy Lợi 4, 205 Nguyễn Xí P. 24, Q. Bình Thạnh, TP. Hồ Chí Minh, Việt
+                                Nam
+                            </a>
+                        </div>
+                        <div nz-col nzSpan="24">
+                            <a href="tel:(+84 28) 6258 1796">
+                                <i nz-icon nzType="phone" nzTheme="outline"></i>
+                                (+84 28) 6258 1796
+                            </a>
+                        </div>
+                        <div nz-col nzSpan="24">
+                            <a href="mailto:sale@nhatha-electric.com">
+                                <i nz-icon nzType="mail" nzTheme="outline"></i>
+                                sale@nhatha-electric.com
+                            </a>
+                        </div>
+                        <div nz-col nzSpan="24">
+                            <a [routerLink]="['/']">
+                                <i nz-icon nzType="google" nzTheme="outline"></i>
+                                www.nhatha-electric.com
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div nz-col nzXs="24" nzSm="24" nzMd="11">
+                    <form nz-form [formGroup]="validateForm" (ngSubmit)="submitForm(validateForm.value)">
+                        <nz-form-item>
+                            <nz-form-control [nzSpan]="24" nzHasFeedback [nzErrorTip]="nameErrorTpl">
+                                <input nz-input formControlName="name" placeholder="Họ tên" />
+                                <ng-template #nameErrorTpl let-control>
+                                    <ng-container *ngIf="control.hasError('required')">
+                                        Vui lòng nhập họ và tên!
+                                    </ng-container>
+                                </ng-template>
+                            </nz-form-control>
+                        </nz-form-item>
+                        <nz-form-item>
+                            <nz-form-control [nzSpan]="24" nzHasFeedback [nzErrorTip]="emailErrorTpl">
+                                <input nz-input formControlName="email" placeholder="Email" type="email" />
+                                <ng-template #emailErrorTpl let-control>
+                                    <ng-container *ngIf="control.hasError('email')">
+                                        Vui lòng nhập một email hợp lệ!
+                                    </ng-container>
+                                    <ng-container *ngIf="control.hasError('required')">
+                                        Vui lòng nhập email!
+                                    </ng-container>
+                                </ng-template>
+                            </nz-form-control>
+                        </nz-form-item>
+                        <nz-form-item>
+                            <nz-form-control [nzSpan]="24" nzHasFeedback [nzErrorTip]="phoneErrorTpl">
+                                <input nz-input formControlName="phoneNumber" placeholder="Số điện thoại" />
+                                <ng-template #phoneErrorTpl let-control>
+                                    <ng-container *ngIf="control.hasError('required')">
+                                        Vui lòng nhập số điện thoại!
+                                    </ng-container>
+                                </ng-template>
+                            </nz-form-control>
+                        </nz-form-item>
+                        <nz-form-item>
+                            <nz-form-control [nzSpan]="24" [nzErrorTip]="inquiryErrorTpl">
+                                <textarea formControlName="inquiry" nz-input rows="3"
+                                    placeholder="Nội dung yêu cầu"></textarea>
+                                <ng-template #inquiryErrorTpl let-control>
+                                    <ng-container *ngIf="control.hasError('required')">
+                                        Vui lòng nhập nội dung yêu cầu!
+                                    </ng-container>
+                                </ng-template>
+                            </nz-form-control>
+                        </nz-form-item>
+                        <nz-form-item>
+                            <nz-form-control [nzOffset]="20" [nzSpan]="4">
+                                <button nz-button nzType="primary" nzBlock [disabled]="!validateForm.valid">Gửi</button>
+                            </nz-form-control>
+                        </nz-form-item>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
