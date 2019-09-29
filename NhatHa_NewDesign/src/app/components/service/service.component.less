@@ -1,0 +1,87 @@
+@text-blue: #096dd9;
+@text-white: #ffffff;
+@text-black: #314659;
+@text-uppercase: uppercase;
+@bg-white: #ffffff;
+@bg-blue: #096dd9;
+
+
+[nz-carousel-content] {
+    height: 550px;
+    box-shadow: 0 2px 8px #f0f1f2;
+    -moz-box-shadow: 0 2px 8px #f0f1f2;
+    -webkit-box-shadow: 0 2px 8px #f0f1f2;
+    -o-box-shadow: 0 2px 8px #f0f1f2;
+    -ms-box-shadow: 0 2px 8px #f0f1f2;
+
+    img {
+        width: 100%;
+        height: 100%;
+        -o-object-fit: cover;
+        object-fit: cover;
+    }
+}
+
+.main-container {
+    padding: 0;
+    background: #fff;
+    min-height: 500px;
+    overflow: hidden;
+    position: relative;
+
+    #service {
+        position: relative;
+        box-shadow: 0 2px 8px #f0f1f2;
+        background: @bg-white;
+        color: @text-black;
+
+        .service-wrap {
+            padding: 1rem 3rem;
+            position: relative;
+
+            // @media (min-width: 768px) {
+            //     .service {
+            //         width: 18.666667%;
+            //     }
+            // }
+
+            .service {
+                text-align: center;
+                padding: 12px;
+                margin: 24px;
+                border-radius: 10px;
+                box-shadow: 0 2px 8px #286db7;
+                -moz-box-shadow: 0 2px 8px #286db7;
+                -webkit-box-shadow: 0 2px 8px #286db7;
+                -o-box-shadow: 0 2px 8px #286db7;
+                -ms-box-shadow: 0 2px 8px #286db7;
+            }
+
+            a {
+                color: @text-white;
+                text-align: center;
+                
+                > img {
+                    border-radius: 50%;
+                    width: 300px;
+                    height: 300px;
+                    -o-object-fit: cover;
+                    object-fit: cover;
+                }
+
+                > h3 {
+                    color: @text-blue;
+                    text-transform: @text-uppercase;
+                    font-weight: bold;
+                    text-align: center;
+                    margin-top: 12px;
+                }
+
+                > p {
+                    color: @text-black;
+                    margin: 0;
+                }
+            }
+        }
+    }
+}
