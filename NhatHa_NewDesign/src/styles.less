@@ -1,0 +1,44 @@
+@import "../node_modules/ng-zorro-antd/style/entry.less";
+@import "../node_modules/ng-zorro-antd/anchor/style/entry.less";
+@import "../node_modules/ng-zorro-antd/affix/style/entry.less";
+@import "../node_modules/ng-zorro-antd/form/style/entry.less";
+@import "../node_modules/ng-zorro-antd/button/style/entry.less";
+@import "../node_modules/ng-zorro-antd/input/style/entry.less";
+@import "../node_modules/ng-zorro-antd/carousel/style/entry.less";
+@import "../node_modules/ng-zorro-antd/divider/style/entry.less";
+@import "../node_modules/ng-zorro-antd/grid/style/entry.less";
+@import "../node_modules/ng-zorro-antd/icon/style/entry.less";
+@import "../node_modules/ng-zorro-antd/menu/style/entry.less";
+@import "../node_modules/ng-zorro-antd/typography/style/entry.less";
+
+@text-primary: #096dd9;
+@text-uppercase: uppercase;
+
+.cdk-overlay-container {
+    ul.ant-menu-sub {
+        &.submenu-company,
+        &.submenu-product {
+            min-width: 250px;
+        }
+
+        &.submenu-service {
+            min-width: 300px;
+        }
+
+        &.submenu-support {
+            min-width: 250px;
+        }
+
+        ul {
+            > li {
+                text-transform: @text-uppercase;
+                color: @text-primary;
+
+                > a {
+                    text-transform: @text-uppercase;
+                    color: @text-primary;
+                }
+            }
+        }
+    }
+}

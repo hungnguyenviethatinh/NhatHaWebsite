@@ -1,0 +1,307 @@
+<div class="page-wrapper">
+    <header class="clearfix" id="header">
+        <div nz-row>
+            <div nz-col nzSpan="24">
+                <ul id="top-bar" nz-menu nzMode="horizontal">
+                    <li nz-menu-item id="switchLanguage">
+                        <i nz-icon nzType="global"></i>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div nz-row nzType="flex" nzJustify="space-between" nzAlign="middle">
+            <div nz-col nzXs="24" nzSm="24" nzMd="8" nzLg="5" nzXl="5" nzXXl="4">
+                <a [routerLink]="['/trangchu']" id="logo">
+                    <img src="../../assets//images/nhatha-logo.png" alt="Công ty Kỹ thuật Điện - Năng lượng Nhật Hạ">
+                </a>
+            </div>
+            <div nz-col nzXs="24" nzSm="24" nzMd="16" nzLg="19" nzXl="19" nzXXl="20">
+                <h4 nz-title>Công ty Kỹ thuật Điện - Năng lượng Nhật Hạ</h4>
+                <h3 nz-title>Nơi Khách Hàng Đặt Niềm Tin</h3>
+            </div>
+        </div>
+        <div nz-row>
+            <div nz-col nzSpan="24">
+                <ul id="menu" nz-menu nzMode="horizontal">
+                    <li nz-menu-item nzSelected>
+                        <a [routerLink]="['/trangchu']">Giới thiệu</a>
+                    </li>
+                    <li nz-submenu nzMenuClassName="submenu-company" nzTitle="Doanh Nghiệp">
+                        <ul>
+                            <li nz-menu-item>
+                                <a [routerLink]="['/tamnhin-sumenh-giatri']">Tầm nhìn - Sứ mệnh - Giá trị</a>
+                            </li>
+                            <li nz-menu-item>
+                                <a [routerLink]="['/thietbi']">Thiết bị</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li nz-submenu nzMenuClassName="submenu-service" nzTitle="Dịch Vụ Kỹ Thuật">
+                        <ul>
+                            <li nz-submenu nzTitle="Phân Tích Hệ Thống Điện">
+                                <ul>
+                                    <li nz-menu-item>
+                                        <a href="">Tính Toán Ngắn Mạch Phối Hợp Bảo Vệ</a>
+                                    </li>
+                                    <li nz-menu-item>
+                                        <a href="">Phân Tích Nguy Cơ Hồ Quang Điện</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li nz-menu-item>
+                                <a href="">Thử nghiệm và Nghiệm Thu</a>
+                            </li>
+                            <li nz-menu-item>
+                                <a href="">Phân Tích Chất Lượng Điện Năng</a>
+                            </li>
+                            <li nz-menu-item>
+                                <a href="">Chương Trình Bảo Trì Điện</a>
+                            </li>
+                            <li nz-submenu nzTitle="Bảo Trì Theo Tình Trạng">
+                                <ul>
+                                    <li nz-menu-item>
+                                        <a href="">Quét Nhiệt Hồng Ngoại Thiết Bị Điện</a>
+                                    </li>
+                                    <li nz-menu-item>
+                                        <a href="">Đo Phóng Điện Cục Bộ</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li nz-submenu nzMenuClassName="submenu-product" nzTitle="Sản Phẩm">
+                        <ul>
+                            <li nz-submenu nzTitle="Cửa Sổ Hồng Ngoại">
+                                <ul>
+                                    <li nz-submenu nzTitle="Sản Phẩm IRISS">
+                                        <ul>
+                                            <li nz-menu-item>
+                                                <a href="">Dòng VPT</a>
+                                            </li>
+                                            <li nz-menu-item>
+                                                <a href="">Dòng CAP CT</a>
+                                            </li>
+                                            <li nz-menu-item>
+                                                <a href="">Dòng CAP ENV</a>
+                                            </li>
+                                            <li nz-menu-item>
+                                                <a href="">Dòng FLEX IR</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li nz-menu-item>
+                                        <a href="">Sản Phẩm Cordex</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li nz-submenu nzTitle="Máy Dò Trình Trạng Thiết Bị">
+                                <ul>
+                                    <li nz-submenu nzTitle="Máy Chụp Hình Nhiệt Cordex">
+                                        <ul>
+                                            <li nz-menu-item>
+                                                <a href="">Máy Cordex Toughpix Digitherm</a>
+                                            </li>
+                                            <li nz-menu-item>
+                                                <a href="">Máy Cordex TC7150</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li nz-submenu nzTitle="Máy Dò Sóng Siêu Âm IRISS">
+                                        <ul>
+                                            <li nz-menu-item>
+                                                <a href="">Iriss Sonus XT</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li nz-submenu nzTitle="Máy Đo Phóng Điện Cục Bộ IRISS">
+                                        <ul>
+                                            <li nz-menu-item>
+                                                <a href="">Iriss Sonus PD</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li nz-submenu nzTitle="Giải Pháp Giám Sát Liên Tục">
+                                <ul>
+                                    <li nz-menu-item>
+                                        <a href="">Emerson Intellisaw</a>
+                                    </li>
+                                    <li nz-submenu nzTitle="Cordex Automated Camera">
+                                        <ul>
+                                            <li nz-menu-item>
+                                                <a href="">MN4000</a>
+                                            </li>
+                                            <li nz-menu-item>
+                                                <a href="">MN4100</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li nz-menu-item>
+                                        <a href="">Iriss Delta T Alert</a>
+                                    </li>
+                                    <li nz-menu-item>
+                                        <a href="">Iriss E Sentry</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li nz-menu-item>
+                        <a [routerLink]="['/doitac']">Đối Tác</a>
+                    </li>
+                    <li nz-menu-item>
+                        <a [routerLink]="['/duan']">Dự Án</a>
+                    </li>
+                    <li nz-submenu nzMenuClassName="submenu-support" nzTitle="Hỗ Trợ">
+                        <ul>
+                            <li nz-menu-item>
+                                <a [routerLink]="['/phanmem']">Phần Mềm</a>
+                            </li>
+                            <li nz-menu-item>
+                                <a [routerLink]="['/nghiencuu']">Tình Huống Nghiên Cứu</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li nz-submenu nzMenuClassName="submenu-contact" nzTitle="Liên Hệ">
+                        <ul>
+                            <li nz-menu-item>
+                                <a [routerLink]="['/lienhe']">Liên Hệ</a>
+                            </li>
+                            <li nz-menu-item>
+                                <a [routerLink]="['/tuyendung']">Việc Làm</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <div class="main-wrapper">
+        <div nz-row>
+            <div nz-col nzSpan="24">
+                <router-outlet></router-outlet>
+            </div>
+            <div nz-col nzSpan="24">
+                <footer class="clearfix" id="footer">
+                    <div class="footer-wrap">
+                        <div nz-row nzType="flex" nzJustify="space-between">
+                            <div nz-col nzXs="24" nzSm="24" nzMd="6">
+                                <div class="footer-center">
+                                    <h3>Dịch Vụ Kỹ Thuật</h3>
+                                    <div nz-col nzSpan="24">
+                                        <a>Tính Toán Ngắn Mạch – Phối Hợp Bảo Vệ Hệ Thống</a>
+                                    </div>
+                                    <div nz-col nzSpan="24">
+                                        <a>Phân Tích Hồ Quang Điện</a>
+                                    </div>
+                                    <div nz-col nzSpan="24">
+                                        <a>Thử Nghiệm & Nghiệm Thu</a>
+                                    </div>
+                                    <div nz-col nzSpan="24">
+                                        <a>Phân Tích Chất Lượng Điện</a>
+                                    </div>
+                                    <div nz-col nzSpan="24">
+                                        <a>Bảo Trì Ngăn Ngừa</a>
+                                    </div>
+                                    <div nz-col nzSpan="24">
+                                        <a>Quét Nhiệt Hồng Ngoại</a>
+                                    </div>
+                                    <div nz-col nzSpan="24">
+                                        <a>Đo Phóng Điện Cục Bộ</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div nz-col nzXs="24" nzSm="24" nzMd="6">
+                                <div class="footer-center">
+                                    <h3>Sản Phẩm</h3>
+                                    <div nz-col nzSpan="24">
+                                        <a>Cửa Sổ Hồng Ngoại Cordex</a>
+                                    </div>
+                                    <div nz-col nzSpan="24">
+                                        <a>Phân Tích Hồ Quang Điện</a>
+                                    </div>
+                                    <div nz-col nzSpan="24">
+                                        <a>Máy Chụp Hình Nhiệt Cordex</a>
+                                    </div>
+                                    <div nz-col nzSpan="24">
+                                        <a>Máy Đo Sóng Siêu Âm IRISS</a>
+                                    </div>
+                                    <div nz-col nzSpan="24">
+                                        <a>Máy Đo Phóng Điện Cục Bộ IRISS</a>
+                                    </div>
+                                    <div nz-col nzSpan="24">
+                                        <a>Hệ Giám Sát IntelliSAW Emerson</a>
+                                    </div>
+                                    <div nz-col nzSpan="24">
+                                        <a>Hệ Giám Sát Monitir Cordex</a>
+                                    </div>
+                                    <div nz-col nzSpan="24">
+                                        <a>Hệ Giám Sát Delta T Alert IRISS</a>
+                                    </div>
+                                    <div nz-col nzSpan="24">
+                                        <a>Hệ Nhãn Đánh Dấu E Sentry IRISS</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div nz-col nzXs="24" nzSm="24" nzMd="6">
+                                <div class="footer-center">
+                                    <h3>Công Ty</h3>
+                                    <div nz-col nzSpan="24">
+                                        <a [routerLink]="['/tamnhin-sumenh-giatri']">Tầm Nhìn – Sứ Mệnh – Giá Trị</a>
+                                    </div>
+                                    <div nz-col nzSpan="24">
+                                        <a [routerLink]="['/tuyendung']">Việc Làm & Sự Nghiệp</a>
+                                    </div>
+                                    <div nz-col nzSpan="24">
+                                        <a [routerLink]="['/lienhe']">Liên Hệ</a>
+                                    </div>
+                                </div>
+                                <div class="footer-center">
+                                    <h3>Đối Tác Dịch Vụ</h3>
+                                    <div nz-row nzType="flex" nzJustify="space-between" nzAlign="middle">
+                                        <div nz-col nzXs="10" nzSm="10" nzMd="10">
+                                            <a [routerLink]="['/doitac']">
+                                                <img src="../../assets/images/schneider-logo.png" alt="Schneider">
+                                            </a>
+                                        </div>
+                                        <div nz-col nzXs="10" nzSm="10" nzMd="10">
+                                            <a [routerLink]="['/doitac']">
+                                                <img src="../../assets/images/abb-logo.png" alt="Abb">
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="footer-center">
+                                    <h3>Đối Tác Sản Phẩm</h3>
+                                    <div nz-row nzType="flex" nzJustify="space-between">
+                                        <div nz-col nzXs="6" nzSm="6" nzMd="6">
+                                            <a [routerLink]="['/doitac']">
+                                                <img src="../../assets/images/emerson-logo.png" alt="Emerson">
+                                            </a>
+                                        </div>
+                                        <div nz-col nzXs="6" nzSm="6" nzMd="6">
+                                            <a [routerLink]="['/doitac']">
+                                                <img src="../../assets/images/cordex-logo.png" alt="Cordex">
+                                            </a>
+                                        </div>
+                                        <div nz-col nzXs="6" nzSm="6" nzMd="6">
+                                            <a [routerLink]="['/doitac']">
+                                                <img src="../../assets/images/iriss-logo.png" alt="Iriss">
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bottom-bar">
+                        Quyền sở hữu 
+                        <i nz-icon nzType="copyright" nzTheme="outline"></i>
+                         {{year}} Công ty Kỹ thuật Điện - Năng lượng Nhật Hạ.
+                    </div>
+                </footer>
+            </div>
+        </div>
+    </div>
+</div>
