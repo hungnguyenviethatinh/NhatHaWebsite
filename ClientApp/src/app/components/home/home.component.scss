@@ -17,14 +17,31 @@
     background-position: center center;
     background-repeat: no-repeat; 
 }
-.my-card p{
-    text-align: center;
-    color: aliceblue;
-}
+
 .carousel-inner img {
     width: 100vw;
     height: 70vh;
     background-position: center center;
     background-repeat: no-repeat; 
     object-fit: cover;
+}
+
+.my-engineering-location{
+    .my-card p{
+        text-align: center;
+        color: aliceblue;
+    }
+}
+.my-poduct-location{    
+    .my-card p {
+        text-align: center;
+        color: blue;
+    }
+    .my-card img{
+        width: 30vw;
+        height: 18vw;
+        background-position: center center;
+        background-repeat: no-repeat;
+        object-fit: cover
+    }
 }
