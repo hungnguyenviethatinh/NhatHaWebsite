@@ -26,19 +26,21 @@
                     <li nz-menu-item nzSelected>
                         <a [routerLink]="['/trangchu']">Giới thiệu</a>
                     </li>
-                    <li nz-submenu nzMenuClassName="submenu-company" nzTitle="Doanh Nghiệp">
+                    <li nz-submenu nzMenuClassName="submenu-company" nzTitle="Doanh Nghiệp"
+                    (click)="navigateTo('/doanhnghiep/tamnhin-sumenh-giatri')">
                         <ul>
                             <li nz-menu-item>
-                                <a [routerLink]="['/tamnhin-sumenh-giatri']">Tầm nhìn - Sứ mệnh - Giá trị</a>
+                                <a [routerLink]="['/doanhnghiep/tamnhin-sumenh-giatri']">Tầm nhìn - Sứ mệnh - Giá trị</a>
                             </li>
                             <li nz-menu-item>
-                                <a [routerLink]="['/thietbi']">Thiết bị</a>
+                                <a [routerLink]="['/doanhnghiep/thietbi']">Thiết bị</a>
                             </li>
                         </ul>
                     </li>
-                    <li nz-submenu nzMenuClassName="submenu-service" nzTitle="Dịch Vụ Kỹ Thuật">
+                    <li nz-submenu nzMenuClassName="submenu-service" nzTitle="Dịch Vụ Kỹ Thuật"
+                    (click)="navigateTo('/dichvu')" >
                         <ul>
-                            <li nz-submenu nzTitle="Phân Tích Hệ Thống Điện">
+                            <li (click)="navigateTo('/dichvu/phan-tich-he-thong-dien')" nz-submenu nzTitle="Phân Tích Hệ Thống Điện">
                                 <ul>
                                     <li nz-menu-item>
                                         <a href="">Tính Toán Ngắn Mạch Phối Hợp Bảo Vệ</a>
@@ -57,7 +59,7 @@
                             <li nz-menu-item>
                                 <a href="">Chương Trình Bảo Trì Điện</a>
                             </li>
-                            <li nz-submenu nzTitle="Bảo Trì Theo Tình Trạng">
+                            <li (click)="navigateTo('/dichvu/bao-tri-theo-tinh-trang')" nz-submenu nzTitle="Bảo Trì Theo Tình Trạng">
                                 <ul>
                                     <li nz-menu-item>
                                         <a href="">Quét Nhiệt Hồng Ngoại Thiết Bị Điện</a>
@@ -153,17 +155,17 @@
                     <li nz-menu-item>
                         <a [routerLink]="['/duan']">Dự Án</a>
                     </li>
-                    <li nz-submenu nzMenuClassName="submenu-support" nzTitle="Hỗ Trợ">
+                    <li (click)="navigateTo('/hotro/phanmem')" nz-submenu nzMenuClassName="submenu-support" nzTitle="Hỗ Trợ">
                         <ul>
                             <li nz-menu-item>
-                                <a [routerLink]="['/phanmem']">Phần Mềm</a>
+                                <a [routerLink]="['/hotro/phanmem']">Phần Mềm</a>
                             </li>
                             <li nz-menu-item>
-                                <a [routerLink]="['/nghiencuu']">Tình Huống Nghiên Cứu</a>
+                                <a [routerLink]="['/hotro/nghiencuu']">Tình Huống Nghiên Cứu</a>
                             </li>
                         </ul>
                     </li>
-                    <li nz-submenu nzMenuClassName="submenu-contact" nzTitle="Liên Hệ">
+                    <li (click)="navigateTo('/lienhe')" nz-submenu nzMenuClassName="submenu-contact" nzTitle="Liên Hệ">
                         <ul>
                             <li nz-menu-item>
                                 <a [routerLink]="['/lienhe']">Liên Hệ</a>
@@ -248,7 +250,7 @@
                                 <div class="footer-center">
                                     <h3>Công Ty</h3>
                                     <div nz-col nzSpan="24">
-                                        <a [routerLink]="['/tamnhin-sumenh-giatri']">Tầm Nhìn – Sứ Mệnh – Giá Trị</a>
+                                        <a [routerLink]="['/doanhnghiep/tamnhin-sumenh-giatri']">Tầm Nhìn – Sứ Mệnh – Giá Trị</a>
                                     </div>
                                     <div nz-col nzSpan="24">
                                         <a [routerLink]="['/tuyendung']">Việc Làm & Sự Nghiệp</a>

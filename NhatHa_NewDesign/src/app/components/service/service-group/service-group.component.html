@@ -1,0 +1,55 @@
+<div class="main-container">
+    <div class="clearfix" id="service">
+        <div *ngIf="selectedService" class="service-wrap">
+            <div class="clearfix" id="banner" nz-row nzType="flex" nzJustify="space-between" nzAlign="middle">
+                <div class="banner" nz-col nzXs="24" nzSm="24" [nzMd]="colMdSize"
+                    *ngFor="let banner of selectedService.data.banners">
+                    <img [src]="banner" alt="selectedService.name">
+                </div>
+            </div>
+            <div class="clearfix" id="subject" nz-row nzType="flex" nzJustify="space-between" nzAlign="middle">
+                <div class="subject" nz-col nzSpan="24">
+                    <h1>{{selectedService.data.subject}}</h1>
+                </div>
+            </div>
+            <div class="clearfix" id="body">
+                <div class="body" nz-row nzType="flex" nzJustify="space-between" nzAlign="middle"
+                    *ngFor="let body of selectedService.data.body">
+                    <div nz-col nzSpan="24">
+                        <h3 class="title">{{body.title}}</h3>
+                        <div *ngIf="body.contentType === 0" class="content">
+                            <p *ngFor="let content of body.contents">
+                                {{content}}
+                            </p>
+                        </div>
+                        <div *ngIf="body.contentType === 1" class="content">
+                            <ul>
+                                <li *ngFor="let content of body.contents">
+                                    {{content}}
+                                </li>
+                            </ul>
+                        </div>
+                        <div nz-row nzType="flex" nzJustify="center" nzAlign="middle"
+                        *ngIf="body.figures.length > 0">
+                            <div class="figure" nz-col nzXs="24" nzSm="24" nzMd="10" *ngFor='let figure of body.figures'>
+                                <img [src]="figure" [alt]="body.title">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="clearfix" id="footer">
+                <p>{{selectedService.data.footer.title}}</p>
+                <div class="link" nz-row nzType="flex" nzJustify="space-between" nzAlign="middle"
+                *ngFor="let link of selectedService.data.footer.links">
+                    <div nz-col nzXs="24" nzSm="24" nzMd="4">
+                        <img [src]="link.img" [alt]="link.title">
+                    </div>
+                    <div nz-col nzXs="24" nzSm="24" nzMd="20">
+                        <a>{{link.title}}</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

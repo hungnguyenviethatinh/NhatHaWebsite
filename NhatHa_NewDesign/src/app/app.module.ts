@@ -6,7 +6,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {
-  NzAffixModule, NzAnchorModule, NzCarouselModule, NzDividerModule, NzButtonModule, NzFormModule,
+  NzAnchorModule, NzCarouselModule, NzDividerModule, NzButtonModule, NzFormModule,
   NzGridModule, NzIconModule, NzInputModule, NzMenuModule, NzTypographyModule, NZ_I18N, vi_VN
 } from 'ng-zorro-antd';
 import { registerLocaleData } from '@angular/common';
@@ -21,6 +21,9 @@ import { CaseStudiesComponent } from './components/support/case-studies/case-stu
 import { ContactUsComponent } from './components/contact/contact-us/contact-us.component';
 import { JobCareerComponent } from './components/contact/job-career/job-career.component';
 import { ProjectComponent } from './components/project/project.component';
+import { ServiceComponent } from './components/service/service.component';
+import { ServiceGroupComponent } from './components/service/service-group/service-group.component';
+import { ServiceDetailComponent } from './components/service/service-detail/service-detail.component';
 
 registerLocaleData(vi);
 
@@ -36,11 +39,13 @@ registerLocaleData(vi);
     ContactUsComponent,
     JobCareerComponent,
     ProjectComponent,
+    ServiceComponent,
+    ServiceGroupComponent,
+    ServiceDetailComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    NzAffixModule,
     NzAnchorModule,
     NzFormModule,
     NzButtonModule,

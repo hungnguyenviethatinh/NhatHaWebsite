@@ -9,6 +9,8 @@ import { CaseStudiesComponent } from './components/support/case-studies/case-stu
 import { JobCareerComponent } from './components/contact/job-career/job-career.component';
 import { ContactUsComponent } from './components/contact/contact-us/contact-us.component';
 import { ProjectComponent } from './components/project/project.component';
+import { ServiceComponent } from './components/service/service.component';
+import { ServiceGroupComponent } from './components/service/service-group/service-group.component';
 
 
 const routes: Routes = [
@@ -16,10 +18,16 @@ const routes: Routes = [
     path: 'trangchu', component: HomeComponent,
   },
   {
-    path: 'tamnhin-sumenh-giatri', component: VisionMissionValueComponent,
+    path: 'doanhnghiep/tamnhin-sumenh-giatri', component: VisionMissionValueComponent,
   },
   {
-    path: 'thietbi', component: EquipmentComponent,
+    path: 'doanhnghiep/thietbi', component: EquipmentComponent,
+  },
+  {
+    path: 'dichvu', component: ServiceComponent,
+  },
+  {
+    path: 'dichvu/:id', component: ServiceGroupComponent,
   },
   {
     path: 'doitac', component: PartnerComponent,
@@ -28,10 +36,10 @@ const routes: Routes = [
     path: 'duan', component: ProjectComponent,
   },
   {
-    path: 'phanmem', component: SoftwareComponent,
+    path: 'hotro/phanmem', component: SoftwareComponent,
   },
   {
-    path: 'nghiencuu', component: CaseStudiesComponent,
+    path: 'hotro/nghiencuu', component: CaseStudiesComponent,
   },
   {
     path: 'tuyendung', component: JobCareerComponent,
