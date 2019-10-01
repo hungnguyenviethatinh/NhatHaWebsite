@@ -23,7 +23,13 @@ import { JobCareerComponent } from './components/contact/job-career/job-career.c
 import { ProjectComponent } from './components/project/project.component';
 import { ServiceComponent } from './components/service/service.component';
 import { ServiceGroupComponent } from './components/service/service-group/service-group.component';
-import { ServiceDetailComponent } from './components/service/service-detail/service-detail.component';
+import { ShortCircuitComponent } from './components/service/service-detail/short-circuit/short-circuit.component';
+import { ArcFlashComponent } from './components/service/service-detail/arc-flash/arc-flash.component';
+import { TestCommitComponent } from './components/service/service-detail/test-commit/test-commit.component';
+import { PowerQualityComponent } from './components/service/service-detail/power-quality/power-quality.component';
+import { EpMaintainComponent } from './components/service/service-detail/ep-maintain/ep-maintain.component';
+import { InfraredScanComponent } from './components/service/service-detail/infrared-scan/infrared-scan.component';
+import { OpdTestComponent } from './components/service/service-detail/opd-test/opd-test.component';
 
 registerLocaleData(vi);
 
@@ -41,7 +47,13 @@ registerLocaleData(vi);
     ProjectComponent,
     ServiceComponent,
     ServiceGroupComponent,
-    ServiceDetailComponent,
+    ShortCircuitComponent,
+    ArcFlashComponent,
+    TestCommitComponent,
+    PowerQualityComponent,
+    EpMaintainComponent,
+    InfraredScanComponent,
+    OpdTestComponent,
   ],
   imports: [
     BrowserModule,

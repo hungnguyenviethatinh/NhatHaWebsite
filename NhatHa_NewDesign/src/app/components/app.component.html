@@ -43,10 +43,14 @@
                             <li (click)="navigateTo('/dichvu/phan-tich-he-thong-dien')" nz-submenu nzTitle="Phân Tích Hệ Thống Điện">
                                 <ul>
                                     <li nz-menu-item>
-                                        <a href="">Tính Toán Ngắn Mạch Phối Hợp Bảo Vệ</a>
+                                        <a [routerLink]="['/dichvu/tinh-toan-ngan-mach-phoi-hop-bao-ve']">
+                                            Tính Toán Ngắn Mạch Phối Hợp Bảo Vệ
+                                        </a>
                                     </li>
                                     <li nz-menu-item>
-                                        <a href="">Phân Tích Nguy Cơ Hồ Quang Điện</a>
+                                        <a [routerLink]="['/dichvu/phan-tich-nguy-co-ho-quang-dien']">
+                                            Phân Tích Nguy Cơ Hồ Quang Điện
+                                        </a>
                                     </li>
                                 </ul>
                             </li>

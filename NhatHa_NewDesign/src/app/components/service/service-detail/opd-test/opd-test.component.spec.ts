@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { ServiceDetailComponent } from './service-detail.component';
+import { OpdTestComponent } from './opd-test.component';
 
-describe('ServiceDetailComponent', () => {
-  let component: ServiceDetailComponent;
-  let fixture: ComponentFixture<ServiceDetailComponent>;
+describe('OpdTestComponent', () => {
+  let component: OpdTestComponent;
+  let fixture: ComponentFixture<OpdTestComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ ServiceDetailComponent ]
+      declarations: [ OpdTestComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(ServiceDetailComponent);
+    fixture = TestBed.createComponent(OpdTestComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

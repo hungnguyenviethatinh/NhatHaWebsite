@@ -11,6 +11,8 @@ import { ContactUsComponent } from './components/contact/contact-us/contact-us.c
 import { ProjectComponent } from './components/project/project.component';
 import { ServiceComponent } from './components/service/service.component';
 import { ServiceGroupComponent } from './components/service/service-group/service-group.component';
+import { ShortCircuitComponent } from './components/service/service-detail/short-circuit/short-circuit.component';
+import { ArcFlashComponent } from './components/service/service-detail/arc-flash/arc-flash.component';
 
 
 const routes: Routes = [
@@ -26,8 +28,16 @@ const routes: Routes = [
   {
     path: 'dichvu', component: ServiceComponent,
   },
+  // {
+  //   path: 'dichvu/:id', component: ServiceGroupComponent,
+  // },
   {
-    path: 'dichvu/:id', component: ServiceGroupComponent,
+    path: 'dichvu/tinh-toan-ngan-mach-phoi-hop-bao-ve',
+    component: ShortCircuitComponent,
+  },
+  {
+    path: 'dichvu/phan-tich-nguy-co-ho-quang-dien',
+    component: ArcFlashComponent,
   },
   {
     path: 'doitac', component: PartnerComponent,
