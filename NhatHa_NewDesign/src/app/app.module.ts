@@ -6,7 +6,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {
-  NzAnchorModule, NzCarouselModule, NzDividerModule, NzButtonModule, NzFormModule,
+  NzAnchorModule, NzCarouselModule, NzDividerModule, NzButtonModule, NzFormModule, NzTableModule,
   NzGridModule, NzIconModule, NzInputModule, NzMenuModule, NzTypographyModule, NZ_I18N, vi_VN
 } from 'ng-zorro-antd';
 import { registerLocaleData } from '@angular/common';
@@ -58,6 +58,7 @@ registerLocaleData(vi);
   imports: [
     BrowserModule,
     AppRoutingModule,
+    NzTableModule,
     NzAnchorModule,
     NzFormModule,
     NzButtonModule,

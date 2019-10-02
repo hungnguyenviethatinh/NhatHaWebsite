@@ -13,6 +13,11 @@ import { ServiceComponent } from './components/service/service.component';
 import { ServiceGroupComponent } from './components/service/service-group/service-group.component';
 import { ShortCircuitComponent } from './components/service/service-detail/short-circuit/short-circuit.component';
 import { ArcFlashComponent } from './components/service/service-detail/arc-flash/arc-flash.component';
+import { TestCommitComponent } from './components/service/service-detail/test-commit/test-commit.component';
+import { PowerQualityComponent } from './components/service/service-detail/power-quality/power-quality.component';
+import { EpMaintainComponent } from './components/service/service-detail/ep-maintain/ep-maintain.component';
+import { InfraredScanComponent } from './components/service/service-detail/infrared-scan/infrared-scan.component';
+import { OpdTestComponent } from './components/service/service-detail/opd-test/opd-test.component';
 
 
 const routes: Routes = [
@@ -32,12 +37,25 @@ const routes: Routes = [
   //   path: 'dichvu/:id', component: ServiceGroupComponent,
   // },
   {
-    path: 'dichvu/tinh-toan-ngan-mach-phoi-hop-bao-ve',
-    component: ShortCircuitComponent,
+    path: 'dichvu/tinh-toan-ngan-mach-phoi-hop-bao-ve', component: ShortCircuitComponent,
   },
   {
-    path: 'dichvu/phan-tich-nguy-co-ho-quang-dien',
-    component: ArcFlashComponent,
+    path: 'dichvu/phan-tich-nguy-co-ho-quang-dien', component: ArcFlashComponent,
+  },
+  {
+    path: 'dichvu/thu-nghiem-va-nghiem-thu', component: TestCommitComponent,
+  },
+  {
+    path: 'dichvu/phan-tich-chat-luong-dien-nang', component: PowerQualityComponent,
+  },
+  {
+    path: 'dichvu/chuong-trinh-bao-tri-dien', component: EpMaintainComponent,
+  },
+  {
+    path: 'dichvu/quet-nhiet-hong-ngoai-thiet-bi-dien', component: InfraredScanComponent,
+  },
+  {
+    path: 'dichvu/do-phong-dien-cuc-bo', component: OpdTestComponent,
   },
   {
     path: 'doitac', component: PartnerComponent,
