@@ -1,6 +1,5 @@
 @import "../node_modules/ng-zorro-antd/style/entry.less";
 @import "../node_modules/ng-zorro-antd/anchor/style/entry.less";
-@import "../node_modules/ng-zorro-antd/affix/style/entry.less";
 @import "../node_modules/ng-zorro-antd/form/style/entry.less";
 @import "../node_modules/ng-zorro-antd/button/style/entry.less";
 @import "../node_modules/ng-zorro-antd/input/style/entry.less";
@@ -10,8 +9,9 @@
 @import "../node_modules/ng-zorro-antd/icon/style/entry.less";
 @import "../node_modules/ng-zorro-antd/menu/style/entry.less";
 @import "../node_modules/ng-zorro-antd/typography/style/entry.less";
+@import "../node_modules/ng-zorro-antd/table/style/entry.less";
 
-@text-primary: #096dd9;
+@text-blue: #096dd9;
 @text-uppercase: uppercase;
 
 .cdk-overlay-container {
@@ -32,13 +32,22 @@
         ul {
             > li {
                 text-transform: @text-uppercase;
-                color: @text-primary;
+                color: @text-blue;
 
                 > a {
                     text-transform: @text-uppercase;
-                    color: @text-primary;
+                    color: @text-blue;
                 }
             }
         }
     }
+
+}
+
+.ant-menu-submenu-title .ant-menu-submenu-arrow::before {
+    background: linear-gradient(to right, @text-blue, @text-blue);   
+}
+
+.ant-table-placeholder {
+    display: none !important;
 }

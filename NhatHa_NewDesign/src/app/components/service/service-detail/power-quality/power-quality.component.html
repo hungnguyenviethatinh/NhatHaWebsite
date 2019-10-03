@@ -1,0 +1,71 @@
+<div class="main-container">
+    <div class="clearfix" id="service">
+        <div class="service-wrap">
+            <div class="clearfix" id="heading" nz-row nzType="flex" nzJustify="space-between" nzAlign="middle">
+                <div nz-col nzXs="24" nzSm="24" nzMd="6">
+                    <img [src]="service.heading.img" alt="">
+                </div>
+                <div nz-col nzXs="24" nzSm="24" nzMd="18">
+                    <h1>{{service.heading.title}}</h1>
+                </div>
+            </div>
+            <div class="clearfix" id="content">
+                <div class="content" nz-row nzType="flex" nzJustify="space-between" nzAlign="top"
+                    *ngFor="let content of service.contents;">
+                    <div class="text-content" nz-col nzXs="24" nzSm="24" nzMd="18">
+                        <h3 class="title">{{content.title}}</h3>
+                        <ng-container *ngFor="let paragraph of content.paragraphs">
+                            <ng-container *ngIf="paragraph.type === 'p'">
+                                <p *ngFor="let text of paragraph.texts">
+                                    {{text}}
+                                </p>
+                            </ng-container>
+                            <ng-container *ngIf="paragraph.type === 'li'">
+                                <ul>
+                                    <li *ngFor="let text of paragraph.texts">
+                                        {{text}}
+                                    </li>
+                                </ul>
+                            </ng-container>
+                            <ng-container *ngIf="paragraph.type === 'sub'">
+                                <h4>{{paragraph.title}}</h4>
+                            </ng-container>
+                            <ng-container *ngIf="paragraph.type === 'table'">
+                                <div class="table-reponsive">
+                                    <nz-table class="table" nzBordered>
+                                        <thead>
+                                            <tr>
+                                                <th *ngFor="let column of paragraph.columns">
+                                                    {{column}}
+                                                </th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr *ngFor="let row of paragraph.rows">
+                                                <td>{{row.col_0}}</td>
+                                                <td>
+                                                    <img [src]="row.col_1" alt="">
+                                                </td>
+                                                <td>
+                                                    <p style="text-align: justify"><strong>Nguyên nhân:
+                                                        </strong>{{row.col_2.reason}}</p>
+                                                    <p style="text-align: justify"><strong>Hệ quả:
+                                                        </strong>{{row.col_2.reason}}</p>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </nz-table>
+                                </div>
+                            </ng-container>
+                        </ng-container>
+                    </div>
+                    <div nz-col nzXs="24" nzSm="24" nzMd="6">
+                        <div *ngFor="let img of content.img; let i = index">
+                            <img [id]="'img-' + i" [src]="img" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

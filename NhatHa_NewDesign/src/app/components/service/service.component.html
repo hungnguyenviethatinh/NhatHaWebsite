@@ -1,0 +1,23 @@
+<nz-carousel nzEffect="fade" nzDots="{{banners.length > 1 ? true : false}}" nzAutoPlay>
+    <div nz-carousel-content *ngFor="let banner of banners">
+        <img [src]="banner" alt="Dịch vụ - Kỹ thuật">
+    </div>
+</nz-carousel>
+<div class="main-container">
+    <div class="clearfix" id="service">
+        <div class="service-wrap">
+            <div nz-row nzType="flex" nzJustify="center" nzAlign="middle">
+                <div class="service" nz-col nzXs="24" nzSm="24" nzMd="7" *ngFor="let service of services">
+                    <a routerLink="{{service.link}}">
+                        <img [src]="service.img" alt="{{service.name}}" />
+                        <h3>{{service.title}}</h3>
+                        <p *ngFor="let description of service.descriptions">
+                            {{description}}
+                        </p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+

@@ -6,7 +6,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {
-  NzAffixModule, NzAnchorModule, NzCarouselModule, NzDividerModule, NzButtonModule, NzFormModule,
+  NzAnchorModule, NzCarouselModule, NzDividerModule, NzButtonModule, NzFormModule, NzTableModule,
   NzGridModule, NzIconModule, NzInputModule, NzMenuModule, NzTypographyModule, NZ_I18N, vi_VN
 } from 'ng-zorro-antd';
 import { registerLocaleData } from '@angular/common';
@@ -21,6 +21,15 @@ import { CaseStudiesComponent } from './components/support/case-studies/case-stu
 import { ContactUsComponent } from './components/contact/contact-us/contact-us.component';
 import { JobCareerComponent } from './components/contact/job-career/job-career.component';
 import { ProjectComponent } from './components/project/project.component';
+import { ServiceComponent } from './components/service/service.component';
+import { ServiceGroupComponent } from './components/service/service-group/service-group.component';
+import { ShortCircuitComponent } from './components/service/service-detail/short-circuit/short-circuit.component';
+import { ArcFlashComponent } from './components/service/service-detail/arc-flash/arc-flash.component';
+import { TestCommitComponent } from './components/service/service-detail/test-commit/test-commit.component';
+import { PowerQualityComponent } from './components/service/service-detail/power-quality/power-quality.component';
+import { EpMaintainComponent } from './components/service/service-detail/ep-maintain/ep-maintain.component';
+import { InfraredScanComponent } from './components/service/service-detail/infrared-scan/infrared-scan.component';
+import { OpdTestComponent } from './components/service/service-detail/opd-test/opd-test.component';
 
 registerLocaleData(vi);
 
@@ -36,11 +45,20 @@ registerLocaleData(vi);
     ContactUsComponent,
     JobCareerComponent,
     ProjectComponent,
+    ServiceComponent,
+    ServiceGroupComponent,
+    ShortCircuitComponent,
+    ArcFlashComponent,
+    TestCommitComponent,
+    PowerQualityComponent,
+    EpMaintainComponent,
+    InfraredScanComponent,
+    OpdTestComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    NzAffixModule,
+    NzTableModule,
     NzAnchorModule,
     NzFormModule,
     NzButtonModule,
