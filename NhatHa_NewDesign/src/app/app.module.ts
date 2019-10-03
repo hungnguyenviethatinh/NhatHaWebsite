@@ -22,7 +22,6 @@ import { ContactUsComponent } from './components/contact/contact-us/contact-us.c
 import { JobCareerComponent } from './components/contact/job-career/job-career.component';
 import { ProjectComponent } from './components/project/project.component';
 import { ServiceComponent } from './components/service/service.component';
-import { ServiceGroupComponent } from './components/service/service-group/service-group.component';
 import { ShortCircuitComponent } from './components/service/service-detail/short-circuit/short-circuit.component';
 import { ArcFlashComponent } from './components/service/service-detail/arc-flash/arc-flash.component';
 import { TestCommitComponent } from './components/service/service-detail/test-commit/test-commit.component';
@@ -30,6 +29,8 @@ import { PowerQualityComponent } from './components/service/service-detail/power
 import { EpMaintainComponent } from './components/service/service-detail/ep-maintain/ep-maintain.component';
 import { InfraredScanComponent } from './components/service/service-detail/infrared-scan/infrared-scan.component';
 import { OpdTestComponent } from './components/service/service-detail/opd-test/opd-test.component';
+import { PowerSystemStudyComponent } from './components/service/service-group/power-system-study/power-system-study.component';
+import { ConditionalMaintainComponent } from './components/service/service-group/conditional-maintain/conditional-maintain.component';
 
 registerLocaleData(vi);
 
@@ -46,7 +47,6 @@ registerLocaleData(vi);
     JobCareerComponent,
     ProjectComponent,
     ServiceComponent,
-    ServiceGroupComponent,
     ShortCircuitComponent,
     ArcFlashComponent,
     TestCommitComponent,
@@ -54,6 +54,8 @@ registerLocaleData(vi);
     EpMaintainComponent,
     InfraredScanComponent,
     OpdTestComponent,
+    PowerSystemStudyComponent,
+    ConditionalMaintainComponent,
   ],
   imports: [
     BrowserModule,
