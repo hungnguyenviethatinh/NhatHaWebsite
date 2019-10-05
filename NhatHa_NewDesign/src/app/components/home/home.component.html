@@ -9,7 +9,7 @@
             <h2>Dịch Vụ Kỹ Thuật</h2>
             <div nz-row nzType="flex" nzJustify="space-between" nzAlign="middle">
                 <div class="service" nz-col nzXs="24" nzSm="24" nzMd="4" *ngFor="let service of services">
-                    <a>
+                    <a routerLink="{{service.href}}">
                         <img [src]="service.img" alt="{{service.name}}" />
                         <p>{{service.name}}</p>
                     </a>
@@ -21,7 +21,7 @@
                 <h2>Sản Phẩm</h2>
                 <div nz-row nzType="flex" nzJustify="space-between" nzAlign="middle">
                     <div class="product" nz-col nzXs="24" nzSm="24" nzMd="7" *ngFor="let product of products">
-                        <a>
+                        <a routerLink="{{product.href}}">
                             <img [src]="product.img" alt="{{product.name}}" />
                             <p>{{product.name}}</p>
                         </a>

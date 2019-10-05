@@ -6,8 +6,8 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {
-  NzAnchorModule, NzCarouselModule, NzDividerModule, NzButtonModule, NzFormModule, NzTableModule,
-  NzGridModule, NzIconModule, NzInputModule, NzMenuModule, NzTypographyModule, NZ_I18N, vi_VN
+  NzAnchorModule, NzCarouselModule, NzDividerModule, NzButtonModule, NzFormModule, NzTabsModule, NzTableModule,
+  NzBackTopModule, NzGridModule, NzIconModule, NzInputModule, NzMenuModule, NzTypographyModule, NZ_I18N, vi_VN
 } from 'ng-zorro-antd';
 import { registerLocaleData } from '@angular/common';
 import vi from '@angular/common/locales/vi';
@@ -31,6 +31,10 @@ import { InfraredScanComponent } from './components/service/service-detail/infra
 import { OpdTestComponent } from './components/service/service-detail/opd-test/opd-test.component';
 import { PowerSystemStudyComponent } from './components/service/service-group/power-system-study/power-system-study.component';
 import { ConditionalMaintainComponent } from './components/service/service-group/conditional-maintain/conditional-maintain.component';
+import { ProductComponent } from './components/product/product.component';
+import { InfraredWindowComponent } from './components/product/infrared-window/infrared-window.component';
+import { CbmToolComponent } from './components/product/cbm-tool/cbm-tool.component';
+import { OnlineMonitorComponent } from './components/product/online-monitor/online-monitor.component';
 
 registerLocaleData(vi);
 
@@ -56,10 +60,16 @@ registerLocaleData(vi);
     OpdTestComponent,
     PowerSystemStudyComponent,
     ConditionalMaintainComponent,
+    ProductComponent,
+    InfraredWindowComponent,
+    CbmToolComponent,
+    OnlineMonitorComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
+    NzBackTopModule,
+    NzTabsModule,
     NzTableModule,
     NzAnchorModule,
     NzFormModule,
@@ -79,4 +89,5 @@ registerLocaleData(vi);
   providers: [{ provide: NZ_I18N, useValue: vi_VN }],
   bootstrap: [AppComponent]
 })
+
 export class AppModule { }

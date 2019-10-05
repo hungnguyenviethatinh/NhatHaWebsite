@@ -19,6 +19,10 @@ import { InfraredScanComponent } from './components/service/service-detail/infra
 import { OpdTestComponent } from './components/service/service-detail/opd-test/opd-test.component';
 import { PowerSystemStudyComponent } from './components/service/service-group/power-system-study/power-system-study.component';
 import { ConditionalMaintainComponent } from './components/service/service-group/conditional-maintain/conditional-maintain.component';
+import { ProductComponent } from './components/product/product.component';
+import { InfraredWindowComponent } from './components/product/infrared-window/infrared-window.component';
+import { CbmToolComponent } from './components/product/cbm-tool/cbm-tool.component';
+import { OnlineMonitorComponent } from './components/product/online-monitor/online-monitor.component';
 
 
 const routes: Routes = [
@@ -62,6 +66,20 @@ const routes: Routes = [
     path: 'dichvu/do-phong-dien-cuc-bo', component: OpdTestComponent,
   },
   {
+    path: 'sanpham', component: ProductComponent,
+  },
+  {
+    path: 'sanpham/cua-so-hong-ngoai', component: InfraredWindowComponent,
+  },
+
+  {
+    path: 'sanpham/may-do-tinh-trang-thiet-bi', component: CbmToolComponent,
+  },
+
+  {
+    path: 'sanpham/giai-phap-giam-sat-lien-tuc', component: OnlineMonitorComponent,
+  },
+  {
     path: 'doitac', component: PartnerComponent,
   },
   {
@@ -86,7 +104,11 @@ const routes: Routes = [
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [RouterModule.forRoot(routes, {
+    scrollPositionRestoration: 'enabled',
+    anchorScrolling: 'enabled',
+  })],
   exports: [RouterModule]
 })
+
 export class AppRoutingModule { }

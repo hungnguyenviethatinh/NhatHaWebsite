@@ -1,0 +1,57 @@
+@text-blue: #096dd9;
+@text-white: #ffffff;
+@text-black: #314659;
+@text-uppercase: uppercase;
+@bg-white: #ffffff;
+@bg-blue: #096dd9;
+
+.main-container {
+    padding: 0;
+    background: #fff;
+    min-height: 500px;
+    overflow: hidden;
+    position: relative;
+
+    #product {
+        position: relative;
+        box-shadow: 0 2px 8px #f0f1f2;
+        background: @bg-white;
+        color: @text-black;
+
+        .product-wrap {
+            padding: 3rem 10rem;
+            position: relative;
+
+            .product {
+                text-align: center;
+                padding: 12px;
+                margin: 24px;
+                //border-radius: 10px;
+                // box-shadow: 0 2px 8px #286db7;
+                // -moz-box-shadow: 0 2px 8px #286db7;
+                // -webkit-box-shadow: 0 2px 8px #286db7;
+                // -o-box-shadow: 0 2px 8px #286db7;
+                // -ms-box-shadow: 0 2px 8px #286db7;
+
+                a {
+                    color: @text-white;
+                    text-align: center;
+                    max-width: 100%;
+                    
+                    img {
+                        width: 100%;
+                        height: 200px;
+                        -o-object-fit: cover;
+                        object-fit: cover;
+                    }
+                    
+                    p {
+                        color: @text-black;
+                        margin: 12px 0px;
+                        text-align: justify;
+                    }
+                }
+            }
+        }
+    }
+}

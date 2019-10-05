@@ -1,0 +1,23 @@
+<div class="main-container">
+    <div class="clearfix" id="product">
+        <div class="product-wrap">
+            <div nz-row nzType="flex" nzJustify="space-between" nzAlign="top">
+                <div class="product" nz-col nzXs="24" nzSm="24" nzMd="7" *ngFor="let product of products">
+                    <a routerLink="{{product.href}}">
+                        <div nz-row nzType="flex" nzJustify="space-between" nzAlign="top">
+                            <div nz-col nzSpan="24" style="margin-bottom: 12px;">
+                                <img [src]="product.img" alt="{{product.name}}" />
+                            </div>
+                            <div nz-col nzSpan="24" style="background: orange;">
+                                <h2>
+                                    {{product.description}}
+                                </h2>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
