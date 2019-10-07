@@ -23,6 +23,9 @@ import { ProductComponent } from './components/product/product.component';
 import { InfraredWindowComponent } from './components/product/infrared-window/infrared-window.component';
 import { CbmToolComponent } from './components/product/cbm-tool/cbm-tool.component';
 import { OnlineMonitorComponent } from './components/product/online-monitor/online-monitor.component';
+import { IrissProductComponent } from './components/product/iriss-product/iriss-product.component';
+import { CordexProductComponent } from './components/product/cordex-product/cordex-product.component';
+import { IrissDetailComponent } from './components/product/iriss-product/iriss-detail/iriss-detail.component';
 
 
 const routes: Routes = [
@@ -71,6 +74,15 @@ const routes: Routes = [
   {
     path: 'sanpham/cua-so-hong-ngoai', component: InfraredWindowComponent,
   },
+  {
+    path: 'sanpham/san-pham-iriss', component: IrissProductComponent,
+  },
+  {
+    path: 'sanpham/san-pham-iriss/thong-tin-san-pham', component: IrissDetailComponent,
+  },
+  {
+    path: 'sanpham/san-pham-cordex', component: CordexProductComponent,
+  },
 
   {
     path: 'sanpham/may-do-tinh-trang-thiet-bi', component: CbmToolComponent,
@@ -107,6 +119,7 @@ const routes: Routes = [
   imports: [RouterModule.forRoot(routes, {
     scrollPositionRestoration: 'enabled',
     anchorScrolling: 'enabled',
+    scrollOffset: [0, 120],
   })],
   exports: [RouterModule]
 })

@@ -1,0 +1,156 @@
+<div class="main-container">
+    <div class="clearfix" id="product">
+        <div class="product-wrap">
+            <nz-affix>
+                <div class="tab" style="background: #fff; padding: 10px 0;" nz-row nzType="flex" [nzGutter]="nzGutter" nzJustify="start"
+                    nzAlign="middle">
+                    <div nz-col *ngFor="let tab of tabs" [ngStyle]="tab.style"
+                        [ngClass]="tab.active ? 'active' : 'inactive'" (click)="tab.click()">
+                        <img [src]="tab.img" alt="">
+                        <p>{{tab.name}}</p>
+                    </div>
+                </div>
+            </nz-affix>
+            <div class="tab-content">
+                <div nz-row nzType="flex" [nzGutter]="nzGutter" nzJustify="start" *ngFor="let tab of tabs">
+                    <ng-container *ngIf="tab.id && tab.contents">
+                        <div nz-col nzSpan="24"
+                            [ngStyle]="tab.active ? open: null" 
+                            id="{{tab.id}}"
+                            class="tab-hide">
+                            <div nz-row nzType="flex" [nzGutter]="nzGutter" nzJustify="space-between">
+                                <div nz-col nzXs="24" nzSm="24" nzMd="8">
+                                    <ng-container *ngFor="let left of tab.contents.cover.left">
+                                        <h3>{{left.h3}} <sub *ngIf="left.sub">{{left.sub}}</sub></h3>
+                                        <p>{{left.p}}</p>
+                                    </ng-container>
+                                </div>
+                                <div nz-col nzXs="24" nzSm="24" nzMd="8">
+                                    <img [src]="tab.contents.cover.center" alt="">
+                                </div>
+                                <div nz-col nzXs="24" nzSm="24" nzMd="8">
+                                    <ng-container *ngFor="let rigth of tab.contents.cover.right">
+                                        <h3>{{rigth.h3}}</h3>
+                                        <p>{{rigth.p}}</p>
+                                    </ng-container>
+                                </div>
+                            </div>
+                            <div id="feature-{{tab.id}}" class="tab" nz-row nzType="flex" nzJustify="start"
+                                nzAlign="middle" style="background: #096dd9; margin-top: 2em;">
+                                <div nz-col nzSpan="4" *ngFor="let tab of secondTabs" [ngStyle]="tab.style"
+                                    [ngClass]="(tab.active || tab.id === 0) ?  'active' : 'inactive'"
+                                    (click)="tab.click()">
+                                    <p style="color: #fff; text-align: center;">{{tab.name}}</p>
+                                </div>
+                            </div>
+                            <div class="tab-content">
+                                <div class="features">
+                                    <nz-table nzBordered *ngFor="let table of tab.contents.detail.features">
+                                        <thead>
+                                            <tr>
+                                                <th [nzWidth]="th.colspan === 2 ? '300px' : 'auto'"
+                                                    *ngFor="let th of table.th" [attr.colspan]="th.colspan">
+                                                    {{th.text}}
+                                                </th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr *ngFor="let tr of table.tr">
+                                                <td *ngFor="let text of tr">{{text}}</td>
+                                            </tr>
+                                        </tbody>
+                                    </nz-table>
+                                </div>
+                                <div id="certificate-{{tab.id}}" class="tab" nz-row nzType="flex" nzJustify="start"
+                                    nzAlign="middle" style="background: #096dd9; margin-top: 2em;">
+                                    <div nz-col nzSpan="4" *ngFor="let tab of secondTabs" [ngStyle]="tab.style"
+                                        [ngClass]="(tab.active || tab.id === 1) ?  'active' : 'inactive'"
+                                        (click)="tab.click()">
+                                        <p style="color: #fff; text-align: center;">{{tab.name}}</p>
+                                    </div>
+                                </div>
+                                <div class="certificates">
+                                    <div nz-row nzType="flex" [nzGutter]="nzGutter" nzJustify="space-between"
+                                        nzAlign="middle" style="padding: 24px;">
+                                        <div nz-col nzXs="24" nzSm="24" [nzMd]="i === 3 ? 8 : 4"
+                                            *ngFor="let img of tab.contents.detail.certificates.img">
+                                            <img [src]="img" alt="">
+                                        </div>
+                                    </div>
+                                    <nz-table class="table-stripped" nzBordered
+                                        *ngFor="let table of tab.contents.detail.certificates.tables">
+                                        <thead>
+                                            <tr>
+                                                <th [nzWidth]="th.colspan === 2 ? '300px' : 'auto'"
+                                                    *ngFor="let th of table.th" [attr.colspan]="th.colspan">
+                                                    {{th.text}}
+                                                </th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <ng-container *ngIf="table.tr">
+                                                <tr *ngFor="let tr of table.tr">
+                                                    <td *ngFor="let text of tr">{{text}}</td>
+                                                </tr>
+                                            </ng-container>
+                                            <ng-container *ngIf="table.p">
+                                                <tr>
+                                                    <td>
+                                                        <p *ngFor="let p of table.p">
+                                                            <strong>{{p[0]}}</strong>
+                                                            {{p[1]}}
+                                                        </p>
+                                                    </td>
+                                                </tr>
+                                            </ng-container>
+                                        </tbody>
+                                    </nz-table>
+                                </div>
+                                <div id="demo-{{tab.id}}" class="tab" nz-row nzType="flex" nzJustify="start"
+                                    nzAlign="middle" style="background: #096dd9; margin-top: 2em;">
+                                    <div nz-col nzSpan="4" *ngFor="let tab of secondTabs" [ngStyle]="tab.style"
+                                        [ngClass]="(tab.active || tab.id === 2) ?  'active' : 'inactive'"
+                                        (click)="tab.click()">
+                                        <p style="color: #fff; text-align: center;">{{tab.name}}</p>
+                                    </div>
+                                </div>
+                                <div class="demos">
+                                    <div nz-row nzType="flex" [nzGutter]="nzGutter" nzJustify="center" nzAlign="middle">
+                                        <div nz-col nzSpan="12">
+                                            <nz-carousel nzAutoPlay nzEffect="fade">
+                                                <div nz-carousel-content
+                                                    *ngFor="let img of tab.contents.detail.demos.img">
+                                                    <img [src]="img" alt="">
+                                                </div>
+                                            </nz-carousel>
+                                        </div>
+                                    </div>
+                                    <div nz-row nzType="flex" [nzGutter]="nzGutter" nzJustify="center" nzAlign="middle">
+                                        <div nz-col nzSpan="12">
+                                            <video width="100%" height="320" controls>
+                                                <source [src]="tab.contents.detail.demos.video" type="video/3gp">
+                                            </video>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="document-{{tab.id}}" class="tab" nz-row nzType="flex" nzJustify="start"
+                                    nzAlign="middle" style="background: #096dd9; margin-top: 2em;">
+                                    <div nz-col nzSpan="4" *ngFor="let tab of secondTabs" [ngStyle]="tab.style"
+                                        [ngClass]="(tab.active || tab.id === 3) ? 'active' : 'inactive'"
+                                        (click)="tab.click()">
+                                        <p style="color: #fff; text-align: center;">{{tab.name}}</p>
+                                    </div>
+                                </div>
+                                <div class="documents">
+                                    <p *ngFor="let document of tab.contents.detail.documents">
+                                        {{document}}
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </ng-container>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
