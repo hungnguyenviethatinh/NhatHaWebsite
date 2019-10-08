@@ -1,0 +1,169 @@
+@text-blue: #096dd9;
+@text-white: #ffffff;
+@text-black: #314659;
+@text-uppercase: uppercase;
+@bg-white: #ffffff;
+@bg-blue: #096dd9;
+@text-orange: #ffa500;
+@bg-orange: #ffa500;
+
+.main-container {
+    padding: 0;
+    background: #fff;
+    min-height: 500px;
+    overflow: hidden;
+    position: relative;
+
+    .img {
+        width: 100%;
+        height: 300px;
+        -o-object-fit: cover;
+        object-fit: cover;
+    }
+
+    #product {
+        position: relative;
+        background: @bg-white;
+        color: @text-black;
+
+        .product-wrap {
+            padding: 3rem 10rem;
+            position: relative;
+
+            .tab {
+                img {
+                    width: 50px;
+                    height: 50px;
+                }
+
+                p {
+                    margin-top: 1em;
+                    color: @text-blue;
+                    font-weight: bold;
+                }
+
+                .active {
+                    opacity: 1;
+                }
+
+                .inactive {
+                    opacity: .5;
+                    transition: opacity ease-in-out .5s;
+                }
+            }
+
+            .tab-content {
+                margin-top: 1em;
+            }
+
+            #page-0 {
+                margin: 24px 0;
+
+                img {
+                    .img;
+                }
+
+                h1 {
+                    color: @text-white;
+                    font-weight: bold;
+                    text-align: center;
+                }
+
+                h3 {
+                    text-align: justify;
+                    font-weight: normal;
+                }
+
+                #logo-0 {
+                    img {
+                        height: 20px;
+                        margin: 1em 0;
+                    }
+                }
+
+                #logo-1 {
+                    #logo-0;
+                }
+            }
+
+            #page-1 {
+                margin: 24px 0;
+
+                img {
+                    .img;
+                    width: 100%;
+                    -o-object-fit: contain;
+                    object-fit: contain;
+                }
+
+                h3 {
+                    color: @text-blue;
+                    font-weight: bold;
+                }
+
+                p {
+                    text-align: justify;
+                }
+            }
+
+            #page-2 {
+                margin: 24px 0;
+
+                h3 {
+                    color: @text-blue;
+                    font-weight: bold;
+                }
+
+                p {
+                    text-align: justify;
+                }
+            }
+
+            #page-3 {
+                margin: 24px 0;
+
+                img {
+                    .img;
+                    -o-object-fit: contain;
+                    object-fit: contain;
+                }
+
+                h3 {
+                    color: @text-white;
+                    line-height: 3em;
+                    text-align: center;
+                    font-weight: bold;
+                    background: @bg-orange;
+                }
+            }
+
+            .cordex-feature {
+                margin: 24px 0;
+            }
+
+            .cordex-certificate {
+                margin: 24px 0;
+            }
+
+            .cordex-demo {
+                margin: 24px 0;
+
+                img {
+                    .img;
+                    width: 100%;
+                    -o-object-fit: cover;
+                    object-fit: cover;
+                }
+            }
+
+            .cordex-document {
+                margin: 24px 0;
+
+                p {
+                    color: @text-orange;
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+}

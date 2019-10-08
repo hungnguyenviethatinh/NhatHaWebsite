@@ -1370,7 +1370,7 @@ export class IrissDetailComponent implements OnInit, AfterViewInit {
   ngAfterViewInit() {
     const sectionId = document.getElementById(this.fragment);
     const offsetTop = sectionId.offsetTop;
-    window.scrollTo(0, offsetTop);
+    window.scrollTo(0, offsetTop + 10);
   }
 
   @HostListener('window:scroll', ['$event'])

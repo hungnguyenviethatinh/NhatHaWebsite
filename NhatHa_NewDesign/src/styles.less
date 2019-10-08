@@ -19,6 +19,7 @@
 @text-uppercase: uppercase;
 @bg-white: #ffffff;
 @bg-blue: #096dd9;
+@bg-orange: #ffa500;
 
 .cdk-overlay-container {
     ul.ant-menu-sub {
@@ -88,6 +89,30 @@ li:not(.ant-menu-submenu) {
         
         tr:nth-chlld(odd) {
             background-color: aliceblue;
+        }
+    }
+}
+
+#cordex-product {
+    .ant-table-thead {
+        tr {
+            th {
+                text-align: left;
+                color: @text-white;
+                font-weight: bold;
+                background: @bg-orange;
+                border-bottom: 2px solid #fff;
+            }
+        }
+    }
+
+    .ant-table-tbody {
+        tr:nth-chlld(even) {
+            background-color: #ffedcc;
+        }
+        
+        tr:nth-chlld(odd) {
+            background-color: #fff6e6;
         }
     }
 }
