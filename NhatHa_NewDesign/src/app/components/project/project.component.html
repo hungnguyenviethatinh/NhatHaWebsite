@@ -1,7 +1,7 @@
-<nz-carousel nzEffect="fade" nzDots="{{banners.length > 1 ? true : false}}" nzAutoPlay>
+<nz-carousel nzEffect="fade" nzDots="{{bannersOfProject.length > 1 ? true : false}}" nzAutoPlay>
     <div nz-carousel-content *ngFor="let banner of banners">
         <img [src]="banner.img" alt="Đối tác của chúng tôi">
-        <h1 nz-title>{{banner.caption}}</h1>
+        <h1 nz-title>{{bannersOfProject.caption}}</h1>
     </div>
 </nz-carousel>
 <div class="main-container">
@@ -10,23 +10,25 @@
             <div class="project" nz-row nzType="flex" nzJustify="space-between" nzAlign="top">
                 <div nz-col nzXs="24" nzSm="24" nzMd="5">
                     <nz-anchor nzOffsetTop="30">
-                        <nz-link *ngFor="let project of projects;" nzHref="#{{project.id}}" nzTitle="{{project.group}}"></nz-link>
+                        <nz-link *ngFor="let project of projects; let i = index" 
+                        nzHref="#{{project.id}}"
+                        nzTitle="{{('project.group'+i)|translate}}"></nz-link>
                     </nz-anchor>
                 </div>
                 <div nz-col nzXs="24" nzSm="24" nzMd="18">
                     <div nz-row nzType="flex" nzJustify="space-between" nzAlign="top"
-                    *ngFor="let project of projects" id="{{project.id}}">
+                    *ngFor="let project of projects; let i=index" id="{{project.id}}">
                         <div nz-col nzSpan="24">
                             <div nz-row nzType="flex" nzJustify="space-between" nzAlign="top"
-                            *ngFor="let p of project.projects">
+                            *ngFor="let p of project.projects; let j=index">
                                 <div nz-col nzXs="24" nzSm="24" nzMd="4">
                                     <img [src]="p.img" alt="">
                                 </div>
                                 <div nz-col nzXs="24" nzSm="24" nzMd="19">
-                                    <h3>{{p.name}}</h3>
+                                    <h3>{{('p.name'+i+j)|translate}}</h3>
                                     <ul>
-                                        <li *ngFor="let description of p.descriptions">
-                                            {{description}}
+                                        <li *ngFor="let projectDescription of p.descriptions;let z = index">
+                                            {{('projectDescription'+i+j+z)|translate}}
                                         </li>
                                     </ul>
                                 </div>

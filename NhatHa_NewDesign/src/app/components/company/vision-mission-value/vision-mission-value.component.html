@@ -7,7 +7,7 @@
     <div class="clearfix" id="vision">
         <div class="vision-wrap">
             <section>
-                <h3 nz-title>Tầm nhìn</h3>
+                <h3 nz-title translate>Tầm nhìn</h3>
                 <nz-divider></nz-divider>
                 <div class="vision" nz-row nzType="flex" nzJustify="space-between" nzAlign="top" *ngFor="let vision of visions">
                     <div nz-col nzXs="24" nzSm="24" nzMd="6">
@@ -16,9 +16,11 @@
                     <div nz-col nzXs="24" nzSm="24" nzMd="16">
                         <article nz-typography>
                             <ul>
-                                <li *ngFor="let content of vision.contents">
+                                <!-- <li *ngFor="let content of vision.contents">
                                     <p nz-paragraph>{{content}}</p>
-                                </li>
+                                </li> -->
+                                <li ><p nz-paragraph>{{'content1'|translate}}</p></li>
+                                <li ><p nz-paragraph>{{'content2'|translate}}</p></li>
                             </ul>
                         </article>
                     </div>
@@ -28,9 +30,9 @@
     <div class="clearfix" id="mission">
         <div class="mission-wrap">
             <section>
-                <h3 nz-title>Sứ mệnh</h3>
+                <h3 nz-title translate>Sứ mệnh</h3>
                 <nz-divider></nz-divider>
-                <div class="mission" nz-row nzType="flex" nzJustify="space-between" nzAlign="top" *ngFor="let mission of missions">
+                <!-- <div class="mission" nz-row nzType="flex" nzJustify="space-between" nzAlign="top" *ngFor="let mission of missions">
                     <div nz-col nzXs="24" nzSm="24" nzMd="6">
                         <img [src]="mission.img" alt="Sứ mệnh của chúng tôi">
                     </div>
@@ -43,24 +45,119 @@
                             </ul>
                         </article>
                     </div>
+                </div> -->
+                <div class="mission" nz-row nzType="flex" nzJustify="space-between" nzAlign="top">
+                    <div nz-col nzXs="24" nzSm="24" nzMd="6">
+                        <img [src]="missions[0].img" alt="Sứ mệnh của chúng tôi">
+                    </div>
+                    <div nz-col nzXs="24" nzSm="24" nzMd="16">
+                        <article nz-typography>
+                            <ul>
+                                <li ><p nz-paragraph>{{'content3'|translate}}</p></li>
+                                <li ><p nz-paragraph>{{'content4'|translate}}</p></li>
+                            </ul>
+                        </article>
+                    </div>
+                </div>
+                <div class="mission" nz-row nzType="flex" nzJustify="space-between" nzAlign="top">
+                    <div nz-col nzXs="24" nzSm="24" nzMd="6">
+                        <img [src]="missions[1].img" alt="Sứ mệnh của chúng tôi">
+                    </div>
+                    <div nz-col nzXs="24" nzSm="24" nzMd="16">
+                        <article nz-typography>
+                            <ul>
+                                <li ><p nz-paragraph>{{'content5'|translate}}</p></li>
+                            </ul>
+                        </article>
+                    </div>
+                </div>
+                <div class="mission" nz-row nzType="flex" nzJustify="space-between" nzAlign="top">
+                    <div nz-col nzXs="24" nzSm="24" nzMd="6">
+                        <img [src]="missions[2].img" alt="Sứ mệnh của chúng tôi">
+                    </div>
+                    <div nz-col nzXs="24" nzSm="24" nzMd="16">
+                        <article nz-typography>
+                            <ul>
+                                <li ><p nz-paragraph>{{'content6'|translate}}</p></li>
+                            </ul>
+                        </article>
+                    </div>
                 </div>
             </section>
         </div>
     <div class="clearfix" id="value">
         <div class="value-wrap">
             <section>
-                <h3 nz-title>Giá trị</h3>
+                <h3 nz-title translate>Giá trị</h3>
                 <nz-divider></nz-divider>
-                <div class="value" nz-row nzType="flex" nzJustify="space-between" nzAlign="top" *ngFor="let value of values">
+                <div class="value" nz-row nzType="flex" nzJustify="space-between" nzAlign="top">
                     <div nz-col nzXs="24" nzSm="24" nzMd="6">
-                        <img [src]="value.img" alt="Giá trị của chúng tôi">
+                        <img [src]="values[0].img" alt="Giá trị của chúng tôi">
                     </div>
                     <div nz-col nzXs="24" nzSm="24" nzMd="16">
                         <article nz-typography>
                             <ul>
-                                <li *ngFor="let content of value.contents">
-                                    <p nz-paragraph>{{content}}</p>
-                                </li>
+                                <li ><p nz-paragraph>{{'content7'|translate}}</p></li>
+                            </ul>
+                        </article>
+                    </div>
+                </div>
+                <div class="value" nz-row nzType="flex" nzJustify="space-between" nzAlign="top">
+                    <div nz-col nzXs="24" nzSm="24" nzMd="6">
+                        <img [src]="values[1].img" alt="Giá trị của chúng tôi">
+                    </div>
+                    <div nz-col nzXs="24" nzSm="24" nzMd="16">
+                        <article nz-typography>
+                            <ul>
+                                <li ><p nz-paragraph>{{'content8'|translate}}</p></li>
+                            </ul>
+                        </article>
+                    </div>
+                </div>
+                <div class="value" nz-row nzType="flex" nzJustify="space-between" nzAlign="top">
+                    <div nz-col nzXs="24" nzSm="24" nzMd="6">
+                        <img [src]="values[2].img" alt="Giá trị của chúng tôi">
+                    </div>
+                    <div nz-col nzXs="24" nzSm="24" nzMd="16">
+                        <article nz-typography>
+                            <ul>
+                                <li ><p nz-paragraph>{{'content9'|translate}}</p></li>
+                            </ul>
+                        </article>
+                    </div>
+                </div>
+                <div class="value" nz-row nzType="flex" nzJustify="space-between" nzAlign="top">
+                    <div nz-col nzXs="24" nzSm="24" nzMd="6">
+                        <img [src]="values[3].img" alt="Giá trị của chúng tôi">
+                    </div>
+                    <div nz-col nzXs="24" nzSm="24" nzMd="16">
+                        <article nz-typography>
+                            <ul>
+                                <li ><p nz-paragraph>{{'content10'|translate}}</p></li>
+                            </ul>
+                        </article>
+                    </div>
+                </div>
+                <div class="value" nz-row nzType="flex" nzJustify="space-between" nzAlign="top">
+                    <div nz-col nzXs="24" nzSm="24" nzMd="6">
+                        <img [src]="values[4].img" alt="Giá trị của chúng tôi">
+                    </div>
+                    <div nz-col nzXs="24" nzSm="24" nzMd="16">
+                        <article nz-typography>
+                            <ul>
+                                <li ><p nz-paragraph>{{'content11'|translate}}</p></li>
+                            </ul>
+                        </article>
+                    </div>
+                </div>
+                <div class="value" nz-row nzType="flex" nzJustify="space-between" nzAlign="top">
+                    <div nz-col nzXs="24" nzSm="24" nzMd="6">
+                        <img [src]="values[5].img" alt="Giá trị của chúng tôi">
+                    </div>
+                    <div nz-col nzXs="24" nzSm="24" nzMd="16">
+                        <article nz-typography>
+                            <ul>
+                                <li ><p nz-paragraph>{{'content12'|translate}}</p></li>
                             </ul>
                         </article>
                     </div>

@@ -1,7 +1,7 @@
 <nz-carousel nzEffect="fade" nzDots="{{banners.length > 1 ? true : false}}" nzAutoPlay>
     <div nz-carousel-content *ngFor="let banner of banners">
         <img [src]="banner.img" alt="Đối tác của chúng tôi">
-        <h1 nz-title>{{banner.caption}}</h1>
+        <h1 nz-title>{{'banner.caption'| translate}}</h1>
     </div>
 </nz-carousel>
 <div class="main-container">
@@ -9,15 +9,15 @@
         <div class="partner-wrap">
             <section>
                 <div class="partner" nz-row nzType="flex" nzJustify="space-between" nzAlign="top"
-                    *ngFor="let partner of partners">
+                    *ngFor="let partner of partners let i =index">
                     <div nz-col nzXs="24" nzSm="24" nzMd="6">
                         <img [src]="partner.logo" [alt]="partner.name">
                     </div>
                     <div nz-col nzXs="24" nzSm="24" nzMd="16">
                         <article nz-typography>
-                            <h3 nz-title>{{partner.name}}</h3>
+                            <h3 nz-title>{{('partner.name'+i)|translate}}</h3>
                             <p nz-paragraph>
-                                {{partner.coop}}
+                                {{'partner.coop'+i|translate}}
                             </p>
                         </article>
                     </div>

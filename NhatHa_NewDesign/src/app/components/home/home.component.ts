@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'nh-home',
@@ -53,7 +54,7 @@ export class HomeComponent implements OnInit {
     },
   ];
 
-  constructor() { }
+  constructor( private translateService: TranslateService) { }
 
   ngOnInit() {
   }

@@ -30,6 +30,13 @@ import { PowerQualityComponent } from './components/service/service-detail/power
 import { EpMaintainComponent } from './components/service/service-detail/ep-maintain/ep-maintain.component';
 import { InfraredScanComponent } from './components/service/service-detail/infrared-scan/infrared-scan.component';
 import { OpdTestComponent } from './components/service/service-detail/opd-test/opd-test.component';
+// import ngx-translate and the http loader
+import {TranslateCompiler,TranslateLoader, TranslateModule} from '@ngx-translate/core';
+import {TranslateHttpLoader} from '@ngx-translate/http-loader';
+import {HttpClient} from '@angular/common/http';
+
+// import ngx-translate-messageformat-compiler
+import {TranslateMessageFormatCompiler} from 'ngx-translate-messageformat-compiler';
 
 registerLocaleData(vi);
 
@@ -72,9 +79,26 @@ registerLocaleData(vi);
     FormsModule,
     ReactiveFormsModule,
     HttpClientModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+     // ngx-translate and the loader module
+     HttpClientModule,
+     TranslateModule.forRoot({
+         loader: {
+             provide: TranslateLoader,
+             useFactory: HttpLoaderFactory,
+             deps: [HttpClient]
+         },
+         // compiler configuration
+         compiler: {
+          provide: TranslateCompiler,
+          useClass: TranslateMessageFormatCompiler
+      }
+     })
   ],
   providers: [{ provide: NZ_I18N, useValue: vi_VN }],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
+export function HttpLoaderFactory(http: HttpClient) {
+  return new TranslateHttpLoader(http);
+}

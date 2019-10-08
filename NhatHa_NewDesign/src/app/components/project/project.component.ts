@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./project.component.less']
 })
 export class ProjectComponent implements OnInit {
-  banners = [
+  bannersOfProject = [
     {
       img: '../../../assets/images/projects/nhatha-projects.JPG',
       caption: 'Dự án cuả chúng tôi'

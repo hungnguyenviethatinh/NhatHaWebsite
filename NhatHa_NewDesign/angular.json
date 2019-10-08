@@ -67,7 +67,7 @@
                 }
               ]
             }
-          }
+          }         
         },
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
@@ -77,13 +77,10 @@
           "configurations": {
             "production": {
               "browserTarget": "NhatHaElectric:build:production"
+            },
+            "en":{
+              "browserTarget": "NhatHaElectric:build:en"
             }
-          }
-        },
-        "extract-i18n": {
-          "builder": "@angular-devkit/build-angular:extract-i18n",
-          "options": {
-            "browserTarget": "NhatHaElectric:build"
           }
         },
         "test": {

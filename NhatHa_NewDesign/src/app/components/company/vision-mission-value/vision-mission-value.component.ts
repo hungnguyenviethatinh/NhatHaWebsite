@@ -73,6 +73,18 @@ export class VisionMissionValueComponent implements OnInit {
         'Cam kết luôn luôn thấu hiểu và nỗ lực không ngừng cung cấp các giá trị tốt nhất cho khách hàng.',
       ],
     },
+    {
+      img: '../../../../assets/images/company/vison-mission-value/value/5.JPG',
+      contents: [
+        'Cam kết luôn luôn thấu hiểu và nỗ lực không ngừng cung cấp các giá trị tốt nhất cho khách hàng.',
+      ],
+    },
+    {
+      img: '../../../../assets/images/company/vison-mission-value/value/6.JPG',
+      contents: [
+        'Cam kết luôn luôn thấu hiểu và nỗ lực không ngừng cung cấp các giá trị tốt nhất cho khách hàng.',
+      ],
+    }
   ];
 
   constructor() { }

@@ -7,15 +7,15 @@
     <div class="clearfix" id="equipment">
         <div class="equipment-wrap">
             <section>
-                <div class="equipment" nz-row nzType="flex" nzJustify="space-between" nzAlign="top"
+                 <div class="equipment" nz-row nzType="flex" nzJustify="space-between" nzAlign="top"
                     *ngFor="let equipment of equipments">
                     <div nz-col nzXs="24" nzSm="24" nzMd="6">
                         <img [src]="equipment.img" [alt]="equipment.name">
                     </div>
                     <div nz-col nzXs="24" nzSm="24" nzMd="16">
                         <article nz-typography>
-                            <p nz-paragraph *ngFor="let content of equipment.contents">
-                                <b>{{content.key}}</b>
+                            <p nz-paragraph *ngFor="let content of equipment.contents;let i = index">
+                                <b>{{('content.key' +i) | translate}}</b>
                                 {{content.value}}
                             </p>
                         </article>
