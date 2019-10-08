@@ -38,6 +38,8 @@ import { OnlineMonitorComponent } from './components/product/online-monitor/onli
 import { IrissProductComponent } from './components/product/iriss-product/iriss-product.component';
 import { CordexProductComponent } from './components/product/cordex-product/cordex-product.component';
 import { IrissDetailComponent } from './components/product/iriss-product/iriss-detail/iriss-detail.component';
+import { CordexCameraComponent } from './components/product/cordex-camera/cordex-camera.component';
+import { CameraDetailComponent } from './components/product/cordex-camera/camera-detail/camera-detail.component';
 
 registerLocaleData(vi);
 
@@ -70,6 +72,8 @@ registerLocaleData(vi);
     IrissProductComponent,
     CordexProductComponent,
     IrissDetailComponent,
+    CordexCameraComponent,
+    CameraDetailComponent,
   ],
   imports: [
     BrowserModule,

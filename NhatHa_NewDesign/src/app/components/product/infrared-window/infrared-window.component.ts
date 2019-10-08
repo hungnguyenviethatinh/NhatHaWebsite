@@ -19,7 +19,7 @@ export class InfraredWindowComponent implements OnInit {
       + 'Sau cùng, các sản phẩm cửa sổ của IRISS được bảo hành trọn đời cho các lỗi sản phẩm.',
     },
     {
-      href: '/sanpham/san-pham-cordex',
+      href: '/sanpham/san-pham-cordex/cua-so-hong-ngoai-cordex',
       name: 'Của sổ hồng ngoại Cordex',
       img: [
         '/assets/images/products/01/2.png',

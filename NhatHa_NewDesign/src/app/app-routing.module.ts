@@ -26,6 +26,8 @@ import { OnlineMonitorComponent } from './components/product/online-monitor/onli
 import { IrissProductComponent } from './components/product/iriss-product/iriss-product.component';
 import { CordexProductComponent } from './components/product/cordex-product/cordex-product.component';
 import { IrissDetailComponent } from './components/product/iriss-product/iriss-detail/iriss-detail.component';
+import { CordexCameraComponent } from './components/product/cordex-camera/cordex-camera.component';
+import { CameraDetailComponent } from './components/product/cordex-camera/camera-detail/camera-detail.component';
 
 
 const routes: Routes = [
@@ -81,13 +83,17 @@ const routes: Routes = [
     path: 'sanpham/san-pham-iriss/thong-tin-san-pham', component: IrissDetailComponent,
   },
   {
-    path: 'sanpham/san-pham-cordex', component: CordexProductComponent,
+    path: 'sanpham/san-pham-cordex/cua-so-hong-ngoai-cordex', component: CordexProductComponent,
   },
-
   {
     path: 'sanpham/may-do-tinh-trang-thiet-bi', component: CbmToolComponent,
   },
-
+  {
+    path: 'sanpham/may-chup-hinh-nhiet-cordex', component: CordexCameraComponent,
+  },
+  {
+    path: 'sanpham/may-chup-hinh-nhiet-cordex/thong-tin-san-pham', component: CameraDetailComponent,
+  },
   {
     path: 'sanpham/giai-phap-giam-sat-lien-tuc', component: OnlineMonitorComponent,
   },

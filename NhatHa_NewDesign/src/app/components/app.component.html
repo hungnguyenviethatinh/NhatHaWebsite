@@ -99,7 +99,7 @@
                                         </ul>
                                     </li>
                                     <li nz-menu-item>
-                                        <a [routerLink]="['/sanpham/san-pham-cordex']">Sản Phẩm Cordex</a>
+                                        <a [routerLink]="['/sanpham/san-pham-cordex/cua-so-hong-ngoai-cordex']">Sản Phẩm Cordex</a>
                                     </li>
                                 </ul>
                             </li>
@@ -107,13 +107,19 @@
                             (click)="navigateTo('/sanpham/may-do-tinh-trang-thiet-bi')">
                                 <ul>
                                     <li nz-submenu nzTitle="Máy Chụp Hình Nhiệt Cordex"
-                                    (click)="navigateTo('/sanpham')">
+                                    (click)="navigateTo('/sanpham/may-chup-hinh-nhiet-cordex')">
                                         <ul>
                                             <li nz-menu-item>
-                                                <a [routerLink]="['/sanpham']">Máy Cordex Toughpix Digitherm</a>
+                                                <a [routerLink]="['/sanpham/may-chup-hinh-nhiet-cordex/thong-tin-san-pham']"
+                                                    fragment="toughpix-digiherm">
+                                                    Máy Cordex Toughpix Digitherm
+                                                </a>
                                             </li>
                                             <li nz-menu-item>
-                                                <a [routerLink]="['/sanpham']">Máy Cordex TC7150</a>
+                                                <a [routerLink]="['/sanpham/may-chup-hinh-nhiet-cordex/thong-tin-san-pham']"
+                                                    fragment="infrared-camera-tc7150">
+                                                    Máy Cordex TC7150
+                                                </a>
                                             </li>
                                         </ul>
                                     </li>
@@ -230,13 +236,13 @@
                                 <div class="footer-center">
                                     <h3>Sản Phẩm</h3>
                                     <div nz-col nzSpan="24">
-                                        <a [routerLink]="['/sanpham']">Cửa Sổ Hồng Ngoại Cordex</a>
+                                        <a [routerLink]="['/sanpham/san-pham-cordex/cua-so-hong-ngoai-cordex']">Cửa Sổ Hồng Ngoại Cordex</a>
                                     </div>
                                     <div nz-col nzSpan="24">
-                                        <a [routerLink]="['/sanpham']">Phân Tích Hồ Quang Điện</a>
+                                        <a [routerLink]="['/sanpham/san-pham-iriss']">Cửa Sổ Hồng Ngoại IRISS</a>
                                     </div>
                                     <div nz-col nzSpan="24">
-                                        <a [routerLink]="['/sanpham']">Máy Chụp Hình Nhiệt Cordex</a>
+                                        <a [routerLink]="['/sanpham/may-chup-hinh-nhiet-cordex']">Máy Chụp Hình Nhiệt Cordex</a>
                                     </div>
                                     <div nz-col nzSpan="24">
                                         <a [routerLink]="['/sanpham']">Máy Đo Sóng Siêu Âm IRISS</a>
