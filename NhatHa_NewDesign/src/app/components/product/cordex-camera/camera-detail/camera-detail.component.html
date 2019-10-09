@@ -1,0 +1,386 @@
+<div class="main-container">
+    <div class="clearfix" id="product">
+        <div id="cordex-product" class="product-wrap">
+            <nz-affix>
+                <div class="tab" style="background: #fff; padding: 10px 0;" nz-row nzType="flex" [nzGutter]="nzGutter"
+                    nzJustify="start" nzAlign="middle">
+                    <div nz-col *ngFor="let tab of tabs" [ngStyle]="tab.style"
+                        [ngClass]="tab.active ? 'active' : 'inactive'" (click)="tab.click()">
+                        <img [src]="tab.img" alt="">
+                        <p>{{tab.name}}</p>
+                    </div>
+                </div>
+            </nz-affix>
+            <div class="tab-content">
+                <div nz-row nzType="flex" [nzGutter]="nzGutter" nzJustify="start" *ngFor="let tab of tabs">
+                    <ng-container *ngIf="tab.id && tab.content">
+                        <div nz-col nzSpan="24" [ngStyle]="tab.active ? open: null" id="{{tab.id}}" class="tab-hide">
+                            <div nz-row nzType="flex" [nzGutter]="nzGutter" nzJustify="space-between">
+                                <div nz-col nzXs="24" nzSm="24" nzMd="16">
+                                    <h3>{{tab.content.cover.left.title}}</h3>
+                                    <p *ngFor="let p of tab.content.cover.left.paragraphs">{{p}}</p>
+                                </div>
+                                <div nz-col nzXs="24" nzSm="24" nzMd="8">
+                                    <img [src]="tab.content.cover.right.img" alt="">
+                                </div>
+                            </div>
+                            <div id="feature-{{tab.id}}" class="tab" nz-row nzType="flex" nzJustify="start"
+                                nzAlign="middle" style="background: #ffa500; margin-top: 2em;">
+                                <div nz-col nzSpan="4" *ngFor="let tab of secondTabs" [ngStyle]="tab.style"
+                                    [ngClass]="(tab.active || tab.id === 0) ?  'active' : 'inactive'"
+                                    (click)="tab.click()">
+                                    <p style="color: #fff; text-align: center;">{{tab.name}}</p>
+                                </div>
+                            </div>
+
+                            <div class="features">
+                                <ng-container *ngIf="tab.id === 'toughpix-digiherm'">
+                                    <nz-table nzBordered>
+                                        <thead>
+                                            <tr>
+                                                <th [attr.colspan]="2" nzWidth="300px">
+                                                    MÔI TRƯỜNG
+                                                </th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>Nhiệt độ hoạt động</td>
+                                                <td>Tamb -10°C to +40°C</td>
+                                            </tr>
+                                        </tbody>
+                                    </nz-table>
+                                    <nz-table nzBordered>
+                                        <thead>
+                                            <tr>
+                                                <th [attr.colspan]="2" nzWidth="300px">
+                                                    THÔNG TIN CHUNG
+                                                </th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>Tải hình ảnh</td>
+                                                <td>
+                                                    High Speed removable memory card with USB (safe area only) & CorDEX
+                                                    Wireless Android App
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>Dung lượng</td>
+                                                <td>4GB</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Độ phân giải tiêu chuẩn</td>
+                                                <td>5 Megapixel </td>
+                                            </tr>
+                                            <tr>
+                                                <td>Kích thước màn hình</td>
+                                                <td>2.8 inches</td>
+                                            </tr>
+                                        </tbody>
+                                    </nz-table>
+                                    <nz-table nzBordered>
+                                        <thead>
+                                            <tr>
+                                                <th [attr.colspan]="2" nzWidth="300px">
+                                                    THÔNG TIN CHI TIẾT
+                                                </th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>Vật liệu thấu kính & màn hình LCD
+                                                </td>
+                                                <td>
+                                                    Armoured Glass
+
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>Trọng lượng
+                                                </td>
+                                                <td>380g
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>Tiêu chuẩn
+                                                </td>
+                                                <td>54 </td>
+                                            </tr>
+                                            <tr>
+                                                <td>Vật liệu khung máy
+                                                </td>
+                                                <td>Anodized aluminum with polymeric materials
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>Kích thước
+                                                </td>
+                                                <td>Length: 113mm Height: 76mm Width: 45mm
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </nz-table>
+                                    <nz-table nzBordered>
+                                        <thead>
+                                            <tr>
+                                                <th [attr.colspan]="2" nzWidth="300px">
+                                                    THÔNG TIN NGUỒN
+                                                </th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>Loại pin </td>
+                                                <td>TRemovable & Rechargeable Ex Power Battery</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Dung lượng</td>
+                                                <td>1900mAh </td>
+                                            </tr>
+                                            <tr>
+                                                <td>Loại cell pin </td>
+                                                <td>Lithium Ion</td>
+                                            </tr>
+                                        </tbody>
+                                    </nz-table>
+                                    <nz-table nzBordered>
+                                        <thead>
+                                            <tr>
+                                                <th [attr.colspan]="2" nzWidth="300px">
+                                                    KHẢ NĂNG CHỤP ẢNH NHIỆT
+                                                </th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>Cảm biến</td>
+                                                <td>80x60 Pixel Array</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Hình ảnh</td>
+                                                <td>Adaptive thermal blending for dual mode imaging</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Độ chính xác dải nhiệt thấp</td>
+                                                <td>-10°C to +140°C with +/-2°C or +/-2% accuracy</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Độ chính xác dải nhiệt cao</td>
+                                                <td>-10°C to +380°C with +/-5°C or +/-5% accuracy</td>
+                                            </tr>
+                                        </tbody>
+                                    </nz-table>
+                                </ng-container>
+                                <ng-container *ngIf="tab.id === 'infrared-camera-tc7150'">
+                                    <nz-table nzBordered>
+                                        <thead>
+                                            <tr>
+                                                <th [attr.colspan]="2" nzWidth="300px">
+                                                    THÔNG TIN NHIỆT ĐỘ
+                                                </th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>Dải đo nhiệt độ</td>
+                                                <td>-4°F to 1112°F (-20°C to +600°C)</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Độ chính xác</td>
+                                                <td>± 2°C or 2% of reading</td>
+                                            </tr>
+                                        </tbody>
+                                    </nz-table>
+                                    <nz-table nzBordered>
+                                        <thead>
+                                            <tr>
+                                                <th [attr.colspan]="2" nzWidth="300px">
+                                                    HÌNH ẢNH
+                                                </th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>Tần số ảnh nhiệt</td>
+                                                <td>9 Hz</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Cảm biến</td>
+                                                <td>4GB</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Độ phân giải tiêu chuẩn</td>
+                                                <td>320 x 240 uncooled microbolometer</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Độ nhạy nhiệt/NETD</td>
+                                                <td>50mK</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Dải sóng hồng ngoại đo được</td>
+                                                <td>8μm to 14μm </td>
+                                            </tr>
+                                            <tr>
+                                                <td>Trường nhìn(FOV)</td>
+                                                <td>25° x 20.5°</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Trường nhìn (IFOV)</td>
+                                                <td>1.38 mrad</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Khoảng cách quan sát tối thiểu</td>
+                                                <td>≈ 4” (10cm) </td>
+                                            </tr>
+                                            <tr>
+                                                <td>Thấu kính</td>
+                                                <td>F 1.2</td>
+                                            </tr>
+                                        </tbody>
+                                    </nz-table>
+                                    <nz-table nzBordered>
+                                        <thead>
+                                            <tr>
+                                                <th [attr.colspan]="2" nzWidth="300px">
+                                                    GHI NHẬN HÌNH ẢNH
+                                                </th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>Dung lượng</td>
+                                                <td>8GB</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Định dạng</td>
+                                                <td>CDX (Radiometric) JPEG (Non-radiometric)</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Ghi chú bằng giọng nói</td>
+                                                <td>Yes</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Đọc thẻ RFID</td>
+                                                <td>
+                                                    <ul>
+                                                        <li>Operates with 13.54MHz passive tags</li>
+                                                        <li>Detection range up to 5cm (1.9in)</li>
+                                                        <li>Supports ISO/IEC15693-2,ISO/IEC18000-3 tag formats</li>
+                                                    </ul>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </nz-table>
+                                    <nz-table nzBordered>
+                                        <thead>
+                                            <tr>
+                                                <th [attr.colspan]="2" nzWidth="300px">
+                                                    THÔNG SỐ CHUNG
+                                                </th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>Nhiệt độ hoạt động</td>
+                                                <td>-4°F to 104°F (-20°C to +40°C) </td>
+                                            </tr>
+                                            <tr>
+                                                <td>Nhiệt độ lưu trữ</td>
+                                                <td>-40°F to +158°F (-40°C to +70°C)</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Hiển thị</td>
+                                                <td>3.2” Backlit LCD</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Phần mềm</td>
+                                                <td>CorDEX CONNECT (Included) </td>
+                                            </tr>
+                                            <tr>
+                                                <td>Pin nguồn</td>
+                                                <td>Rechargeable Lithium-ion</td>
+                                            </tr>
+                                        </tbody>
+                                    </nz-table>
+                                </ng-container>
+                            </div>
+                            <div id="certificate-{{tab.id}}" class="tab" nz-row nzType="flex" nzJustify="start"
+                                nzAlign="middle" style="background: #ffa500; margin-top: 2em;">
+                                <div nz-col nzSpan="4" *ngFor="let tab of secondTabs" [ngStyle]="tab.style"
+                                    [ngClass]="(tab.active || tab.id === 1) ?  'active' : 'inactive'"
+                                    (click)="tab.click()">
+                                    <p style="color: #fff; text-align: center;">{{tab.name}}</p>
+                                </div>
+                            </div>
+                            <div class="certificates"
+                                [ngStyle]="{'height': tab.id === 'toughpix-digiherm' ? '300px' : 'auto'}">
+                                <ng-container *ngIf="tab.id === 'infrared-camera-tc7150'">
+                                    <nz-table nzBordered>
+                                        <thead>
+                                            <tr>
+                                                <th [attr.colspan]="2" nzWidth="300px">
+                                                    THÔNG TIN CHỨNG CHỈ
+                                                </th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>MET Listing No.</td>
+                                                <td>E113607</td>
+                                            </tr>
+                                            <tr>
+                                                <td>MET (North American) Certificate Type</td>
+                                                <td>Class 1, Division 2 Groups B,C,D</td>
+                                            </tr>
+                                        </tbody>
+                                    </nz-table>
+                                </ng-container>
+                            </div>
+                            <div id="demo-{{tab.id}}" class="tab" nz-row nzType="flex" nzJustify="start"
+                                nzAlign="middle" style="background: #ffa500; margin-top: 2em;">
+                                <div nz-col nzSpan="4" *ngFor="let tab of secondTabs" [ngStyle]="tab.style"
+                                    [ngClass]="(tab.active || tab.id === 2) ?  'active' : 'inactive'"
+                                    (click)="tab.click()">
+                                    <p style="color: #fff; text-align: center;">{{tab.name}}</p>
+                                </div>
+                            </div>
+                            <div class="demos">
+                                <div nz-row nzType="flex" [nzGutter]="nzGutter" nzJustify="center" nzAlign="middle">
+                                    <div nz-col nzSpan="12">
+                                        <nz-carousel nzAutoPlay nzEffect="fade">
+                                            <div nz-carousel-content *ngFor="let img of tab.content.detail.demo.img">
+                                                <img [src]="img" alt="">
+                                            </div>
+                                        </nz-carousel>
+                                    </div>
+                                </div>
+                                <div nz-row nzType="flex" [nzGutter]="nzGutter" nzJustify="center" nzAlign="middle">
+                                    <div nz-col nzSpan="12">
+                                        <video width="100%" height="320" controls>
+                                            <source [src]="tab.content.detail.demo.video" type="video/3gp">
+                                        </video>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="document-{{tab.id}}" class="tab" nz-row nzType="flex" nzJustify="start"
+                                nzAlign="middle" style="background: #ffa500; margin-top: 2em;">
+                                <div nz-col nzSpan="4" *ngFor="let tab of secondTabs" [ngStyle]="tab.style"
+                                    [ngClass]="(tab.active || tab.id === 3) ? 'active' : 'inactive'"
+                                    (click)="tab.click()">
+                                    <p style="color: #fff; text-align: center;">{{tab.name}}</p>
+                                </div>
+                            </div>
+                            <div class="documents">
+                                <p *ngFor="let document of tab.content.detail.documents">
+                                    {{document}}
+                                </p>
+                            </div>
+                        </div>
+                    </ng-container>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -25,8 +25,7 @@ export class IrissDetailComponent implements OnInit, AfterViewInit {
     cover: {
       left: [
         {
-          h3: 'Công Nghệ Poly-View System',
-          sub: 'TM',
+          h3: 'Công Nghệ Poly-View System™',
           p: 'Một cách mạng trong công nghệ cửa sổ hồng ngoại, sản phẩm dòng VPT ứng dụng công nghệ độc quyền '
             + 'Poly-View System™ khiến việc quan sát trực tiếp trở nên dễ dàng đồng thời cho phép truyền dẫn tia '
             + 'hồng ngoại trên toàn dải đo.',
@@ -333,8 +332,7 @@ export class IrissDetailComponent implements OnInit, AfterViewInit {
             + 'dòng CAP CT có diện tích miền nhìn lớn nhất với tấm phim quang học dạng trong suốt.',
         },
         {
-          h3: 'Công Nghệ Poly-View System',
-          sub: 'TM',
+          h3: 'Công Nghệ Poly-View System™',
           p: 'Tấm phim polyme hồng ngoại áp dụng công nghệ Poly-View System™ được kết hợp với '
             + 'lưới trợ lực chuẩn công nghiệp cho phép làm việc với bất cứ máy chụp hình nhiệt '
             + 'để giám sát tình trạng thiết bị điện sâu bên trong.',
@@ -633,8 +631,7 @@ export class IrissDetailComponent implements OnInit, AfterViewInit {
             + 'trong suốt dòng đời hoạt động, cũng như chịu được tác động của nước, sóng siêu âm và không bị hao mòn theo thời gian.',
         },
         {
-          h3: 'Công Nghệ Poly-View System',
-          sub: 'TM',
+          h3: 'Công Nghệ Poly-View System™',
           p: 'Tấm phim polyme hồng ngoại áp dụng công nghệ Poly-View System™ được kết hợp với lưới trợ lực '
             + 'chuẩn công nghiệp cho phép làm việc với bất cứ máy chụp hình nhiệt để giám sát tình trạng thiết '
             + 'bị điện sâu bên trong. Tấm phim polyme của '
@@ -931,8 +928,7 @@ export class IrissDetailComponent implements OnInit, AfterViewInit {
             + 'đảm bảo người thực hiện công tác không chịu rủi ro nguy hiểm điện giật hoặc chảy nổ do hồ quang điện.',
         },
         {
-          h3: 'Công Nghệ Poly-View System',
-          sub: 'TM',
+          h3: 'Công Nghệ Poly-View System™',
           p: 'Tấm phim polyme hồng ngoại áp dụng công nghệ Poly-View System™ được kết hợp với lưới trợ lực chuẩn công nghiệp '
             + 'cho phép làm việc với bất cứ máy chụp hình nhiệt để giám sát tình trạng thiết bị điện sâu bên trong.',
         },
