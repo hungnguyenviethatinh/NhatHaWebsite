@@ -1,1 +1,252 @@
-<p>iriss-delta works!</p>
+<div class="main-container">
+    <div class="clearfix" id="product">
+        <div id="delta-t-product" class="product-wrap">
+            <nz-affix>
+                <div class="tab" style="background: #fff; padding: 10px 0;" nz-row nzType="flex" [nzGutter]="nzGutter"
+                    nzJustify="start" nzAlign="middle">
+                    <div nz-col *ngFor="let tab of tabs" [ngStyle]="tab.style" (click)="tab.click()">
+                        <img [src]="tab.img" alt="">
+                        <p>{{tab.name}}</p>
+                    </div>
+                </div>
+            </nz-affix>
+            <div class="tab-content">
+                <div id="page-0" nz-row nzType="flex" [nzGutter]="nzGutter" nzJustify="space-between" nzAlign="middle">
+                    <div nz-col nzXs="24" nzSm="24" nzMd="12">
+                        <h2>HỆ THỐNG GIÁM SÁT NHIỆT ĐỘ</h2>
+                        <h1>KHÔNG DÂY</h1>
+                        <h3>Giải Pháp Giám Sát Liên Tục Chênh Lệch Nhiệt Độ Của Thiết Bị</h3>
+                        <h4>Không cần nguồn, không dây và liên tục 24/7</h4>
+                    </div>
+                    <div nz-col nzXs="24" nzSm="24" nzMd="12">
+                        <img src="/assets/images/products/03/03/1.PNG" alt="SẢN PHẨM IRISS DELTA T">
+                    </div>
+                </div>
+                <div id="page-1" nz-row nzType="flex" [nzGutter]="nzGutter" nzJustify="center" nzAlign="middle">
+                    <div id="left" nz-col nzXs="24" nzSm="24" nzMd="8">
+                        <ng-container *ngFor="let left of content.page1.left">
+                            <h3>{{left[0]}}</h3>
+                            <p>{{left[1]}}</p>
+                        </ng-container>
+                    </div>
+                    <div id="center" nz-col nzXs="24" nzSm="24" nzMd="8">
+                        <img [src]="content.page1.center" alt="">
+                    </div>
+                    <div id="right" nz-col nzXs="24" nzSm="24" nzMd="8">
+                        <ng-container *ngFor="let right of content.page1.right">
+                            <h3>{{right[0]}}</h3>
+                            <p>{{right[1]}}</p>
+                        </ng-container>
+                    </div>
+                </div>
+                <div id="delta-t-feature" class="tab" nz-row nzType="flex" nzJustify="start" nzAlign="middle"
+                    style="background: #4472c4; margin-top: 2em;">
+                    <div nz-col nzSpan="4" *ngFor="let tab of secondTabs" [ngStyle]="tab.style"
+                        [ngClass]="(tab.active || tab.id === 0) ?  'active' : 'inactive'" (click)="tab.click()">
+                        <p style="color: #fff; text-align: center;">{{tab.name}}</p>
+                    </div>
+                </div>
+
+                <div class="delta-t-feature" class="tab" nz-row nzType="flex" nzJustify="start" nzAlign="middle">
+                    <div nz-col nzSpan="24">
+                        <nz-table nzBordered>
+                            <thead>
+                                <tr>
+                                    <th nzWidth="300px" [attr.colspan]="2">TÍNH NĂNG</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Sử dụng ngoài trời </td>
+                                    <td>Không</td>
+                                </tr>
+                                <tr>
+                                    <td>Công nghệ không dây</td>
+                                    <td>Z-Wave 5th Gen
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Khoảng cách giao tiếp (điểm đến điểm)
+                                    </td>
+                                    <td>Up to 300 feet
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Kênh back-up
+                                    </td>
+                                    <td>Có</td>
+                                </tr>
+                                <tr>
+                                    <td>Thời gian pin sử dụng
+                                    </td>
+                                    <td>18-24 tháng
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Nâng cấp trực tiếp online
+                                    </td>
+                                    <td>Có</td>
+                                </tr>
+                                <tr>
+                                    <td>Số lượng báo cáo hàng ngày
+                                    </td>
+                                    <td>Up to 8
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Báo cáo theo yêu cầu
+                                    </td>
+                                    <td>Có</td>
+                                </tr>
+                                <tr>
+                                    <td>Đèn hiển thị trạng thái
+                                    </td>
+                                    <td>Green, Red, Yellow
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Nhiệt độ hoạt động
+                                    </td>
+                                    <td>-40°C to +85°C / -40°F to +185°F
+
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Độ chính xác nhiệt độ đo
+                                    </td>
+                                    <td>+/- 0.5°C
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </nz-table>
+                        <nz-table nzBordered>
+                            <thead>
+                                <tr>
+                                    <th nzWidth="300px">SẢN PHẨM</th>
+                                    <th>KÍCH THƯỚC</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Delta-T Alert</td>
+                                    <td>2.75”W x 4.5”H x 1.0”D</td>
+                                </tr>
+                            </tbody>
+                        </nz-table>
+                        <nz-table nzBordered>
+                            <thead>
+                                <tr>
+                                    <th nzWidth="300px">VÙNG</th>
+                                    <th>AMERICAS</th>
+                                    <th>EMEA, BRAZIL</th>
+                                    <th>APAC</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Tần số </td>
+                                    <td>908.42 MHz </td>
+                                    <td>868 MHz</td>
+                                    <td>921.4 MHz</td>
+                                </tr>
+                            </tbody>
+                        </nz-table>
+                        <nz-table nzBordered>
+                            <thead>
+                                <tr>
+                                    <th nzWidth="300px">CẤU HÌNH TỐI THIỂU</th>
+                                    <th>BẮT BUỘC</th>
+                                    <th>KHUYẾN CÁO</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Hệ điều hành (Microsoft Only) </td>
+                                    <td>Windows XP
+                                    </td>
+                                    <td>Windows 7 or higher
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Tốc độ vi xử lý
+                                    </td>
+                                    <td>500 MHz
+                                    </td>
+                                    <td>1 GHz</td>
+                                </tr>
+                                <tr>
+                                    <td>RAM </td>
+                                    <td>1 GB </td>
+                                    <td>1 GB</td>
+                                </tr>
+                                <tr>
+                                    <td>Dung lượng ổ trống
+                                    </td>
+                                    <td>5 GB </td>
+                                    <td>10 GB</td>
+                                </tr>
+                                <tr>
+                                    <td>Độ phân giải hiển thị
+                                    </td>
+                                    <td>800 x 600
+                                    </td>
+                                    <td>800 x 600 hoặc hơn</td>
+                                </tr>
+                            </tbody>
+                        </nz-table>
+                    </div>
+                </div>
+
+                <div id="delta-t-certificate" class="tab" nz-row nzType="flex" nzJustify="start" nzAlign="middle"
+                    style="background: #4472c4; margin-top: 2em;">
+                    <div nz-col nzSpan="4" *ngFor="let tab of secondTabs" [ngStyle]="tab.style"
+                        [ngClass]="(tab.active || tab.id === 1) ?  'active' : 'inactive'" (click)="tab.click()">
+                        <p style="color: #fff; text-align: center;">{{tab.name}}</p>
+                    </div>
+                </div>
+
+                <div class="delta-t-certificate" class="tab" nz-row nzType="flex" nzJustify="start" nzAlign="middle">
+                    <div nz-col nzSpan="24">
+                    </div>
+                </div>
+
+                <div id="delta-t-demo" class="tab" nz-row nzType="flex" nzJustify="start" nzAlign="middle"
+                    style="background: #4472c4; margin-top: 2em;">
+                    <div nz-col nzSpan="4" *ngFor="let tab of secondTabs" [ngStyle]="tab.style"
+                        [ngClass]="(tab.active || tab.id === 2) ?  'active' : 'inactive'" (click)="tab.click()">
+                        <p style="color: #fff; text-align: center;">{{tab.name}}</p>
+                    </div>
+                </div>
+
+                <div class="delta-t-demo" nz-row nzType="flex" nzJustify="center" nzAlign="middle">
+                    <div nz-col nzSpan="12">
+                        <nz-carousel nzAutoPlay nzEffect="fade">
+                            <div nz-carousel-content *ngFor="let img of content.detail.demos.img">
+                                <img [src]="img" alt="">
+                            </div>
+                        </nz-carousel>
+                    </div>
+                </div>
+                <div class="delta-t-demo" nz-row nzType="flex" nzJustify="center" nzAlign="middle">
+                    <div nz-col nzSpan="12">
+                        <video width="100%" height="320" controls>
+                            <source [src]="content.detail.demos.video" type="video/3gp">
+                        </video>
+                    </div>
+                </div>
+                <div id="delta-t-document" class="tab" nz-row nzType="flex" nzJustify="center" nzAlign="middle"
+                    style="background: #4472c4; margin-top: 2em;">
+                    <div nz-col nzSpan="4" *ngFor="let tab of secondTabs" [ngStyle]="tab.style"
+                        [ngClass]="(tab.active || tab.id === 3) ?  'active' : 'inactive'" (click)="tab.click()">
+                        <p style="color: #fff; text-align: center;">{{tab.name}}</p>
+                    </div>
+                </div>
+                <div class="delta-t-document" nz-row nzType="flex" nzJustify="start" nzAlign="middle">
+                    <div nz-col nzSpan="24">
+                        <p *ngFor="let document of content.detail.documents">{{document}}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

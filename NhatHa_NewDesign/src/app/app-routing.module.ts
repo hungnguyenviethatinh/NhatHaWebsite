@@ -30,6 +30,13 @@ import { CordexCameraComponent } from './components/product/cordex-camera/cordex
 import { CameraDetailComponent } from './components/product/cordex-camera/camera-detail/camera-detail.component';
 import { IrissUltrsoundComponent } from './components/product/iriss-ultrsound/iriss-ultrsound.component';
 import { IrissDischargeComponent } from './components/product/iriss-discharge/iriss-discharge.component';
+import { EmersonIntellisawComponent } from './components/product/emerson-intellisaw/emerson-intellisaw.component';
+import { CordexAutoCameraComponent } from './components/product/cordex-auto-camera/cordex-auto-camera.component';
+import { IrissDeltaComponent } from './components/product/iriss-delta/iriss-delta.component';
+import { IrissSentryComponent } from './components/product/iriss-sentry/iriss-sentry.component';
+import {
+  CordexAutocamDetailComponent
+} from './components/product/cordex-auto-camera/cordex-autocam-detail/cordex-autocam-detail.component';
 
 
 const routes: Routes = [
@@ -104,6 +111,21 @@ const routes: Routes = [
   },
   {
     path: 'san-pham/giai-phap-giam-sat-lien-tuc', component: OnlineMonitorComponent,
+  },
+  {
+    path: 'san-pham/emerson-intellisaw', component: EmersonIntellisawComponent,
+  },
+  {
+    path: 'san-pham/cordex-automated-camera', component: CordexAutoCameraComponent,
+  },
+  {
+    path: 'san-pham/cordex-automated-camera/chi-tiet', component: CordexAutocamDetailComponent,
+  },
+  {
+    path: 'san-pham/iriss-delta-t-alert', component: IrissDeltaComponent,
+  },
+  {
+    path: 'san-pham/iriss-e-sentry-connect', component: IrissSentryComponent,
   },
   {
     path: 'doi-tac', component: PartnerComponent,

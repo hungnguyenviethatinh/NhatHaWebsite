@@ -143,23 +143,24 @@
                             (click)="navigateTo('/san-pham/giai-phap-giam-sat-lien-tuc')">
                                 <ul>
                                     <li nz-menu-item>
-                                        <a [routerLink]="['/san-pham']">Emerson Intellisaw</a>
+                                        <a [routerLink]="['/san-pham/emerson-intellisaw']">Emerson Intellisaw</a>
                                     </li>
-                                    <li nz-submenu nzTitle="Cordex Automated Camera">
+                                    <li nz-submenu nzTitle="Cordex Automated Camera"
+                                    (click)="navigateTo('/san-pham/cordex-automated-camera')">
                                         <ul>
                                             <li nz-menu-item>
-                                                <a [routerLink]="['/san-pham']">MN4000</a>
+                                                <a [routerLink]="['/san-pham/cordex-automated-camera/chi-tiet']" fragment="mn4000">MN4000</a>
                                             </li>
                                             <li nz-menu-item>
-                                                <a [routerLink]="['/san-pham']">MN4100</a>
+                                                <a [routerLink]="['/san-pham/cordex-automated-camera/chi-tiet']" fragment="mn4100">MN4100</a>
                                             </li>
                                         </ul>
                                     </li>
                                     <li nz-menu-item>
-                                        <a [routerLink]="['/san-pham']">Iriss Delta T Alert</a>
+                                        <a [routerLink]="['/san-pham/iriss-delta-t-alert']">Iriss Delta T Alert</a>
                                     </li>
                                     <li nz-menu-item>
-                                        <a [routerLink]="['/san-pham']">Iriss E Sentry</a>
+                                        <a [routerLink]="['/san-pham/iriss-e-sentry-connect']">Iriss E Sentry</a>
                                     </li>
                                 </ul>
                             </li>
@@ -249,16 +250,16 @@
                                         <a [routerLink]="['/san-pham/may-do-phong-dien-cuc-bo-iriss']">Máy Đo Phóng Điện Cục Bộ IRISS</a>
                                     </div>
                                     <div nz-col nzSpan="24">
-                                        <a [routerLink]="['/san-pham']">Hệ Giám Sát IntelliSAW Emerson</a>
+                                        <a [routerLink]="['/san-pham/emerson-intellisaw']">Hệ Giám Sát IntelliSAW Emerson</a>
                                     </div>
                                     <div nz-col nzSpan="24">
-                                        <a [routerLink]="['/san-pham']">Hệ Giám Sát Monitir Cordex</a>
+                                        <a [routerLink]="['/san-pham/cordex-automated-camera']">Hệ Giám Sát Monitir Cordex</a>
                                     </div>
                                     <div nz-col nzSpan="24">
-                                        <a [routerLink]="['/san-pham']">Hệ Giám Sát Delta T Alert IRISS</a>
+                                        <a [routerLink]="['/san-pham/iriss-delta-t-alert']">Hệ Giám Sát Delta T Alert IRISS</a>
                                     </div>
                                     <div nz-col nzSpan="24">
-                                        <a [routerLink]="['/san-pham']">Hệ Nhãn Đánh Dấu E Sentry IRISS</a>
+                                        <a [routerLink]="['/san-pham/iriss-e-sentry-connect']">Hệ Nhãn Đánh Dấu E Sentry IRISS</a>
                                     </div>
                                 </div>
                             </div>

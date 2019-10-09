@@ -117,6 +117,31 @@ li:not(.ant-menu-submenu) {
     }
 }
 
+
+#delta-t-product {
+    .ant-table-thead {
+        tr {
+            th {
+                text-align: left;
+                color: @text-white;
+                font-weight: bold;
+                background: #4472c4;
+                border-bottom: 2px solid #fff;
+            }
+        }
+    }
+
+    .ant-table-tbody {
+        tr:nth-chlld(even) {
+            background-color: #b1c5e7;
+        }
+        
+        tr:nth-chlld(odd) {
+            background-color: #d8e2f3;
+        }
+    }
+}
+
 .demos {
     [nz-carousel-content] {
         height: 300px;
@@ -124,6 +149,6 @@ li:not(.ant-menu-submenu) {
     }
 }
 
-[class$="-wrap"] {
-    
-}
+// [class$="-wrap"] {
+
+// }

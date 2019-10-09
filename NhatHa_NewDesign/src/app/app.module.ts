@@ -42,6 +42,11 @@ import { CordexCameraComponent } from './components/product/cordex-camera/cordex
 import { CameraDetailComponent } from './components/product/cordex-camera/camera-detail/camera-detail.component';
 import { IrissUltrsoundComponent } from './components/product/iriss-ultrsound/iriss-ultrsound.component';
 import { IrissDischargeComponent } from './components/product/iriss-discharge/iriss-discharge.component';
+import { EmersonIntellisawComponent } from './components/product/emerson-intellisaw/emerson-intellisaw.component';
+import { CordexAutoCameraComponent } from './components/product/cordex-auto-camera/cordex-auto-camera.component';
+import { IrissDeltaComponent } from './components/product/iriss-delta/iriss-delta.component';
+import { IrissSentryComponent } from './components/product/iriss-sentry/iriss-sentry.component';
+import { CordexAutocamDetailComponent } from './components/product/cordex-auto-camera/cordex-autocam-detail/cordex-autocam-detail.component';
 
 registerLocaleData(vi);
 
@@ -78,6 +83,11 @@ registerLocaleData(vi);
     CameraDetailComponent,
     IrissUltrsoundComponent,
     IrissDischargeComponent,
+    EmersonIntellisawComponent,
+    CordexAutoCameraComponent,
+    IrissDeltaComponent,
+    IrissSentryComponent,
+    CordexAutocamDetailComponent,
   ],
   imports: [
     BrowserModule,
