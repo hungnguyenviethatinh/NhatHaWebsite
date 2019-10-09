@@ -1,1 +1,183 @@
-<p>iriss-ultrsound works!</p>
+<div class="main-container">
+    <div class="clearfix" id="product">
+        <div id="iriss-product" class="product-wrap">
+            <nz-affix>
+                <div class="tab" style="background: #fff; padding: 10px 0;" nz-row nzType="flex" [nzGutter]="nzGutter"
+                    nzJustify="start" nzAlign="middle">
+                    <div nz-col *ngFor="let tab of tabs" [ngStyle]="tab.style" (click)="tab.click()">
+                        <img [src]="tab.img" alt="">
+                        <p>{{tab.name}}</p>
+                    </div>
+                </div>
+            </nz-affix>
+            <div class="tab-content">
+                <div id="cover" nz-row nzType="flex" [nzGutter]="nzGutter" nzJustify="center" nzAlign="middle">
+                    <div id="left" nz-col nzXs="24" nzSm="24" nzMd="8">
+                        <ng-container *ngFor="let left of content.cover.left">
+                            <h3>{{left[0]}}</h3>
+                            <p>{{left[1]}}</p>
+                        </ng-container>
+                    </div>
+                    <div id="center" nz-col nzXs="24" nzSm="24" nzMd="8">
+                        <img [src]="content.cover.center" alt="">
+                    </div>
+                    <div id="right" nz-col nzXs="24" nzSm="24" nzMd="8">
+                        <ng-container *ngFor="let right of content.cover.right">
+                            <h3>{{right[0]}}</h3>
+                            <p>{{right[1]}}</p>
+                        </ng-container>
+                    </div>
+                </div>
+
+                <div id="iriss-feature" class="tab" nz-row nzType="flex" nzJustify="start" nzAlign="middle"
+                    style="background: #096dd9; margin-top: 2em;">
+                    <div nz-col nzSpan="4" *ngFor="let tab of secondTabs" [ngStyle]="tab.style"
+                        [ngClass]="(tab.active || tab.id === 0) ?  'active' : 'inactive'" (click)="tab.click()">
+                        <p style="color: #fff; text-align: center;">{{tab.name}}</p>
+                    </div>
+                </div>
+                <div class="iriss-feature" nz-row nzType="flex" nzJustify="start" nzAlign="middle">
+                    <div nz-col nzSpan="24">
+                        <nz-table nzBordered>
+                            <thead>
+                                <tr>
+                                    <th nzWidth="300px" [attr.colspan]="2">
+                                        THÔNG TIN TỔNG QUÁT
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Tần số đo </td>
+                                    <td>40 kHz</td>
+                                </tr>
+                                <tr>
+                                    <td>Chức năng</td>
+                                    <td>
+                                        Detection and conversion of ultrasonic signals to the audible spectrum, Display
+                                        sound level (dB), Auto power off function
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Màn hình</td>
+                                    <td>Illuminated Liquid Crystal display</td>
+                                </tr>
+                                <tr>
+                                    <td>Kết nối giao tiếp</td>
+                                    <td>Custom jack ultrasonic probe types, Stereo jack plug 3.5mm</td>
+                                </tr>
+                                <tr>
+                                    <td>Nguồn cấp</td>
+                                    <td>2x AA batteries</td>
+                                </tr>
+                                <tr>
+                                    <td>Điện áp hoạt động</td>
+                                    <td>2x 1.5 V battery</td>
+                                </tr>
+                                <tr>
+                                    <td>Thời gian hoạt động</td>
+                                    <td>Approx. 24 hours with battery operation</td>
+                                </tr>
+                                <tr>
+                                    <td>Nhiệt độ hoạt động</td>
+                                    <td>-10 °C … +60 °C</td>
+                                </tr>
+                                <tr>
+                                    <td>Nhiệt độ lưu trữ</td>
+                                    <td>-20 °C … +60 °C</td>
+                                </tr>
+                                <tr>
+                                    <td>Chuẩn bảo vệ</td>
+                                    <td>IP54</td>
+                                </tr>
+                                <tr>
+                                    <td>Kích thước</td>
+                                    <td>
+                                        <p>Without probe: LWH 130x85x30 mm</p>
+                                        <p>With AP50 probe: L 170 mm</p>
+                                        <p>Probe: L 52 mm, Ø 22 mm</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Bộ sản phẩm bao gồm</td>
+                                    <td>
+                                        Ultrasonic detector, probes as specified in the order,
+                                        stereo headphones, carrying case, user manual
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </nz-table>
+                    </div>
+                </div>
+
+                <div id="iriss-certificate" class="tab" nz-row nzType="flex" nzJustify="start" nzAlign="middle"
+                    style="background: #096dd9; margin-top: 2em;">
+                    <div nz-col nzSpan="4" *ngFor="let tab of secondTabs" [ngStyle]="tab.style"
+                        [ngClass]="(tab.active || tab.id === 1) ?  'active' : 'inactive'" (click)="tab.click()">
+                        <p style="color: #fff; text-align: center;">{{tab.name}}</p>
+                    </div>
+                </div>
+                <div class="iriss-certificate" nz-row nzType="flex" nzJustify="start" nzAlign="middle">
+                    <div nz-col nzSpan="24">
+                        <nz-table nzBordered>
+                            <thead>
+                                <tr>
+                                    <th nzWidth="300px" [attr.colspan]="2">
+                                        CHỨNG CHỈ
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Safety and EMC</td>
+                                    <td>
+                                        2014/30/EU, electromagnetic compatibility 2011/65/EU,
+                                        on the restriction of the use of certain hazardous substances
+                                        in electrical and electronic equipment (RoHS)
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </nz-table>
+                    </div>
+                </div>
+
+                <div id="iriss-demo" class="tab" nz-row nzType="flex" nzJustify="start" nzAlign="middle"
+                    style="background: #096dd9; margin-top: 2em;">
+                    <div nz-col nzSpan="4" *ngFor="let tab of secondTabs" [ngStyle]="tab.style"
+                        [ngClass]="(tab.active || tab.id === 2) ?  'active' : 'inactive'" (click)="tab.click()">
+                        <p style="color: #fff; text-align: center;">{{tab.name}}</p>
+                    </div>
+                </div>
+                <div class="iriss-demo" nz-row nzType="flex" nzJustify="center" nzAlign="middle">
+                    <div nz-col nzSpan="12">
+                        <nz-carousel nzAutoPlay nzEffect="fade">
+                            <div nz-carousel-content *ngFor="let img of content.detail.demos.img">
+                                <img [src]="img" alt="">
+                            </div>
+                        </nz-carousel>
+                    </div>
+                </div>
+                <div class="iriss-demo" nz-row nzType="flex" nzJustify="center" nzAlign="middle">
+                    <div nz-col nzSpan="12">
+                        <video width="100%" height="320" controls>
+                            <source [src]="content.detail.demos.video" type="video/3gp">
+                        </video>
+                    </div>
+                </div>
+
+                <div id="iriss-document" class="tab" nz-row nzType="flex" nzJustify="center" nzAlign="middle"
+                    style="background: #096dd9; margin-top: 2em;">
+                    <div nz-col nzSpan="4" *ngFor="let tab of secondTabs" [ngStyle]="tab.style"
+                        [ngClass]="(tab.active || tab.id === 3) ?  'active' : 'inactive'" (click)="tab.click()">
+                        <p style="color: #fff; text-align: center;">{{tab.name}}</p>
+                    </div>
+                </div>
+                <div class="iriss-document" nz-row nzType="flex" nzJustify="start" nzAlign="middle">
+                    <div nz-col nzSpan="24">
+                        <p *ngFor="let document of content.detail.documents">{{document}}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
