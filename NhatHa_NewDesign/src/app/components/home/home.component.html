@@ -6,9 +6,9 @@
 <div class="main-container">
     <div class="clearfix" id="service">
         <div class="service-wrap">
-            <h2|translate>Dịch Vụ Kỹ Thuật</h2>
+            <h2 translate>Dịch Vụ Kỹ Thuật</h2>
             <div nz-row nzType="flex" nzJustify="space-between" nzAlign="middle">
-                <div class="service" nz-col nzXs="24" nzSm="24" nzMd="4" *ngFor="let service of services";let i=index>
+                <div class="service" nz-col nzXs="24" nzSm="24" nzMd="4" *ngFor="let service of services;let i=index">
                     <a routerLink="{{service.href}}">
                         <img [src]="service.img" alt="{{('service.name'+i)|translate}}" />
                         <p>{{('service.name'+i)|translate}}</p>
@@ -20,7 +20,7 @@
             <div class="product-wrap">
                 <h2 translate>Sản Phẩm</h2>
                 <div nz-row nzType="flex" nzJustify="space-between" nzAlign="middle">
-                    <div class="product" nz-col nzXs="24" nzSm="24" nzMd="7" *ngFor="let product of products";let i=index>
+                    <div class="product" nz-col nzXs="24" nzSm="24" nzMd="7" *ngFor="let product of products;let i=index">
                         <a routerLink="{{product.href}}">
                             <img [src]="product.img" alt="{{('product.name'+i)|translate}}" />
                             <p>{{('product.name'+i)|translate}}</p>

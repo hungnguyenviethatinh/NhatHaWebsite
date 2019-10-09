@@ -15,7 +15,7 @@
                     <div nz-col nzXs="24" nzSm="24" nzMd="16">
                         <article nz-typography>
                             <p nz-paragraph *ngFor="let content of equipment.contents;let i = index">
-                                <b>{{('content.key' +i) | translate}}</b>
+                                <b>{{('content.key'+i) | translate}}</b>
                                 {{content.value}}
                             </p>
                         </article>
