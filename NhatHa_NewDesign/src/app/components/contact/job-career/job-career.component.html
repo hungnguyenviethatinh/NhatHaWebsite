@@ -1,7 +1,7 @@
-<nz-carousel nzEffect="fade" nzDots="{{banners.length > 1 ? true : false}}" nzAutoPlay>
-    <div nz-carousel-content *ngFor="let banner of banners">
-        <img [src]="banner.img" alt="Đối tác của chúng tôi">
-        <h1 nz-title>{{banner.caption}}</h1>
+<nz-carousel nzEffect="fade" nzDots="{{bannerjobs.length > 1 ? true : false}}" nzAutoPlay>
+    <div nz-carousel-content *ngFor="let bannerjob of bannerjobs">
+        <img [src]="bannerjob.img" alt="Đối tác của chúng tôi">
+        <h1 nz-title>{{'bannerjob.caption'|translate}}</h1>
     </div>
 </nz-carousel>
 <div class="main-container">
@@ -14,11 +14,11 @@
                     </div>
                     <div nz-col nzXs="24" nzSm="24" nzMd="16">
                         <article nz-typography>
-                            <h3 nz-title>{{hr.poster.title}}</h3>
-                            <p nz-paragraph *ngFor="let content of hr.poster.contents">
-                                {{content}}
+                            <h3 nz-title>{{'hr.poster.title' |translate}}</h3>
+                            <p nz-paragraph *ngFor="let contentjob of hr.poster.contents; let i=index;">
+                                {{('contentjob'+i)|translate}}
                             </p>
-                            <button nz-button nzType="primary">Các cơ hội hiện tại</button>
+                            <button nz-button nzType="primary">{{'Các cơ hội hiện tại'|translate}}</button>
                         </article>
                     </div>
                 </div>

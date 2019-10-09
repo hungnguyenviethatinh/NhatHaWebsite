@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./job-career.component.less']
 })
 export class JobCareerComponent implements OnInit {
-  banners = [
+  bannerjobs = [
     {
       img: '../../../../assets/images/job-career/job-career.PNG',
       caption: 'Tuyển Dụng: Kỹ Sư có Thái Độ và Đam Mê',

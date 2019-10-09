@@ -4,9 +4,9 @@
             <div class="contact-us" nz-row nzType="flex" nzJustify="space-between" nzAlign="top">
                 <div nz-col nzXs="24" nzSm="24" nzMd="11">
                     <div class="contact-us-info">
-                        <h3>CÔNG TY TNHH THƯƠNG MẠI KỸ THUẬT NHẬT HẠ</h3>
+                        <h3 translate>CÔNG TY TNHH THƯƠNG MẠI KỸ THUẬT NHẬT HẠ</h3>
                         <div nz-col nzSpan="24">
-                            <a href="">
+                            <a href="" translate>
                                 <i nz-icon nzType="global" nzTheme="outline"></i>
                                 Tầng 4, Tòa nhà Thủy Lợi 4, 205 Nguyễn Xí P. 24, Q. Bình Thạnh, TP. Hồ Chí Minh, Việt
                                 Nam
@@ -36,9 +36,9 @@
                     <form nz-form [formGroup]="validateForm" (ngSubmit)="submitForm(validateForm.value)">
                         <nz-form-item>
                             <nz-form-control [nzSpan]="24" nzHasFeedback [nzErrorTip]="nameErrorTpl">
-                                <input nz-input formControlName="name" placeholder="Họ tên" />
+                                <input nz-input formControlName="name" [placeholder]="'Họ tên'|translate" />
                                 <ng-template #nameErrorTpl let-control>
-                                    <ng-container *ngIf="control.hasError('required')">
+                                    <ng-container *ngIf="control.hasError('required')" translate>
                                         Vui lòng nhập họ và tên!
                                     </ng-container>
                                 </ng-template>
@@ -48,10 +48,10 @@
                             <nz-form-control [nzSpan]="24" nzHasFeedback [nzErrorTip]="emailErrorTpl">
                                 <input nz-input formControlName="email" placeholder="Email" type="email" />
                                 <ng-template #emailErrorTpl let-control>
-                                    <ng-container *ngIf="control.hasError('email')">
+                                    <ng-container *ngIf="control.hasError('email')" translate>
                                         Vui lòng nhập một email hợp lệ!
                                     </ng-container>
-                                    <ng-container *ngIf="control.hasError('required')">
+                                    <ng-container *ngIf="control.hasError('required')" translate>
                                         Vui lòng nhập email!
                                     </ng-container>
                                 </ng-template>
@@ -59,9 +59,9 @@
                         </nz-form-item>
                         <nz-form-item>
                             <nz-form-control [nzSpan]="24" nzHasFeedback [nzErrorTip]="phoneErrorTpl">
-                                <input nz-input formControlName="phoneNumber" placeholder="Số điện thoại" />
+                                <input nz-input formControlName="phoneNumber" [placeholder]="'Số điện thoại'|translate" />
                                 <ng-template #phoneErrorTpl let-control>
-                                    <ng-container *ngIf="control.hasError('required')">
+                                    <ng-container *ngIf="control.hasError('required')" translate>
                                         Vui lòng nhập số điện thoại!
                                     </ng-container>
                                 </ng-template>
@@ -70,9 +70,9 @@
                         <nz-form-item>
                             <nz-form-control [nzSpan]="24" [nzErrorTip]="inquiryErrorTpl">
                                 <textarea formControlName="inquiry" nz-input rows="3"
-                                    placeholder="Nội dung yêu cầu"></textarea>
+                                    [placeholder]="'Nội dung yêu cầu'|translate"></textarea>
                                 <ng-template #inquiryErrorTpl let-control>
-                                    <ng-container *ngIf="control.hasError('required')">
+                                    <ng-container *ngIf="control.hasError('required')" translate>
                                         Vui lòng nhập nội dung yêu cầu!
                                     </ng-container>
                                 </ng-template>
@@ -80,7 +80,7 @@
                         </nz-form-item>
                         <nz-form-item>
                             <nz-form-control [nzOffset]="20" [nzSpan]="4">
-                                <button nz-button nzType="primary" nzBlock [disabled]="!validateForm.valid">Gửi</button>
+                                <button nz-button nzType="primary" nzBlock [disabled]="!validateForm.valid" translate>Gửi</button>
                             </nz-form-control>
                         </nz-form-item>
                     </form>

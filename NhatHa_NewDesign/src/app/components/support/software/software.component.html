@@ -8,15 +8,15 @@
         <div class="software-wrap">
             <section>
                 <div class="software" nz-row nzType="flex" nzJustify="space-between" nzAlign="top"
-                    *ngFor="let software of softwares">
+                    *ngFor="let software of softwares; let i=index">
                     <div nz-col nzXs="24" nzSm="24" nzMd="6">
                         <img [src]="software.logo" [alt]="software.name">
                     </div>
                     <div nz-col nzXs="24" nzSm="24" nzMd="16">
                         <article nz-typography>
-                            <h3 nz-title>{{software.name}}</h3>
-                            <p nz-paragraph *ngFor="let description of software.descriptions">
-                                {{description}}
+                            <h3 nz-title>{{('software.name'+i)|translate}}</h3>
+                            <p nz-paragraph *ngFor="let descriptionSoftware of software.descriptions;let j=index">
+                                {{('descriptionSoftware'+i+j)|translate}}
                             </p>
                         </article>
                     </div>
