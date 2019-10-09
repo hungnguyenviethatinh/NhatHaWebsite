@@ -25,20 +25,20 @@ export class CordexCameraComponent implements OnInit {
         ...this.style,
         'border-right': '1px dashed #ffa500'
       },
-      click: () => { this.router.navigate(['/sanpham/may-do-tinh-trang-thiet-bi']); },
+      click: () => { this.router.navigate(['/san-pham/may-do-tinh-trang-thiet-bi']); },
     },
     {
       name: 'MÁY CHỤP NHIỆT CORDEX',
       img: '/assets/images/products/02/01/tab-1.gif',
       contents: [
         {
-          href: '/sanpham/may-chup-hinh-nhiet-cordex/thong-tin-san-pham',
+          href: '/san-pham/may-chup-hinh-nhiet-cordex/chi-tiet',
           fragment: 'toughpix-digiherm',
           img: '/assets/images/products/02/01/1.jpg',
           text: 'TOUGHPIX DIGITHERM',
         },
         {
-          href: '/sanpham/may-chup-hinh-nhiet-cordex/thong-tin-san-pham',
+          href: '/san-pham/may-chup-hinh-nhiet-cordex/chi-tiet',
           fragment: 'infrared-camera-tc7150',
           img: '/assets/images/products/02/01/2.jpg',
           text: 'INFRARED CAMERA – TC7150',

@@ -40,6 +40,8 @@ import { CordexProductComponent } from './components/product/cordex-product/cord
 import { IrissDetailComponent } from './components/product/iriss-product/iriss-detail/iriss-detail.component';
 import { CordexCameraComponent } from './components/product/cordex-camera/cordex-camera.component';
 import { CameraDetailComponent } from './components/product/cordex-camera/camera-detail/camera-detail.component';
+import { IrissUltrsoundComponent } from './components/product/iriss-ultrsound/iriss-ultrsound.component';
+import { IrissDischargeComponent } from './components/product/iriss-discharge/iriss-discharge.component';
 
 registerLocaleData(vi);
 
@@ -74,6 +76,8 @@ registerLocaleData(vi);
     IrissDetailComponent,
     CordexCameraComponent,
     CameraDetailComponent,
+    IrissUltrsoundComponent,
+    IrissDischargeComponent,
   ],
   imports: [
     BrowserModule,

@@ -15,7 +15,7 @@ export class ServiceComponent implements OnInit {
 
   services = [
     {
-      link: '/dichvu/phan-tich-he-thong-dien',
+      link: '/dich-vu/phan-tich-he-thong-dien',
       img: '/assets/images/services/6.JPG',
       title: 'Phân Tích Hệ Thống Điện',
       descriptions: [
@@ -24,7 +24,7 @@ export class ServiceComponent implements OnInit {
       ],
     },
     {
-      link: '/dichvu/thu-nghiem-va-nghiem-thu',
+      link: '/dich-vu/thu-nghiem-va-nghiem-thu',
       img: '/assets/images/services/7.JPG',
       title: 'Thử Nghiệm & Nghiệm Thu',
       descriptions: [
@@ -33,7 +33,7 @@ export class ServiceComponent implements OnInit {
       ],
     },
     {
-      link: '/dichvu/phan-tich-chat-luong-dien-nang',
+      link: '/dich-vu/phan-tich-chat-luong-dien-nang',
       img: '/assets/images/services/8.JPG',
       title: 'Phân Tích Chất Lượng Điện',
       descriptions: [
@@ -42,7 +42,7 @@ export class ServiceComponent implements OnInit {
       ],
     },
     {
-      link: '/dichvu/chuong-trinh-bao-tri-dien',
+      link: '/dich-vu/chuong-trinh-bao-tri-dien',
       img: '/assets/images/services/4.JPG',
       title: 'Bảo Trì Ngăn Ngừa',
       descriptions: [
@@ -51,7 +51,7 @@ export class ServiceComponent implements OnInit {
       ],
     },
     {
-      link: '/dichvu/bao-tri-theo-tinh-trang',
+      link: '/dich-vu/bao-tri-theo-tinh-trang',
       img: '/assets/images/services/5.JPG',
       title: 'Bảo Trì Theo Tình Trạng',
       descriptions: [

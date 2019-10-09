@@ -24,7 +24,7 @@ export class CordexProductComponent implements OnInit {
         ...this.style,
         'border-right': '1px dashed #ffa500'
       },
-      click: () => { this.router.navigate(['/sanpham/cua-so-hong-ngoai']); },
+      click: () => { this.router.navigate(['/san-pham/cua-so-hong-ngoai']); },
     },
     {
       name: 'CỬA SỔ IR CORDEX',

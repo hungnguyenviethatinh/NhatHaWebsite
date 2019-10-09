@@ -1196,7 +1196,7 @@ export class IrissDetailComponent implements OnInit, AfterViewInit {
         ...this.style,
         'border-right': '1px dashed #096dd9',
       },
-      click: () => { this.router.navigate(['/sanpham/cua-so-hong-ngoai']); },
+      click: () => { this.router.navigate(['/san-pham/cua-so-hong-ngoai']); },
     },
     {
       active: false,
@@ -1206,7 +1206,7 @@ export class IrissDetailComponent implements OnInit, AfterViewInit {
         ...this.style,
         'border-right': '1px dashed #096dd9',
       },
-      click: () => { this.router.navigate(['/sanpham/san-pham-iriss']); },
+      click: () => { this.router.navigate(['/san-pham/san-pham-iriss']); },
     },
     {
       active: true,
@@ -1223,7 +1223,7 @@ export class IrissDetailComponent implements OnInit, AfterViewInit {
           activeTab.active = false;
           this.tabs.find(t => t.id === 'dong-vpt').active = true;
         }
-        this.router.navigate(['/sanpham/san-pham-iriss/thong-tin-san-pham'], {
+        this.router.navigate(['/san-pham/san-pham-iriss/chi-tiet'], {
           fragment: 'dong-vpt',
         });
       },
@@ -1243,7 +1243,7 @@ export class IrissDetailComponent implements OnInit, AfterViewInit {
           activeTab.active = false;
           this.tabs.find(t => t.id === 'dong-cap-ct').active = true;
         }
-        this.router.navigate(['/sanpham/san-pham-iriss/thong-tin-san-pham'], {
+        this.router.navigate(['/san-pham/san-pham-iriss/chi-tiet'], {
           fragment: 'dong-cap-ct',
         });
       },
@@ -1263,7 +1263,7 @@ export class IrissDetailComponent implements OnInit, AfterViewInit {
           activeTab.active = false;
           this.tabs.find(t => t.id === 'dong-cap-env').active = true;
         }
-        this.router.navigate(['/sanpham/san-pham-iriss/thong-tin-san-pham'], {
+        this.router.navigate(['/san-pham/san-pham-iriss/chi-tiet'], {
           fragment: 'dong-cap-env',
         });
       },
@@ -1283,7 +1283,7 @@ export class IrissDetailComponent implements OnInit, AfterViewInit {
           activeTab.active = false;
           this.tabs.find(t => t.id === 'dong-flex-ir').active = true;
         }
-        this.router.navigate(['/sanpham/san-pham-iriss/thong-tin-san-pham'], {
+        this.router.navigate(['/san-pham/san-pham-iriss/chi-tiet'], {
           fragment: 'dong-flex-ir',
         });
       },
@@ -1379,7 +1379,7 @@ export class IrissDetailComponent implements OnInit, AfterViewInit {
         if (activeTab) {
           activeTab.active = false;
           this.tabs.find(t => t.id === id).active = true;
-          this.router.navigate(['/sanpham/san-pham-iriss/thong-tin-san-pham'], {
+          this.router.navigate(['/san-pham/san-pham-iriss/chi-tiet'], {
             fragment: id,
           });
         }

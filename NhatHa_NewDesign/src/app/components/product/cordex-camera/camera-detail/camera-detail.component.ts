@@ -117,7 +117,7 @@ export class CameraDetailComponent implements OnInit, AfterViewInit {
         ...this.style,
         'border-right': '1px dashed #ffa500',
       },
-      click: () => { this.router.navigate(['/sanpham/may-do-tinh-trang-thiet-bi']); },
+      click: () => { this.router.navigate(['/san-pham/may-do-tinh-trang-thiet-bi']); },
     },
     {
       active: false,
@@ -127,7 +127,7 @@ export class CameraDetailComponent implements OnInit, AfterViewInit {
         ...this.style,
         'border-right': '1px dashed #ffa500',
       },
-      click: () => { this.router.navigate(['/sanpham/may-chup-hinh-nhiet-cordex']); },
+      click: () => { this.router.navigate(['/san-pham/may-chup-hinh-nhiet-cordex']); },
     },
     {
       active: true,
@@ -144,7 +144,7 @@ export class CameraDetailComponent implements OnInit, AfterViewInit {
           activeTab.active = false;
           this.tabs.find(t => t.id === 'toughpix-digiherm').active = true;
         }
-        this.router.navigate(['/sanpham/may-chup-hinh-nhiet-cordex/thong-tin-san-pham'], {
+        this.router.navigate(['/san-pham/may-chup-hinh-nhiet-cordex/chi-tiet'], {
           fragment: 'toughpix-digiherm',
         });
       },
@@ -164,7 +164,7 @@ export class CameraDetailComponent implements OnInit, AfterViewInit {
           activeTab.active = false;
           this.tabs.find(t => t.id === 'infrared-camera-tc7150').active = true;
         }
-        this.router.navigate(['/sanpham/may-chup-hinh-nhiet-cordex/thong-tin-san-pham'], {
+        this.router.navigate(['/san-pham/may-chup-hinh-nhiet-cordex/chi-tiet'], {
           fragment: 'infrared-camera-tc7150',
         });
       },
@@ -260,7 +260,7 @@ export class CameraDetailComponent implements OnInit, AfterViewInit {
         if (activeTab) {
           activeTab.active = false;
           this.tabs.find(t => t.id === id).active = true;
-          this.router.navigate(['/sanpham/may-chup-hinh-nhiet-cordex/thong-tin-san-pham'], {
+          this.router.navigate(['/san-pham/may-chup-hinh-nhiet-cordex/chi-tiet'], {
             fragment: id,
           });
         }

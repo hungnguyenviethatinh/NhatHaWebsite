@@ -11,7 +11,7 @@
         </div>
         <div nz-row nzType="flex" nzJustify="space-between" nzAlign="middle">
             <div nz-col nzXs="24" nzSm="24" nzMd="8" nzLg="5" nzXl="5" nzXXl="4">
-                <a [routerLink]="['/trangchu']" id="logo">
+                <a [routerLink]="['/trang-chu']" id="logo">
                     <img src="/assets//images/nhatha-logo.png" alt="Công ty Kỹ thuật Điện - Năng lượng Nhật Hạ">
                 </a>
             </div>
@@ -24,172 +24,170 @@
             <div nz-col nzSpan="24">
                 <ul id="menu" nz-menu nzMode="horizontal">
                     <li nz-menu-item nzSelected>
-                        <a [routerLink]="['/trangchu']">Giới thiệu</a>
+                        <a [routerLink]="['/trang-chu']">Giới thiệu</a>
                     </li>
                     <li nz-submenu nzMenuClassName="submenu-company" nzTitle="Doanh Nghiệp"
-                    (click)="navigateTo('/doanhnghiep/tamnhin-sumenh-giatri')">
+                    (click)="navigateTo('/doanh-nghiep/tamnhin-sumenh-giatri')">
                         <ul>
                             <li nz-menu-item>
-                                <a [routerLink]="['/doanhnghiep/tamnhin-sumenh-giatri']">Tầm nhìn - Sứ mệnh - Giá trị</a>
+                                <a [routerLink]="['/doanh-nghiep/tamnhin-sumenh-giatri']">Tầm nhìn - Sứ mệnh - Giá trị</a>
                             </li>
                             <li nz-menu-item>
-                                <a [routerLink]="['/doanhnghiep/thietbi']">Thiết bị</a>
+                                <a [routerLink]="['/doanh-nghiep/thietbi']">Thiết bị</a>
                             </li>
                         </ul>
                     </li>
                     <li nz-submenu nzMenuClassName="submenu-service" nzTitle="Dịch Vụ Kỹ Thuật"
-                    (click)="navigateTo('/dichvu')" >
+                    (click)="navigateTo('/dich-vu')" >
                         <ul>
-                            <li (click)="navigateTo('/dichvu/phan-tich-he-thong-dien')" nz-submenu nzTitle="Phân Tích Hệ Thống Điện">
+                            <li (click)="navigateTo('/dich-vu/phan-tich-he-thong-dien')" nz-submenu nzTitle="Phân Tích Hệ Thống Điện">
                                 <ul>
                                     <li nz-menu-item>
-                                        <a [routerLink]="['/dichvu/tinh-toan-ngan-mach-phoi-hop-bao-ve']">
+                                        <a [routerLink]="['/dich-vu/tinh-toan-ngan-mach-phoi-hop-bao-ve']">
                                             Tính Toán Ngắn Mạch Phối Hợp Bảo Vệ
                                         </a>
                                     </li>
                                     <li nz-menu-item>
-                                        <a [routerLink]="['/dichvu/phan-tich-nguy-co-ho-quang-dien']">
+                                        <a [routerLink]="['/dich-vu/phan-tich-nguy-co-ho-quang-dien']">
                                             Phân Tích Nguy Cơ Hồ Quang Điện
                                         </a>
                                     </li>
                                 </ul>
                             </li>
                             <li nz-menu-item>
-                                <a [routerLink]="['/dichvu/thu-nghiem-va-nghiem-thu']">Thử nghiệm và Nghiệm Thu</a>
+                                <a [routerLink]="['/dich-vu/thu-nghiem-va-nghiem-thu']">Thử nghiệm và Nghiệm Thu</a>
                             </li>
                             <li nz-menu-item>
-                                <a [routerLink]="['/dichvu/phan-tich-chat-luong-dien-nang']">Phân Tích Chất Lượng Điện Năng</a>
+                                <a [routerLink]="['/dich-vu/phan-tich-chat-luong-dien-nang']">Phân Tích Chất Lượng Điện Năng</a>
                             </li>
                             <li nz-menu-item>
-                                <a [routerLink]="['/dichvu/chuong-trinh-bao-tri-dien']">Chương Trình Bảo Trì Điện</a>
+                                <a [routerLink]="['/dich-vu/chuong-trinh-bao-tri-dien']">Chương Trình Bảo Trì Điện</a>
                             </li>
-                            <li (click)="navigateTo('/dichvu/bao-tri-theo-tinh-trang')" nz-submenu nzTitle="Bảo Trì Theo Tình Trạng">
+                            <li (click)="navigateTo('/dich-vu/bao-tri-theo-tinh-trang')" nz-submenu nzTitle="Bảo Trì Theo Tình Trạng">
                                 <ul>
                                     <li nz-menu-item>
-                                        <a [routerLink]="['/dichvu/quet-nhiet-hong-ngoai-thiet-bi-dien']">Quét Nhiệt Hồng Ngoại Thiết Bị Điện</a>
+                                        <a [routerLink]="['/dich-vu/quet-nhiet-hong-ngoai-thiet-bi-dien']">Quét Nhiệt Hồng Ngoại Thiết Bị Điện</a>
                                     </li>
                                     <li nz-menu-item>
-                                        <a [routerLink]="['/dichvu/do-phong-dien-cuc-bo']">Đo Phóng Điện Cục Bộ</a>
+                                        <a [routerLink]="['/dich-vu/do-phong-dien-cuc-bo']">Đo Phóng Điện Cục Bộ</a>
                                     </li>
                                 </ul>
                             </li>
                         </ul>
                     </li>
                     <li nz-submenu nzMenuClassName="submenu-product" nzTitle="Sản Phẩm"
-                    (click)="navigateTo('/sanpham')">
+                    (click)="navigateTo('/san-pham')">
                         <ul>
                             <li nz-submenu nzTitle="Cửa Sổ Hồng Ngoại"
-                            (click)="navigateTo('/sanpham/cua-so-hong-ngoai')">
+                            (click)="navigateTo('/san-pham/cua-so-hong-ngoai')">
                                 <ul>
                                     <li nz-submenu nzTitle="Sản Phẩm IRISS"
-                                    (click)="navigateTo('/sanpham/san-pham-iriss')">
+                                    (click)="navigateTo('/san-pham/san-pham-iriss')">
                                         <ul>
                                             <li nz-menu-item>
-                                                <a [routerLink]="['/sanpham/san-pham-iriss/thong-tin-san-pham']" fragment="dong-vpt">Dòng VPT</a>
+                                                <a [routerLink]="['/san-pham/san-pham-iriss/chi-tiet']" fragment="dong-vpt">Dòng VPT</a>
                                             </li>
                                             <li nz-menu-item>
-                                                <a [routerLink]="['/sanpham/san-pham-iriss/thong-tin-san-pham']" fragment="dong-cap-ct">Dòng CAP CT</a>
+                                                <a [routerLink]="['/san-pham/san-pham-iriss/chi-tiet']" fragment="dong-cap-ct">Dòng CAP CT</a>
                                             </li>
                                             <li nz-menu-item>
-                                                <a [routerLink]="['/sanpham/san-pham-iriss/thong-tin-san-pham']" fragment="dong-cap-env">Dòng CAP ENV</a>
+                                                <a [routerLink]="['/san-pham/san-pham-iriss/chi-tiet']" fragment="dong-cap-env">Dòng CAP ENV</a>
                                             </li>
                                             <li nz-menu-item>
-                                                <a [routerLink]="['/sanpham/san-pham-iriss/thong-tin-san-pham']" fragment="dong-flex-ir">Dòng FLEX IR</a>
+                                                <a [routerLink]="['/san-pham/san-pham-iriss/chi-tiet']" fragment="dong-flex-ir">Dòng FLEX IR</a>
                                             </li>
                                         </ul>
                                     </li>
                                     <li nz-menu-item>
-                                        <a [routerLink]="['/sanpham/san-pham-cordex/cua-so-hong-ngoai-cordex']">Sản Phẩm Cordex</a>
+                                        <a [routerLink]="['/san-pham/cua-so-hong-ngoai-cordex']">Sản Phẩm Cordex</a>
                                     </li>
                                 </ul>
                             </li>
                             <li nz-submenu nzTitle="Máy Dò Trình Trạng Thiết Bị"
-                            (click)="navigateTo('/sanpham/may-do-tinh-trang-thiet-bi')">
+                            (click)="navigateTo('/san-pham/may-do-tinh-trang-thiet-bi')">
                                 <ul>
                                     <li nz-submenu nzTitle="Máy Chụp Hình Nhiệt Cordex"
-                                    (click)="navigateTo('/sanpham/may-chup-hinh-nhiet-cordex')">
+                                    (click)="navigateTo('/san-pham/may-chup-hinh-nhiet-cordex')">
                                         <ul>
                                             <li nz-menu-item>
-                                                <a [routerLink]="['/sanpham/may-chup-hinh-nhiet-cordex/thong-tin-san-pham']"
+                                                <a [routerLink]="['/san-pham/may-chup-hinh-nhiet-cordex/chi-tiet']"
                                                     fragment="toughpix-digiherm">
                                                     Máy Cordex Toughpix Digitherm
                                                 </a>
                                             </li>
                                             <li nz-menu-item>
-                                                <a [routerLink]="['/sanpham/may-chup-hinh-nhiet-cordex/thong-tin-san-pham']"
+                                                <a [routerLink]="['/san-pham/may-chup-hinh-nhiet-cordex/chi-tiet']"
                                                     fragment="infrared-camera-tc7150">
                                                     Máy Cordex TC7150
                                                 </a>
                                             </li>
                                         </ul>
                                     </li>
-                                    <li nz-submenu nzTitle="Máy Dò Sóng Siêu Âm IRISS"
-                                    (click)="navigateTo('/sanpham')">
+                                    <li nz-submenu nzTitle="Máy Dò Sóng Siêu Âm IRISS">
                                         <ul>
                                             <li nz-menu-item>
-                                                <a [routerLink]="['/sanpham']">Iriss Sonus XT</a>
+                                                <a [routerLink]="['/san-pham/may-do-song-sieu-am-iriss']">Iriss Sonus XT</a>
                                             </li>
                                         </ul>
                                     </li>
-                                    <li nz-submenu nzTitle="Máy Đo Phóng Điện Cục Bộ IRISS"
-                                    (click)="navigateTo('/sanpham')">
+                                    <li nz-submenu nzTitle="Máy Đo Phóng Điện Cục Bộ IRISS">
                                         <ul>
                                             <li nz-menu-item>
-                                                <a [routerLink]="['/sanpham']">Iriss Sonus PD</a>
+                                                <a [routerLink]="['/san-pham/may-do-phong-dien-cuc-bo-iriss']">Iriss Sonus PD</a>
                                             </li>
                                         </ul>
                                     </li>
                                 </ul>
                             </li>
                             <li nz-submenu nzTitle="Giải Pháp Giám Sát Liên Tục"
-                            (click)="navigateTo('/sanpham/giai-phap-giam-sat-lien-tuc')">
+                            (click)="navigateTo('/san-pham/giai-phap-giam-sat-lien-tuc')">
                                 <ul>
                                     <li nz-menu-item>
-                                        <a [routerLink]="['/sanpham']">Emerson Intellisaw</a>
+                                        <a [routerLink]="['/san-pham']">Emerson Intellisaw</a>
                                     </li>
                                     <li nz-submenu nzTitle="Cordex Automated Camera">
                                         <ul>
                                             <li nz-menu-item>
-                                                <a [routerLink]="['/sanpham']">MN4000</a>
+                                                <a [routerLink]="['/san-pham']">MN4000</a>
                                             </li>
                                             <li nz-menu-item>
-                                                <a [routerLink]="['/sanpham']">MN4100</a>
+                                                <a [routerLink]="['/san-pham']">MN4100</a>
                                             </li>
                                         </ul>
                                     </li>
                                     <li nz-menu-item>
-                                        <a [routerLink]="['/sanpham']">Iriss Delta T Alert</a>
+                                        <a [routerLink]="['/san-pham']">Iriss Delta T Alert</a>
                                     </li>
                                     <li nz-menu-item>
-                                        <a [routerLink]="['/sanpham']">Iriss E Sentry</a>
+                                        <a [routerLink]="['/san-pham']">Iriss E Sentry</a>
                                     </li>
                                 </ul>
                             </li>
                         </ul>
                     </li>
                     <li nz-menu-item>
-                        <a [routerLink]="['/doitac']">Đối Tác</a>
+                        <a [routerLink]="['/doi-tac']">Đối Tác</a>
                     </li>
                     <li nz-menu-item>
-                        <a [routerLink]="['/duan']">Dự Án</a>
+                        <a [routerLink]="['/du-an']">Dự Án</a>
                     </li>
-                    <li (click)="navigateTo('/hotro/phanmem')" nz-submenu nzMenuClassName="submenu-support" nzTitle="Hỗ Trợ">
+                    <li (click)="navigateTo('/ho-tro/phan-mem')" nz-submenu nzMenuClassName="submenu-support" nzTitle="Hỗ Trợ">
                         <ul>
                             <li nz-menu-item>
-                                <a [routerLink]="['/hotro/phanmem']">Phần Mềm</a>
+                                <a [routerLink]="['/ho-tro/phan-mem']">Phần Mềm</a>
                             </li>
                             <li nz-menu-item>
-                                <a [routerLink]="['/hotro/nghiencuu']">Tình Huống Nghiên Cứu</a>
+                                <a [routerLink]="['/ho-tro/nghien-cuu']">Tình Huống Nghiên Cứu</a>
                             </li>
                         </ul>
                     </li>
-                    <li (click)="navigateTo('/lienhe')" nz-submenu nzMenuClassName="submenu-contact" nzTitle="Liên Hệ">
+                    <li (click)="navigateTo('/lien-he')" nz-submenu nzMenuClassName="submenu-contact" nzTitle="Liên Hệ">
                         <ul>
                             <li nz-menu-item>
-                                <a [routerLink]="['/lienhe']">Liên Hệ</a>
+                                <a [routerLink]="['/lien-he']">Liên Hệ</a>
                             </li>
                             <li nz-menu-item>
-                                <a [routerLink]="['/tuyendung']">Việc Làm</a>
+                                <a [routerLink]="['/tuyen-dung']">Việc Làm</a>
                             </li>
                         </ul>
                     </li>
@@ -210,25 +208,25 @@
                                 <div class="footer-center">
                                     <h3>Dịch Vụ Kỹ Thuật</h3>
                                     <div nz-col nzSpan="24">
-                                        <a [routerLink]="['/dichvu/tinh-toan-ngan-mach-phoi-hop-bao-ve']">Tính Toán Ngắn Mạch – Phối Hợp Bảo Vệ Hệ Thống</a>
+                                        <a [routerLink]="['/dich-vu/tinh-toan-ngan-mach-phoi-hop-bao-ve']">Tính Toán Ngắn Mạch – Phối Hợp Bảo Vệ Hệ Thống</a>
                                     </div>
                                     <div nz-col nzSpan="24">
-                                        <a [routerLink]="['/dichvu/phan-tich-nguy-co-ho-quang-dien']">Phân Tích Hồ Quang Điện</a>
+                                        <a [routerLink]="['/dich-vu/phan-tich-nguy-co-ho-quang-dien']">Phân Tích Hồ Quang Điện</a>
                                     </div>
                                     <div nz-col nzSpan="24">
-                                        <a [routerLink]="['/dichvu/thu-nghiem-va-nghiem-thu']">Thử Nghiệm & Nghiệm Thu</a>
+                                        <a [routerLink]="['/dich-vu/thu-nghiem-va-nghiem-thu']">Thử Nghiệm & Nghiệm Thu</a>
                                     </div>
                                     <div nz-col nzSpan="24">
-                                        <a [routerLink]="['/dichvu/phan-tich-chat-luong-dien-nang']">Phân Tích Chất Lượng Điện</a>
+                                        <a [routerLink]="['/dich-vu/phan-tich-chat-luong-dien-nang']">Phân Tích Chất Lượng Điện</a>
                                     </div>
                                     <div nz-col nzSpan="24">
-                                        <a [routerLink]="['/dichvu/chuong-trinh-bao-tri-dien']">Bảo Trì Ngăn Ngừa</a>
+                                        <a [routerLink]="['/dich-vu/chuong-trinh-bao-tri-dien']">Bảo Trì Ngăn Ngừa</a>
                                     </div>
                                     <div nz-col nzSpan="24">
-                                        <a [routerLink]="['/dichvu/quet-nhiet-hong-ngoai-thiet-bi-dien']">Quét Nhiệt Hồng Ngoại</a>
+                                        <a [routerLink]="['/dich-vu/quet-nhiet-hong-ngoai-thiet-bi-dien']">Quét Nhiệt Hồng Ngoại</a>
                                     </div>
                                     <div nz-col nzSpan="24">
-                                        <a [routerLink]="['/dichvu/do-phong-dien-cuc-bo']">Đo Phóng Điện Cục Bộ</a>
+                                        <a [routerLink]="['/dich-vu/do-phong-dien-cuc-bo']">Đo Phóng Điện Cục Bộ</a>
                                     </div>
                                 </div>
                             </div>
@@ -236,31 +234,31 @@
                                 <div class="footer-center">
                                     <h3>Sản Phẩm</h3>
                                     <div nz-col nzSpan="24">
-                                        <a [routerLink]="['/sanpham/san-pham-cordex/cua-so-hong-ngoai-cordex']">Cửa Sổ Hồng Ngoại Cordex</a>
+                                        <a [routerLink]="['/san-pham/cua-so-hong-ngoai-cordex']">Cửa Sổ Hồng Ngoại Cordex</a>
                                     </div>
                                     <div nz-col nzSpan="24">
-                                        <a [routerLink]="['/sanpham/san-pham-iriss']">Cửa Sổ Hồng Ngoại IRISS</a>
+                                        <a [routerLink]="['/san-pham/san-pham-iriss']">Cửa Sổ Hồng Ngoại IRISS</a>
                                     </div>
                                     <div nz-col nzSpan="24">
-                                        <a [routerLink]="['/sanpham/may-chup-hinh-nhiet-cordex']">Máy Chụp Hình Nhiệt Cordex</a>
+                                        <a [routerLink]="['/san-pham/may-chup-hinh-nhiet-cordex']">Máy Chụp Hình Nhiệt Cordex</a>
                                     </div>
                                     <div nz-col nzSpan="24">
-                                        <a [routerLink]="['/sanpham']">Máy Đo Sóng Siêu Âm IRISS</a>
+                                        <a [routerLink]="['/san-pham/may-do-song-sieu-am-iriss']">Máy Đo Sóng Siêu Âm IRISS</a>
                                     </div>
                                     <div nz-col nzSpan="24">
-                                        <a [routerLink]="['/sanpham']">Máy Đo Phóng Điện Cục Bộ IRISS</a>
+                                        <a [routerLink]="['/san-pham/may-do-phong-dien-cuc-bo-iriss']">Máy Đo Phóng Điện Cục Bộ IRISS</a>
                                     </div>
                                     <div nz-col nzSpan="24">
-                                        <a [routerLink]="['/sanpham']">Hệ Giám Sát IntelliSAW Emerson</a>
+                                        <a [routerLink]="['/san-pham']">Hệ Giám Sát IntelliSAW Emerson</a>
                                     </div>
                                     <div nz-col nzSpan="24">
-                                        <a [routerLink]="['/sanpham']">Hệ Giám Sát Monitir Cordex</a>
+                                        <a [routerLink]="['/san-pham']">Hệ Giám Sát Monitir Cordex</a>
                                     </div>
                                     <div nz-col nzSpan="24">
-                                        <a [routerLink]="['/sanpham']">Hệ Giám Sát Delta T Alert IRISS</a>
+                                        <a [routerLink]="['/san-pham']">Hệ Giám Sát Delta T Alert IRISS</a>
                                     </div>
                                     <div nz-col nzSpan="24">
-                                        <a [routerLink]="['/sanpham']">Hệ Nhãn Đánh Dấu E Sentry IRISS</a>
+                                        <a [routerLink]="['/san-pham']">Hệ Nhãn Đánh Dấu E Sentry IRISS</a>
                                     </div>
                                 </div>
                             </div>
@@ -268,25 +266,25 @@
                                 <div class="footer-center">
                                     <h3>Công Ty</h3>
                                     <div nz-col nzSpan="24">
-                                        <a [routerLink]="['/doanhnghiep/tamnhin-sumenh-giatri']">Tầm Nhìn – Sứ Mệnh – Giá Trị</a>
+                                        <a [routerLink]="['/doanh-nghiep/tamnhin-sumenh-giatri']">Tầm Nhìn – Sứ Mệnh – Giá Trị</a>
                                     </div>
                                     <div nz-col nzSpan="24">
-                                        <a [routerLink]="['/tuyendung']">Việc Làm & Sự Nghiệp</a>
+                                        <a [routerLink]="['/tuyen-dung']">Việc Làm & Sự Nghiệp</a>
                                     </div>
                                     <div nz-col nzSpan="24">
-                                        <a [routerLink]="['/lienhe']">Liên Hệ</a>
+                                        <a [routerLink]="['/lien-he']">Liên Hệ</a>
                                     </div>
                                 </div>
                                 <div class="footer-center">
                                     <h3>Đối Tác Dịch Vụ</h3>
                                     <div nz-row nzType="flex" nzJustify="space-between" nzAlign="middle">
                                         <div nz-col nzXs="10" nzSm="10" nzMd="10">
-                                            <a [routerLink]="['/doitac']">
+                                            <a [routerLink]="['/doi-tac']">
                                                 <img src="/assets/images/schneider-logo.png" alt="Schneider">
                                             </a>
                                         </div>
                                         <div nz-col nzXs="10" nzSm="10" nzMd="10">
-                                            <a [routerLink]="['/doitac']">
+                                            <a [routerLink]="['/doi-tac']">
                                                 <img src="/assets/images/abb-logo.png" alt="Abb">
                                             </a>
                                         </div>
@@ -296,17 +294,17 @@
                                     <h3>Đối Tác Sản Phẩm</h3>
                                     <div nz-row nzType="flex" nzJustify="space-between">
                                         <div nz-col nzXs="6" nzSm="6" nzMd="6">
-                                            <a [routerLink]="['/doitac']">
+                                            <a [routerLink]="['/doi-tac']">
                                                 <img src="/assets/images/emerson-logo.png" alt="Emerson">
                                             </a>
                                         </div>
                                         <div nz-col nzXs="6" nzSm="6" nzMd="6">
-                                            <a [routerLink]="['/doitac']">
+                                            <a [routerLink]="['/doi-tac']">
                                                 <img src="/assets/images/cordex-logo.png" alt="Cordex">
                                             </a>
                                         </div>
                                         <div nz-col nzXs="6" nzSm="6" nzMd="6">
-                                            <a [routerLink]="['/doitac']">
+                                            <a [routerLink]="['/doi-tac']">
                                                 <img src="/assets/images/iriss-logo.png" alt="Iriss">
                                             </a>
                                         </div>

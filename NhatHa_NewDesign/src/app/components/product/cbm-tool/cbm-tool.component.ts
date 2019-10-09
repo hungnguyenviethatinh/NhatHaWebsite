@@ -8,19 +8,19 @@ import { Component, OnInit } from '@angular/core';
 export class CbmToolComponent implements OnInit {
   products = [
     {
-      href: '/sanpham/may-chup-hinh-nhiet-cordex',
+      href: '/san-pham/may-chup-hinh-nhiet-cordex',
       name: 'MÁY CHỤP ẢNH NHIỆT',
       img: '/assets/images/products/02/1.png',
       description: 'MÁY CHỤP ẢNH NHIỆT',
     },
     {
-      href: '/sanpham',
+      href: '/san-pham/may-do-song-sieu-am-iriss',
       name: 'MÁY ĐO SÓNG SIÊU ÂM',
       img: '/assets/images/products/02/2.png',
       description: 'MÁY ĐO SÓNG SIÊU ÂM',
     },
     {
-      href: '/sanpham',
+      href: '/san-pham/may-do-phong-dien-cuc-bo-iriss',
       name: 'MÁY ĐO PHÓNG ĐIỆN CỤC BỘ',
       img: '/assets/images/products/02/3.png',
       description: 'MÁY ĐO PHÓNG ĐIỆN CỤC BỘ',

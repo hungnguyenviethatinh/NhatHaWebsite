@@ -25,32 +25,32 @@ export class IrissProductComponent implements OnInit {
         ...this.style,
         'border-right': '1px dashed #096dd9'
       },
-      click: () => { this.router.navigate(['/sanpham/cua-so-hong-ngoai']); },
+      click: () => { this.router.navigate(['/san-pham/cua-so-hong-ngoai']); },
     },
     {
       name: 'CỬA SỔ IR IRISS',
       img: '/assets/images/products/01/01/tab-1.png',
       contents: [
         {
-          href: '/sanpham/san-pham-iriss/thong-tin-san-pham',
+          href: '/san-pham/san-pham-iriss/chi-tiet',
           fragment: 'dong-vpt',
           img: '/assets/images/products/01/01/vpt.jpg',
           text: 'DÒNG VPT',
         },
         {
-          href: '/sanpham/san-pham-iriss/thong-tin-san-pham',
+          href: '/san-pham/san-pham-iriss/chi-tiet',
           fragment: 'dong-cap-ct',
           img: '/assets/images/products/01/01/ct.png',
           text: 'DÒNG CAP CT',
         },
         {
-          href: '/sanpham/san-pham-iriss/thong-tin-san-pham',
+          href: '/san-pham/san-pham-iriss/chi-tiet',
           fragment: 'dong-cap-env',
           img: '/assets/images/products/01/01/env.png',
           text: 'DÒNG CAP ENV',
         },
         {
-          href: '/sanpham/san-pham-iriss/thong-tin-san-pham',
+          href: '/san-pham/san-pham-iriss/chi-tiet',
           fragment: 'dong-flex-ir',
           img: '/assets/images/products/01/01/flex-ir.png',
           text: 'DÒNG FLEX IR',
