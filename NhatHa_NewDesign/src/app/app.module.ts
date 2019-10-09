@@ -6,8 +6,8 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {
-  NzAnchorModule, NzCarouselModule, NzDividerModule, NzButtonModule, NzFormModule, NzTableModule,
-  NzGridModule, NzIconModule, NzInputModule, NzMenuModule, NzTypographyModule, NZ_I18N, vi_VN
+  NzAffixModule, NzAnchorModule, NzCarouselModule, NzDividerModule, NzButtonModule, NzFormModule, NzTableModule,
+  NzBackTopModule, NzGridModule, NzIconModule, NzInputModule, NzMenuModule, NzTypographyModule, NZ_I18N, vi_VN
 } from 'ng-zorro-antd';
 import { registerLocaleData } from '@angular/common';
 import vi from '@angular/common/locales/vi';
@@ -22,7 +22,6 @@ import { ContactUsComponent } from './components/contact/contact-us/contact-us.c
 import { JobCareerComponent } from './components/contact/job-career/job-career.component';
 import { ProjectComponent } from './components/project/project.component';
 import { ServiceComponent } from './components/service/service.component';
-import { ServiceGroupComponent } from './components/service/service-group/service-group.component';
 import { ShortCircuitComponent } from './components/service/service-detail/short-circuit/short-circuit.component';
 import { ArcFlashComponent } from './components/service/service-detail/arc-flash/arc-flash.component';
 import { TestCommitComponent } from './components/service/service-detail/test-commit/test-commit.component';
@@ -37,6 +36,15 @@ import {HttpClient} from '@angular/common/http';
 
 // import ngx-translate-messageformat-compiler
 import {TranslateMessageFormatCompiler} from 'ngx-translate-messageformat-compiler';
+import { PowerSystemStudyComponent } from './components/service/service-group/power-system-study/power-system-study.component';
+import { ConditionalMaintainComponent } from './components/service/service-group/conditional-maintain/conditional-maintain.component';
+import { ProductComponent } from './components/product/product.component';
+import { InfraredWindowComponent } from './components/product/infrared-window/infrared-window.component';
+import { CbmToolComponent } from './components/product/cbm-tool/cbm-tool.component';
+import { OnlineMonitorComponent } from './components/product/online-monitor/online-monitor.component';
+import { IrissProductComponent } from './components/product/iriss-product/iriss-product.component';
+import { CordexProductComponent } from './components/product/cordex-product/cordex-product.component';
+import { IrissDetailComponent } from './components/product/iriss-product/iriss-detail/iriss-detail.component';
 
 registerLocaleData(vi);
 
@@ -53,7 +61,6 @@ registerLocaleData(vi);
     JobCareerComponent,
     ProjectComponent,
     ServiceComponent,
-    ServiceGroupComponent,
     ShortCircuitComponent,
     ArcFlashComponent,
     TestCommitComponent,
@@ -61,10 +68,21 @@ registerLocaleData(vi);
     EpMaintainComponent,
     InfraredScanComponent,
     OpdTestComponent,
+    PowerSystemStudyComponent,
+    ConditionalMaintainComponent,
+    ProductComponent,
+    InfraredWindowComponent,
+    CbmToolComponent,
+    OnlineMonitorComponent,
+    IrissProductComponent,
+    CordexProductComponent,
+    IrissDetailComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
+    NzAffixModule,
+    NzBackTopModule,
     NzTableModule,
     NzAnchorModule,
     NzFormModule,
@@ -98,6 +116,7 @@ registerLocaleData(vi);
   providers: [{ provide: NZ_I18N, useValue: vi_VN }],
   bootstrap: [AppComponent]
 })
+
 export class AppModule { }
 export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http);

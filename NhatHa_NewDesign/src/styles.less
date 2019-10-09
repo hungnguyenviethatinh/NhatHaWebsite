@@ -1,4 +1,5 @@
 @import "../node_modules/ng-zorro-antd/style/entry.less";
+@import "../node_modules/ng-zorro-antd/affix/style/entry.less";
 @import "../node_modules/ng-zorro-antd/anchor/style/entry.less";
 @import "../node_modules/ng-zorro-antd/form/style/entry.less";
 @import "../node_modules/ng-zorro-antd/button/style/entry.less";
@@ -10,9 +11,14 @@
 @import "../node_modules/ng-zorro-antd/menu/style/entry.less";
 @import "../node_modules/ng-zorro-antd/typography/style/entry.less";
 @import "../node_modules/ng-zorro-antd/table/style/entry.less";
+@import "../node_modules/ng-zorro-antd/back-top/style/entry.less";
 
 @text-blue: #096dd9;
+@text-white: #ffffff;
+@text-black: #314659;
 @text-uppercase: uppercase;
+@bg-white: #ffffff;
+@bg-blue: #096dd9;
 
 .cdk-overlay-container {
     ul.ant-menu-sub {
@@ -44,10 +50,51 @@
 
 }
 
-.ant-menu-submenu-title .ant-menu-submenu-arrow::before {
-    background: linear-gradient(to right, @text-blue, @text-blue);   
+.ant-menu-submenu-title .ant-menu-submenu-arrow::after {
+    background-image: linear-gradient(to right, @text-blue, @text-blue) !important;   
 }
+
+.ant-menu-submenu-title .ant-menu-submenu-arrow::before {
+    background-image: linear-gradient(to right, @text-blue, @text-blue) !important;   
+}
+
 
 .ant-table-placeholder {
     display: none !important;
+}
+
+li:not(.ant-menu-submenu) {
+    list-style-type: circle;
+    text-align: justify;
+}
+
+.features, .certificates {
+    .ant-table-thead {
+        tr {
+            th {
+                text-align: left;
+                color: @text-white;
+                font-weight: bold;
+                background: @bg-blue;
+                border-bottom: 2px solid #fff;
+            }
+        }
+    }
+
+    .ant-table-tbody {
+        tr:nth-chlld(even) {
+            background-color: lightblue;
+        }
+        
+        tr:nth-chlld(odd) {
+            background-color: aliceblue;
+        }
+    }
+}
+
+.demos {
+    [nz-carousel-content] {
+        height: 300px;
+        margin: 24px 0;
+    }
 }

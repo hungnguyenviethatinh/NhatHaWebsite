@@ -1,0 +1,25 @@
+<div class="main-container">
+    <div class="clearfix" id="product">
+        <div class="product-wrap">
+            <div class="tab">
+                <div nz-row nzType="flex" [nzGutter]="nzGutter" nzJustify="start" nzAlign="middle">
+                    <div nz-col *ngFor="let tab of tabs" [ngStyle]="tab.style" (click)="tab.click()">
+                        <img [src]="tab.img" alt="">
+                        <p>{{tab.name}}</p>
+                    </div>
+                </div>
+                <div class="tab-content">
+                    <div nz-row nzType="flex" [nzGutter]="nzGutter" nzJustify="start" nzAlign="middle"
+                        *ngFor="let tab of tabs">
+                        <div nz-col nzXs="24" nzSm="24" nzMd="6" *ngFor="let content of tab.contents">
+                            <a routerLink="{{content.href}}" fragment="{{content.fragment}}">
+                                <img [src]="content.img" alt="">
+                                <h3>{{content.text}}</h3>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

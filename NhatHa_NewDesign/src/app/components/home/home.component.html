@@ -6,41 +6,12 @@
 <div class="main-container">
     <div class="clearfix" id="service">
         <div class="service-wrap">
-            <h2 translate>Dịch Vụ Kỹ Thuật</h2>
-            <div nz-row nzType="flex" nzJustify="space-between" nzAlign="middle">              
-                <div class="service" nz-col nzXs="24" nzSm="24" nzMd="4" >
-                    <a>
-                        <img src="../../../assets/images/services/1.JPG"
-                        [alt]="'Power System Study'|translate" />
-                        <p translate>Phân Tích Hệ Thống Điện</p>
-                    </a>
-                </div>
-                <div class="service" nz-col nzXs="24" nzSm="24" nzMd="4" >
-                    <a>
-                        <img src="../../../assets/images/services/2.JPG"
-                        [alt]="'Thử Nghiệm Và Nghiệm Thu'|translate" />
-                        <p translate>Thử Nghiệm Và Nghiệm Thu</p>
-                    </a>
-                </div>
-                <div class="service" nz-col nzXs="24" nzSm="24" nzMd="4" >
-                    <a>
-                        <img src="../../../assets/images/services/3.JPG"
-                        [alt]="'Phân Tích Chất Lượng Điện'|translate" />
-                        <p translate>Phân Tích Chất Lượng Điện</p>
-                    </a>
-                </div>
-                <div class="service" nz-col nzXs="24" nzSm="24" nzMd="4" >
-                    <a>
-                        <img src="../../../assets/images/services/4.JPG"
-                         [alt]="'Bảo Trì Ngăn Ngừa'|translate" />
-                        <p translate>Bảo Trì Ngăn Ngừa</p>
-                    </a>
-                </div>
-                <div class="service" nz-col nzXs="24" nzSm="24" nzMd="4" >
-                    <a>
-                        <img src="../../../assets/images/services/5.JPG"
-                        [alt]="'Bảo Trì Theo Tình Trạng'|translate" />
-                        <p translate>Bảo Trì Theo Tình Trạng</p>
+            <h2|translate>Dịch Vụ Kỹ Thuật</h2>
+            <div nz-row nzType="flex" nzJustify="space-between" nzAlign="middle">
+                <div class="service" nz-col nzXs="24" nzSm="24" nzMd="4" *ngFor="let service of services";let i=index>
+                    <a routerLink="{{service.href}}">
+                        <img [src]="service.img" alt="{{('service.name'+i)|translate}}" />
+                        <p>{{('service.name'+i)|translate}}</p>
                     </a>
                 </div>
             </div>
@@ -49,25 +20,10 @@
             <div class="product-wrap">
                 <h2 translate>Sản Phẩm</h2>
                 <div nz-row nzType="flex" nzJustify="space-between" nzAlign="middle">
-                    <div class="product" nz-col nzXs="24" nzSm="24" nzMd="7" >
-                        <a>
-                            <img src="../../../assets/images/products/Iriss.JPG"
-                            [alt]="'Cửa Sổ Hồng Ngoại'|translate" />
-                            <p translate>Cửa Sổ Hồng Ngoại</p>
-                        </a>
-                    </div>
-                    <div class="product" nz-col nzXs="24" nzSm="24" nzMd="7" >
-                        <a>
-                            <img src="../../../assets/images/products/Cordex.JPG"
-                            [alt]="'Máy Giám Sát Tình Trạng Thiết Bị'|translate" />
-                            <p translate>Máy Giám Sát Tình Trạng Thiết Bị</p>
-                        </a>
-                    </div>
-                    <div class="product" nz-col nzXs="24" nzSm="24" nzMd="7" >
-                        <a>
-                            <img src="../../../assets/images/products/Emerson.PNG"
-                            alt="'Giải Pháp Giám Sát Liên Tục Tình Trạng Thiết Bị'|translate" />
-                            <p translate>Giải Pháp Giám Sát Liên Tục Tình Trạng Thiết Bị</p>
+                    <div class="product" nz-col nzXs="24" nzSm="24" nzMd="7" *ngFor="let product of products";let i=index>
+                        <a routerLink="{{product.href}}">
+                            <img [src]="product.img" alt="{{('product.name'+i)|translate}}" />
+                            <p>{{('product.name'+i)|translate}}</p>
                         </a>
                     </div>
                 </div>

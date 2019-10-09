@@ -1,0 +1,13 @@
+<div class="main-container">
+    <div class="clearfix" id="product">
+        <div class="product-wrap">
+            <div nz-row nzType="flex" nzJustify="center" nzAlign="middle" *ngFor="let product of products">
+                <div class="product" nz-col nzSpan="24" [ngStyle]="{'text-align': product.align}" >
+                    <a routerLink="{{product.href}}">
+                        <img [src]="product.img" alt="" />
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
