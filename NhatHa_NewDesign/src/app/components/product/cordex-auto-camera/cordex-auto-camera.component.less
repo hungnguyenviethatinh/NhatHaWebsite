@@ -1,0 +1,95 @@
+@text-blue: #4472c4;
+@text-white: #ffffff;
+@text-black: #314659;
+@text-uppercase: uppercase;
+@bg-white: #ffffff;
+@bg-blue: #4472c4;
+@text-orange: #ed7d31;
+@bg-orange: #ed7d31;
+@text-green: #00b050;
+@bg-green: #00b050;
+
+.main-container {
+    padding: 0;
+    background: #fff;
+    min-height: 500px;
+    overflow: hidden;
+    position: relative;
+
+    .img {
+        width: 100%;
+        height: 300px;
+        -o-object-fit: contain;
+        object-fit: contain;
+    }
+
+    #product {
+        position: relative;
+        background: @bg-white;
+        color: @text-black;
+
+        .product-wrap {
+            padding: 3rem 10rem;
+            position: relative;
+
+            .tab {
+                img {
+                    width: 50px;
+                    height: 50px;
+                }
+
+                p {
+                    margin-top: 1em;
+                    color: @text-blue;
+                    font-weight: bold;
+                }
+
+                .active {
+                    opacity: 1;
+                }
+
+                .inactive {
+                    opacity: .5;
+                    transition: opacity ease-in-out .5s;
+                }
+            }
+
+            .tab-content {
+                margin-top: 1em;
+            }
+
+            #page-0 {
+                padding: 10px 0;
+                background: @bg-orange;
+                margin-top: 2em;
+                margin-bottom: 2em;
+
+                h1, h2, h3, h4 {
+                    font-weight: bold;
+                    color: @text-white;
+                }
+
+                img {
+                    .img;
+                }
+            }
+
+            #prouct-list {
+                h3 {
+                    line-height: 3em;
+                    color: @text-white;
+                    font-weight: bold;
+                    background: @bg-orange;
+                    text-align: center;
+                }
+
+                img {
+                    height: 300px;
+                    width: 100%;
+                    object-fit: contain;
+                    -o-object-fit: contain;
+                }
+            }
+        }
+    }
+}

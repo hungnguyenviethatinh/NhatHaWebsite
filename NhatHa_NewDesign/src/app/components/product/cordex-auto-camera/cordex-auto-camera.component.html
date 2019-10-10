@@ -1,1 +1,37 @@
-<p>cordex-auto-camera works!</p>
+<div class="main-container">
+    <div class="clearfix" id="product">
+        <div id="delta-t-product" class="product-wrap">
+            <nz-affix>
+                <div class="tab" style="background: #fff; padding: 10px 0;" nz-row nzType="flex" [nzGutter]="nzGutter"
+                    nzJustify="start" nzAlign="middle">
+                    <div nz-col *ngFor="let tab of tabs" [ngStyle]="tab.style" (click)="tab.click()">
+                        <img [src]="tab.img" alt="">
+                        <p>{{tab.name}}</p>
+                    </div>
+                </div>
+            </nz-affix>
+            <div class="tab-content">
+                <div id="page-0" nz-row nzType="flex" [nzGutter]="nzGutter" nzJustify="space-between" nzAlign="middle">
+                    <div nz-col nzXs="24" nzSm="24" nzMd="12">
+                        <h2>Giám Sát Nhiệt Hồng Ngoại</h2>
+                        <h1>Tự Động</h1>
+                        <h3>Ứng Dụng Điều Khiển Tự Động Hóa – Cảm Biến Nhiệt và Ảnh</h3>
+                        <h4>Không bao giờ bỏ qua sự cố với giám sát 24x7x365</h4>
+                    </div>
+                    <div nz-col nzXs="24" nzSm="24" nzMd="12">
+                        <img src="/assets/images/products/03/02/1.PNG" alt="SẢN PHẨM IRISS DELTA T">
+                    </div>
+                </div>
+                <div id="prouct-list" nz-row nzType="flex" nzJustify="center" nzAlign="middle">
+                    <div nz-col nzXs="24" nzSm="24" nzMd="12" *ngFor="let product of products">
+                        <a routerLink="{{product.href}}">
+                            <img [src]="product.img" [alt]="product.name">
+                            <h3>{{product.name}}</h3>
+                        </a>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+</div>

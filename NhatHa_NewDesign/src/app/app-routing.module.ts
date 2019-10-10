@@ -34,10 +34,8 @@ import { EmersonIntellisawComponent } from './components/product/emerson-intelli
 import { CordexAutoCameraComponent } from './components/product/cordex-auto-camera/cordex-auto-camera.component';
 import { IrissDeltaComponent } from './components/product/iriss-delta/iriss-delta.component';
 import { IrissSentryComponent } from './components/product/iriss-sentry/iriss-sentry.component';
-import {
-  CordexAutocamDetailComponent
-} from './components/product/cordex-auto-camera/cordex-autocam-detail/cordex-autocam-detail.component';
-
+import { CordexMn4000Component } from './components/product/cordex-auto-camera/cordex-mn4000/cordex-mn4000.component';
+import { CordexMn4100Component } from './components/product/cordex-auto-camera/cordex-mn4100/cordex-mn4100.component';
 
 const routes: Routes = [
   {
@@ -119,7 +117,10 @@ const routes: Routes = [
     path: 'san-pham/cordex-automated-camera', component: CordexAutoCameraComponent,
   },
   {
-    path: 'san-pham/cordex-automated-camera/chi-tiet', component: CordexAutocamDetailComponent,
+    path: 'san-pham/cordex-automated-camera/cordex-mn4000', component: CordexMn4000Component,
+  },
+  {
+    path: 'san-pham/cordex-automated-camera/cordex-mn4100', component: CordexMn4100Component,
   },
   {
     path: 'san-pham/iriss-delta-t-alert', component: IrissDeltaComponent,

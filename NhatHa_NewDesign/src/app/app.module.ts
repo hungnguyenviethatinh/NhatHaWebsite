@@ -46,7 +46,8 @@ import { EmersonIntellisawComponent } from './components/product/emerson-intelli
 import { CordexAutoCameraComponent } from './components/product/cordex-auto-camera/cordex-auto-camera.component';
 import { IrissDeltaComponent } from './components/product/iriss-delta/iriss-delta.component';
 import { IrissSentryComponent } from './components/product/iriss-sentry/iriss-sentry.component';
-import { CordexAutocamDetailComponent } from './components/product/cordex-auto-camera/cordex-autocam-detail/cordex-autocam-detail.component';
+import { CordexMn4000Component } from './components/product/cordex-auto-camera/cordex-mn4000/cordex-mn4000.component';
+import { CordexMn4100Component } from './components/product/cordex-auto-camera/cordex-mn4100/cordex-mn4100.component';
 
 registerLocaleData(vi);
 
@@ -87,7 +88,8 @@ registerLocaleData(vi);
     CordexAutoCameraComponent,
     IrissDeltaComponent,
     IrissSentryComponent,
-    CordexAutocamDetailComponent,
+    CordexMn4000Component,
+    CordexMn4100Component,
   ],
   imports: [
     BrowserModule,
