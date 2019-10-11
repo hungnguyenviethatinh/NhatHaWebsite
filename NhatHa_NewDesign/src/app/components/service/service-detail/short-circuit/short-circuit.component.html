@@ -6,20 +6,20 @@
                     <img [src]="service.heading.img" alt="">
                 </div>
                 <div nz-col nzXs="24" nzSm="24" nzMd="18">
-                    <h1>{{service.heading.title}}</h1>
+                    <h1 translate>{{'service.heading.title'}}</h1>
                 </div>
             </div>
             <div class="clearfix" id="content">
                 <div class="content" nz-row nzType="flex" nzJustify="space-between" nzAlign="top"
-                    *ngFor="let content of service.contents; let i = index">
+                    *ngFor="let contentshort of service.contents; let i = index;">
                     <div class="text-content" nz-col nzXs="24" nzSm="24" nzMd="18">
-                        <h3 class="title">{{content.title}}</h3>
-                        <p *ngFor="let paragraph of content.paragraphs">
-                            {{paragraph}}
+                        <h3 class="title">{{('contentshort.title'+i)|translate}}</h3>
+                        <p *ngFor="let paragraph of contentshort.paragraphs; let j=index;">
+                            {{('paragraph'+i+j)|translate}}
                         </p>
                     </div>
                     <div nz-col nzXs="24" nzSm="24" nzMd="6">
-                        <img [src]="content.img" alt="">
+                        <img [src]="contentshort.img" alt="">
                     </div>
                 </div>
             </div>

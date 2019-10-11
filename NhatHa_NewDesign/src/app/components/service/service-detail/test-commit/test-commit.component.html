@@ -6,31 +6,31 @@
                     <img [src]="service.heading.img" alt="">
                 </div>
                 <div nz-col nzXs="24" nzSm="24" nzMd="18">
-                    <h1>{{service.heading.title}}</h1>
+                    <h1>{{'service.heading.title_test_commit'|translate}}</h1>
                 </div>
             </div>
             <div class="clearfix" id="content">
                 <div class="content" nz-row nzType="flex" nzJustify="space-between" nzAlign="top"
-                    *ngFor="let content of service.contents">
+                    *ngFor="let content_test_commit of service.contents;let i=index">
                     <div class="text-content" nz-col nzXs="24" nzSm="24" nzMd="18">
-                        <h3 class="title">{{content.title}}</h3>
-                        <ng-container *ngFor="let paragraph of content.paragraphs">
+                        <h3 class="title" translate>{{('content_test_commit.title'+i)|translate}}</h3>
+                        <ng-container *ngFor="let paragraph of content_test_commit.paragraphs;let j=index;">
                             <ng-container *ngIf="paragraph.type === 'p'">
-                                <p *ngFor="let content of paragraph.contents">
-                                    {{content}}
+                                <p *ngFor="let content_paragraph of paragraph.contents;let z=index">
+                                    {{('content_paragraph'+i+j+z)|translate}}
                                 </p>
                             </ng-container>
                             <ng-container *ngIf="paragraph.type === 'li'">
                                 <ul>
-                                    <li *ngFor="let text of paragraph.contents">
-                                        {{text}}
+                                    <li *ngFor="let text_paragraph of paragraph.contents;let z=index">
+                                        {{('text_paragraph'+i+j+z)|translate}}
                                     </li>
                                 </ul>
                             </ng-container>
                         </ng-container>
                     </div>
                     <div nz-col nzXs="24" nzSm="24" nzMd="6">
-                        <div *ngFor="let img of content.img; let i = index">
+                        <div *ngFor="let img of content_test_commit.img; let i = index">
                             <img [id]="'img-' + i" [src]="img" alt="">
                         </div>
                     </div>

@@ -7,12 +7,12 @@
     <div class="clearfix" id="service">
         <div class="service-wrap">
             <div nz-row nzType="flex" nzJustify="center" nzAlign="middle">
-                <div class="service" nz-col nzXs="24" nzSm="24" nzMd="7" *ngFor="let service of services">
+                <div class="service" nz-col nzXs="24" nzSm="24" nzMd="7" *ngFor="let service of services;let i=index">
                     <a routerLink="{{service.link}}">
-                        <img [src]="service.img" alt="{{service.name}}" />
-                        <h3>{{service.title}}</h3>
-                        <p *ngFor="let description of service.descriptions">
-                            {{description}}
+                        <img [src]="service.img" alt="{{service.title}}" />
+                        <h3>{{('service.title'+i)|translate}}</h3>
+                        <p *ngFor="let description of service.descriptions; let j=index">
+                            {{('description'+i+j)|translate}}
                         </p>
                     </a>
                 </div>
