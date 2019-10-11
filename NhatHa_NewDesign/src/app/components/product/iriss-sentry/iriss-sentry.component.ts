@@ -178,7 +178,7 @@ export class IrissSentryComponent implements OnInit {
           '/assets/images/products/03/04/9.png',
           '/assets/images/products/03/04/10.jpg',
         ],
-        video: '/assets/images/products/03/04/video.3gp',
+        video: '/assets/images/products/03/04/video.mp4',
       },
       documents: [
         'Product Data Sheet – E Sentry Connect',

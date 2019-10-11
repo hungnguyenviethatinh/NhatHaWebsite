@@ -150,7 +150,7 @@ export class IrissDeltaComponent implements OnInit {
           '/assets/images/products/03/03/12.jpg',
           '/assets/images/products/03/03/13.jpg',
         ],
-        video: '/assets/images/products/03/03/video.3gp',
+        video: '/assets/images/products/03/03/video.mp4',
       },
       documents: [
         'Product Data Sheet – Delta T Alert',

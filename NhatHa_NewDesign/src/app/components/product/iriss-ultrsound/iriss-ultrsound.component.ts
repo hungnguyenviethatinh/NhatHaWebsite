@@ -139,7 +139,7 @@ export class IrissUltrsoundComponent implements OnInit {
           '/assets/images/products/02/02/13.jpg',
           '/assets/images/products/02/02/14.jpg',
         ],
-        video: '/assets/images/products/02/02/video.3gp',
+        video: '/assets/images/products/02/02/video.mp4',
       },
       documents: [
         'Product Data Sheet – Sonus XT',

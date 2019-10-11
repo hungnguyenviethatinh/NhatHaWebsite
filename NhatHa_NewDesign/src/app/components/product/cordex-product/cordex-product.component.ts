@@ -274,7 +274,7 @@ export class CordexProductComponent implements OnInit {
           '/assets/images/products/01/02/13.jpg',
           '/assets/images/products/01/02/14.bmp',
         ],
-          video: '/assets/images/products/01/02/video.3gp',
+          video: '/assets/images/products/01/02/video.mp4',
       },
       documents: [
         'Brochure – IW Series',

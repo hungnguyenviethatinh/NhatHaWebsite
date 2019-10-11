@@ -57,7 +57,7 @@ export class CameraDetailComponent implements OnInit, AfterViewInit {
           '/assets/images/products/02/01/01/11.jpg',
           '/assets/images/products/02/01/01/12.jpg',
         ],
-        video: '/assets/images/products/02/01/01/video.3gp',
+        video: '/assets/images/products/02/01/01/video.mp4',
       },
       documents: [
         'Brochure – ToughPix DigiTherm Camera',
@@ -99,7 +99,7 @@ export class CameraDetailComponent implements OnInit, AfterViewInit {
           '/assets/images/products/02/01/02/8.jpg',
           '/assets/images/products/02/01/02/9.jpg',
         ],
-        video: '/assets/images/products/02/01/02/video.3gp',
+        video: '/assets/images/products/02/01/02/video.mp4',
       },
       documents: [
         'Brochure – TC7150 Thermal Camera',

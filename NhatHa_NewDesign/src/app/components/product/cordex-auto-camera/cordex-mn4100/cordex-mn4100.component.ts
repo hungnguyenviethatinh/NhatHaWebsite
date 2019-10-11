@@ -117,7 +117,7 @@ export class CordexMn4100Component implements OnInit {
           '/assets/images/products/03/02/02/6.png',
           '/assets/images/products/03/02/02/7.jpg',
         ],
-        video: '/assets/images/products/03/02/02/video.3gp',
+        video: '/assets/images/products/03/02/02/video.mp4',
       },
       documents:[
         'Product Data Sheet – MN4100',

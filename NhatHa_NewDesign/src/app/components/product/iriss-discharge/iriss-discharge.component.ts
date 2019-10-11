@@ -133,7 +133,7 @@ export class IrissDischargeComponent implements OnInit {
           '/assets/images/products/02/03/6.jpg',
           '/assets/images/products/02/03/7.jpg',
         ],
-        video: '/assets/images/products/02/03/video.3gp',
+        video: '/assets/images/products/02/03/video.mp4',
       },
       documents: [
         'Product Data Sheet – Sonus PD',

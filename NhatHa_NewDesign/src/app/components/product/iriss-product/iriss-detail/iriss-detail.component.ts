@@ -309,7 +309,7 @@ export class IrissDetailComponent implements OnInit, AfterViewInit {
           '/assets/images/products/01/01/01/6.jpg',
           '/assets/images/products/01/01/01/7.jpg',
         ],
-        video: '/assets/images/products/01/01/01/video.3gp',
+        video: '/assets/images/products/01/01/01/video.mp4',
       },
       documents: [
         'Product Data Sheet – VPT Series',
@@ -606,7 +606,7 @@ export class IrissDetailComponent implements OnInit, AfterViewInit {
           '/assets/images/products/01/01/02/8.jpg',
           '/assets/images/products/01/01/02/9.jpg',
         ],
-        video: '/assets/images/products/01/01/02/video.3gp',
+        video: '/assets/images/products/01/01/02/video.mp4',
       },
       documents: [
         'Product Data Sheet – CAP-CT Series',
@@ -904,7 +904,7 @@ export class IrissDetailComponent implements OnInit, AfterViewInit {
           '/assets/images/products/01/01/03/6.jpg',
           '/assets/images/products/01/01/03/1.png',
         ],
-        video: '/assets/images/products/01/01/03/video.3gp',
+        video: '/assets/images/products/01/01/03/video.mp4',
       },
       documents: [
         'Product Data Sheet – CAP-ENV Series',
@@ -1177,7 +1177,7 @@ export class IrissDetailComponent implements OnInit, AfterViewInit {
           '/assets/images/products/01/01/04/6.png',
           '/assets/images/products/01/01/04/7.png',
         ],
-        video: '/assets/images/products/01/01/04/video.3gp',
+        video: '/assets/images/products/01/01/04/video.mp4',
       },
       documents: [
         'Product Data Sheet – CAP-F Series',

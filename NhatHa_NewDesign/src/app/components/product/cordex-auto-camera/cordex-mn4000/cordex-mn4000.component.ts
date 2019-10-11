@@ -126,7 +126,7 @@ export class CordexMn4000Component implements OnInit {
           './assets/images/products/03/02/01/5.jpg',
           './assets/images/products/03/02/01/6.jpg',
         ],
-        video: './assets/images/products/03/02/01/video.3gp',
+        video: './assets/images/products/03/02/01/video.mp4',
       },
       documents: [
         'Product Data Sheet – MN4000',
