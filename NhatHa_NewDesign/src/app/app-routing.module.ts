@@ -26,91 +26,128 @@ import { OnlineMonitorComponent } from './components/product/online-monitor/onli
 import { IrissProductComponent } from './components/product/iriss-product/iriss-product.component';
 import { CordexProductComponent } from './components/product/cordex-product/cordex-product.component';
 import { IrissDetailComponent } from './components/product/iriss-product/iriss-detail/iriss-detail.component';
-
+import { CordexCameraComponent } from './components/product/cordex-camera/cordex-camera.component';
+import { CameraDetailComponent } from './components/product/cordex-camera/camera-detail/camera-detail.component';
+import { IrissUltrsoundComponent } from './components/product/iriss-ultrsound/iriss-ultrsound.component';
+import { IrissDischargeComponent } from './components/product/iriss-discharge/iriss-discharge.component';
+import { EmersonIntellisawComponent } from './components/product/emerson-intellisaw/emerson-intellisaw.component';
+import { CordexAutoCameraComponent } from './components/product/cordex-auto-camera/cordex-auto-camera.component';
+import { IrissDeltaComponent } from './components/product/iriss-delta/iriss-delta.component';
+import { IrissSentryComponent } from './components/product/iriss-sentry/iriss-sentry.component';
+import { CordexMn4000Component } from './components/product/cordex-auto-camera/cordex-mn4000/cordex-mn4000.component';
+import { CordexMn4100Component } from './components/product/cordex-auto-camera/cordex-mn4100/cordex-mn4100.component';
 
 const routes: Routes = [
   {
-    path: 'trangchu', component: HomeComponent,
+    path: 'trang-chu', component: HomeComponent,
   },
   {
-    path: 'doanhnghiep/tamnhin-sumenh-giatri', component: VisionMissionValueComponent,
+    path: 'doanh-nghiep/tamnhin-sumenh-giatri', component: VisionMissionValueComponent,
   },
   {
-    path: 'doanhnghiep/thietbi', component: EquipmentComponent,
+    path: 'doanh-nghiep/thiet-bi', component: EquipmentComponent,
   },
   {
-    path: 'dichvu', component: ServiceComponent,
+    path: 'dich-vu', component: ServiceComponent,
   },
   {
-    path: 'dichvu/phan-tich-he-thong-dien', component: PowerSystemStudyComponent,
+    path: 'dich-vu/phan-tich-he-thong-dien', component: PowerSystemStudyComponent,
   },
   {
-    path: 'dichvu/tinh-toan-ngan-mach-phoi-hop-bao-ve', component: ShortCircuitComponent,
+    path: 'dich-vu/tinh-toan-ngan-mach-phoi-hop-bao-ve', component: ShortCircuitComponent,
   },
   {
-    path: 'dichvu/phan-tich-nguy-co-ho-quang-dien', component: ArcFlashComponent,
+    path: 'dich-vu/phan-tich-nguy-co-ho-quang-dien', component: ArcFlashComponent,
   },
   {
-    path: 'dichvu/thu-nghiem-va-nghiem-thu', component: TestCommitComponent,
+    path: 'dich-vu/thu-nghiem-va-nghiem-thu', component: TestCommitComponent,
   },
   {
-    path: 'dichvu/phan-tich-chat-luong-dien-nang', component: PowerQualityComponent,
+    path: 'dich-vu/phan-tich-chat-luong-dien-nang', component: PowerQualityComponent,
   },
   {
-    path: 'dichvu/chuong-trinh-bao-tri-dien', component: EpMaintainComponent,
+    path: 'dich-vu/chuong-trinh-bao-tri-dien', component: EpMaintainComponent,
   },
   {
-    path: 'dichvu/bao-tri-theo-tinh-trang', component: ConditionalMaintainComponent,
+    path: 'dich-vu/bao-tri-theo-tinh-trang', component: ConditionalMaintainComponent,
   },
   {
-    path: 'dichvu/quet-nhiet-hong-ngoai-thiet-bi-dien', component: InfraredScanComponent,
+    path: 'dich-vu/quet-nhiet-hong-ngoai-thiet-bi-dien', component: InfraredScanComponent,
   },
   {
-    path: 'dichvu/do-phong-dien-cuc-bo', component: OpdTestComponent,
+    path: 'dich-vu/do-phong-dien-cuc-bo', component: OpdTestComponent,
   },
   {
-    path: 'sanpham', component: ProductComponent,
+    path: 'san-pham', component: ProductComponent,
   },
   {
-    path: 'sanpham/cua-so-hong-ngoai', component: InfraredWindowComponent,
+    path: 'san-pham/cua-so-hong-ngoai', component: InfraredWindowComponent,
   },
   {
-    path: 'sanpham/san-pham-iriss', component: IrissProductComponent,
+    path: 'san-pham/san-pham-iriss', component: IrissProductComponent,
   },
   {
-    path: 'sanpham/san-pham-iriss/thong-tin-san-pham', component: IrissDetailComponent,
+    path: 'san-pham/san-pham-iriss/chi-tiet', component: IrissDetailComponent,
   },
   {
-    path: 'sanpham/san-pham-cordex', component: CordexProductComponent,
-  },
-
-  {
-    path: 'sanpham/may-do-tinh-trang-thiet-bi', component: CbmToolComponent,
-  },
-
-  {
-    path: 'sanpham/giai-phap-giam-sat-lien-tuc', component: OnlineMonitorComponent,
+    path: 'san-pham/cua-so-hong-ngoai-cordex', component: CordexProductComponent,
   },
   {
-    path: 'doitac', component: PartnerComponent,
+    path: 'san-pham/may-do-tinh-trang-thiet-bi', component: CbmToolComponent,
   },
   {
-    path: 'duan', component: ProjectComponent,
+    path: 'san-pham/may-chup-hinh-nhiet-cordex', component: CordexCameraComponent,
   },
   {
-    path: 'hotro/phanmem', component: SoftwareComponent,
+    path: 'san-pham/may-chup-hinh-nhiet-cordex/chi-tiet', component: CameraDetailComponent,
   },
   {
-    path: 'hotro/nghiencuu', component: CaseStudiesComponent,
+    path: 'san-pham/may-do-song-sieu-am-iriss', component: IrissUltrsoundComponent,
   },
   {
-    path: 'tuyendung', component: JobCareerComponent,
+    path: 'san-pham/may-do-phong-dien-cuc-bo-iriss', component: IrissDischargeComponent,
   },
   {
-    path: 'lienhe', component: ContactUsComponent,
+    path: 'san-pham/giai-phap-giam-sat-lien-tuc', component: OnlineMonitorComponent,
   },
   {
-    path: '', redirectTo: '/trangchu', pathMatch: 'full',
+    path: 'san-pham/emerson-intellisaw', component: EmersonIntellisawComponent,
+  },
+  {
+    path: 'san-pham/cordex-automated-camera', component: CordexAutoCameraComponent,
+  },
+  {
+    path: 'san-pham/cordex-automated-camera/cordex-mn4000', component: CordexMn4000Component,
+  },
+  {
+    path: 'san-pham/cordex-automated-camera/cordex-mn4100', component: CordexMn4100Component,
+  },
+  {
+    path: 'san-pham/iriss-delta-t-alert', component: IrissDeltaComponent,
+  },
+  {
+    path: 'san-pham/iriss-e-sentry-connect', component: IrissSentryComponent,
+  },
+  {
+    path: 'doi-tac', component: PartnerComponent,
+  },
+  {
+    path: 'du-an', component: ProjectComponent,
+  },
+  {
+    path: 'ho-tro/phan-mem', component: SoftwareComponent,
+  },
+  {
+    path: 'ho-tro/nghien-cuu', component: CaseStudiesComponent,
+  },
+  {
+    path: 'tuyen-dung', component: JobCareerComponent,
+  },
+  {
+    path: 'lien-he', component: ContactUsComponent,
+  },
+  {
+    path: '', redirectTo: '/trang-chu', pathMatch: 'full',
   },
   { path: '**', component: HomeComponent, }
 ];

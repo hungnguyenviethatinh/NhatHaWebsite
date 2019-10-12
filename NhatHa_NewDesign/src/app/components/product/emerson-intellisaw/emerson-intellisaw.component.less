@@ -1,0 +1,183 @@
+@text-blue: #096dd9;
+@text-white: #ffffff;
+@text-black: #314659;
+@text-uppercase: uppercase;
+@bg-white: #ffffff;
+@bg-blue: #096dd9;
+@text-orange: #ffa500;
+@bg-orange: #ffa500;
+@text-green: #00b050;
+@bg-green: #00b050;
+
+.main-container {
+    padding: 0;
+    background: #fff;
+    min-height: 500px;
+    overflow: hidden;
+    position: relative;
+
+    .img {
+        width: 100%;
+        height: 300px;
+        -o-object-fit: contain;
+        object-fit: contain;
+    }
+
+    #product {
+        position: relative;
+        background: @bg-white;
+        color: @text-black;
+
+        .product-wrap {
+            padding: 3rem 10rem;
+            position: relative;
+
+            .tab {
+                img {
+                    width: 50px;
+                    height: 50px;
+                }
+
+                p {
+                    margin-top: 1em;
+                    color: @text-blue;
+                    font-weight: bold;
+                }
+
+                .active {
+                    opacity: 1;
+                }
+
+                .inactive {
+                    opacity: .5;
+                    transition: opacity ease-in-out .5s;
+                }
+            }
+
+            .tab-content {
+                margin-top: 1em;
+            }
+
+            #page-1 {
+                padding: 10px 0;
+                background: @bg-green;
+                margin-top: 2em;
+                margin-bottom: 2em;
+
+                h1, h2, h3, h4 {
+                    font-weight: bold;
+                    color: @text-white;
+                }
+
+                img {
+                    .img;
+                }
+            }
+
+            #page-2 {
+                margin-top: 2em;
+                margin-bottom: 2em;
+
+                h3 {
+                    font-weight: bold;
+                    color: @text-green;
+                    text-align: left;
+                }
+
+                p {
+                    text-align: justify;
+                }
+
+                img {
+                    .img;
+                }
+            }
+
+            #page-3 {
+                margin-top: 2em;
+                margin-bottom: 2em;
+
+                td {
+                    text-align: center;
+                }
+
+                h2.title {
+                    line-height: 3em;
+                    background: @bg-green;
+                    color: @text-white;
+                    font-weight: bold;
+                    padding-left: 1em;
+                }
+
+                img {
+                    .img;
+                }
+            }
+
+            #page-4 {
+                margin-top: 2em;
+                margin-bottom: 2em;
+
+                img {
+                    .img;
+                    height: 200px;
+                    padding: 1em;
+                }
+
+                h3 {
+                    text-align: center;
+                    line-height: 3em;
+                    background: @bg-green;
+                    color: @text-white;
+                    font-weight: bold;
+                    border-right: 1px solid #fff;
+                }
+
+                a {
+                    cursor: initial;
+                }
+            }
+
+            #page-5 {
+                margin-top: 2em;
+                margin-bottom: 2em;
+
+                img {
+                    .img;
+
+                    height: 200px;
+                }
+                
+                h2 {
+                    line-height: 3em;
+                    background: @bg-green;
+                    color: @text-white;
+                    font-weight: bold;
+                    padding-left: 1em;
+                }
+
+                h3 {
+                    color: @text-green;
+                    font-weight: bold;
+                    margin-left: 2em;
+                }
+            }
+
+            #page-6 {
+                margin-top: 2em;
+                margin-bottom: 2em;
+
+                img {
+                    .img;
+                    -o-object-fit: cover;
+                    object-fit: cover;
+                }
+            }
+
+            #page-7 {
+                margin-top: 2em;
+                margin-bottom: 2em;
+            }
+        }
+    }
+}

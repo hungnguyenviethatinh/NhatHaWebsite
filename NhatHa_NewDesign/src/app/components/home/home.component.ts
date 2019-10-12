@@ -20,27 +20,27 @@ export class HomeComponent implements OnInit {
     {
       img: '/assets/images/services/1.JPG',
       name: 'Phân Tích Hệ Thống Điện',
-      href: '/dichvu/phan-tich-he-thong-dien',
+      href: '/dich-vu/phan-tich-he-thong-dien',
     },
     {
       img: '/assets/images/services/2.JPG',
       name: 'Thử Nghiệm Và Nghiệm Thu',
-      href: '/dichvu/thu-nghiem-va-nghiem-thu',
+      href: '/dich-vu/thu-nghiem-va-nghiem-thu',
     },
     {
       img: '/assets/images/services/3.JPG',
       name: 'Phân Tích Chất Lượng Điện',
-      href: '/dichvu/phan-tich-chat-luong-dien-nang',
+      href: '/dich-vu/phan-tich-chat-luong-dien-nang',
     },
     {
       img: '/assets/images/services/4.JPG',
       name: 'Bảo Trì Ngăn Ngừa',
-      href: '/dichvu/chuong-trinh-bao-tri-dien',
+      href: '/dich-vu/chuong-trinh-bao-tri-dien',
     },
     {
       img: '/assets/images/services/5.JPG',
       name: 'Bảo Trì Theo Trình Trạng',
-      href: '/dichvu/bao-tri-theo-tinh-trang',
+      href: '/dich-vu/bao-tri-theo-tinh-trang',
     },
   ];
 
@@ -48,17 +48,17 @@ export class HomeComponent implements OnInit {
     {
       img: '/assets/images/products/Iriss.JPG',
       name: 'Cửa Sổ Hồng Ngoại',
-      href: '/sanpham/cua-so-hong-ngoai',
+      href: '/san-pham/cua-so-hong-ngoai',
     },
     {
       img: '/assets/images/products/Cordex.JPG',
       name: 'Máy Giám Sát Tình Trạng Thiết Bị',
-      href: '/sanpham/may-do-tinh-trang-thiet-bi',
+      href: '/san-pham/may-do-tinh-trang-thiet-bi',
     },
     {
       img: '/assets/images/products/Emerson.PNG',
       name: 'Giải Pháp Giám Sát Liên Tục Tình Trạng Thiết Bị',
-      href: '/sanpham/giai-phap-giam-sat-lien-tuc',
+      href: '/san-pham/giai-phap-giam-sat-lien-tuc',
     },
   ];
 

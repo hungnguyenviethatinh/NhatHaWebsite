@@ -1,6 +1,6 @@
 <div class="main-container">
     <div class="clearfix" id="product">
-        <div class="product-wrap">
+        <div id="iriss-product" class="product-wrap">
             <nz-affix>
                 <div class="tab" style="background: #fff; padding: 10px 0;" nz-row nzType="flex" [nzGutter]="nzGutter" nzJustify="start"
                     nzAlign="middle">
@@ -21,7 +21,7 @@
                             <div nz-row nzType="flex" [nzGutter]="nzGutter" nzJustify="space-between">
                                 <div nz-col nzXs="24" nzSm="24" nzMd="8">
                                     <ng-container *ngFor="let left of tab.contents.cover.left">
-                                        <h3>{{left.h3}} <sub *ngIf="left.sub">{{left.sub}}</sub></h3>
+                                        <h3>{{left.h3}}</h3>
                                         <p>{{left.p}}</p>
                                     </ng-container>
                                 </div>
@@ -128,7 +128,7 @@
                                     <div nz-row nzType="flex" [nzGutter]="nzGutter" nzJustify="center" nzAlign="middle">
                                         <div nz-col nzSpan="12">
                                             <video width="100%" height="320" controls>
-                                                <source [src]="tab.contents.detail.demos.video" type="video/3gp">
+                                                <source [src]="tab.contents.detail.demos.video" type="video/mp4">
                                             </video>
                                         </div>
                                     </div>

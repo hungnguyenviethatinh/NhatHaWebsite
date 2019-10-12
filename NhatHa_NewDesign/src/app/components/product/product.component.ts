@@ -10,17 +10,17 @@ export class ProductComponent implements OnInit {
     {
       align: 'left',
       img: '/assets/images/products/cate_1.png',
-      href: '/sanpham/cua-so-hong-ngoai',
+      href: '/san-pham/cua-so-hong-ngoai',
     },
     {
       align: 'right',
       img: '/assets/images/products/cate_2.png',
-      href: '/sanpham/may-do-tinh-trang-thiet-bi',
+      href: '/san-pham/may-do-tinh-trang-thiet-bi',
     },
     {
       align: 'left',
       img: '/assets/images/products/cate_3.png',
-      href: '/sanpham/giai-phap-giam-sat-lien-tuc',
+      href: '/san-pham/giai-phap-giam-sat-lien-tuc',
     },
   ];
 

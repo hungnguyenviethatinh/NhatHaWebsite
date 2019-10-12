@@ -48,12 +48,12 @@ export class PowerSystemStudyComponent implements OnInit {
           {
             img: '/assets/images/services/01/link-1.jpg',
             title: 'TÍNH TOÁN NGẮN MẠCH – PHỐI HỢP BẢO VỆ HỆ THỐNG',
-            href: '/dichvu/tinh-toan-ngan-mach-phoi-hop-bao-ve',
+            href: '/dich-vu/tinh-toan-ngan-mach-phoi-hop-bao-ve',
           },
           {
             img: '/assets/images/services/01/link-2.jpg',
             title: 'PHÂN TÍCH NGUY CƠ HỒ QUANG ĐIỆN',
-            href: '/dichvu/phan-tich-nguy-co-ho-quang-dien',
+            href: '/dich-vu/phan-tich-nguy-co-ho-quang-dien',
           },
         ],
       },

@@ -45,6 +45,16 @@ import { OnlineMonitorComponent } from './components/product/online-monitor/onli
 import { IrissProductComponent } from './components/product/iriss-product/iriss-product.component';
 import { CordexProductComponent } from './components/product/cordex-product/cordex-product.component';
 import { IrissDetailComponent } from './components/product/iriss-product/iriss-detail/iriss-detail.component';
+import { CordexCameraComponent } from './components/product/cordex-camera/cordex-camera.component';
+import { CameraDetailComponent } from './components/product/cordex-camera/camera-detail/camera-detail.component';
+import { IrissUltrsoundComponent } from './components/product/iriss-ultrsound/iriss-ultrsound.component';
+import { IrissDischargeComponent } from './components/product/iriss-discharge/iriss-discharge.component';
+import { EmersonIntellisawComponent } from './components/product/emerson-intellisaw/emerson-intellisaw.component';
+import { CordexAutoCameraComponent } from './components/product/cordex-auto-camera/cordex-auto-camera.component';
+import { IrissDeltaComponent } from './components/product/iriss-delta/iriss-delta.component';
+import { IrissSentryComponent } from './components/product/iriss-sentry/iriss-sentry.component';
+import { CordexMn4000Component } from './components/product/cordex-auto-camera/cordex-mn4000/cordex-mn4000.component';
+import { CordexMn4100Component } from './components/product/cordex-auto-camera/cordex-mn4100/cordex-mn4100.component';
 
 registerLocaleData(vi);
 
@@ -77,6 +87,16 @@ registerLocaleData(vi);
     IrissProductComponent,
     CordexProductComponent,
     IrissDetailComponent,
+    CordexCameraComponent,
+    CameraDetailComponent,
+    IrissUltrsoundComponent,
+    IrissDischargeComponent,
+    EmersonIntellisawComponent,
+    CordexAutoCameraComponent,
+    IrissDeltaComponent,
+    IrissSentryComponent,
+    CordexMn4000Component,
+    CordexMn4100Component,
   ],
   imports: [
     BrowserModule,
