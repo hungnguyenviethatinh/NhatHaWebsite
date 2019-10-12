@@ -23,8 +23,9 @@
                             <ng-container *ngIf="paragraph.type === 'img'">
                                 <img [src]="paragraph.img" alt="" />
                             </ng-container>
-                            <ng-container *ngIf="paragraph.type === 'blue' || paragraph.type === 'yellow' || paragraph.type === 'red'">
-                                <h4 [ngStyle]="{'color': paragraph.type === 'blue' ? 'blue' : (paragraph.type === 'yellow' ? 'yellow' : 'red')}">
+                            <ng-container 
+                                *ngIf="paragraph.type === 'blue' || paragraph.type === 'yellow' || paragraph.type === 'orange' || paragraph.type === 'red'">
+                                <h4 [ngStyle]="{'color': paragraph.type}">
                                     {{paragraph.text}}
                                 </h4>
                             </ng-container>

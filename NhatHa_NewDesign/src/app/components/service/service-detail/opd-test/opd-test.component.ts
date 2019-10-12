@@ -95,6 +95,21 @@ export class OpdTestComponent implements OnInit {
             ],
           },
           {
+            type: 'orange',
+            text: 'Bước 3 – Giám sát',
+          },
+          {
+            type: 'p',
+            texts: [
+              'Đôi khi, bạn cần phải tiến hành giám sát liên tục trong một giai đoạn ngắn. '
+              + 'Chúng tôi có thể cài đặt một thiết bị đo nhằm giám sát trong thời gian một giờ đồng hồ '
+              + 'cho đến vài tháng. Thông qua việc liên tục giám sát, đội ngũ chúng tôi sẽ nắm được '
+              + 'biểu hiện trạng thái thay đổi theo thời gian để có thể đưa ra nhận định và khuyến cáo chính xác. '
+              + 'Giải pháp này mang lại lợi ích lớn nhất giống như lắp đặt tại chỗ một hệ thống giám sát với '
+              + 'chi phí thấp hơn và có thể chuyển đổi tuần tự giữa nhiều trạm khác nhau.',
+            ],
+          },
+          {
             type: 'red',
             text: 'Bước 4 – Quản lý',
           },
