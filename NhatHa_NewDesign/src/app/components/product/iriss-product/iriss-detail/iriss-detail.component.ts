@@ -25,8 +25,7 @@ export class IrissDetailComponent implements OnInit, AfterViewInit {
     cover: {
       left: [
         {
-          h3: 'Công Nghệ Poly-View System',
-          sub: 'TM',
+          h3: 'Công Nghệ Poly-View System™',
           p: 'Một cách mạng trong công nghệ cửa sổ hồng ngoại, sản phẩm dòng VPT ứng dụng công nghệ độc quyền '
             + 'Poly-View System™ khiến việc quan sát trực tiếp trở nên dễ dàng đồng thời cho phép truyền dẫn tia '
             + 'hồng ngoại trên toàn dải đo.',
@@ -310,7 +309,7 @@ export class IrissDetailComponent implements OnInit, AfterViewInit {
           '/assets/images/products/01/01/01/6.jpg',
           '/assets/images/products/01/01/01/7.jpg',
         ],
-        video: '/assets/images/products/01/01/01/video.3gp',
+        video: '/assets/images/products/01/01/01/video.mp4',
       },
       documents: [
         'Product Data Sheet – VPT Series',
@@ -333,8 +332,7 @@ export class IrissDetailComponent implements OnInit, AfterViewInit {
             + 'dòng CAP CT có diện tích miền nhìn lớn nhất với tấm phim quang học dạng trong suốt.',
         },
         {
-          h3: 'Công Nghệ Poly-View System',
-          sub: 'TM',
+          h3: 'Công Nghệ Poly-View System™',
           p: 'Tấm phim polyme hồng ngoại áp dụng công nghệ Poly-View System™ được kết hợp với '
             + 'lưới trợ lực chuẩn công nghiệp cho phép làm việc với bất cứ máy chụp hình nhiệt '
             + 'để giám sát tình trạng thiết bị điện sâu bên trong.',
@@ -608,7 +606,7 @@ export class IrissDetailComponent implements OnInit, AfterViewInit {
           '/assets/images/products/01/01/02/8.jpg',
           '/assets/images/products/01/01/02/9.jpg',
         ],
-        video: '/assets/images/products/01/01/02/video.3gp',
+        video: '/assets/images/products/01/01/02/video.mp4',
       },
       documents: [
         'Product Data Sheet – CAP-CT Series',
@@ -633,8 +631,7 @@ export class IrissDetailComponent implements OnInit, AfterViewInit {
             + 'trong suốt dòng đời hoạt động, cũng như chịu được tác động của nước, sóng siêu âm và không bị hao mòn theo thời gian.',
         },
         {
-          h3: 'Công Nghệ Poly-View System',
-          sub: 'TM',
+          h3: 'Công Nghệ Poly-View System™',
           p: 'Tấm phim polyme hồng ngoại áp dụng công nghệ Poly-View System™ được kết hợp với lưới trợ lực '
             + 'chuẩn công nghiệp cho phép làm việc với bất cứ máy chụp hình nhiệt để giám sát tình trạng thiết '
             + 'bị điện sâu bên trong. Tấm phim polyme của '
@@ -907,7 +904,7 @@ export class IrissDetailComponent implements OnInit, AfterViewInit {
           '/assets/images/products/01/01/03/6.jpg',
           '/assets/images/products/01/01/03/1.png',
         ],
-        video: '/assets/images/products/01/01/03/video.3gp',
+        video: '/assets/images/products/01/01/03/video.mp4',
       },
       documents: [
         'Product Data Sheet – CAP-ENV Series',
@@ -931,8 +928,7 @@ export class IrissDetailComponent implements OnInit, AfterViewInit {
             + 'đảm bảo người thực hiện công tác không chịu rủi ro nguy hiểm điện giật hoặc chảy nổ do hồ quang điện.',
         },
         {
-          h3: 'Công Nghệ Poly-View System',
-          sub: 'TM',
+          h3: 'Công Nghệ Poly-View System™',
           p: 'Tấm phim polyme hồng ngoại áp dụng công nghệ Poly-View System™ được kết hợp với lưới trợ lực chuẩn công nghiệp '
             + 'cho phép làm việc với bất cứ máy chụp hình nhiệt để giám sát tình trạng thiết bị điện sâu bên trong.',
         },
@@ -1181,7 +1177,7 @@ export class IrissDetailComponent implements OnInit, AfterViewInit {
           '/assets/images/products/01/01/04/6.png',
           '/assets/images/products/01/01/04/7.png',
         ],
-        video: '/assets/images/products/01/01/04/video.3gp',
+        video: '/assets/images/products/01/01/04/video.mp4',
       },
       documents: [
         'Product Data Sheet – CAP-F Series',
@@ -1200,7 +1196,7 @@ export class IrissDetailComponent implements OnInit, AfterViewInit {
         ...this.style,
         'border-right': '1px dashed #096dd9',
       },
-      click: () => { this.router.navigate(['/sanpham/cua-so-hong-ngoai']); },
+      click: () => { this.router.navigate(['/san-pham/cua-so-hong-ngoai']); },
     },
     {
       active: false,
@@ -1210,7 +1206,7 @@ export class IrissDetailComponent implements OnInit, AfterViewInit {
         ...this.style,
         'border-right': '1px dashed #096dd9',
       },
-      click: () => { this.router.navigate(['/sanpham/san-pham-iriss']); },
+      click: () => { this.router.navigate(['/san-pham/san-pham-iriss']); },
     },
     {
       active: true,
@@ -1227,7 +1223,7 @@ export class IrissDetailComponent implements OnInit, AfterViewInit {
           activeTab.active = false;
           this.tabs.find(t => t.id === 'dong-vpt').active = true;
         }
-        this.router.navigate(['/sanpham/san-pham-iriss/thong-tin-san-pham'], {
+        this.router.navigate(['/san-pham/san-pham-iriss/chi-tiet'], {
           fragment: 'dong-vpt',
         });
       },
@@ -1247,7 +1243,7 @@ export class IrissDetailComponent implements OnInit, AfterViewInit {
           activeTab.active = false;
           this.tabs.find(t => t.id === 'dong-cap-ct').active = true;
         }
-        this.router.navigate(['/sanpham/san-pham-iriss/thong-tin-san-pham'], {
+        this.router.navigate(['/san-pham/san-pham-iriss/chi-tiet'], {
           fragment: 'dong-cap-ct',
         });
       },
@@ -1267,7 +1263,7 @@ export class IrissDetailComponent implements OnInit, AfterViewInit {
           activeTab.active = false;
           this.tabs.find(t => t.id === 'dong-cap-env').active = true;
         }
-        this.router.navigate(['/sanpham/san-pham-iriss/thong-tin-san-pham'], {
+        this.router.navigate(['/san-pham/san-pham-iriss/chi-tiet'], {
           fragment: 'dong-cap-env',
         });
       },
@@ -1287,7 +1283,7 @@ export class IrissDetailComponent implements OnInit, AfterViewInit {
           activeTab.active = false;
           this.tabs.find(t => t.id === 'dong-flex-ir').active = true;
         }
-        this.router.navigate(['/sanpham/san-pham-iriss/thong-tin-san-pham'], {
+        this.router.navigate(['/san-pham/san-pham-iriss/chi-tiet'], {
           fragment: 'dong-flex-ir',
         });
       },
@@ -1370,7 +1366,7 @@ export class IrissDetailComponent implements OnInit, AfterViewInit {
   ngAfterViewInit() {
     const sectionId = document.getElementById(this.fragment);
     const offsetTop = sectionId.offsetTop;
-    window.scrollTo(0, offsetTop);
+    window.scrollTo(0, offsetTop + 10);
   }
 
   @HostListener('window:scroll', ['$event'])
@@ -1383,7 +1379,7 @@ export class IrissDetailComponent implements OnInit, AfterViewInit {
         if (activeTab) {
           activeTab.active = false;
           this.tabs.find(t => t.id === id).active = true;
-          this.router.navigate(['/sanpham/san-pham-iriss/thong-tin-san-pham'], {
+          this.router.navigate(['/san-pham/san-pham-iriss/chi-tiet'], {
             fragment: id,
           });
         }

@@ -69,12 +69,12 @@ export class ConditionalMaintainComponent implements OnInit {
           {
             img: '/assets/images/services/05/link-1.JPG',
             title: 'QUÉT NHIỆT HỒNG NGOẠI THIẾT BỊ ĐIỆN',
-            href: '/dichvu/quet-nhiet-hong-ngoai-thiet-bi-dien',
+            href: '/dich-vu/quet-nhiet-hong-ngoai-thiet-bi-dien',
           },
           {
             img: '/assets/images/services/05/link-2.jpg',
             title: 'ĐO PHÓNG ĐIỆN CỤC BỘ',
-            href: '/dichvu/do-phong-dien-cuc-bo',
+            href: '/dich-vu/do-phong-dien-cuc-bo',
           },
         ],
       },

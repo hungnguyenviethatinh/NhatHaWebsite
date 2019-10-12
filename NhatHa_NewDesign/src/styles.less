@@ -19,6 +19,7 @@
 @text-uppercase: uppercase;
 @bg-white: #ffffff;
 @bg-blue: #096dd9;
+@bg-orange: #ffa500;
 
 .cdk-overlay-container {
     ul.ant-menu-sub {
@@ -68,7 +69,7 @@ li:not(.ant-menu-submenu) {
     text-align: justify;
 }
 
-.features, .certificates {
+#iriss-product {
     .ant-table-thead {
         tr {
             th {
@@ -92,9 +93,62 @@ li:not(.ant-menu-submenu) {
     }
 }
 
+#cordex-product {
+    .ant-table-thead {
+        tr {
+            th {
+                text-align: left;
+                color: @text-white;
+                font-weight: bold;
+                background: @bg-orange;
+                border-bottom: 2px solid #fff;
+            }
+        }
+    }
+
+    .ant-table-tbody {
+        tr:nth-chlld(even) {
+            background-color: #ffedcc;
+        }
+        
+        tr:nth-chlld(odd) {
+            background-color: #fff6e6;
+        }
+    }
+}
+
+
+#delta-t-product {
+    .ant-table-thead {
+        tr {
+            th {
+                text-align: left;
+                color: @text-white;
+                font-weight: bold;
+                background: #4472c4;
+                border-bottom: 2px solid #fff;
+            }
+        }
+    }
+
+    .ant-table-tbody {
+        tr:nth-chlld(even) {
+            background-color: #b1c5e7;
+        }
+        
+        tr:nth-chlld(odd) {
+            background-color: #d8e2f3;
+        }
+    }
+}
+
 .demos {
     [nz-carousel-content] {
         height: 300px;
         margin: 24px 0;
     }
 }
+
+// [class$="-wrap"] {
+
+// }

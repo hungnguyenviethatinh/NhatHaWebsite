@@ -8,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class InfraredWindowComponent implements OnInit {
   products = [
     {
-      href: '/sanpham/san-pham-iriss',
+      href: '/san-pham/san-pham-iriss',
       name: 'Cửa sổ hồng ngoại Iriss',
       img: [
         '/assets/images/products/01/1.jpg',
@@ -19,7 +19,7 @@ export class InfraredWindowComponent implements OnInit {
       + 'Sau cùng, các sản phẩm cửa sổ của IRISS được bảo hành trọn đời cho các lỗi sản phẩm.',
     },
     {
-      href: '/sanpham/san-pham-cordex',
+      href: '/san-pham/cua-so-hong-ngoai-cordex',
       name: 'Của sổ hồng ngoại Cordex',
       img: [
         '/assets/images/products/01/2.png',
