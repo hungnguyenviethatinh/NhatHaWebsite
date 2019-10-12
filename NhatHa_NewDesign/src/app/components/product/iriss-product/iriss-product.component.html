@@ -3,18 +3,18 @@
         <div class="product-wrap">
             <div class="tab">
                 <div nz-row nzType="flex" [nzGutter]="nzGutter" nzJustify="start" nzAlign="middle">
-                    <div nz-col *ngFor="let tab of tabs" [ngStyle]="tab.style" (click)="tab.click()">
-                        <img [src]="tab.img" alt="">
-                        <p>{{tab.name}}</p>
+                    <div nz-col *ngFor="let tab_iripro of tabs; let i=index" [ngStyle]="tab_iripro.style" (click)="tab_iripro.click()">
+                        <img [src]="tab_iripro.img" alt="">
+                        <p>{{('tab_iripro.name'+i)|translate}}</p>
                     </div>
                 </div>
                 <div class="tab-content">
                     <div nz-row nzType="flex" [nzGutter]="nzGutter" nzJustify="start" nzAlign="middle"
-                        *ngFor="let tab of tabs">
-                        <div nz-col nzXs="24" nzSm="24" nzMd="6" *ngFor="let content of tab.contents">
-                            <a routerLink="{{content.href}}" fragment="{{content.fragment}}">
-                                <img [src]="content.img" alt="">
-                                <h3>{{content.text}}</h3>
+                        *ngFor="let tab_iripro of tabs; let i=index">
+                        <div nz-col nzXs="24" nzSm="24" nzMd="6" *ngFor="let content_iripro of tab_iripro.contents; let j=index">
+                            <a routerLink="{{content_iripro.href}}" fragment="{{content_iripro.fragment}}">
+                                <img [src]="content_iripro.img" alt="">
+                                <h3>{{('content_iripro.text'+i+j)|translate}}</h3>
                             </a>
                         </div>
                     </div>

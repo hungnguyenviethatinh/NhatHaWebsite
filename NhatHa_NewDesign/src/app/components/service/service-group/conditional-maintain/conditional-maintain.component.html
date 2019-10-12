@@ -9,44 +9,44 @@
             </div>
             <div class="clearfix" id="subject" nz-row nzType="flex" nzJustify="space-between" nzAlign="middle">
                 <div class="subject" nz-col nzSpan="24">
-                    <h1>{{service.data.subject}}</h1>
+                    <h1 translate>{{'service.data.subject_conditional_maintain'}}</h1>
                 </div>
             </div>
             <div class="clearfix" id="body">
                 <div class="body" nz-row nzType="flex" nzJustify="space-between" nzAlign="middle"
-                    *ngFor="let body of service.data.body">
+                    *ngFor="let body_conditional_maintain of service.data.body; let i=index">
                     <div nz-col nzSpan="24">
-                        <h3 class="title">{{body.title}}</h3>
-                        <div *ngIf="body.contentType === 0" class="content">
-                            <p *ngFor="let content of body.contents">
-                                {{content}}
+                        <h3 class="title">{{('body_conditional_maintain.title'+i)|translate}}</h3>
+                        <div *ngIf="body_conditional_maintain.contentType === 0" class="content">
+                            <p *ngFor="let content_conditional_maintain of body_conditional_maintain.contents; let j=index">
+                                {{('content_conditional_maintain'+i+j)|translate}}
                             </p>
                         </div>
-                        <div *ngIf="body.contentType === 1" class="content">
+                        <div *ngIf="body_conditional_maintain.contentType === 1" class="content">
                             <ul>
-                                <li *ngFor="let content of body.contents">
-                                    {{content}}
+                                <li *ngFor="let content_conditional_maintain of body_conditional_maintain.contents; let j=index">
+                                    {{('content_conditional_maintain'+i+j)|translate}}
                                 </li>
                             </ul>
                         </div>
                         <div nz-row nzType="flex" nzJustify="center" nzAlign="middle"
-                        *ngIf="body.figures.length > 0">
-                            <div class="figure" nz-col nzXs="24" nzSm="24" nzMd="10" *ngFor='let figure of body.figures'>
-                                <img [src]="figure" [alt]="body.title">
+                        *ngIf="body_conditional_maintain.figures.length > 0">
+                            <div class="figure" nz-col nzXs="24" nzSm="24" nzMd="10" *ngFor='let figure of body_conditional_maintain.figures'>
+                                <img [src]="figure" [alt]="body_conditional_maintain.title">
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="clearfix" id="footer">
-                <p>{{service.data.footer.title}}</p>
+                <p translate>{{'service.data.footer.title_conditional_maintain'}}</p>
                 <div class="link" nz-row nzType="flex" nzJustify="space-between" nzAlign="middle"
-                *ngFor="let link of service.data.footer.links">
+                *ngFor="let link_conditional_maintain of service.data.footer.links; let i=index">
                     <div nz-col nzXs="24" nzSm="24" nzMd="4">
-                        <img [src]="link.img" [alt]="link.title">
+                        <img [src]="link_conditional_maintain.img" [alt]="link_conditional_maintain.title">
                     </div>
                     <div nz-col nzXs="24" nzSm="24" nzMd="20">
-                        <a routerLink="{{link.href}}">{{link.title}}</a>
+                        <a routerLink="{{link_conditional_maintain.href}}">{{('link.title_conditional_maintain'+i)|translate}}</a>
                     </div>
                 </div>
             </div>
