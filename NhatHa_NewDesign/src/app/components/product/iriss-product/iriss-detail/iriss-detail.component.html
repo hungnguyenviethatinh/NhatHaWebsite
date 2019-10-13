@@ -4,15 +4,15 @@
             <nz-affix>
                 <div class="tab" style="background: #fff; padding: 10px 0;" nz-row nzType="flex" [nzGutter]="nzGutter" nzJustify="start"
                     nzAlign="middle">
-                    <div nz-col *ngFor="let tab of tabs" [ngStyle]="tab.style"
-                        [ngClass]="tab.active ? 'active' : 'inactive'" (click)="tab.click()">
-                        <img [src]="tab.img" alt="">
-                        <p>{{tab.name}}</p>
+                    <div nz-col *ngFor="let tab_iridetail of tabs; let i=index" [ngStyle]="tab_iridetail.style"
+                        [ngClass]="tab_iridetail.active ? 'active' : 'inactive'" (click)="tab_iridetail.click()">
+                        <img [src]="tab_iridetail.img" alt="">
+                        <p>{{('tab_iridetail.name'+i)|translate}}</p>
                     </div>
                 </div>
             </nz-affix>
             <div class="tab-content">
-                <div nz-row nzType="flex" [nzGutter]="nzGutter" nzJustify="start" *ngFor="let tab of tabs">
+                <div nz-row nzType="flex" [nzGutter]="nzGutter" nzJustify="start" *ngFor="let tab of tabs; let i=index;">
                     <ng-container *ngIf="tab.id && tab.contents">
                         <div nz-col nzSpan="24"
                             [ngStyle]="tab.active ? open: null" 
@@ -20,53 +20,53 @@
                             class="tab-hide">
                             <div nz-row nzType="flex" [nzGutter]="nzGutter" nzJustify="space-between">
                                 <div nz-col nzXs="24" nzSm="24" nzMd="8">
-                                    <ng-container *ngFor="let left of tab.contents.cover.left">
-                                        <h3>{{left.h3}}</h3>
-                                        <p>{{left.p}}</p>
+                                    <ng-container *ngFor="let left_irissdetail of tab.contents.cover.left; let j=index">
+                                        <h3>{{('left_irissdetail.h3'+i+j)|translate}}</h3>
+                                        <p>{{('left_irissdetail.p'+i+j)|translate}}</p>
                                     </ng-container>
                                 </div>
                                 <div nz-col nzXs="24" nzSm="24" nzMd="8">
                                     <img [src]="tab.contents.cover.center" alt="">
                                 </div>
                                 <div nz-col nzXs="24" nzSm="24" nzMd="8">
-                                    <ng-container *ngFor="let rigth of tab.contents.cover.right">
-                                        <h3>{{rigth.h3}}</h3>
-                                        <p>{{rigth.p}}</p>
+                                    <ng-container *ngFor="let rigth_irissdetail of tab.contents.cover.right; let j=index">
+                                        <h3>{{('rigth_irissdetail.h3'+i+j)|translate}}</h3>
+                                        <p>{{('rigth_irissdetail.p'+i+j)|translate}}</p>
                                     </ng-container>
                                 </div>
                             </div>
                             <div id="feature-{{tab.id}}" class="tab" nz-row nzType="flex" nzJustify="start"
                                 nzAlign="middle" style="background: #096dd9; margin-top: 2em;">
-                                <div nz-col nzSpan="4" *ngFor="let tab of secondTabs" [ngStyle]="tab.style"
-                                    [ngClass]="(tab.active || tab.id === 0) ?  'active' : 'inactive'"
-                                    (click)="tab.click()">
-                                    <p style="color: #fff; text-align: center;">{{tab.name}}</p>
+                                <div nz-col nzSpan="4" *ngFor="let tab_iriss_detail of secondTabs; let j=index;" [ngStyle]="tab_iriss_detail.style"
+                                    [ngClass]="(tab_iriss_detail.active || tab_iriss_detail.id === 0) ?  'active' : 'inactive'"
+                                    (click)="tab_iriss_detail.click()">
+                                    <p style="color: #fff; text-align: center;">{{('tab_iriss_detail.name'+i+j)|translate}}</p>
                                 </div>
                             </div>
                             <div class="tab-content">
                                 <div class="features">
-                                    <nz-table nzBordered *ngFor="let table of tab.contents.detail.features">
+                                    <nz-table nzBordered *ngFor="let table of tab.contents.detail.features; let j=index;">
                                         <thead>
                                             <tr>
-                                                <th [nzWidth]="th.colspan === 2 ? '300px' : 'auto'"
-                                                    *ngFor="let th of table.th" [attr.colspan]="th.colspan">
-                                                    {{th.text}}
+                                                <th [nzWidth]="th_iriss_detail.colspan === 2 ? '300px' : 'auto'"
+                                                    *ngFor="let th_iriss_detail of table.th; let z=index;" [attr.colspan]="th_iriss_detail.colspan">
+                                                    {{('th_iriss_detail.text'+i+j+z)|translate}}
                                                 </th>
                                             </tr>
                                         </thead>
                                         <tbody>
-                                            <tr *ngFor="let tr of table.tr">
-                                                <td *ngFor="let text of tr">{{text}}</td>
+                                            <tr *ngFor="let tr of table.tr; let z=index">
+                                                <td *ngFor="let texttr_iriss_detail of tr; let x=index">{{('texttr_iriss_detail'+i+j+z+x)|translate}}</td>
                                             </tr>
                                         </tbody>
                                     </nz-table>
                                 </div>
                                 <div id="certificate-{{tab.id}}" class="tab" nz-row nzType="flex" nzJustify="start"
                                     nzAlign="middle" style="background: #096dd9; margin-top: 2em;">
-                                    <div nz-col nzSpan="4" *ngFor="let tab of secondTabs" [ngStyle]="tab.style"
-                                        [ngClass]="(tab.active || tab.id === 1) ?  'active' : 'inactive'"
-                                        (click)="tab.click()">
-                                        <p style="color: #fff; text-align: center;">{{tab.name}}</p>
+                                    <div nz-col nzSpan="4" *ngFor="let tab_iriss_detail of secondTabs; let j=index" [ngStyle]="tab_iriss_detail.style"
+                                        [ngClass]="(tab_iriss_detail.active || tab_iriss_detail.id === 1) ?  'active' : 'inactive'"
+                                        (click)="tab_iriss_detail.click()">
+                                        <p style="color: #fff; text-align: center;">{{('tab_iriss_detail.name'+i+j)|translate}}</p>
                                     </div>
                                 </div>
                                 <div class="certificates">
@@ -78,27 +78,27 @@
                                         </div>
                                     </div>
                                     <nz-table class="table-stripped" nzBordered
-                                        *ngFor="let table of tab.contents.detail.certificates.tables">
+                                        *ngFor="let table of tab.contents.detail.certificates.tables; let j=index">
                                         <thead>
                                             <tr>
-                                                <th [nzWidth]="th.colspan === 2 ? '300px' : 'auto'"
-                                                    *ngFor="let th of table.th" [attr.colspan]="th.colspan">
-                                                    {{th.text}}
+                                                <th [nzWidth]="th_iriss_detail3.colspan === 2 ? '300px' : 'auto'"
+                                                    *ngFor="let th_iriss_detail3 of table.th; let z=index" [attr.colspan]="th_iriss_detail3.colspan">
+                                                    {{('th_iriss_detail3.text'+i+j+z)|translate}}
                                                 </th>
                                             </tr>
                                         </thead>
                                         <tbody>
                                             <ng-container *ngIf="table.tr">
-                                                <tr *ngFor="let tr of table.tr">
-                                                    <td *ngFor="let text of tr">{{text}}</td>
+                                                <tr *ngFor="let tr of table.tr; let z=index">
+                                                    <td *ngFor="let text_iriss_detail3 of tr; let x=index">{{('text_iriss_detail3'+i+j+z+x)|translate}}</td>
                                                 </tr>
                                             </ng-container>
                                             <ng-container *ngIf="table.p">
                                                 <tr>
                                                     <td>
-                                                        <p *ngFor="let p of table.p">
-                                                            <strong>{{p[0]}}</strong>
-                                                            {{p[1]}}
+                                                        <p *ngFor="let p of table.p; let j=index">
+                                                            <strong>{{('p[0]'+i+j)|translate}}</strong>
+                                                            {{('p[1]'+i+j)|translate}}
                                                         </p>
                                                     </td>
                                                 </tr>
@@ -108,10 +108,10 @@
                                 </div>
                                 <div id="demo-{{tab.id}}" class="tab" nz-row nzType="flex" nzJustify="start"
                                     nzAlign="middle" style="background: #096dd9; margin-top: 2em;">
-                                    <div nz-col nzSpan="4" *ngFor="let tab of secondTabs" [ngStyle]="tab.style"
-                                        [ngClass]="(tab.active || tab.id === 2) ?  'active' : 'inactive'"
-                                        (click)="tab.click()">
-                                        <p style="color: #fff; text-align: center;">{{tab.name}}</p>
+                                    <div nz-col nzSpan="4" *ngFor="let tab_iriss_detail of secondTabs; let j=index" [ngStyle]="tab_iriss_detail.style"
+                                        [ngClass]="(tab_iriss_detail.active || tab_iriss_detail.id === 2) ?  'active' : 'inactive'"
+                                        (click)="tab_iriss_detail.click()">
+                                        <p style="color: #fff; text-align: center;">{{('tab_iriss_detail.name'+i+j)|translate}}</p>
                                     </div>
                                 </div>
                                 <div class="demos">
@@ -135,15 +135,15 @@
                                 </div>
                                 <div id="document-{{tab.id}}" class="tab" nz-row nzType="flex" nzJustify="start"
                                     nzAlign="middle" style="background: #096dd9; margin-top: 2em;">
-                                    <div nz-col nzSpan="4" *ngFor="let tab of secondTabs" [ngStyle]="tab.style"
-                                        [ngClass]="(tab.active || tab.id === 3) ? 'active' : 'inactive'"
-                                        (click)="tab.click()">
-                                        <p style="color: #fff; text-align: center;">{{tab.name}}</p>
+                                    <div nz-col nzSpan="4" *ngFor="let tab_iriss_detail of secondTabs; let j=index" [ngStyle]="tab_iriss_detail.style"
+                                        [ngClass]="(tab_iriss_detail.active || tab_iriss_detail.id === 3) ? 'active' : 'inactive'"
+                                        (click)="tab_iriss_detail.click()">
+                                        <p style="color: #fff; text-align: center;">{{('tab_iriss_detail.name'+i+j)|translate}}</p>
                                     </div>
                                 </div>
                                 <div class="documents">
-                                    <p *ngFor="let document of tab.contents.detail.documents">
-                                        {{document}}
+                                    <p *ngFor="let document_iriss_detail of tab.contents.detail.documents; let j=index">
+                                        {{('document_iriss_detail'+i+j)|translate}}
                                     </p>
                                 </div>
                             </div>
