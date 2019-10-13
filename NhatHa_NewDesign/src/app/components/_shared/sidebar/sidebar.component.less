@@ -1,0 +1,46 @@
+@text-blue: #096dd9;
+@text-white: #ffffff;
+@text-uppercase: uppercase;
+@bg-white: #ffffff;
+@bg-blue: #096dd9;
+
+ul {
+    &[nz-menu] {
+        border: none;
+    }
+
+    &[id="top-bar"] {
+        display: flex;
+        justify-content: flex-end;
+        line-height: 10px;
+        margin-bottom: 1em;
+
+        li {
+            border: none;
+            color: @text-blue;
+            padding-top: 5px;
+            padding-bottom: 5px;
+        }
+    }
+}
+
+#hideSideBar {
+    padding-right: 5px;
+    padding-left: 5px;
+}
+
+#switchLanguage {
+    margin-right: auto;
+    padding-right: 5px;
+    padding-left: 5px;
+
+    button {
+        color: @text-blue;
+        height: 17px;
+        font-size: 10px;
+    }
+
+    &:hover {
+        border: none;
+    }
+}

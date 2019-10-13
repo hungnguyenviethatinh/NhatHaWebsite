@@ -5,12 +5,21 @@ import { AppRoutingModule } from './app-routing.module';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
+import { TranslateCompiler, TranslateLoader, TranslateModule } from '@ngx-translate/core';
+import { TranslateHttpLoader } from '@ngx-translate/http-loader';
+import { HttpClient } from '@angular/common/http';
+import { TranslateMessageFormatCompiler } from 'ngx-translate-messageformat-compiler';
+
 import {
-  NzAffixModule, NzAnchorModule, NzCarouselModule, NzDividerModule, NzButtonModule, NzFormModule, NzTableModule,
-  NzBackTopModule, NzGridModule, NzIconModule, NzInputModule, NzMenuModule, NzTypographyModule, NZ_I18N, vi_VN
+  NzAffixModule, NzAnchorModule, NzCarouselModule, NzDividerModule,
+  NzButtonModule, NzFormModule, NzTableModule, NzDrawerModule,
+  NzBackTopModule, NzGridModule, NzIconModule, NzInputModule,
+  NzMenuModule, NzTypographyModule, NZ_I18N, vi_VN
 } from 'ng-zorro-antd';
 import { registerLocaleData } from '@angular/common';
 import vi from '@angular/common/locales/vi';
+
 import { AppComponent } from './components/app.component';
 import { HomeComponent } from './components/home/home.component';
 import { EquipmentComponent } from './components/company/equipment/equipment.component';
@@ -29,13 +38,6 @@ import { PowerQualityComponent } from './components/service/service-detail/power
 import { EpMaintainComponent } from './components/service/service-detail/ep-maintain/ep-maintain.component';
 import { InfraredScanComponent } from './components/service/service-detail/infrared-scan/infrared-scan.component';
 import { OpdTestComponent } from './components/service/service-detail/opd-test/opd-test.component';
-// import ngx-translate and the http loader
-import {TranslateCompiler,TranslateLoader, TranslateModule} from '@ngx-translate/core';
-import {TranslateHttpLoader} from '@ngx-translate/http-loader';
-import {HttpClient} from '@angular/common/http';
-
-// import ngx-translate-messageformat-compiler
-import {TranslateMessageFormatCompiler} from 'ngx-translate-messageformat-compiler';
 import { PowerSystemStudyComponent } from './components/service/service-group/power-system-study/power-system-study.component';
 import { ConditionalMaintainComponent } from './components/service/service-group/conditional-maintain/conditional-maintain.component';
 import { ProductComponent } from './components/product/product.component';
@@ -55,6 +57,10 @@ import { IrissDeltaComponent } from './components/product/iriss-delta/iriss-delt
 import { IrissSentryComponent } from './components/product/iriss-sentry/iriss-sentry.component';
 import { CordexMn4000Component } from './components/product/cordex-auto-camera/cordex-mn4000/cordex-mn4000.component';
 import { CordexMn4100Component } from './components/product/cordex-auto-camera/cordex-mn4100/cordex-mn4100.component';
+import { HeaderComponent } from './components/_shared/header/header.component';
+import { FooterComponent } from './components/_shared/footer/footer.component';
+import { SidebarComponent } from './components/_shared/sidebar/sidebar.component';
+import { MenuComponent } from './components/_shared/menu/menu.component';
 
 registerLocaleData(vi);
 
@@ -97,12 +103,17 @@ registerLocaleData(vi);
     IrissSentryComponent,
     CordexMn4000Component,
     CordexMn4100Component,
+    HeaderComponent,
+    FooterComponent,
+    SidebarComponent,
+    MenuComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     NzAffixModule,
     NzBackTopModule,
+    NzDrawerModule,
     NzTableModule,
     NzAnchorModule,
     NzFormModule,
@@ -118,20 +129,18 @@ registerLocaleData(vi);
     ReactiveFormsModule,
     HttpClientModule,
     BrowserAnimationsModule,
-     // ngx-translate and the loader module
-     HttpClientModule,
-     TranslateModule.forRoot({
-         loader: {
-             provide: TranslateLoader,
-             useFactory: HttpLoaderFactory,
-             deps: [HttpClient]
-         },
-         // compiler configuration
-         compiler: {
-          provide: TranslateCompiler,
-          useClass: TranslateMessageFormatCompiler
+    HttpClientModule,
+    TranslateModule.forRoot({
+      loader: {
+        provide: TranslateLoader,
+        useFactory: HttpLoaderFactory,
+        deps: [HttpClient]
+      },
+      compiler: {
+        provide: TranslateCompiler,
+        useClass: TranslateMessageFormatCompiler
       }
-     })
+    })
   ],
   providers: [{ provide: NZ_I18N, useValue: vi_VN }],
   bootstrap: [AppComponent]

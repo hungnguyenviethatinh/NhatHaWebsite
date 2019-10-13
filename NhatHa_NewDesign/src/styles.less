@@ -12,6 +12,7 @@
 @import "../node_modules/ng-zorro-antd/typography/style/entry.less";
 @import "../node_modules/ng-zorro-antd/table/style/entry.less";
 @import "../node_modules/ng-zorro-antd/back-top/style/entry.less";
+@import "../node_modules/ng-zorro-antd/drawer/style/entry.less";
 
 @text-blue: #096dd9;
 @text-white: #ffffff;
@@ -149,6 +150,18 @@ li:not(.ant-menu-submenu) {
     }
 }
 
-// [class$="-wrap"] {
+.ant-drawer-header {
+    box-shadow: 0 2px 8px #f0f1f2;
+    -moz-box-shadow: 0 2px 8px #f0f1f2;
+    -webkit-box-shadow: 0 2px 8px #f0f1f2;
+    -o-box-shadow: 0 2px 8px #f0f1f2;
+    -ms-box-shadow: 0 2px 8px #f0f1f2;
+}
 
-// }
+.ant-drawer-title {
+    text-align: center;
+    
+    h4, h5 {
+        color: @text-blue;
+    }
+}

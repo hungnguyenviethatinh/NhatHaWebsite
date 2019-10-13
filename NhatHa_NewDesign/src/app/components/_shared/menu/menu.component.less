@@ -1,0 +1,29 @@
+@text-blue: #096dd9;
+@text-white: #ffffff;
+@text-uppercase: uppercase;
+@bg-white: #ffffff;
+@bg-blue: #096dd9;
+
+ul {
+    &[nz-menu] {
+        border: none;
+    }
+
+    // &[id="menu"] {
+    //     display: flex;
+    //     justify-content: space-between;
+    //     margin-top: 1em;
+    // }
+    
+    > li {
+        text-transform: @text-uppercase;
+        color: @text-blue;
+        font-weight: bold;
+
+        > a {
+            text-transform: @text-uppercase;
+            color: @text-blue;
+            font-weight: bold;
+        }
+    }
+}
