@@ -42,15 +42,19 @@
                                         </thead>
                                         <tbody>
                                             <tr *ngFor="let row_power_quality of paragraph_power_quality.rows; let z=index;">
-                                                <td>{{('row_power_quality.col_0'+i+j+z) |translate}}</td>
+                                                <td>{{('row_power_quality.col_0'+i+j+z) | translate}}</td>
                                                 <td>
                                                     <img [src]="row_power_quality.col_1" alt="">
                                                 </td>
                                                 <td>
-                                                    <p style="text-align: justify"><strong translate>Nguyên nhân:
-                                                        </strong>{{('row_power_quality.col_2.reason'+j+j+z) | translate}}</p>
-                                                    <p style="text-align: justify"><strong translate>Hệ quả:
-                                                        </strong>{{('row_power_quality.col_2.result'+i+j+z)|translate}}</p>
+                                                    <p style="text-align: justify">
+                                                        <strong translate>Nguyên nhân:</strong>
+                                                        {{('row_power_quality.col_2.reason'+j+j+z) | translate}}
+                                                    </p>
+                                                    <p style="text-align: justify">
+                                                        <strong translate>Hệ quả:</strong>
+                                                        {{('row_power_quality.col_2.result'+i+j+z) | translate}}
+                                                    </p>
                                                 </td>
                                             </tr>
                                         </tbody>

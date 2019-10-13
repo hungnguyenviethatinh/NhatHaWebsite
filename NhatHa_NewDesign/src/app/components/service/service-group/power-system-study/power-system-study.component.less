@@ -19,7 +19,8 @@
         color: @text-black;
 
         .service-wrap {
-            padding: 3rem 10rem;
+            padding-top: 3rem;
+            padding-bottom: 3rem;
             position: relative;
             
             #banner {
@@ -30,9 +31,21 @@
 
                     img {
                         width: 100%;
-                        height: 300px;
-                        -o-object-fit: cover;
-                        object-fit: cover;
+                        height: 150px;
+                        -o-object-fit: contain;
+                        object-fit: contain;
+
+                        @media screen and (min-width: 768px) {
+                            height: 200px;
+                        }
+
+                        @media screen and (min-width: 992px) {
+                            height: 250px;
+                        }
+
+                        @media screen and (min-width: 1200px) {
+                            height: 300px;
+                        }
                     }
                 }
             }

@@ -165,3 +165,18 @@ li:not(.ant-menu-submenu) {
         color: @text-blue;
     }
 }
+
+[class$="-wrap"] {
+    padding-left: 1rem;
+    padding-right: 1rem;
+
+    @media screen and (min-width: 992px) {
+        padding-left: 3rem;
+        padding-right: 3rem;
+    }
+
+    @media screen and (min-width: 1200px) {
+        padding-left: 10rem;
+        padding-right: 10rem;
+    }
+}
