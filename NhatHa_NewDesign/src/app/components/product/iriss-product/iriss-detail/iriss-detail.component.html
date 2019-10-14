@@ -12,7 +12,7 @@
                 </div>
             </nz-affix>
             <div class="tab-content">
-                <div nz-row nzType="flex" [nzGutter]="nzGutter" nzJustify="start" *ngFor="let tab of tabs">
+                <div nz-row nzType="flex" [nzGutter]="nzGutter" nzJustify="start" *ngFor="let tab of tabs; let i = index">
                     <ng-container *ngIf="tab.id && tab.contents">
                         <div nz-col nzSpan="24"
                             [ngStyle]="tab.active ? open: null" 

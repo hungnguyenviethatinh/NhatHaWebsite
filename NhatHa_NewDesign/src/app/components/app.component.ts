@@ -8,7 +8,6 @@ import { TranslateService } from '@ngx-translate/core';
   styleUrls: ['./app.component.less']
 })
 export class AppComponent {
-  year = new Date().getFullYear();
   language = 'vn';
   sideBarVisible = false;
 

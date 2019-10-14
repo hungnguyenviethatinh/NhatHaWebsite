@@ -1,7 +1,7 @@
-<nz-carousel nzEffect="fade" nzDots="{{bannersOfProject.length > 1 ? true : false}}" nzAutoPlay>
+<nz-carousel nzEffect="fade" nzDots="{{banners.length > 1 ? true : false}}" nzAutoPlay>
     <div nz-carousel-content *ngFor="let banner of banners">
         <img [src]="banner.img" alt="Đối tác của chúng tôi">
-        <h1 nz-title>{{bannersOfProject.caption}}</h1>
+        <h1 nz-title>{{banner.caption}}</h1>
     </div>
 </nz-carousel>
 <div class="main-container">
