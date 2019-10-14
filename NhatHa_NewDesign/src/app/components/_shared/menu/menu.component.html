@@ -1,20 +1,20 @@
 <ul id="menu" nz-menu [nzMode]="menuMode" [ngStyle]="style">
     <li nz-menu-item nzSelected>
-        <a (click)="closeSideBar($event)" [routerLink]="['/trang-chu']" translate>
-            Giới thiệu
+        <a (click)="closeSideBar($event)" [routerLink]="['/trang-chu']">
+            {{'Giới thiệu' | translate}}
         </a>
     </li>
     <li nz-submenu nzMenuClassName="submenu-company" [nzTitle]="'Doanh Nghiệp' | translate"
         (click)="switchRouter('/doanh-nghiep/tamnhin-sumenh-giatri', $event)">
         <ul>
             <li nz-menu-item>
-                <a (click)="closeSideBar($event)" [routerLink]="['/doanh-nghiep/tamnhin-sumenh-giatri']" translate>
-                    Tầm nhìn - Sứ mệnh - Giá trị
+                <a (click)="closeSideBar($event)" [routerLink]="['/doanh-nghiep/tamnhin-sumenh-giatri']">
+                    {{'Tầm nhìn - Sứ mệnh - Giá trị' | translate}}
                 </a>
             </li>
             <li nz-menu-item>
-                <a (click)="closeSideBar($event)" [routerLink]="['/doanh-nghiep/thiet-bi']" translate>
-                    Thiết bị
+                <a (click)="closeSideBar($event)" [routerLink]="['/doanh-nghiep/thiet-bi']">
+                    {{'Thiết bị' | translate}}
                 </a>
             </li>
         </ul>
@@ -192,8 +192,8 @@
         [nzTitle]="'Hỗ Trợ' | translate">
         <ul>
             <li nz-menu-item>
-                <a (click)="closeSideBar($event)" [routerLink]="['/ho-tro/phan-mem']" translate>
-                    Phần Mềm
+                <a (click)="closeSideBar($event)" [routerLink]="['/ho-tro/phan-mem']">
+                    {{'Phần Mềm' | translate}}
                 </a>
             </li>
             <li nz-menu-item>
@@ -209,7 +209,7 @@
                 <a (click)="closeSideBar($event)" [routerLink]="['/lien-he']" translate>Thông Tin Liên Hệ</a>
             </li>
             <li nz-menu-item>
-                <a (click)="closeSideBar($event)" [routerLink]="['/tuyen-dung']" translate>Việc Làm</a>
+                <a (click)="closeSideBar($event)" [routerLink]="['/lien-he/tuyen-dung']" translate>Việc Làm</a>
             </li>
         </ul>
     </li>
