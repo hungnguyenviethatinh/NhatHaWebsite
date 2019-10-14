@@ -8,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class ProjectComponent implements OnInit {
   bannersOfProject = [
     {
-      img: '../../../assets/images/projects/nhatha-projects.JPG',
+      img: '/assets/images/projects/nhatha-projects.JPG',
       caption: 'Dự án cuả chúng tôi'
     },
   ];
@@ -19,7 +19,7 @@ export class ProjectComponent implements OnInit {
       group: 'Công nghiệp nặng',
       projects: [
         {
-          img: '../../../assets/images/projects/01/01/Pomina.gif',
+          img: '/assets/images/projects/01/01/Pomina.gif',
           name: 'Nhà Máy Thép Pomina 2 – Bà Rịa Vũng Tàu',
           descriptions: [
             'Cung cấp Sản phẩm – Thiết bị Cao thế - Trung thế cho trạm phân phối.',
@@ -27,7 +27,7 @@ export class ProjectComponent implements OnInit {
           ],
         },
         {
-          img: '../../../assets/images/projects/01/02/Viglacera.jpg',
+          img: '/assets/images/projects/01/02/Viglacera.jpg',
           name: 'Nhà Máy Kính Nổi Viglacera – Bình Dương',
           descriptions: [
             'Cung cấp Sản phẩm – Thiết bị Trung thế - Hạ thế cho trạm và tủ phân phối.',
@@ -36,14 +36,14 @@ export class ProjectComponent implements OnInit {
           ],
         },
         {
-          img: '../../../assets/images/projects/01/03/Formosa Ha Tinh.jpg',
+          img: '/assets/images/projects/01/03/Formosa Ha Tinh.jpg',
           name: 'Nhà Máy Gang Thép Formosa – Hà Tĩnh',
           descriptions: [
             'Cung cấp Dịch vụ đo và đánh giá tình trạng (PD Online) cho Busway Trung thế.',
           ],
         },
         {
-          img: '../../../assets/images/projects/01/04/Formosa Nhon Trach.png',
+          img: '/assets/images/projects/01/04/Formosa Nhon Trach.png',
           name: 'Nhà Máy Formosa Nhơn Trạch – Đồng Nai',
           descriptions: [
             'Cung cấp Dịch vụ đo và đánh giá tình trạng (PD Online) cho Hộp nối cáp Trung thế.',
@@ -57,7 +57,7 @@ export class ProjectComponent implements OnInit {
       group: 'Nhà máy điện',
       projects: [
         {
-          img: '../../../assets/images/projects/02/01/Nhiet Dien Phu My.jpg',
+          img: '/assets/images/projects/02/01/Nhiet Dien Phu My.jpg',
           name: 'Nhiệt Điện Phú Mỹ 2.2 – Bà Rịa Vũng Tàu',
           descriptions: [
             'Cung cấp Sản phẩm – Thiết bị Trung thế - Hạ thế cho trạm và tủ phân phối.',
@@ -72,7 +72,7 @@ export class ProjectComponent implements OnInit {
       group: 'Dầu khí',
       projects: [
         {
-          img: '../../../assets/images/projects/03/Tau FPSO Lewek Emas.jpg',
+          img: '/assets/images/projects/03/Tau FPSO Lewek Emas.jpg',
           name: 'Tàu FPSO Lewek Emas – Bà Rịa Vũng Tàu',
           descriptions: [
             'Cung cấp Dịch vụ bảo trì – thí nghiệm điện.',
@@ -80,7 +80,7 @@ export class ProjectComponent implements OnInit {
           ],
         },
         {
-          img: '../../../assets/images/projects/03/Chim Sao Platform.jpg',
+          img: '/assets/images/projects/03/Chim Sao Platform.jpg',
           name: 'Giàn Khoan Chim Sáo – Bà Rịa Vũng Tàu',
           descriptions: [
             'Cung cấp Dịch vụ bảo trì – thí nghiệm điện.',
@@ -94,7 +94,7 @@ export class ProjectComponent implements OnInit {
       group: 'Điện tử - Bán dẫn',
       projects: [
         {
-          img: '../../../assets/images/projects/04/01/ON Semiconductor Binh Duong.jpg',
+          img: '/assets/images/projects/04/01/ON Semiconductor Binh Duong.jpg',
           name: 'Nhà máy ON Semiconductor – Bình Dương',
           descriptions: [
             'Cung cấp Dịch vụ bảo trì – thí nghiệm điện.',
@@ -103,7 +103,7 @@ export class ProjectComponent implements OnInit {
           ],
         },
         {
-          img: '../../../assets/images/projects/04/02/ON Semiconductor Dong Nai.jpg',
+          img: '/assets/images/projects/04/02/ON Semiconductor Dong Nai.jpg',
           name: 'Nhà máy ON Semiconductor – Đồng Nai',
           descriptions: [
             'Cung cấp Dịch vụ bảo trì – thí nghiệm điện.',
@@ -113,7 +113,7 @@ export class ProjectComponent implements OnInit {
           ],
         },
         {
-          img: '../../../assets/images/projects/04/03/Nha May II-VI.png',
+          img: '/assets/images/projects/04/03/Nha May II-VI.png',
           name: 'Nhà máy II-VI Optical VSIP1 – Bình Dương',
           descriptions: [
             'Cung cấp Dịch vụ bảo trì – thí nghiệm điện.',
@@ -122,7 +122,7 @@ export class ProjectComponent implements OnInit {
           ],
         },
         {
-          img: '../../../assets/images/projects/04/04/Nha May Jabil.jpg',
+          img: '/assets/images/projects/04/04/Nha May Jabil.jpg',
           name: 'Nhà máy Jabil SHTP – Hồ Chí Minh',
           descriptions: [
             'Cung cấp Dịch vụ bảo trì – thí nghiệm điện.',
@@ -137,7 +137,7 @@ export class ProjectComponent implements OnInit {
       group: 'Hàng tiêu dùng',
       projects: [
         {
-          img: '../../../assets/images/projects/05/01/Nha May P&G Dong An.JPG',
+          img: '/assets/images/projects/05/01/Nha May P&G Dong An.JPG',
           name: 'Nhà máy P&G Đồng An – Bình Dương',
           descriptions: [
             'Cung cấp Dịch vụ bảo trì – thí nghiệm điện.',
@@ -147,7 +147,7 @@ export class ProjectComponent implements OnInit {
           ],
         },
         {
-          img: '../../../assets/images/projects/05/02/Nha May P&G Ben Cat.jpg',
+          img: '/assets/images/projects/05/02/Nha May P&G Ben Cat.jpg',
           name: 'Nhà máy P&G Bến Cát – Bình Dương',
           descriptions: [
             'Cung cấp Dịch vụ bảo trì – thí nghiệm điện.',
@@ -156,7 +156,7 @@ export class ProjectComponent implements OnInit {
           ],
         },
         {
-          img: '../../../assets/images/projects/05/03/Nha May Kimberly Clark.jpg',
+          img: '/assets/images/projects/05/03/Nha May Kimberly Clark.jpg',
           name: 'Nhà máy Kimberly Clark – Bình Dương',
           descriptions: [
             'Cung cấp Dịch vụ bảo trì – thí nghiệm điện.',
@@ -164,7 +164,7 @@ export class ProjectComponent implements OnInit {
           ],
         },
         {
-          img: '../../../assets/images/projects/05/04/Nha May Colgate My Phuoc.jpg',
+          img: '/assets/images/projects/05/04/Nha May Colgate My Phuoc.jpg',
           name: 'Nhà máy Colgate Mỹ Phước – Bình Dương',
           descriptions: [
             'Cung cấp Dịch vụ bảo trì – thí nghiệm điện.',
@@ -178,7 +178,7 @@ export class ProjectComponent implements OnInit {
       group: 'Thực phẩm',
       projects: [
         {
-          img: '../../../assets/images/projects/06/01/Nha May Masan Binh Duong.jpg',
+          img: '/assets/images/projects/06/01/Nha May Masan Binh Duong.jpg',
           name: 'Nhà máy Masan – Bình Dương',
           descriptions: [
             'Cung cấp Dịch vụ bảo trì – thí nghiệm điện.',
@@ -187,7 +187,7 @@ export class ProjectComponent implements OnInit {
           ],
         },
         {
-          img: '../../../assets/images/projects/06/02/Nha May Perfetti.jpg',
+          img: '/assets/images/projects/06/02/Nha May Perfetti.jpg',
           name: 'Nhà máy Perfetti Van Melle – Bình Dương',
           descriptions: [
             'Cung cấp Dịch vụ bảo trì – thí nghiệm điện.',
@@ -195,7 +195,7 @@ export class ProjectComponent implements OnInit {
           ],
         },
         {
-          img: '../../../assets/images/projects/06/03/Nha May Yakult.jpg',
+          img: '/assets/images/projects/06/03/Nha May Yakult.jpg',
           name: 'Nhà máy Yakult – Bình Dương',
           descriptions: [
             'Cung cấp Dịch vụ bảo trì – thí nghiệm điện',
@@ -204,7 +204,7 @@ export class ProjectComponent implements OnInit {
           ],
         },
         {
-          img: '../../../assets/images/projects/06/04/Nha May Nestle Dong Nai.jpg',
+          img: '/assets/images/projects/06/04/Nha May Nestle Dong Nai.jpg',
           name: 'Nhà máy Nestle’ – Đồng Nai',
           descriptions: [
             'Cung cấp Dịch vụ bảo trì – thí nghiệm điện.',
@@ -218,7 +218,7 @@ export class ProjectComponent implements OnInit {
       group: 'Cảng - Kho bãi',
       projects: [
         {
-          img: '../../../assets/images/projects/07/01/Cang SITV.jpg',
+          img: '/assets/images/projects/07/01/Cang SITV.jpg',
           name: 'Cảng Quốc Tế Saigon – Bà Rịa Vũng Tàu',
           descriptions: [
             'Cung cấp Dịch vụ bảo trì – thí nghiệm điện.',
@@ -227,7 +227,7 @@ export class ProjectComponent implements OnInit {
           ],
         },
         {
-          img: '../../../assets/images/projects/07/02/Cang Vopak.jpg',
+          img: '/assets/images/projects/07/02/Cang Vopak.jpg',
           name: 'Kho Hóa Chất Vopak – Đồng Nai',
           descriptions: [
             'Cung cấp Dịch vụ bảo trì – thí nghiệm điện.',
@@ -235,7 +235,7 @@ export class ProjectComponent implements OnInit {
           ],
         },
         {
-          img: '../../../assets/images/projects/07/03/Kho Linfox Unilever.jpg',
+          img: '/assets/images/projects/07/03/Kho Linfox Unilever.jpg',
           name: 'Kho Linfox Unilever – Bình Dương',
           descriptions: [
             'Cung cấp Dịch vụ bảo trì – thí nghiệm điện.',
@@ -245,7 +245,7 @@ export class ProjectComponent implements OnInit {
           ],
         },
         {
-          img: '../../../assets/images/projects/07/04/Kho DKSH.jpg',
+          img: '/assets/images/projects/07/04/Kho DKSH.jpg',
           name: 'Kho DKSH VSIP – Bình Dương',
           descriptions: [
             'Cung cấp Dịch vụ bảo trì – thí nghiệm điện.',
@@ -259,7 +259,7 @@ export class ProjectComponent implements OnInit {
       group: 'Tòa nhà văn phòng',
       projects: [
         {
-          img: '../../../assets/images/projects/08/01/Toa Nha IPC.jpg',
+          img: '/assets/images/projects/08/01/Toa Nha IPC.jpg',
           name: 'Tòa nhà IPC – Hồ Chí Minh',
           descriptions: [
             'Cung cấp Dịch vụ bảo trì – thí nghiệm điện.',
@@ -267,7 +267,7 @@ export class ProjectComponent implements OnInit {
           ],
         },
         {
-          img: '../../../assets/images/projects/08/02/Toa Nha TNR.jpg',
+          img: '/assets/images/projects/08/02/Toa Nha TNR.jpg',
           name: 'Tòa nhà TNR – Hồ Chí Minh',
           descriptions: [
             'Cung cấp Dịch vụ bảo trì – thí nghiệm điện.',
@@ -282,14 +282,14 @@ export class ProjectComponent implements OnInit {
       group: 'Khách sạn - Resort',
       projects: [
         {
-          img: '../../../assets/images/projects/09/01/Khach San Desart.jpg',
+          img: '/assets/images/projects/09/01/Khach San Desart.jpg',
           name: 'Khách sạn DesArt – Hồ Chí Minh',
           descriptions: [
             'Cung cấp Dịch vụ bảo trì – thí nghiệm điện.',
           ],
         },
         {
-          img: '../../../assets/images/projects/09/02/Khach San Intercontinental Nha Trang.jpg',
+          img: '/assets/images/projects/09/02/Khach San Intercontinental Nha Trang.jpg',
           name: 'Khách sạn Intercontinental – Nha Trang',
           descriptions: [
             'Cung cấp Dịch vụ xử lý sự cố theo yêu cầu.',
@@ -297,7 +297,7 @@ export class ProjectComponent implements OnInit {
           ],
         },
         {
-          img: '../../../assets/images/projects/09/03/Khach San New World.jpg',
+          img: '/assets/images/projects/09/03/Khach San New World.jpg',
           name: 'Khách sạn New World – Hồ Chí Minh',
           descriptions: [
             'Cung cấp Dịch vụ bảo trì – thí nghiệm điện.',
