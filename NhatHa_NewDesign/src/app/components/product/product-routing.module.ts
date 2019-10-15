@@ -4,19 +4,12 @@ import { ProductComponent } from './product.component';
 import { InfraredWindowComponent } from './infrared-window/infrared-window.component';
 import { CbmToolComponent } from './cbm-tool/cbm-tool.component';
 import { OnlineMonitorComponent } from './online-monitor/online-monitor.component';
-import { IrissProductComponent } from './iriss-product/iriss-product.component';
 import { CordexProductComponent } from './cordex-product/cordex-product.component';
-import { IrissDetailComponent } from './iriss-product/iriss-detail/iriss-detail.component';
-import { CordexCameraComponent } from './cordex-camera/cordex-camera.component';
-import { CameraDetailComponent } from './cordex-camera/camera-detail/camera-detail.component';
 import { IrissUltrsoundComponent } from './iriss-ultrsound/iriss-ultrsound.component';
 import { IrissDischargeComponent } from './iriss-discharge/iriss-discharge.component';
 import { EmersonIntellisawComponent } from './emerson-intellisaw/emerson-intellisaw.component';
-import { CordexAutoCameraComponent } from './cordex-auto-camera/cordex-auto-camera.component';
 import { IrissDeltaComponent } from './iriss-delta/iriss-delta.component';
 import { IrissSentryComponent } from './iriss-sentry/iriss-sentry.component';
-import { CordexMn4000Component } from './cordex-auto-camera/cordex-mn4000/cordex-mn4000.component';
-import { CordexMn4100Component } from './cordex-auto-camera/cordex-mn4100/cordex-mn4100.component';
 
 const productRoutes: Routes = [
   {
@@ -26,10 +19,8 @@ const productRoutes: Routes = [
     path: 'cua-so-hong-ngoai', component: InfraredWindowComponent,
   },
   {
-    path: 'san-pham-iriss', component: IrissProductComponent,
-  },
-  {
-    path: 'san-pham-iriss/chi-tiet', component: IrissDetailComponent,
+    path: 'san-pham-iriss',
+    loadChildren: () => import('./iriss-product/iriss-product.module').then(mod => mod.IrissProductModule),
   },
   {
     path: 'cua-so-hong-ngoai-cordex', component: CordexProductComponent,
@@ -38,10 +29,8 @@ const productRoutes: Routes = [
     path: 'may-do-tinh-trang-thiet-bi', component: CbmToolComponent,
   },
   {
-    path: 'may-chup-hinh-nhiet-cordex', component: CordexCameraComponent,
-  },
-  {
-    path: 'may-chup-hinh-nhiet-cordex/chi-tiet', component: CameraDetailComponent,
+    path: 'may-chup-hinh-nhiet-cordex',
+    loadChildren: () => import('./cordex-camera/cordex-camera.module').then(mod => mod.CordexCameraModule),
   },
   {
     path: 'may-do-song-sieu-am-iriss', component: IrissUltrsoundComponent,
@@ -56,13 +45,8 @@ const productRoutes: Routes = [
     path: 'emerson-intellisaw', component: EmersonIntellisawComponent,
   },
   {
-    path: 'cordex-automated-camera', component: CordexAutoCameraComponent,
-  },
-  {
-    path: 'cordex-automated-camera/cordex-mn4000', component: CordexMn4000Component,
-  },
-  {
-    path: 'cordex-automated-camera/cordex-mn4100', component: CordexMn4100Component,
+    path: 'cordex-automated-camera',
+    loadChildren: () => import('./cordex-auto-camera/cordex-auto-camera.module').then(mod => mod.CordexAutoCameraModule),
   },
   {
     path: 'iriss-delta-t-alert', component: IrissDeltaComponent,

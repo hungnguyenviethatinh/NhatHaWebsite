@@ -14,8 +14,6 @@ import { FooterComponent } from './footer/footer.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
 import { MenuComponent } from './menu/menu.component';
 
-// registerLocaleData(vi);
-
 @NgModule({
   declarations: [
     HeaderComponent,
