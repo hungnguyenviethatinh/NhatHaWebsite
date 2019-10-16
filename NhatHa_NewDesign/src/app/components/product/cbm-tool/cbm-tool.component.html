@@ -2,15 +2,15 @@
     <div class="clearfix" id="product">
         <div class="product-wrap">
             <div nz-row nzType="flex" nzJustify="space-between" nzAlign="top">
-                <div class="product" nz-col nzXs="24" nzSm="24" nzMd="7" *ngFor="let product of products">
-                    <a routerLink="{{product.href}}">
+                <div class="product" nz-col nzXs="24" nzSm="24" nzMd="7" *ngFor="let product_cbm_tool of products; let i=index">
+                    <a routerLink="{{product_cbm_tool.href}}">
                         <div nz-row nzType="flex" nzJustify="space-between" nzAlign="top">
                             <div nz-col nzSpan="24" style="margin-bottom: 12px;">
-                                <img [src]="product.img" alt="{{product.name}}" />
+                                <img [src]="product_cbm_tool.img" alt="{{product_cbm_tool.name}}" />
                             </div>
                             <div nz-col nzSpan="24" style="background: orange;">
                                 <h2>
-                                    {{product.description}}
+                                    {{('product_cbm_tool.description'+i)|translate}}
                                 </h2>
                             </div>
                         </div>

@@ -3,9 +3,9 @@
         <div class="product-wrap">
             <div class="tab">
                 <div nz-row nzType="flex" [nzGutter]="nzGutter" nzJustify="start" nzAlign="middle">
-                    <div nz-col *ngFor="let tab of tabs" [ngStyle]="tab.style" (click)="tab.click()">
-                        <img [src]="tab.img" alt="">
-                        <p>{{tab.name}}</p>
+                    <div nz-col *ngFor="let tab_cordex_camera of tabs; let i=index" [ngStyle]="tab_cordex_camera.style" (click)="tab_cordex_camera.click()">
+                        <img [src]="tab_cordex_camera.img" alt="">
+                        <p>{{('tab_cordex_camera.name'+i)|translate}}</p>
                     </div>
                 </div>
                 <div class="tab-content">
