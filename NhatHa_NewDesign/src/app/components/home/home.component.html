@@ -7,7 +7,7 @@
     <div class="clearfix" id="service">
         <div class="service-wrap">
             <h2 translate>Dịch Vụ Kỹ Thuật</h2>
-            <div nz-row nzType="flex" nzJustify="space-between" nzAlign="middle">
+            <div nz-row nzType="flex" nzJustify="space-between" nzAlign="middle" style="align-items: initial !important;">
                 <div class="service" nz-col nzXs="24" nzSm="24" nzMd="4" *ngFor="let service of services;let i=index">
                     <a routerLink="{{service.href}}">
                         <img [src]="service.img" alt="{{('service.name'+i)|translate}}" />

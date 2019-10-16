@@ -3,8 +3,8 @@ import { Router, ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'nh-camera-detail',
-  templateUrl: '/camera-detail.component.html',
-  styleUrls: ['/camera-detail.component.less']
+  templateUrl: './camera-detail.component.html',
+  styleUrls: ['./camera-detail.component.less']
 })
 export class CameraDetailComponent implements OnInit, AfterViewInit {
   style = {

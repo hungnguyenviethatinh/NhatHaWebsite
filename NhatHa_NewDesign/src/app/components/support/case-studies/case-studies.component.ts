@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CaseStudiesComponent implements OnInit {
   banners = [
-    '../../../../assets/images/supports/study/Case-Studies.JPG',
+    '/assets/images/supports/study/Case-Studies.JPG',
   ];
 
   constructor() { }

@@ -6,16 +6,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class EquipmentComponent implements OnInit {
   banners = [
-    '../../../../assets/images/company/equipment/Megger Testing Equipment.JPG',
+    '/assets/images/company/equipment/Megger Testing Equipment.JPG',
   ];
-  equipments:any;
-  
+  equipments: any;
 
   constructor() {
       this.equipments = [
         {
           name: 'Siemens - MV Switchgear Station',
-          img: '../../../../assets/images/company/equipment/Siemens - MV Switchgear Station.JPG',
+          img: '/assets/images/company/equipment/Siemens - MV Switchgear Station.JPG',
           contents: [
             {
               key: 'Thiết bị thí nghiệm: ',
@@ -37,7 +36,7 @@ export class EquipmentComponent implements OnInit {
         },
         {
           name: 'ABB Transformer Substation',
-          img: '../../../../assets/images/company/equipment/ABB Transformer Substation.JPG',
+          img: '/assets/images/company/equipment/ABB Transformer Substation.JPG',
           contents: [
             {
               key: 'Thiết bị thí nghiệm: ',
@@ -57,14 +56,15 @@ export class EquipmentComponent implements OnInit {
         },
         {
           name: 'Schneider LV Switchboard',
-          img: '../../../../assets/images/company/equipment/Schneider LV Switchboard.JPG',
+          img: '/assets/images/company/equipment/Schneider LV Switchboard.JPG',
           contents: [
             {
               key: 'Thiết bị thí nghiệm: ',
               value: 'Manta MTS 1710, Programma Sverker 780, Megger MPRT 8415, Vanguard EZCT-2000, '
               + 'HV Hipot CT/PT Tester, Chauvin 8510, Vanguard ATRT-03B, Megger MOM200, HV Hipot GDH-100, '
               + 'Megger BM5200, Fluke 1550B, Kyoritsu 3124, EuroSMC Raptor, Sonel MRU-200, Chauvin 6250, '
-              + 'Kyoritsu 6050, Fluke 1630, Fluke 6500, Schneider FFTK, ABB Ekip T&P, GE GTUTK20, Siemens WLTS, All-Test III BJM, Hioki 3555.',
+              + 'Kyoritsu 6050, Fluke 1630, Fluke 6500, Schneider FFTK, ABB Ekip T&P, GE GTUTK20, '
+              + 'Siemens WLTS, All-Test III BJM, Hioki 3555.',
             },
             {
               key: 'Thiết bị bảo trì: ',
@@ -77,7 +77,6 @@ export class EquipmentComponent implements OnInit {
           ],
         },
       ];
-    
    }
 
   ngOnInit() {

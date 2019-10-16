@@ -1,0 +1,38 @@
+<nz-drawer [nzClosable]="false" [nzVisible]="visible" [nzTitle]="nzTitle" (nzOnClose)="close()" nzPlacement="left"
+    nzWidth="100%" nzWrapClassName="mobileSideBar">
+    <nh-menu [menuMode]="'inline'" (switchRouterEvent)="switchRouter($event)" (closeSideBarEvent)="close()">
+    </nh-menu>
+    <ng-template #nzTitle>
+        <div nz-row nzType="flex" nzJustify="flex-end" nzAlign="middle">
+            <div nz-col nzSpan="24">
+                <ul id="top-bar" nz-menu nzMode="horizontal">
+                    <!-- <li nz-menu-item>
+                                    <a href="tel:(+84 28) 6258 1796">
+                                        <i nz-icon nzType="phone" nzTheme="outline"></i>
+                                        (+84 28) 6258 1796
+                                    </a>
+                                </li>
+                                <li nz-menu-item>
+                                    <a href="mailto:sale@nhatha-electric.com">
+                                        <i nz-icon nzType="mail" nzTheme="outline"></i>
+                                        sale@nhatha-electric.com
+                                    </a>
+                                </li> -->
+                    <li nz-menu-item id="switchLanguage">
+                        <button nz-button nzSize="small" nzShape="round" (click)="switchLanguage($event)">
+                            {{language === 'vn' ? 'English' : 'Tiếng Việt'}}
+                        </button>
+                    </li>
+                    <li nz-menu-item id="hideSideBar">
+                        <i (click)="close()" style="vertical-align: middle;" nz-icon nzType="menu-fold"
+                            nzTheme="outline"></i>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <h5 nz-title translate>
+            Công ty Kỹ thuật Điện - Năng lượng Nhật Hạ</h5>
+        <h4 nz-title translate>
+            Nơi Khách Hàng Đặt Niềm Tin</h4>
+    </ng-template>
+</nz-drawer>

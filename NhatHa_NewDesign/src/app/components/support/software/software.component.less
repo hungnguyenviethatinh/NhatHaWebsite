@@ -5,7 +5,7 @@
 
 
 [nz-carousel-content] {
-    height: 550px;
+    height: 300px;
     box-shadow: 0 2px 8px #f0f1f2;
     -moz-box-shadow: 0 2px 8px #f0f1f2;
     -webkit-box-shadow: 0 2px 8px #f0f1f2;
@@ -17,6 +17,10 @@
         height: 100%;
         -o-object-fit: cover;
         object-fit: cover;
+    }
+
+    @media screen and (min-width: 992px) {
+        height: 500px;
     }
 }
 
@@ -32,7 +36,8 @@
         background: @bg-white;
 
         .software-wrap {
-            padding: 3rem 10rem;
+            padding-top: 3rem;
+            padding-bottom: 3rem;
             position: relative;
 
             .software {

@@ -82,8 +82,10 @@ export class PowerQualityComponent implements OnInit {
                 col_0: 'Sụt áp/nhấp nháy',
                 col_1: '/assets/images/services/03/t1.png',
                 col_2: {
-                  reason: 'khởi động hoặc dừng một tải lớn ví dụ như một máy nén khí điều hòa hay một động cơ lớn hay các thiết bị hút dòng gián đoạn thường xuyển.',
-                  result: 'gây mất dữ liệu, gây quá nhiệt động cơ, bị tái khởi động thường xuyên và làm giảm đến sức quan sát (bị nhấp nháy).',
+                  reason: 'khởi động hoặc dừng một tải lớn ví dụ như một máy nén khí điều hòa hay một động cơ '
+                  + 'lớn hay các thiết bị hút dòng gián đoạn thường xuyển.',
+                  result: 'gây mất dữ liệu, gây quá nhiệt động cơ, bị tái khởi động thường xuyên và làm giảm '
+                  + 'đến sức quan sát (bị nhấp nháy).',
                 },
               },
               {
@@ -99,7 +101,8 @@ export class PowerQualityComponent implements OnInit {
                 col_1: '/assets/images/services/03/t3.png',
                 col_2: {
                   reason: 'do các tải phi tuyến (hầu như đối với các thiết bị điện tử và điều khiển động cơ).',
-                  result: 'làm quá nhiệt thiết bị điện, dây dẫn và động cơ, gây sai lệch trong điều khiển, tác động rơ-le, nổ cầu chì và sự gia giảm hiệu năng của cả hệ thống.',
+                  result: 'làm quá nhiệt thiết bị điện, dây dẫn và động cơ, gây sai lệch trong điều khiển, '
+                  + 'tác động rơ-le, nổ cầu chì và sự gia giảm hiệu năng của cả hệ thống.',
                 },
               },
               {
@@ -114,8 +117,10 @@ export class PowerQualityComponent implements OnInit {
                 col_0: 'Dòng quá độ và vọt điện áp',
                 col_1: '/assets/images/services/03/t5.png',
                 col_2: {
-                  reason: 'đóng cắt các bộ lọc, đóng cắt các thiết bị có công suất lớn, ngắn mạch đường truyền hoặc bị ảnh hưởng bởi sét đánh.',
-                  result: 'rút ngắn tuổi thọ bóng đèn, dừng hoặc gây hư hỏng thiết bị,máy tính bị treo và mất bộ nhớ, gây sai sót trong xử lý dữ liệu, cháy các thiết bị điện tử và suy giảm cách điện của động cơ và máy biến áp.',
+                  reason: 'đóng cắt các bộ lọc, đóng cắt các thiết bị có công suất lớn, ngắn mạch đường truyền '
+                  + 'hoặc bị ảnh hưởng bởi sét đánh.',
+                  result: 'rút ngắn tuổi thọ bóng đèn, dừng hoặc gây hư hỏng thiết bị,máy tính bị treo và mất '
+                  + 'bộ nhớ, gây sai sót trong xử lý dữ liệu, cháy các thiết bị điện tử và suy giảm cách điện của động cơ và máy biến áp.',
                 },
               },
             ],

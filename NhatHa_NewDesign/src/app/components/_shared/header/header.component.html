@@ -1,0 +1,56 @@
+<header class="clearfix" id="header">
+    <div nz-row>
+        <div nz-col nzSpan="24">
+            <ul id="top-bar" nz-menu nzMode="horizontal">
+                <!-- <li nz-menu-item>
+                        <a href="tel:(+84 28) 6258 1796">
+                            <i nz-icon nzType="phone" nzTheme="outline"></i>
+                            (+84 28) 6258 1796
+                        </a>
+                    </li>
+                    <li nz-menu-item>
+                        <a href="mailto:sale@nhatha-electric.com">
+                            <i nz-icon nzType="mail" nzTheme="outline"></i>
+                            sale@nhatha-electric.com
+                        </a>
+                    </li> -->
+                <li nz-menu-item id="switchLanguage">
+                    <button nz-button nzSize="small" nzShape="round" (click)="switchLanguage($event)">
+                        {{language === 'vn' ? 'English' : 'Tiếng Việt'}}
+                    </button>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div id="desktopHeader" nz-row nzType="flex" nzJustify="space-between" nzAlign="middle">
+        <div nz-col nzXs="24" nzSm="8" nzMd="8" nzLg="5" nzXl="5" nzXXl="4">
+            <a [routerLink]="['/trang-chu']" id="logo">
+                <img src="/assets//images/nhatha-logo.png"
+                    [alt]="'Công ty Kỹ thuật Điện - Năng lượng Nhật Hạ' | translate">
+            </a>
+        </div>
+        <div nz-col nzXs="24" nzSm="16" nzMd="16" nzLg="19" nzXl="19" nzXXl="20">
+            <h4 nz-title translate>
+                Công ty Kỹ thuật Điện - Năng lượng Nhật Hạ</h4>
+            <h3 nz-title translate>
+                Nơi Khách Hàng Đặt Niềm Tin</h3>
+        </div>
+    </div>
+    <div id="mobileHeader" nz-row nzType="flex" nzJustify="space-between" nzAlign="middle">
+        <div nz-col nzSpan="12">
+            <a [routerLink]="['/trang-chu']" id="logo">
+                <img style="height: 60px;" src="/assets//images/nhatha-logo.png"
+                    [alt]="'Công ty Kỹ thuật Điện - Năng lượng Nhật Hạ' | translate">
+            </a>
+        </div>
+        <div nz-col nzSpan="12" style="text-align: right;">
+            <i style="color: #096dd9; cursor: pointer;" (click)="openSideBar()" nz-icon nzType="menu"
+                nzTheme="outline"></i>
+        </div>
+    </div>
+    <div id="menu" nz-row>
+        <div nz-col nzSpan="24">
+            <nh-menu [menuMode]="'horizontal'" (switchRouterEvent)="switchRouter($event)"></nh-menu>
+        </div>
+    </div>
+</header>
