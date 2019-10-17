@@ -4,19 +4,22 @@
             <nz-affix>
                 <div class="tab" style="background: #fff; padding: 10px 0;" nz-row nzType="flex" [nzGutter]="nzGutter"
                     nzJustify="start" nzAlign="middle">
-                    <div nz-col *ngFor="let tab of tabs" [ngStyle]="tab.style" (click)="tab.click()">
-                        <img [src]="tab.img" alt="">
-                        <p>{{tab.name}}</p>
+                    <div nz-col *ngFor="let tab_emer_inte of tabs; let i=index" [ngStyle]="tab_emer_inte.style" (click)="tab_emer_inte.click()">
+                        <img [src]="tab_emer_inte.img" alt="">
+                        <p>{{('tab_emer_inte.name'+i)|translate}}</p>
                     </div>
                 </div>
             </nz-affix>
             <div class="tab-content">
                 <div id="page-1" nz-row nzType="flex" [nzGutter]="nzGutter" nzJustify="space-between" nzAlign="middle">
                     <div nz-col nzXs="24" nzSm="24" nzMd="12">
-                        <h2>Giải Pháp Giám Sát Liên Tục</h2>
-                        <h1>HỆ THỐNG QUAN TRỌNG</h1>
-                        <h3>Giải Pháp Giám Sát Nhiệt – Độ Ẩm – Phóng Điện Cục Bộ Vượt Trội</h3>
-                        <h4>Không cần nguồn, không dây và liên tục 24/7</h4>
+                        <h2>{{'Giải Pháp Giám Sát Liên Tục'|translate}}</h2>
+                        <h1>{{'HỆ THỐNG QUAN TRỌNG'|translate}}
+                        </h1>
+                        <h3>{{'Giải Pháp Giám Sát Nhiệt – Độ Ẩm – Phóng Điện Cục Bộ Vượt Trội'|translate}}
+                        </h3>
+                        <h4>{{'Không cần nguồn, không dây và liên tục 24/7'|translate}}
+                        </h4>
                     </div>
                     <div nz-col nzXs="24" nzSm="24" nzMd="12">
                         <img src="/assets/images/products/03/01/1.PNG" alt="SẢN PHẨM EMERSON INTELLISAW">
@@ -24,21 +27,29 @@
                 </div>
                 <div id="page-2" nz-row nzType="flex" [nzGutter]="nzGutter" nzJustify="space-between" nzAlign="middle">
                     <div nz-col nzXs="24" nzSm="24" nzMd="12">
-                        <h3>Giám sát 24/7</h3>
-                        <p>Giải pháp IntelliSAW cho phép giám sát liên tục theo thời gian thực nhiệt độ, độ ẩm và độ
-                            phóng điện cục bộ.</p>
-                        <h3>Không xâm lấn</h3>
-                        <p>Với công nghệ tự cấp nguồn thụ động của cảm biến SAW, không cần dùng đến pin do đó không phải
-                            tiếp cận thường xuyên.</p>
-                        <h3>Không dây</h3>
-                        <p>Hoàn toàn cách ly điện, không cần lo đến rò hoặc phóng điện</p>
-                        <h3>Cấu hình linh hoạt</h3>
-                        <p>Kết nối với 12 cảm biến đồng thời với nhiều cấu hình kết hợp với nhau 4x3, 3x4, 6x2.</p>
-                        <h3>Giám sát đa điểm</h3>
-                        <p>Ứng dụng đo được đồng thời tất cả các điểm nhiệt tại thanh cái, đầu cực vào ra của máy cắt và
-                            cáp lực.</p>
-                        <h3>Tích hợp </h3>
-                        <p>Hệ thống có thể dễ dàng tích hợp vào hệ thống SCADA</p>
+                        <h3>{{'Giám sát 24/7'|translate}}
+                        </h3>
+                        <p>{{'Giải pháp IntelliSAW cho phép giám sát liên tục theo thời gian thực nhiệt độ, độ ẩm và độ
+                            phóng điện cục bộ.'|translate}}</p>
+                        <h3>{{'Không xâm lấn'|translate}}
+                        </h3>
+                        <p>{{'Với công nghệ tự cấp nguồn thụ động của cảm biến SAW, không cần dùng đến pin do đó không phải
+                            tiếp cận thường xuyên.'|translate}}</p>
+                        <h3>{{'Không dây'|translate}}</h3>
+                        <p>{{'Hoàn toàn cách ly điện, không cần lo đến rò hoặc phóng điện'|translate}}
+                        </p>
+                        <h3>{{'Cấu hình linh hoạt'|translate}}
+                        </h3>
+                        <p>{{'Kết nối với 12 cảm biến đồng thời với nhiều cấu hình kết hợp với nhau 4x3, 3x4, 6x2.'|translate}}
+                        </p>
+                        <h3>{{'Giám sát đa điểm'|translate}}
+                        </h3>
+                        <p>{{'Ứng dụng đo được đồng thời tất cả các điểm nhiệt tại thanh cái, đầu cực vào ra của máy cắt và
+                            cáp lực.'|translate}}</p>
+                        <h3>{{'Tích hợp'|translate}}
+                        </h3>
+                        <p>{{'Hệ thống có thể dễ dàng tích hợp vào hệ thống SCADA'|translate}}
+                        </p>
                     </div>
                     <div nz-col nzXs="24" nzSm="24" nzMd="12">
                         <img src="/assets/images/products/03/01/2.png" alt="SẢN PHẨM EMERSON INTELLISAW">
@@ -46,89 +57,109 @@
                 </div>
                 <div id="page-3" nz-row nzType="flex" [nzGutter]="nzGutter" nzJustify="space-between" nzAlign="middle">
                     <div nz-col nzSpan="24">
-                        <h2 class="title">So Sánh Các Công Nghệ Giám Sát Hệ Thống Quan Trọng</h2>
+                        <h2 class="title">{{'So Sánh Các Công Nghệ Giám Sát Hệ Thống Quan Trọng'|translate}}
+                        </h2>
                     </div>
                     <div nz-col nzSpan="24">
                         <nz-table nzBordered>
                             <thead>
                                 <tr>
                                     <th nzAlign="center" style="background: #ccffcc;">
-                                        <h2 style="color: #fff;">Kết nối dây</h2>
+                                        <h2 style="color: #fff;">{{'Kết nối dây'|translate}}
+                                        </h2>
                                     </th>
                                     <th nzAlign="center" style="background: #ccffcc;">
-                                        <h2 style="color: #fff;">Hồng ngoại</h2>
+                                        <h2 style="color: #fff;">{{'Hồng ngoại'|translate}}
+                                        </h2>
                                     </th>
                                     <th nzAlign="center" style="background: #ccffcc">
-                                        <h2 style="color: #fff;">Không dây</h2>
+                                        <h2 style="color: #fff;">{{'Không dây'|translate}}
+                                        </h2>
                                     </th>
                                     <th nzAlign="center" style="background: #00b050">
-                                        <h2 style="color: #fff;">IntelliSAW</h2>
+                                        <h2 style="color: #fff;">{{'IntelliSAW'|translate}}
+                                        </h2>
                                     </th>
                                 </tr>
                             </thead>
                             <tbody>
                                 <tr>
-                                    <td style="color: #ff0000">Xâm lấn</td>
-                                    <td style="color: #00b050">Không xâm lấn</td>
-                                    <td style="color: #00b050">Không xâm lấn</td>
-                                    <td style="color: #00b050">Không xâm lấn</td>
-                                </tr>
-                                <tr>
-                                    <td style="color: #00b050">Giám sát liên tục</td>
-                                    <td style="color: #ff0000">Không giám sát liên tục</td>
-                                    <td style="color: #00b050">Giám sát liên tục</td>
-                                    <td style="color: #00b050">Giám sát liên tục</td>
-                                </tr>
-                                <tr>
-                                    <td style="color: #ff0000">Có nguy cơ bị phóng điện do dây kết nối bằng
-                                        kim loại
+                                    <td style="color: #ff0000">{{'Xâm lấn'|translate}}
                                     </td>
-                                    <td style="color: #ff0000">Yêu cầu chi phí đầu tư cho cửa sổ - khoảng
-                                        1kUSD/vị trí
+                                    <td style="color: #00b050">{{'Không xâm lấn'|translate}}
                                     </td>
-                                    <td style="color: #00b050">Cách ly điện hoàn toàn nên không bị nguy cơ
-                                        phóng điện
+                                    <td style="color: #00b050">{{'Không xâm lấn'|translate}}
                                     </td>
-                                    <td style="color: #00b050">Cách ly điện hoàn toàn nên không bị nguy cơ
-                                        phóng điện
+                                    <td style="color: #00b050">{{'Không xâm lấn'|translate}}
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td style="color: #ff0000">Có nguy cơ phóng điện khi sử dụng cáp quang
-                                        truyền tín hiệu
+                                    <td style="color: #00b050">{{'Giám sát liên tục'|translate}}
                                     </td>
-                                    <td style="color: #ff0000">Môi trường dơ bẩn có thể làm truyền dẫn không
-                                        tốt
+                                    <td style="color: #ff0000">{{'Không giám sát liên tục'|translate}}
+                                    </td>
+                                    <td style="color: #00b050">{{'Giám sát liên tục'|translate}}
+                                    </td>
+                                    <td style="color: #00b050">{{'Giám sát liên tục'|translate}}
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="color: #ff0000">{{'Có nguy cơ bị phóng điện do dây kết nối bằng
+                                        kim loại'|translate}}
+                                    </td>
+                                    <td style="color: #ff0000">{{'Yêu cầu chi phí đầu tư cho cửa sổ - khoảng
+                                        1kUSD/vị trí'|translate}}
+                                    </td>
+                                    <td style="color: #00b050">{{'Cách ly điện hoàn toàn nên không bị nguy cơ
+                                        phóng điện'|translate}}
+                                    </td>
+                                    <td style="color: #00b050">{{'Cách ly điện hoàn toàn nên không bị nguy cơ
+                                        phóng điện'|translate}}
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="color: #ff0000">{{'Có nguy cơ phóng điện khi sử dụng cáp quang
+                                        truyền tín hiệu'|translate}}
+                                    </td>
+                                    <td style="color: #ff0000">{{'Môi trường dơ bẩn có thể làm truyền dẫn không
+                                        tốt'|translate}}
                                     </td>
                                     <td style="color: #ff0000">
-                                        <p>Phải cấp nguồn chủ động</p>
-                                        <p>Thời lượng của pin &lt; 2 năm</p>
-                                        <p>Cần tắt điện để thay thế</p>
+                                        <p>{{'Phải cấp nguồn chủ động'|translate}}</p>
+                                        <p>{{'Thời lượng của pin &lt; 2 năm'|translate}}
+                                        </p>
+                                        <p>{{'Cần tắt điện để thay thế'|translate}}
+                                        </p>
                                     </td>
                                     <td style="color: #00b050">
-                                        <p>Công nghệ SAW thụ động</p>
-                                        <p>Không cần pin nguồn</p>
-                                        <p>Không cần thay thế & vứt bỏ</p>
+                                        <p>{{'Công nghệ SAW thụ động'|translate}}
+                                        </p>
+                                        <p>{{'Không cần pin nguồn'|translate}}
+                                        </p>
+                                        <p>{{'Không cần thay thế & vứt bỏ'|translate}}
+                                        </p>
                                     </td>
                                 </tr>
                                 <tr>
                                     <td></td>
-                                    <td style="color: #ff0000">Thiết bị quét hồng ngoại đắt tiền
+                                    <td style="color: #ff0000">{{'Thiết bị quét hồng ngoại đắt tiền'|translate}}
+
                                     </td>
                                     <td></td>
-                                    <td style="color: #00b050">Nhiều chuẩn kết nối
-                                        RS485, CAN, Modbus, IEC 61850
+                                    <td style="color: #00b050">{{'Nhiều chuẩn kết nối
+                                        RS485, CAN, Modbus, IEC 61850'|translate}}
                                     </td>
                                 </tr>
                                 <tr>
                                     <td></td>
-                                    <td style="color: #ff0000">Đầu tư chi phí đào tạo người thực hiện công
-                                        việc
+                                    <td style="color: #ff0000">{{'Đầu tư chi phí đào tạo người thực hiện công việc'|translate}}
                                     </td>
                                     <td></td>
                                     <td style="color: #00b050">
-                                        <p>Có thể gắn và sử dụng ngay</p>
-                                        <p>Không yêu cầu bảo dưỡng</p>
+                                        <p>{{'Có thể gắn và sử dụng ngay'|translate}}
+                                        </p>
+                                        <p>{{'Không yêu cầu bảo dưỡng'|translate}}
+                                        </p>
                                     </td>
                                 </tr>
                             </tbody>
@@ -143,44 +174,51 @@
                     <div nz-col nzXs="24" nzSm="24" nzMd="8">
                         <a>
                             <img src="/assets/images/products/03/01/3.png" alt="">
-                            <h3>Cảm Biến Nhiệt IS485 SAW</h3>
+                            <h3>{{'Cảm Biến Nhiệt IS485 SAW'|translate}}
+                            </h3>
                         </a>
                     </div>
                     <div nz-col nzXs="24" nzSm="24" nzMd="8">
                         <a>
                             <img src="/assets/images/products/03/01/4.jpg" alt="">
-                            <h3>Cảm Biến Độ Ẩm</h3>
+                            <h3>{{'Cảm Biến Độ Ẩm'|translate}}
+                            </h3>
                         </a>
                     </div>
                     <div nz-col nzXs="24" nzSm="24" nzMd="8">
                         <a>
                             <img src="/assets/images/products/03/01/5.jpg" alt="">
-                            <h3>Giao Tiếp Nhiệt – Đo Phóng Điện </h3>
+                            <h3>{{'Giao Tiếp Nhiệt – Đo Phóng Điện'|translate}}
+                            </h3>
                         </a>
                     </div>
                     <div nz-col nzXs="24" nzSm="24" nzMd="8">
                         <a>
                             <img src="/assets/images/products/03/01/6.png" alt="">
-                            <h3>Đầu Đọc Tín Hiệu IS485</h3>
+                            <h3>{{'Đầu Đọc Tín Hiệu IS485'|translate}}
+                            </h3>
                         </a>
                     </div>
                     <div nz-col nzXs="24" nzSm="24" nzMd="8">
                         <a>
                             <img src="/assets/images/products/03/01/7.jpg" alt="">
-                            <h3>Giao Tiếp Nhiệt</h3>
+                            <h3>{{'Giao Tiếp Nhiệt'|translate}}
+                            </h3>
                         </a>
                     </div>
                     <div nz-col nzXs="24" nzSm="24" nzMd="8">
                         <a>
                             <img src="/assets/images/products/03/01/8.png" alt="">
-                            <h3>Màn Hình CAM-5</h3>
+                            <h3>{{'Màn Hình CAM-5'|translate}}
+                            </h3>
                         </a>
                     </div>
                 </div>
 
                 <div id="page-5" nz-row nzType="flex" [nzGutter]="nzGutter" nzJustify="space-between" nzAlign="middle">
                     <div nz-col nzSpan="24">
-                        <h2>Ứng dụng</h2>
+                        <h2>{{'Ứng dụng'|translate}}
+                        </h2>
                     </div>
                     <div nz-col nzSpan="24">
                         <div nz-row nzType="flex" nzJustify="space-between" nzAlign="middle">
@@ -188,13 +226,15 @@
                                 <img src="/assets/images/products/03/01/9.jpg" alt="">
                             </div>
                             <div nz-col nzXs="24" nzSm="24" nzMd="8">
-                                <h3>MÁY CẮT ĐẦU CỰC</h3>
+                                <h3>{{'MÁY CẮT ĐẦU CỰC'|translate}}
+                                </h3>
                             </div>
                             <div nz-col nzXs="24" nzSm="24" nzMd="4">
                                 <img src="/assets/images/products/03/01/10.jpg" alt="">
                             </div>
                             <div nz-col nzXs="24" nzSm="24" nzMd="8">
-                                <h3>MÁY BIẾN ÁP KHÔ</h3>
+                                <h3>{{'MÁY BIẾN ÁP KHÔ'|translate}}
+                                </h3>
                             </div>
                         </div>
                         <div nz-row nzType="flex" nzJustify="space-between" nzAlign="middle">
@@ -202,13 +242,15 @@
                                 <img src="/assets/images/products/03/01/11.jpg" alt="">
                             </div>
                             <div nz-col nzXs="24" nzSm="24" nzMd="8">
-                                <h3>TỦ TRUNG THẾ MẠCH VÒNG</h3>
+                                <h3>{{'TỦ TRUNG THẾ MẠCH VÒNG'|translate}}
+                                </h3>
                             </div>
                             <div nz-col nzXs="24" nzSm="24" nzMd="4">
                                 <img src="/assets/images/products/03/01/12.jpg" alt="">
                             </div>
                             <div nz-col nzXs="24" nzSm="24" nzMd="8">
-                                <h3>THANH DẪN DÒNG</h3>
+                                <h3>{{'THANH DẪN DÒNG'|translate}}
+                                </h3>
                             </div>
                         </div>
                         <div nz-row nzType="flex" nzJustify="space-between" nzAlign="middle">
@@ -216,13 +258,15 @@
                                 <img src="/assets/images/products/03/01/13.jpg" alt="">
                             </div>
                             <div nz-col nzXs="24" nzSm="24" nzMd="8">
-                                <h3>ĐẦU CÁP TRUNG THẾ</h3>
+                                <h3>{{'ĐẦU CÁP TRUNG THẾ'|translate}}
+                                </h3>
                             </div>
                             <div nz-col nzXs="24" nzSm="24" nzMd="4">
                                 <img src="/assets/images/products/03/01/14.gif" alt="">
                             </div>
                             <div nz-col nzXs="24" nzSm="24" nzMd="8">
-                                <h3>TỦ TRUNG THẾ</h3>
+                                <h3>{{'TỦ TRUNG THẾ'|translate}}
+                                </h3>
                             </div>
                         </div>
                         <div nz-row nzType="flex" nzJustify="space-between" nzAlign="middle">
@@ -230,13 +274,15 @@
                                 <img src="/assets/images/products/03/01/15.jpg" alt="">
                             </div>
                             <div nz-col nzXs="24" nzSm="24" nzMd="8">
-                                <h3>TỦ PHÂN PHỐI HẠ THẾ</h3>
+                                <h3>{{'TỦ PHÂN PHỐI HẠ THẾ'|translate}}
+                                </h3>
                             </div>
                             <div nz-col nzXs="24" nzSm="24" nzMd="4">
                                 <img src="/assets/images/products/03/01/16.jpg" alt="">
                             </div>
                             <div nz-col nzXs="24" nzSm="24" nzMd="8">
-                                <h3>TRẠM TỤ BÙ CAO THẾ</h3>
+                                <h3>{{'TRẠM TỤ BÙ CAO THẾ'|translate}}
+                                </h3>
                             </div>
                         </div>
                     </div>

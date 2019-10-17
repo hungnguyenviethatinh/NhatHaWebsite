@@ -4,18 +4,18 @@
             <nz-affix>
                 <div class="tab" style="background: #fff; padding: 10px 0;" nz-row nzType="flex" [nzGutter]="nzGutter"
                     nzJustify="start" nzAlign="middle">
-                    <div nz-col *ngFor="let tab of tabs" [ngStyle]="tab.style" (click)="tab.click()">
-                        <img [src]="tab.img" alt="">
-                        <p>{{tab.name}}</p>
+                    <div nz-col *ngFor="let tab_mn4100_tit of tabs; let i=index" [ngStyle]="tab_mn4100_tit.style" (click)="tab_mn4100_tit.click()">
+                        <img [src]="tab_mn4100_tit.img" alt="">
+                        <p>{{('tab_mn4100_tit.name'+i)|translate}}</p>
                     </div>
                 </div>
             </nz-affix>
             <div class="tab-content">
                 <div id="cover" nz-row nzType="flex" [nzGutter]="nzGutter" nzJustify="space-between" nzAlign="top">
                     <div nz-col nzXs="24" nzSm="24" nzMd="14">
-                        <h3>{{content.cover.title}}</h3>
-                        <p *ngFor="let paragraph of content.cover.paragraphs">
-                            {{paragraph}}
+                        <h3>{{('Product Descriptions')|translate}}</h3>
+                        <p *ngFor="let paragraph_mn4100 of content.cover.paragraphs; let i=index">
+                            {{('paragraph_mn4100'+i)|translate}}
                         </p>
                     </div>
                     <div nz-col nzXs="24" nzSm="24" nzMd="10">
@@ -25,9 +25,9 @@
 
                 <div id="cordex-feature" class="tab" nz-row nzType="flex" nzJustify="start" nzAlign="middle"
                     style="background: #ffa500; margin-top: 2em;">
-                    <div nz-col nzSpan="4" *ngFor="let tab of secondTabs" [ngStyle]="tab.style"
-                        [ngClass]="(tab.active || tab.id === 0) ?  'active' : 'inactive'" (click)="tab.click()">
-                        <p style="color: #fff; text-align: center;">{{tab.name}}</p>
+                    <div nz-col nzSpan="4" *ngFor="let tab_mn4100 of secondTabs; let i=index" [ngStyle]="tab_mn4100.style"
+                        [ngClass]="(tab_mn4100.active || tab_mn4100.id === 0) ?  'active' : 'inactive'" (click)="tab_mn4100.click()">
+                        <p style="color: #fff; text-align: center;">{{('tab_mn4100.name'+i)|translate}}</p>
                     </div>
                 </div>
 
@@ -36,36 +36,36 @@
                         <nz-table nzBordered>
                             <thead>
                                 <tr>
-                                    <th nzWidth="300px" [attr.colspan]="2">ĐẶC TÍNH HÌNH ẢNH</th>
+                                    <th nzWidth="300px" [attr.colspan]="2" >{{'ĐẶC TÍNH HÌNH ẢNH'|translate}}</th>
                                 </tr>
                             </thead>
                             <tbody>
                                 <tr>
-                                    <td>Độ phân giải hình nhiệt</td>
+                                    <td translate>Độ phân giải hình nhiệt</td>
                                     <td>80x60 pixels (4800 measuring points) </td>
                                 </tr>
                                 <tr>
-                                    <td>Dải nhiệt độ đo</td>
+                                    <td translate>Dải nhiệt độ đo</td>
                                     <td>-10°C to 120°C (14-248°F)</td>
                                 </tr>
                                 <tr>
-                                    <td>Độ chính xác</td>
+                                    <td translate>Độ chính xác</td>
                                     <td>+/- 2°C or +/- 2%</td>
                                 </tr>
                                 <tr>
-                                    <td>Độ phân giải hình ảnh thực</td>
+                                    <td translate>Độ phân giải hình ảnh thực</td>
                                     <td>640x480 pixels</td>
                                 </tr>
                                 <tr>
-                                    <td>Trường nhìn (FOV)</td>
+                                    <td translate>Trường nhìn (FOV)</td>
                                     <td>63° Diagonal</td>
                                 </tr>
                                 <tr>
-                                    <td>Chiếu sáng</td>
+                                    <td translate>Chiếu sáng2</td>
                                     <td>LED Flash [800 lumens]</td>
                                 </tr>
                                 <tr>
-                                    <td>Độ nhạy sáng cảm biến ảnh</td>
+                                    <td translate>Độ nhạy sáng cảm biến ảnh</td>
                                     <td>1.0 lux without illuminator</td>
                                 </tr>
                             </tbody>
@@ -73,20 +73,20 @@
                         <nz-table nzBordered>
                             <thead>
                                 <tr>
-                                    <th nzWidth="300px" [attr.colspan]="2">NGUỒN VÀ TRUYỀN THÔNG</th>
+                                    <th nzWidth="300px" [attr.colspan]="2" >{{'NGUỒN VÀ TRUYỀN THÔNG'|translate}}</th>
                                 </tr>
                             </thead>
                             <tbody>
                                 <tr>
-                                    <td>Nguồn cấp</td>
+                                    <td translate>Nguồn cấp</td>
                                     <td>12/24Vdc [2W, 3Wpeak]</td>
                                 </tr>
                                 <tr>
-                                    <td>Dải điện áp cấp nguồn</td>
+                                    <td translate>Dải điện áp cấp nguồn</td>
                                     <td>11Vdc to 30Vdc</td>
                                 </tr>
                                 <tr>
-                                    <td>Đầu kết nối</td>
+                                    <td translate>Đầu kết nối</td>
                                     <td>
                                         3.81mm plug [3-pin]
                                         <br />
@@ -94,15 +94,15 @@
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td>Truyền thông</td>
+                                    <td translate>Truyền thông</td>
                                     <td>Modbus/TCP</td>
                                 </tr>
                                 <tr>
-                                    <td>Đầu kết nối Ethernet</td>
+                                    <td translate>Đầu kết nối Ethernet</td>
                                     <td>RJ45</td>
                                 </tr>
                                 <tr>
-                                    <td>Chuẩn Ethernet</td>
+                                    <td translate>Chuẩn Ethernet</td>
                                     <td>IEEE802.3, 10/100Mbps</td>
                                 </tr>
                             </tbody>
@@ -110,16 +110,16 @@
                         <nz-table nzBordered>
                             <thead>
                                 <tr>
-                                    <th nzWidth="300px" [attr.colspan]="2">MÔI TRƯỜNG</th>
+                                    <th nzWidth="300px" [attr.colspan]="2" >{{'MÔI TRƯỜNG'|translate}}</th>
                                 </tr>
                             </thead>
                             <tbody>
                                 <tr>
-                                    <td>Nhiệt độ hoạt động</td>
+                                    <td translate>Nhiệt độ hoạt động</td>
                                     <td>0°C to 40°C</td>
                                 </tr>
                                 <tr>
-                                    <td>Nhiệt độ lưu trữ</td>
+                                    <td translate>Nhiệt độ lưu trữ</td>
                                     <td>-40°C to 80°C</td>
                                 </tr>
                             </tbody>
@@ -129,9 +129,9 @@
 
                 <div id="cordex-certificate" class="tab" nz-row nzType="flex" nzJustify="start" nzAlign="middle"
                     style="background: #ffa500; margin-top: 2em;">
-                    <div nz-col nzSpan="4" *ngFor="let tab of secondTabs" [ngStyle]="tab.style"
-                        [ngClass]="(tab.active || tab.id === 1) ?  'active' : 'inactive'" (click)="tab.click()">
-                        <p style="color: #fff; text-align: center;">{{tab.name}}</p>
+                    <div nz-col nzSpan="4" *ngFor="let tab_mn4100 of secondTabs; let i=index" [ngStyle]="tab_mn4100.style"
+                        [ngClass]="(tab_mn4100.active || tab_mn4100.id === 1) ?  'active' : 'inactive'" (click)="tab_mn4100.click()">
+                        <p style="color: #fff; text-align: center;">{{('tab_mn4100.name'+i)|translate}}</p>
                     </div>
                 </div>
 
@@ -144,9 +144,9 @@
 
                 <div id="cordex-demo" class="tab" nz-row nzType="flex" nzJustify="start" nzAlign="middle"
                     style="background: #ffa500; margin-top: 2em;">
-                    <div nz-col nzSpan="4" *ngFor="let tab of secondTabs" [ngStyle]="tab.style"
-                        [ngClass]="(tab.active || tab.id === 2) ?  'active' : 'inactive'" (click)="tab.click()">
-                        <p style="color: #fff; text-align: center;">{{tab.name}}</p>
+                    <div nz-col nzSpan="4" *ngFor="let tab_mn4100 of secondTabs; let i=index" [ngStyle]="tab_mn4100.style"
+                        [ngClass]="(tab_mn4100.active || tab_mn4100.id === 2) ?  'active' : 'inactive'" (click)="tab_mn4100.click()">
+                        <p style="color: #fff; text-align: center;">{{('tab_mn4100.name'+i)|translate}}</p>
                     </div>
                 </div>
 
@@ -168,9 +168,9 @@
                 </div>
                 <div id="cordex-document" class="tab" nz-row nzType="flex" nzJustify="center" nzAlign="middle"
                     style="background: #ffa500; margin-top: 2em;">
-                    <div nz-col nzSpan="4" *ngFor="let tab of secondTabs" [ngStyle]="tab.style"
-                        [ngClass]="(tab.active || tab.id === 3) ?  'active' : 'inactive'" (click)="tab.click()">
-                        <p style="color: #fff; text-align: center;">{{tab.name}}</p>
+                    <div nz-col nzSpan="4" *ngFor="let tab_mn4100 of secondTabs; let i=index" [ngStyle]="tab_mn4100.style"
+                        [ngClass]="(tab_mn4100.active || tab_mn4100.id === 3) ?  'active' : 'inactive'" (click)="tab_mn4100.click()">
+                        <p style="color: #fff; text-align: center;">{{('tab_mn4100.name'+i)|translate}}</p>
                     </div>
                 </div>
                 <div class="cordex-document" nz-row nzType="flex" nzJustify="start" nzAlign="middle">
