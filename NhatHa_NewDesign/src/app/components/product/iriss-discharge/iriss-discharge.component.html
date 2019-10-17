@@ -4,36 +4,36 @@
             <nz-affix>
                 <div class="tab" style="background: #fff; padding: 10px 0;" nz-row nzType="flex" [nzGutter]="nzGutter"
                     nzJustify="start" nzAlign="middle">
-                    <div nz-col *ngFor="let tab of tabs" [ngStyle]="tab.style" (click)="tab.click()">
-                        <img [src]="tab.img" alt="">
-                        <p>{{tab.name}}</p>
+                    <div nz-col *ngFor="let tab_iriss of tabs; let i=index" [ngStyle]="tab_iriss.style" (click)="tab_iriss.click()">
+                        <img [src]="tab_iriss.img" alt="">
+                        <p>{{('tab_iriss.name'+i)|translate}}</p>
                     </div>
                 </div>
             </nz-affix>
             <div class="tab-content">
                 <div id="cover" nz-row nzType="flex" [nzGutter]="nzGutter" nzJustify="center" nzAlign="top">
                     <div id="left" nz-col nzXs="24" nzSm="24" nzMd="8">
-                        <ng-container *ngFor="let left of content.cover.left">
-                            <h3>{{left[0]}}</h3>
-                            <p>{{left[1]}}</p>
+                        <ng-container *ngFor="let left_iriss of content.cover.left; let i=index">
+                            <h3>{{('left_iriss[0]'+i)|translate}}</h3>
+                            <p>{{('left_iriss[1]'+i)|translate}}</p>
                         </ng-container>
                     </div>
                     <div id="center" nz-col nzXs="24" nzSm="24" nzMd="8">
                         <img [src]="content.cover.center" alt="">
                     </div>
                     <div id="right" nz-col nzXs="24" nzSm="24" nzMd="8">
-                        <ng-container *ngFor="let right of content.cover.right">
-                            <h3>{{right[0]}}</h3>
-                            <p>{{right[1]}}</p>
+                        <ng-container *ngFor="let right_iriss of content.cover.right; let i=index">
+                            <h3>{{('right_iriss[0]'+i)|translate}}</h3>
+                            <p>{{('right_iriss[1]'+i)|translate}}</p>
                         </ng-container>
                     </div>
                 </div>
 
                 <div id="iriss-feature" class="tab" nz-row nzType="flex" nzJustify="start" nzAlign="middle"
                     style="background: #096dd9; margin-top: 2em;">
-                    <div nz-col nzSpan="4" *ngFor="let tab of secondTabs" [ngStyle]="tab.style"
-                        [ngClass]="(tab.active || tab.id === 0) ?  'active' : 'inactive'" (click)="tab.click()">
-                        <p style="color: #fff; text-align: center;">{{tab.name}}</p>
+                    <div nz-col nzSpan="4" *ngFor="let tab_iriss_detail of secondTabs; let i=index" [ngStyle]="tab_iriss_detail.style"
+                        [ngClass]="(tab_iriss_detail.active || tab_iriss_detail.id === 0) ?  'active' : 'inactive'" (click)="tab_iriss_detail.click()">
+                        <p style="color: #fff; text-align: center;">{{('tab_iriss_detail.name'+i)|translate}}</p>
                     </div>
                 </div>
                 <div class="iriss-feature" nz-row nzType="flex" nzJustify="start" nzAlign="middle">
@@ -42,29 +42,33 @@
                             <thead>
                                 <tr>
                                     <th nzWidth="300px" [attr.colspan]="2">
-                                        ĐO ĐIỆN TỪ TRƯỜNG TEV
+                                        {{'ĐO ĐIỆN TỪ TRƯỜNG TEV'|translate}}
                                     </th>
                                 </tr>
                             </thead>
                             <tbody>
                                 <tr>
-                                    <td>Cảm biến</td>
+                                    <td>{{'Cảm biến'|translate}}</td>
                                     <td>Capacitive</td>
                                 </tr>
                                 <tr>
-                                    <td>Dải đo</td>
+                                    <td>{{'Dải đo'|translate}}
+                                    </td>
                                     <td>0 to 80 dBmV </td>
                                 </tr>
                                 <tr>
-                                    <td>Độ phân dải</td>
+                                    <td>{{'Độ phân dải'|translate}}
+                                    </td>
                                     <td>1 dB</td>
                                 </tr>
                                 <tr>
-                                    <td>Độ chính xác</td>
+                                    <td>{{'Độ chính xác'|translate}}
+                                    </td>
                                     <td>±1 dB</td>
                                 </tr>
                                 <tr>
-                                    <td>Khử nhiễu</td>
+                                    <td>{{'Khử nhiễu'|translate}}
+                                    </td>
                                     <td>Có</td>
                                 </tr>
                             </tbody>
@@ -73,29 +77,34 @@
                             <thead>
                                 <tr>
                                     <th nzWidth="300px" [attr.colspan]="2">
-                                        ĐO SÓNG SIÊU ÂM AE
+                                        {{'ĐO SÓNG SIÊU ÂM AE'|translate}}
                                     </th>
                                 </tr>
                             </thead>
                             <tbody>
                                 <tr>
-                                    <td>Dải đo</td>
+                                    <td>{{'Dải đo'|translate}}
+                                    </td>
                                     <td>-6dBµV to + 70dBµV</td>
                                 </tr>
                                 <tr>
-                                    <td>Độ phân dải</td>
+                                    <td>{{'Độ phân dải'|translate}}
+                                    </td>
                                     <td>1 dB</td>
                                 </tr>
                                 <tr>
-                                    <td>Độ chính xác</td>
+                                    <td>{{'Độ chính xác'|translate}}
+                                    </td>
                                     <td>±1 dB</td>
                                 </tr>
                                 <tr>
-                                    <td>Độ nhạy cảm</td>
+                                    <td>{{'Độ nhạy cảm'|translate}}
+                                    </td>
                                     <td>-65dB (0dB = 1volt/µbar RMS SPL)</td>
                                 </tr>
                                 <tr>
-                                    <td>Dải tần sô đo trung tâm</td>
+                                    <td>{{'Dải tần sô đo trung tâm'|translate}}
+                                    </td>
                                     <td>40 kHz</td>
                                 </tr>
                             </tbody>
@@ -104,29 +113,34 @@
                             <thead>
                                 <tr>
                                     <th nzWidth="300px" [attr.colspan]="2">
-                                        ỨNG DỤNG
+                                        {{'ỨNG DỤNG'|translate}}
                                     </th>
                                 </tr>
                             </thead>
                             <tbody>
                                 <tr>
-                                    <td>Chuẩn giao tiếp</td>
+                                    <td>{{'Chuẩn giao tiếp'|translate}}
+                                    </td>
                                     <td>Bluetooth & Customer Server</td>
                                 </tr>
                                 <tr>
-                                    <td>Giao tiếp dữ liệu</td>
+                                    <td>{{'Giao tiếp dữ liệu'|translate}}
+                                    </td>
                                     <td>Web front end</td>
                                 </tr>
                                 <tr>
-                                    <td>Hệ điều hành</td>
+                                    <td>{{'Hệ điều hành'|translate}}
+                                    </td>
                                     <td>Android</td>
                                 </tr>
                                 <tr>
-                                    <td>Khả năng báo cáo</td>
+                                    <td>{{'Khả năng báo cáo'|translate}}
+                                    </td>
                                     <td>Có</td>
                                 </tr>
                                 <tr>
-                                    <td>Kết quả đo</td>
+                                    <td>{{'Kết quả đo'|translate}}
+                                    </td>
                                     <td>dB, PRPD, Noise</td>
                                 </tr>
                             </tbody>
@@ -135,25 +149,29 @@
                             <thead>
                                 <tr>
                                     <th nzWidth="300px" [attr.colspan]="2">
-                                        PHẦN CỨNG
+                                        {{'Kết quả đo'|translate}}
                                     </th>
                                 </tr>
                             </thead>
                             <tbody>
                                 <tr>
-                                    <td>Vỏ thiết bị</td>
+                                    <td>{{'Vỏ thiết bị'|translate}}
+                                    </td>
                                     <td>Injection moulded plastic case</td>
                                 </tr>
                                 <tr>
-                                    <td>Màn hình</td>
+                                    <td>{{'Màn hình'|translate}}
+                                    </td>
                                     <td>OLED display with 6 display LEDs (PD level)</td>
                                 </tr>
                                 <tr>
-                                    <td>Điều khiển</td>
+                                    <td>{{'Điều khiển'|translate}}
+                                    </td>
                                     <td>Membrane keypad</td>
                                 </tr>
                                 <tr>
-                                    <td>Đầu kết nối</td>
+                                    <td>{{'Đầu kết nối'|translate}}
+                                    </td>
                                     <td>Power, Headphones and External Acoustic Sensor</td>
                                 </tr>
                             </tbody>
@@ -162,21 +180,24 @@
                             <thead>
                                 <tr>
                                     <th nzWidth="300px" [attr.colspan]="2">
-                                        MÔI TRƯỜNG HOẠT ĐỘNG
+                                        {{'MÔI TRƯỜNG HOẠT ĐỘNG'|translate}}
                                     </th>
                                 </tr>
                             </thead>
                             <tbody>
                                 <tr>
-                                    <td>Nhiệt độ hoạt động</td>
+                                    <td>{{'Nhiệt độ hoạt động'|translate}}
+                                    </td>
                                     <td>5°C to 55°C</td>
                                 </tr>
                                 <tr>
-                                    <td>Độ ẩm</td>
+                                    <td>{{'Độ ẩm'|translate}}
+                                    </td>
                                     <td>0 to 90% RH non-condensing</td>
                                 </tr>
                                 <tr>
-                                    <td>Tiêu chuẩn IP</td>
+                                    <td>{{'Tiêu chuẩn IP'|translate}}
+                                    </td>
                                     <td>54</td>
                                 </tr>
                             </tbody>
@@ -185,17 +206,19 @@
                             <thead>
                                 <tr>
                                     <th nzWidth="300px" [attr.colspan]="2">
-                                        KÍCH THƯỚC
+                                        {{'KÍCH THƯỚC1'|translate}}
                                     </th>
                                 </tr>
                             </thead>
                             <tbody>
                                 <tr>
-                                    <td>Kích thước</td>
+                                    <td>{{'Kích thước2'|translate}}
+                                    </td>
                                     <td>175 x 89 x 46 cm</td>
                                 </tr>
                                 <tr>
-                                    <td>Khối lượng</td>
+                                    <td>{{'Khối lượng'|translate}}
+                                    </td>
                                     <td>300g</td>
                                 </tr>
                             </tbody>
@@ -204,17 +227,19 @@
                             <thead>
                                 <tr>
                                     <th nzWidth="300px" [attr.colspan]="2">
-                                        NGUỒN
+                                        {{'NGUỒN'|translate}}
                                     </th>
                                 </tr>
                             </thead>
                             <tbody>
                                 <tr>
-                                    <td>Pin nguồn</td>
+                                    <td>{{'Pin nguồn'|translate}}
+                                    </td>
                                     <td>Lithium Ion, 3.75V, 2.2Ah</td>
                                 </tr>
                                 <tr>
-                                    <td>Thời gian hoạt động</td>
+                                    <td>{{'Thời gian hoạt động2'|translate}}
+                                    </td>
                                     <td>Approx. 8 hours</td>
                                 </tr>
                             </tbody>
@@ -223,25 +248,29 @@
                             <thead>
                                 <tr>
                                     <th nzWidth="300px" [attr.colspan]="2">
-                                        NGUỒN SẠC PIN
+                                        {{'NGUỒN SẠC PIN'|translate}}
                                     </th>
                                 </tr>
                             </thead>
                             <tbody>
                                 <tr>
-                                    <td>Điện áp định mức</td>
+                                    <td>{{'Điện áp định mức'|translate}}
+                                    </td>
                                     <td>90 to 264 V AC, 5V, 2.6A</td>
                                 </tr>
                                 <tr>
-                                    <td>Tần số</td>
+                                    <td>{{'Tần số'|translate}}
+                                    </td>
                                     <td>47 to 63Hz</td>
                                 </tr>
                                 <tr>
-                                    <td>Kiểu chân cắm nguồn</td>
+                                    <td>{{'Kiểu chân cắm nguồn'|translate}}
+                                    </td>
                                     <td>UK, EU, Australia, USA</td>
                                 </tr>
                                 <tr>
-                                    <td>Thời gian sạc</td>
+                                    <td>{{'Thời gian sạc'|translate}}
+                                    </td>
                                     <td>2 giờ</td>
                                 </tr>
                             </tbody>
@@ -251,9 +280,9 @@
 
                 <div id="iriss-certificate" class="tab" nz-row nzType="flex" nzJustify="start" nzAlign="middle"
                     style="background: #096dd9; margin-top: 2em;">
-                    <div nz-col nzSpan="4" *ngFor="let tab of secondTabs" [ngStyle]="tab.style"
-                        [ngClass]="(tab.active || tab.id === 1) ?  'active' : 'inactive'" (click)="tab.click()">
-                        <p style="color: #fff; text-align: center;">{{tab.name}}</p>
+                    <div nz-col nzSpan="4" *ngFor="let tab_iriss_detail of secondTabs; let i=index" [ngStyle]="tab_iriss_detail.style"
+                        [ngClass]="(tab_iriss_detail.active || tab_iriss_detail.id === 1) ?  'active' : 'inactive'" (click)="tab_iriss_detail.click()">
+                        <p style="color: #fff; text-align: center;">{{('tab_iriss_detail.name'+i)|translate}}</p>
                     </div>
                 </div>
                 <div class="iriss-certificate" nz-row nzType="flex" nzJustify="start" nzAlign="middle">
@@ -262,7 +291,7 @@
                             <thead>
                                 <tr>
                                     <th nzWidth="300px" [attr.colspan]="2">
-                                        CHỨNG CHỈ
+                                        {{'CHỨNG CHỈ'|translate}}
                                     </th>
                                 </tr>
                             </thead>
@@ -281,9 +310,9 @@
 
                 <div id="iriss-demo" class="tab" nz-row nzType="flex" nzJustify="start" nzAlign="middle"
                     style="background: #096dd9; margin-top: 2em;">
-                    <div nz-col nzSpan="4" *ngFor="let tab of secondTabs" [ngStyle]="tab.style"
-                        [ngClass]="(tab.active || tab.id === 2) ?  'active' : 'inactive'" (click)="tab.click()">
-                        <p style="color: #fff; text-align: center;">{{tab.name}}</p>
+                    <div nz-col nzSpan="4" *ngFor="let tab_iriss_detail of secondTabs; let i=index" [ngStyle]="tab_iriss_detail.style"
+                        [ngClass]="(tab_iriss_detail.active || tab_iriss_detail.id === 2) ?  'active' : 'inactive'" (click)="tab_iriss_detail.click()">
+                        <p style="color: #fff; text-align: center;">{{('tab_iriss_detail.name'+i)|translate}}</p>
                     </div>
                 </div>
                 <div class="iriss-demo" nz-row nzType="flex" nzJustify="center" nzAlign="middle">
@@ -305,9 +334,9 @@
 
                 <div id="iriss-document" class="tab" nz-row nzType="flex" nzJustify="center" nzAlign="middle"
                     style="background: #096dd9; margin-top: 2em;">
-                    <div nz-col nzSpan="4" *ngFor="let tab of secondTabs" [ngStyle]="tab.style"
-                        [ngClass]="(tab.active || tab.id === 3) ?  'active' : 'inactive'" (click)="tab.click()">
-                        <p style="color: #fff; text-align: center;">{{tab.name}}</p>
+                    <div nz-col nzSpan="4" *ngFor="let tab_iriss_detail of secondTabs; let i=index" [ngStyle]="tab_iriss_detail.style"
+                        [ngClass]="(tab_iriss_detail.active || tab_iriss_detail.id === 3) ?  'active' : 'inactive'" (click)="tab_iriss_detail.click()">
+                        <p style="color: #fff; text-align: center;">{{('tab_iriss_detail.name'+i)|translate}}</p>
                     </div>
                 </div>
                 <div class="iriss-document" nz-row nzType="flex" nzJustify="start" nzAlign="middle">

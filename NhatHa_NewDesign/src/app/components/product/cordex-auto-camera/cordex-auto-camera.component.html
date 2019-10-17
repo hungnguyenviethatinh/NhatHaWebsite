@@ -4,19 +4,19 @@
             <nz-affix>
                 <div class="tab" style="background: #fff; padding: 10px 0;" nz-row nzType="flex" [nzGutter]="nzGutter"
                     nzJustify="start" nzAlign="middle">
-                    <div nz-col *ngFor="let tab of tabs" [ngStyle]="tab.style" (click)="tab.click()">
-                        <img [src]="tab.img" alt="">
-                        <p>{{tab.name}}</p>
+                    <div nz-col *ngFor="let tab_cordex_auto of tabs; let i=index" [ngStyle]="tab_cordex_auto.style" (click)="tab_cordex_auto.click()">
+                        <img [src]="tab_cordex_auto.img" alt="">
+                        <p>{{('tab_cordex_auto.name'+i)|translate}}</p>
                     </div>
                 </div>
             </nz-affix>
             <div class="tab-content">
                 <div id="page-0" nz-row nzType="flex" [nzGutter]="nzGutter" nzJustify="space-between" nzAlign="middle">
                     <div nz-col nzXs="24" nzSm="24" nzMd="12">
-                        <h2>Giám Sát Nhiệt Hồng Ngoại</h2>
-                        <h1>Tự Động</h1>
-                        <h3>Ứng Dụng Điều Khiển Tự Động Hóa – Cảm Biến Nhiệt và Ảnh</h3>
-                        <h4>Không bao giờ bỏ qua sự cố với giám sát 24x7x365</h4>
+                        <h2 translate>Giám Sát Nhiệt Hồng Ngoại</h2>
+                        <h1 translate>Tự Động</h1>
+                        <h3 translate>Ứng Dụng Điều Khiển Tự Động Hóa – Cảm Biến Nhiệt và Ảnh</h3>
+                        <h4 translate>Không bao giờ bỏ qua sự cố với giám sát 24x7x365</h4>
                     </div>
                     <div nz-col nzXs="24" nzSm="24" nzMd="12">
                         <img src="/assets/images/products/03/02/1.PNG" alt="SẢN PHẨM IRISS DELTA T">

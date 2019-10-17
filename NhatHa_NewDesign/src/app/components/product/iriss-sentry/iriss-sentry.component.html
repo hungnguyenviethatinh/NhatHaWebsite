@@ -4,19 +4,23 @@
             <nz-affix>
                 <div class="tab" style="background: #fff; padding: 10px 0;" nz-row nzType="flex" [nzGutter]="nzGutter"
                     nzJustify="start" nzAlign="middle">
-                    <div nz-col *ngFor="let tab of tabs" [ngStyle]="tab.style" (click)="tab.click()">
-                        <img [src]="tab.img" alt="">
-                        <p>{{tab.name}}</p>
+                    <div nz-col *ngFor="let tab_sentry of tabs; let i=index" [ngStyle]="tab_sentry.style" (click)="tab_sentry.click()">
+                        <img [src]="tab_sentry.img" alt="">
+                        <p>{{('tab_sentry.name'+i)|translate}}</p>
                     </div>
                 </div>
             </nz-affix>
             <div class="tab-content">
                 <div id="page-0" nz-row nzType="flex" [nzGutter]="nzGutter" nzJustify="space-between" nzAlign="middle">
                     <div nz-col nzXs="24" nzSm="24" nzMd="12">
-                        <h2>HỆ THỐNG QUẢN LÝ TÀI SẢN</h2>
-                        <h1>THÔNG MINH</h1>
-                        <h3>Hệ Thống Thẻ Thông Tin Thông Minh</h3>
-                        <h4>Công nghệ thẻ thông minh giao tiếp NFC không dây</h4>
+                        <h2>{{'HỆ THỐNG QUẢN LÝ TÀI SẢN'|translate}}
+                        </h2>
+                        <h1>{{'THÔNG MINH'|translate}}
+                        </h1>
+                        <h3>{{'Hệ Thống Thẻ Thông Tin Thông Minh'|translate}}
+                        </h3>
+                        <h4>{{'Công nghệ thẻ thông minh giao tiếp NFC không dây'|translate}}
+                        </h4>
                     </div>
                     <div nz-col nzXs="24" nzSm="24" nzMd="12">
                         <img src="/assets/images/products/03/04/1.PNG" alt="SẢN PHẨM IRISS E SENTRY">
@@ -24,21 +28,21 @@
                 </div>
                 <div id="page-1" nz-row nzType="flex" [nzGutter]="nzGutter" nzJustify="center" nzAlign="top">
                     <div nz-col nzSpan="24">
-                        <h2>{{content.page1.title}}</h2>
+                        <h2>{{'E Sentry Connect Phiên Bản Đơn'|translate}}</h2>
                         <div nz-row nzType="flex" [nzGutter]="nzGutter" nzJustify="center" nzAlign="middle">
                             <div id="left" nz-col nzXs="24" nzSm="24" nzMd="8">
-                                <ng-container *ngFor="let left of content.page1.left">
-                                    <h3>{{left[0]}}</h3>
-                                    <p>{{left[1]}}</p>
+                                <ng-container *ngFor="let left_iriss_sentry of content.page1.left; let i=index">
+                                    <h3>{{('left_iriss_sentry[0]'+i)|translate}}</h3>
+                                    <p>{{('left_iriss_sentry[1]'+i)|translate}}</p>
                                 </ng-container>
                             </div>
                             <div id="center" nz-col nzXs="24" nzSm="24" nzMd="8">
                                 <img [src]="content.page1.center" alt="">
                             </div>
                             <div id="right" nz-col nzXs="24" nzSm="24" nzMd="8">
-                                <ng-container *ngFor="let right of content.page1.right">
-                                    <h3>{{right[0]}}</h3>
-                                    <p>{{right[1]}}</p>
+                                <ng-container *ngFor="let right_iriss_sentry of content.page1.right; let i=index">
+                                    <h3>{{('right_iriss_sentry[0]'+i)|translate}}</h3>
+                                    <p>{{('right_iriss_sentry[1]'+i)|translate}}</p>
                                 </ng-container>
                             </div>
                         </div>
@@ -47,21 +51,21 @@
 
                 <div id="page-2" nz-row nzType="flex" [nzGutter]="nzGutter" nzJustify="center" nzAlign="middle">
                     <div nz-col nzSpan="24">
-                        <h2>{{content.page2.title}}</h2>
+                        <h2>{{('E Sentry Connect Phiên Bản Đám Mây')|translate}}</h2>
                         <div nz-row nzType="flex" [nzGutter]="nzGutter" nzJustify="center" nzAlign="middle">
                             <div id="left" nz-col nzXs="24" nzSm="24" nzMd="8">
-                                <ng-container *ngFor="let left of content.page2.left">
-                                    <h3>{{left[0]}}</h3>
-                                    <p>{{left[1]}}</p>
+                                <ng-container *ngFor="let left2_iriss of content.page2.left; let i=index">
+                                    <h3>{{('left2_iriss[0]'+i)|translate}}</h3>
+                                    <p>{{('left2_iriss[1]'+i)|translate}}</p>
                                 </ng-container>
                             </div>
                             <div id="center" nz-col nzXs="24" nzSm="24" nzMd="8">
                                 <img [src]="content.page2.center" alt="">
                             </div>
                             <div id="right" nz-col nzXs="24" nzSm="24" nzMd="8">
-                                <ng-container *ngFor="let right of content.page2.right">
-                                    <h3>{{right[0]}}</h3>
-                                    <p>{{right[1]}}</p>
+                                <ng-container *ngFor="let right2_iriss of content.page2.right; let i=index">
+                                    <h3>{{('right2_iriss[0]'+i)|translate}}</h3>
+                                    <p>{{('right2_iriss[1]'+i)|translate}}</p>
                                 </ng-container>
                             </div>
                         </div>
@@ -70,9 +74,9 @@
 
                 <div id="delta-t-demo" class="tab" nz-row nzType="flex" nzJustify="start" nzAlign="middle"
                     style="background: #4472c4; margin-top: 2em;">
-                    <div nz-col nzSpan="4" *ngFor="let tab of secondTabs" [ngStyle]="tab.style"
-                        [ngClass]="(tab.active || tab.id === 2) ?  'active' : 'inactive'" (click)="tab.click()">
-                        <p style="color: #fff; text-align: center;">{{tab.name}}</p>
+                    <div nz-col nzSpan="4" *ngFor="let tab_sentry_detail of secondTabs; let i=index" [ngStyle]="tab_sentry_detail.style"
+                        [ngClass]="(tab_sentry_detail.active || tab_sentry_detail.id === 2) ?  'active' : 'inactive'" (click)="tab_sentry_detail.click()">
+                        <p style="color: #fff; text-align: center;">{{('tab_sentry_detail.name'+i)|translate}}</p>
                     </div>
                 </div>
 
@@ -94,9 +98,9 @@
                 </div>
                 <div id="delta-t-document" class="tab" nz-row nzType="flex" nzJustify="center" nzAlign="middle"
                     style="background: #4472c4; margin-top: 2em;">
-                    <div nz-col nzSpan="4" *ngFor="let tab of secondTabs" [ngStyle]="tab.style"
-                        [ngClass]="(tab.active || tab.id === 3) ?  'active' : 'inactive'" (click)="tab.click()">
-                        <p style="color: #fff; text-align: center;">{{tab.name}}</p>
+                    <div nz-col nzSpan="4" *ngFor="let tab_sentry_detail of secondTabs; let i=index" [ngStyle]="tab_sentry_detail.style"
+                        [ngClass]="(tab_sentry_detail.active || tab_sentry_detail.id === 3) ?  'active' : 'inactive'" (click)="tab_sentry_detail.click()">
+                        <p style="color: #fff; text-align: center;">{{('tab_sentry_detail.name'+i)|translate}}</p>
                     </div>
                 </div>
                 <div class="delta-t-document" nz-row nzType="flex" nzJustify="start" nzAlign="middle">
