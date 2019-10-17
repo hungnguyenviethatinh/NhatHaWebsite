@@ -1,12 +1,12 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { HomeComponent } from './components/home/home.component';
-import { PartnerComponent } from './components/partner/partner.component';
-import { ProjectComponent } from './components/project/project.component';
+import { PageNotFoundComponent } from './components/page-not-found/page-not-found.component';
 
 const routes: Routes = [
   {
-    path: 'trang-chu', component: HomeComponent,
+    path: 'trang-chu',
+    loadChildren: () => import('./components/home/home.module').then(mod => mod.HomeModule),
   },
   {
     path: 'doanh-nghiep',
@@ -23,10 +23,12 @@ const routes: Routes = [
     data: { preload: true },
   },
   {
-    path: 'doi-tac', component: PartnerComponent,
+    path: 'doi-tac',
+    loadChildren: () => import('./components/partner/partner.module').then(mod => mod.PartnerModule),
   },
   {
-    path: 'du-an', component: ProjectComponent,
+    path: 'du-an',
+    loadChildren: () => import('./components/project/project.module').then(mod => mod.ProjectModule),
   },
   {
     path: 'ho-tro',
@@ -39,7 +41,7 @@ const routes: Routes = [
   {
     path: '', redirectTo: '/trang-chu', pathMatch: 'full',
   },
-  { path: '**', component: HomeComponent, }
+  { path: '**', component: PageNotFoundComponent, }
 ];
 
 @NgModule({

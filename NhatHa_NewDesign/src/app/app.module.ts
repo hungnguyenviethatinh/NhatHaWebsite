@@ -17,18 +17,14 @@ import { registerLocaleData } from '@angular/common';
 import vi from '@angular/common/locales/vi';
 
 import { AppComponent } from './components/app.component';
-import { HomeComponent } from './components/home/home.component';
-import { PartnerComponent } from './components/partner/partner.component';
-import { ProjectComponent } from './components/project/project.component';
+import { PageNotFoundComponent } from './components/page-not-found/page-not-found.component';
 
 registerLocaleData(vi);
 
 @NgModule({
   declarations: [
     AppComponent,
-    HomeComponent,
-    PartnerComponent,
-    ProjectComponent,
+    PageNotFoundComponent,
   ],
   imports: [
     BrowserModule,
