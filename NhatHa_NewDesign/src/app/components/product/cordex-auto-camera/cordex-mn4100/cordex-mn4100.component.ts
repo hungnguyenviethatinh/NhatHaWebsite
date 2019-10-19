@@ -119,7 +119,7 @@ export class CordexMn4100Component implements OnInit {
         ],
         video: 'assets/images/products/03/02/02/video.mp4',
       },
-      documents:[
+      documents: [
         'Product Data Sheet – MN4100',
         'Product Manual – MN4100',
       ],

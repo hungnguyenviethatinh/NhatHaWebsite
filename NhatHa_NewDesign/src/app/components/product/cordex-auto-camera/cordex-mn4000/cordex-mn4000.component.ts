@@ -90,7 +90,7 @@ export class CordexMn4000Component implements OnInit {
 
   content = {
     cover: {
-      img: '.assets/images/products/03/02/01/1.PNG',
+      img: 'assets/images/products/03/02/01/1.PNG',
       paragraphs: [
         [
           'Bảo Vệ Tài Sản Của Bạn',
@@ -120,13 +120,13 @@ export class CordexMn4000Component implements OnInit {
     detail: {
       demos: {
         img: [
-          '.assets/images/products/03/02/01/2.jpg',
-          '.assets/images/products/03/02/01/3.jpg',
-          '.assets/images/products/03/02/01/4.jpg',
-          '.assets/images/products/03/02/01/5.jpg',
-          '.assets/images/products/03/02/01/6.jpg',
+          'assets/images/products/03/02/01/2.jpg',
+          'assets/images/products/03/02/01/3.jpg',
+          'assets/images/products/03/02/01/4.jpg',
+          'assets/images/products/03/02/01/5.jpg',
+          'assets/images/products/03/02/01/6.jpg',
         ],
-        video: '.assets/images/products/03/02/01/video.mp4',
+        video: 'assets/images/products/03/02/01/video.mp4',
       },
       documents: [
         'Product Data Sheet – MN4000',
