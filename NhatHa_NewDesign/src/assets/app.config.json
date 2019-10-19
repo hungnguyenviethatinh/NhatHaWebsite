@@ -1,5 +1,5 @@
 {
     "apiUrl" : {
-        "mailService": "http://localhost:8000/MailService.php"
+        "mailService": "/api/MailService.php"
     }
 }
