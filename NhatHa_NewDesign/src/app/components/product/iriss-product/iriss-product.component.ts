@@ -19,7 +19,7 @@ export class IrissProductComponent implements OnInit {
   tabs = [
     {
       name: 'SẢN PHẨM CBM',
-      img: '/assets/images/products/01/01/tab-home.png',
+      img: 'assets/images/products/01/01/tab-home.png',
       contents: [],
       style: {
         ...this.style,
@@ -29,30 +29,30 @@ export class IrissProductComponent implements OnInit {
     },
     {
       name: 'CỬA SỔ IR IRISS',
-      img: '/assets/images/products/01/01/tab-1.png',
+      img: 'assets/images/products/01/01/tab-1.png',
       contents: [
         {
           href: '/san-pham/san-pham-iriss/chi-tiet',
           fragment: 'dong-vpt',
-          img: '/assets/images/products/01/01/vpt.jpg',
+          img: 'assets/images/products/01/01/vpt.jpg',
           text: 'DÒNG VPT',
         },
         {
           href: '/san-pham/san-pham-iriss/chi-tiet',
           fragment: 'dong-cap-ct',
-          img: '/assets/images/products/01/01/ct.png',
+          img: 'assets/images/products/01/01/ct.png',
           text: 'DÒNG CAP CT',
         },
         {
           href: '/san-pham/san-pham-iriss/chi-tiet',
           fragment: 'dong-cap-env',
-          img: '/assets/images/products/01/01/env.png',
+          img: 'assets/images/products/01/01/env.png',
           text: 'DÒNG CAP ENV',
         },
         {
           href: '/san-pham/san-pham-iriss/chi-tiet',
           fragment: 'dong-flex-ir',
-          img: '/assets/images/products/01/01/flex-ir.png',
+          img: 'assets/images/products/01/01/flex-ir.png',
           text: 'DÒNG FLEX IR',
         },
       ],

@@ -1,5 +1,5 @@
 {
     "apiUrl" : {
-        "mailService": "/api/MailService.php"
+        "mailService": "api/MailService.php"
     }
 }

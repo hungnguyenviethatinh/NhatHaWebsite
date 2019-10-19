@@ -10,9 +10,9 @@ export class ConditionalMaintainComponent implements OnInit {
     name: 'Bảo trì theo tình trạng',
     data: {
       banners: [
-        '/assets/images/services/05/1.jpg',
-        '/assets/images/services/05/2.jpg',
-        '/assets/images/services/05/3.png',
+        'assets/images/services/05/1.jpg',
+        'assets/images/services/05/2.jpg',
+        'assets/images/services/05/3.png',
       ],
       subject: 'BẢO TRÌ THEO TÌNH TRẠNG – XU HƯỚNG TƯƠNG LAI',
       body: [
@@ -31,7 +31,7 @@ export class ConditionalMaintainComponent implements OnInit {
             + 'sẽ được quyết định dựa trên tình trạng của thiết bị. Đây chính là nguyên lý của Bảo trì theo Tình trạng (CBM).',
           ],
           figures: [
-            '/assets/images/services/05/fig-1.jpg',
+            'assets/images/services/05/fig-1.jpg',
           ],
         },
         {
@@ -45,7 +45,7 @@ export class ConditionalMaintainComponent implements OnInit {
             'Chi phí sửa chữa luôn tăng cao hơn khi chúng ta tiến gần hơn đến trạng thái hư hỏng chức năng (functional failure)!',
           ],
           figures: [
-            '/assets/images/services/05/fig-2.png',
+            'assets/images/services/05/fig-2.png',
           ],
         },
         {
@@ -58,7 +58,7 @@ export class ConditionalMaintainComponent implements OnInit {
             + 'vào thời điểm thuận lợi nhất cũng như mang lại ít phiền phức và chi phí thấp nhất.',
           ],
           figures: [
-            '/assets/images/services/05/fig-3.jpg',
+            'assets/images/services/05/fig-3.jpg',
           ],
         },
       ],
@@ -67,12 +67,12 @@ export class ConditionalMaintainComponent implements OnInit {
           + 'chúng tôi có thể hỗ trợ bạn bất cứ lúc nào. Hãy xem qua các dịch vụ của chúng tôi:',
         links: [
           {
-            img: '/assets/images/services/05/link-1.JPG',
+            img: 'assets/images/services/05/link-1.JPG',
             title: 'QUÉT NHIỆT HỒNG NGOẠI THIẾT BỊ ĐIỆN',
             href: '/dich-vu/quet-nhiet-hong-ngoai-thiet-bi-dien',
           },
           {
-            img: '/assets/images/services/05/link-2.jpg',
+            img: 'assets/images/services/05/link-2.jpg',
             title: 'ĐO PHÓNG ĐIỆN CỤC BỘ',
             href: '/dich-vu/do-phong-dien-cuc-bo',
           },

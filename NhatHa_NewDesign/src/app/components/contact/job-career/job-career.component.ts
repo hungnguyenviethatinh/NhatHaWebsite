@@ -8,13 +8,13 @@ import { Component, OnInit } from '@angular/core';
 export class JobCareerComponent implements OnInit {
   bannerjobs = [
     {
-      img: '/assets/images/job-career/job-career.PNG',
+      img: 'assets/images/job-career/job-career.PNG',
       caption: 'Tuyển Dụng: Kỹ Sư có Thái Độ và Đam Mê',
     },
   ];
 
   hr = {
-    img: '/assets/images/job-career/candidate.PNG',
+    img: 'assets/images/job-career/candidate.PNG',
     poster: {
       title: 'CHÚNG TÔI TỰ HÀO PHÁT TRIỂN SỰ NGHIỆP CỦA BẠN',
       contents: [

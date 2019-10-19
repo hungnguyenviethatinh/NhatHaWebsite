@@ -19,7 +19,7 @@ export class IrissDeltaComponent implements OnInit {
   tabs = [
     {
       name: 'SẢN PHẨM CBM',
-      img: '/assets/images/products/03/03/tab-home.png',
+      img: 'assets/images/products/03/03/tab-home.png',
       style: {
         ...this.style,
         'border-right': '1px dashed #4472c4'
@@ -28,7 +28,7 @@ export class IrissDeltaComponent implements OnInit {
     },
     {
       name: 'IRISS DELTA T ALERT',
-      img: '/assets/images/products/03/03/tab-1.jpg',
+      img: 'assets/images/products/03/03/tab-1.jpg',
       style: {
         ...this.style,
       },
@@ -112,7 +112,7 @@ export class IrissDeltaComponent implements OnInit {
           'Hệ thống Delta T Alert™ sẽ cảnh báo bạn khi nhiệt độ thiết bị vượt ngưỡng cài đặt trước.',
         ],
       ],
-      center: '/assets/images/products/03/03/2.jpg',
+      center: 'assets/images/products/03/03/2.jpg',
       right: [
         [
           'Cảm Biến Nhiệt Độ ',
@@ -138,19 +138,19 @@ export class IrissDeltaComponent implements OnInit {
     detail: {
       demos: {
         img: [
-          '/assets/images/products/03/03/3.jpg',
-          '/assets/images/products/03/03/4.jpg',
-          '/assets/images/products/03/03/5.jpg',
-          '/assets/images/products/03/03/6.png',
-          '/assets/images/products/03/03/7.jpg',
-          '/assets/images/products/03/03/8.jpg',
-          '/assets/images/products/03/03/9.jpg',
-          '/assets/images/products/03/03/10.jpg',
-          '/assets/images/products/03/03/11.png',
-          '/assets/images/products/03/03/12.jpg',
-          '/assets/images/products/03/03/13.jpg',
+          'assets/images/products/03/03/3.jpg',
+          'assets/images/products/03/03/4.jpg',
+          'assets/images/products/03/03/5.jpg',
+          'assets/images/products/03/03/6.png',
+          'assets/images/products/03/03/7.jpg',
+          'assets/images/products/03/03/8.jpg',
+          'assets/images/products/03/03/9.jpg',
+          'assets/images/products/03/03/10.jpg',
+          'assets/images/products/03/03/11.png',
+          'assets/images/products/03/03/12.jpg',
+          'assets/images/products/03/03/13.jpg',
         ],
-        video: '/assets/images/products/03/03/video.mp4',
+        video: 'assets/images/products/03/03/video.mp4',
       },
       documents: [
         'Product Data Sheet – Delta T Alert',

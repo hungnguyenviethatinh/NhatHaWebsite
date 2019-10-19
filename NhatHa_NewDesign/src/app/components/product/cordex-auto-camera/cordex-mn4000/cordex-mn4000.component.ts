@@ -19,7 +19,7 @@ export class CordexMn4000Component implements OnInit {
   tabs = [
     {
       name: 'SẢN PHẨM CBM',
-      img: '/assets/images/products/03/02/tab-home.png',
+      img: 'assets/images/products/03/02/tab-home.png',
       style: {
         ...this.style,
         'border-right': '1px dashed #ed7d31'
@@ -28,7 +28,7 @@ export class CordexMn4000Component implements OnInit {
     },
     {
       name: 'CORDEX MN4000',
-      img: '/assets/images/products/03/02/tab-mn4000.png',
+      img: 'assets/images/products/03/02/tab-mn4000.png',
       style: {
         ...this.style,
       },
@@ -90,7 +90,7 @@ export class CordexMn4000Component implements OnInit {
 
   content = {
     cover: {
-      img: './assets/images/products/03/02/01/1.PNG',
+      img: '.assets/images/products/03/02/01/1.PNG',
       paragraphs: [
         [
           'Bảo Vệ Tài Sản Của Bạn',
@@ -120,13 +120,13 @@ export class CordexMn4000Component implements OnInit {
     detail: {
       demos: {
         img: [
-          './assets/images/products/03/02/01/2.jpg',
-          './assets/images/products/03/02/01/3.jpg',
-          './assets/images/products/03/02/01/4.jpg',
-          './assets/images/products/03/02/01/5.jpg',
-          './assets/images/products/03/02/01/6.jpg',
+          '.assets/images/products/03/02/01/2.jpg',
+          '.assets/images/products/03/02/01/3.jpg',
+          '.assets/images/products/03/02/01/4.jpg',
+          '.assets/images/products/03/02/01/5.jpg',
+          '.assets/images/products/03/02/01/6.jpg',
         ],
-        video: './assets/images/products/03/02/01/video.mp4',
+        video: '.assets/images/products/03/02/01/video.mp4',
       },
       documents: [
         'Product Data Sheet – MN4000',

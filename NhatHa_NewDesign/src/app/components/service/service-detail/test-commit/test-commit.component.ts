@@ -8,15 +8,15 @@ import { Component, OnInit } from '@angular/core';
 export class TestCommitComponent implements OnInit {
   service = {
     heading: {
-      img: '/assets/images/services/02/1.jpg',
+      img: 'assets/images/services/02/1.jpg',
       title: 'THỬ NGHIỆM VÀ NGHIỆM THU',
     },
     contents: [
       {
         img: [
-          '/assets/images/services/02/2.JPG',
-          '/assets/images/services/02/3.JPG',
-          '/assets/images/services/02/4.jpg',
+          'assets/images/services/02/2.JPG',
+          'assets/images/services/02/3.JPG',
+          'assets/images/services/02/4.jpg',
         ],
         title: 'I. THỬ NGHIỆM VÀ NGHIỆM THU TỐT GIÚP BẠN TIẾT KIỆM HÀNG NGHÌN ĐÔ-LA CHI PHÍ',
         paragraphs: [
@@ -50,9 +50,9 @@ export class TestCommitComponent implements OnInit {
       },
       {
         img: [
-          '/assets/images/services/02/5.JPG',
-          '/assets/images/services/02/6.jpg',
-          '/assets/images/services/02/7.JPG',
+          'assets/images/services/02/5.JPG',
+          'assets/images/services/02/6.jpg',
+          'assets/images/services/02/7.JPG',
         ],
         title: 'II. CHÚNG TÔI THỰC HIỆN DỊCH VỤ THỬ NGHIỆM VÀ NGHIỆM THU NHƯ THẾ NÀO?',
         paragraphs: [

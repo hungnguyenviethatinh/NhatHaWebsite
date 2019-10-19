@@ -19,7 +19,7 @@ export class CordexProductComponent implements OnInit {
   tabs = [
     {
       name: 'SẢN PHẨM CBM',
-      img: '/assets/images/products/01/02/tab-home.png',
+      img: 'assets/images/products/01/02/tab-home.png',
       style: {
         ...this.style,
         'border-right': '1px dashed #ffa500'
@@ -28,7 +28,7 @@ export class CordexProductComponent implements OnInit {
     },
     {
       name: 'CỬA SỔ IR CORDEX',
-      img: '/assets/images/products/01/02/tab-1.png',
+      img: 'assets/images/products/01/02/tab-1.png',
       style: {
         ...this.style,
       },
@@ -90,17 +90,17 @@ export class CordexProductComponent implements OnInit {
 
   content = {
     page0: {
-      img: '/assets/images/products/01/02/1.png ',
+      img: 'assets/images/products/01/02/1.png ',
       title: 'CỬA SỔ HỒNG NGOẠI – DÒNG IW',
       description: 'Dòng sản phẩm IW là thế hệ mới nhất của Cửa sổ Hồng ngoại Thông minh đến từ '
       + 'CorDEX Instruments. Dòng cửa sổ  hồng ngoại IW hoạt động với mọi thiết bị chụp nhiệt '
       + 'hồng ngoại giúp nâng cao sự an toàn, hiệu quả và độ chính xác cho công tác kiểm tra hệ thống và điện và bảo trì chẩn đoán',
       logos: [
-        '/assets/images/products/01/02/Connect Logo.png',
-        '/assets/images/products/01/02/HydroGard Logo.png',
-        '/assets/images/products/01/02/Queens Award Logo.png',
-        '/assets/images/products/01/02/C RUS Logo.png',
-        '/assets/images/products/01/02/Sira Logo.png',
+        'assets/images/products/01/02/Connect Logo.png',
+        'assets/images/products/01/02/HydroGard Logo.png',
+        'assets/images/products/01/02/Queens Award Logo.png',
+        'assets/images/products/01/02/C RUS Logo.png',
+        'assets/images/products/01/02/Sira Logo.png',
       ],
     },
     page1: {
@@ -126,7 +126,7 @@ export class CordexProductComponent implements OnInit {
           + 'bản lề lò xo nén sẽ mở và giữ nắp bảo vệ một cách tự động trong suốt quá trình tiến hành đo đạc.',
         ],
       ],
-      center: '/assets/images/products/01/02/2.png',
+      center: 'assets/images/products/01/02/2.png',
       right: [
         [
           'Cơ Cấu Khóa Vặn ¼ Vòng Để Mở',
@@ -189,15 +189,15 @@ export class CordexProductComponent implements OnInit {
     ],
     page3: [
       {
-        img: '/assets/images/products/01/02/Cordex - IW4000.png',
+        img: 'assets/images/products/01/02/Cordex - IW4000.png',
         title: 'CỬA SỔ HỒNG NGOẠI– IW4000',
       },
       {
-        img: '/assets/images/products/01/02/Cordex - IW3000.png',
+        img: 'assets/images/products/01/02/Cordex - IW3000.png',
         title: 'CỬA SỔ HỒNG NGOẠI – IW3000',
       },
       {
-        img: '/assets/images/products/01/02/Cordex - IW2000.png',
+        img: 'assets/images/products/01/02/Cordex - IW2000.png',
         title: 'CỬA SỔ HỒNG NGOẠI – IW2000',
       },
     ],
@@ -261,20 +261,20 @@ export class CordexProductComponent implements OnInit {
       ],
       demos: {
         img: [
-          '/assets/images/products/01/02/3.jpg',
-          '/assets/images/products/01/02/4.png',
-          '/assets/images/products/01/02/5.jpg',
-          '/assets/images/products/01/02/6.jpg',
-          '/assets/images/products/01/02/7.jpg',
-          '/assets/images/products/01/02/8.jpg',
-          '/assets/images/products/01/02/9.jpg',
-          '/assets/images/products/01/02/10.jpg',
-          '/assets/images/products/01/02/11.gif',
-          '/assets/images/products/01/02/12.jpg',
-          '/assets/images/products/01/02/13.jpg',
-          '/assets/images/products/01/02/14.bmp',
+          'assets/images/products/01/02/3.jpg',
+          'assets/images/products/01/02/4.png',
+          'assets/images/products/01/02/5.jpg',
+          'assets/images/products/01/02/6.jpg',
+          'assets/images/products/01/02/7.jpg',
+          'assets/images/products/01/02/8.jpg',
+          'assets/images/products/01/02/9.jpg',
+          'assets/images/products/01/02/10.jpg',
+          'assets/images/products/01/02/11.gif',
+          'assets/images/products/01/02/12.jpg',
+          'assets/images/products/01/02/13.jpg',
+          'assets/images/products/01/02/14.bmp',
         ],
-          video: '/assets/images/products/01/02/video.mp4',
+          video: 'assets/images/products/01/02/video.mp4',
       },
       documents: [
         'Brochure – IW Series',

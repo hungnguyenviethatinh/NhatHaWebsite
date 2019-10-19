@@ -8,14 +8,14 @@ import { Component, OnInit } from '@angular/core';
 export class PowerQualityComponent implements OnInit {
   service = {
     heading: {
-      img: '/assets/images/services/03/1.jpg',
+      img: 'assets/images/services/03/1.jpg',
       title: 'PHÂN TÍCH CHẤT LƯỢNG ĐIỆN NĂNG',
     },
     contents: [
       {
         img: [
-          '/assets/images/services/03/2.JPG',
-          '/assets/images/services/03/3.jpg',
+          'assets/images/services/03/2.JPG',
+          'assets/images/services/03/3.jpg',
         ],
         title: 'I. CHẤT LƯỢNG ĐIỆN NĂNG CÓ QUAN TRỌNG KHÔNG?',
         paragraphs: [
@@ -47,11 +47,11 @@ export class PowerQualityComponent implements OnInit {
       },
       {
         img: [
-          '/assets/images/services/03/4.jpg',
-          '/assets/images/services/03/5.JPG',
-          '/assets/images/services/03/6.jpg',
-          '/assets/images/services/03/7.jpg',
-          '/assets/images/services/03/8.png',
+          'assets/images/services/03/4.jpg',
+          'assets/images/services/03/5.JPG',
+          'assets/images/services/03/6.jpg',
+          'assets/images/services/03/7.jpg',
+          'assets/images/services/03/8.png',
         ],
         title: 'II. CHẤT LƯỢNG ĐIỆN NĂNG LÀ GÌ?',
         paragraphs: [
@@ -80,7 +80,7 @@ export class PowerQualityComponent implements OnInit {
             rows: [
               {
                 col_0: 'Sụt áp/nhấp nháy',
-                col_1: '/assets/images/services/03/t1.png',
+                col_1: 'assets/images/services/03/t1.png',
                 col_2: {
                   reason: 'khởi động hoặc dừng một tải lớn ví dụ như một máy nén khí điều hòa hay một động cơ '
                   + 'lớn hay các thiết bị hút dòng gián đoạn thường xuyển.',
@@ -90,7 +90,7 @@ export class PowerQualityComponent implements OnInit {
               },
               {
                 col_0: 'Giảm hệ số công suất',
-                col_1: '/assets/images/services/03/t2.png',
+                col_1: 'assets/images/services/03/t2.png',
                 col_2: {
                   reason: 'do thừa tải mang tính dung/tính kháng, tình trạng hư hỏng bộ lọc tụ bù hoặc hệ thống bù công suất phản kháng.',
                   result: 'tăng chi phí vận hành, bị phạt bù công suất trong hóa đơn tiền điện.',
@@ -98,7 +98,7 @@ export class PowerQualityComponent implements OnInit {
               },
               {
                 col_0: 'Méo dạng sóng hài',
-                col_1: '/assets/images/services/03/t3.png',
+                col_1: 'assets/images/services/03/t3.png',
                 col_2: {
                   reason: 'do các tải phi tuyến (hầu như đối với các thiết bị điện tử và điều khiển động cơ).',
                   result: 'làm quá nhiệt thiết bị điện, dây dẫn và động cơ, gây sai lệch trong điều khiển, '
@@ -107,7 +107,7 @@ export class PowerQualityComponent implements OnInit {
               },
               {
                 col_0: 'Mất cân bằng pha đối tải 3 pha',
-                col_1: '/assets/images/services/03/t4.png',
+                col_1: 'assets/images/services/03/t4.png',
                 col_2: {
                   reason: 'đấu nối tải một pha với công suất khác nhau, sự cố với các thiết bị tải 3 pha.',
                   result: 'giảm hiệu năng, gây quá nhiệt, gây hư hỏng động cơ và máy biến áp.',
@@ -115,7 +115,7 @@ export class PowerQualityComponent implements OnInit {
               },
               {
                 col_0: 'Dòng quá độ và vọt điện áp',
-                col_1: '/assets/images/services/03/t5.png',
+                col_1: 'assets/images/services/03/t5.png',
                 col_2: {
                   reason: 'đóng cắt các bộ lọc, đóng cắt các thiết bị có công suất lớn, ngắn mạch đường truyền '
                   + 'hoặc bị ảnh hưởng bởi sét đánh.',
@@ -129,9 +129,9 @@ export class PowerQualityComponent implements OnInit {
       },
       {
         img: [
-          '/assets/images/services/03/9.jpg',
-          '/assets/images/services/03/10.jpg',
-          '/assets/images/services/03/11.jpg',
+          'assets/images/services/03/9.jpg',
+          'assets/images/services/03/10.jpg',
+          'assets/images/services/03/11.jpg',
         ],
         title: 'III. CHÚNG TÔI THỰC HIỆN DỊCH VỤ PHÂN TÍCH CHẤT LƯỢNG ĐIỆN NĂNG NHƯ THẾ NÀO?',
         paragraphs: [

@@ -19,7 +19,7 @@ export class EmersonIntellisawComponent implements OnInit {
   tabs = [
     {
       name: 'SẢN PHẨM CBM',
-      img: '/assets/images/products/03/01/tab-home.png',
+      img: 'assets/images/products/03/01/tab-home.png',
       style: {
         ...this.style,
         'border-right': '1px dashed #008000'
@@ -28,7 +28,7 @@ export class EmersonIntellisawComponent implements OnInit {
     },
     {
       name: 'EMERSON INTELLISAW',
-      img: '/assets/images/products/03/01/tab-1.jpg',
+      img: 'assets/images/products/03/01/tab-1.jpg',
       style: {
         ...this.style,
       },
@@ -37,23 +37,23 @@ export class EmersonIntellisawComponent implements OnInit {
   ];
 
   imgages = [
-    '/assets/images/products/03/01/17.jpg',
-    '/assets/images/products/03/01/18.jpg',
-    '/assets/images/products/03/01/19.png',
-    '/assets/images/products/03/01/20.png',
-    '/assets/images/products/03/01/21.png',
-    '/assets/images/products/03/01/22.png',
-    '/assets/images/products/03/01/23.jpg',
-    '/assets/images/products/03/01/24.jpg',
-    '/assets/images/products/03/01/25.jpg',
-    '/assets/images/products/03/01/27.jpg',
-    '/assets/images/products/03/01/28.jpg',
-    '/assets/images/products/03/01/29.jpg',
-    '/assets/images/products/03/01/30.jpg',
-    '/assets/images/products/03/01/31.jpg',
-    '/assets/images/products/03/01/32.jpg',
-    '/assets/images/products/03/01/33.jpg',
-    '/assets/images/products/03/01/34.png',
+    'assets/images/products/03/01/17.jpg',
+    'assets/images/products/03/01/18.jpg',
+    'assets/images/products/03/01/19.png',
+    'assets/images/products/03/01/20.png',
+    'assets/images/products/03/01/21.png',
+    'assets/images/products/03/01/22.png',
+    'assets/images/products/03/01/23.jpg',
+    'assets/images/products/03/01/24.jpg',
+    'assets/images/products/03/01/25.jpg',
+    'assets/images/products/03/01/27.jpg',
+    'assets/images/products/03/01/28.jpg',
+    'assets/images/products/03/01/29.jpg',
+    'assets/images/products/03/01/30.jpg',
+    'assets/images/products/03/01/31.jpg',
+    'assets/images/products/03/01/32.jpg',
+    'assets/images/products/03/01/33.jpg',
+    'assets/images/products/03/01/34.png',
   ];
 
   constructor(private router: Router) { }

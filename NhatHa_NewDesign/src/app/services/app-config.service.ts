@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 
-const appConfigUrl = '/assets/app.config.json';
+const appConfigUrl = 'assets/app.config.json';
 
 @Injectable({
   providedIn: 'root'

@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class EquipmentComponent implements OnInit {
   banners = [
-    '/assets/images/company/equipment/Megger Testing Equipment.JPG',
+    'assets/images/company/equipment/Megger Testing Equipment.JPG',
   ];
   equipments: any;
 
@@ -14,7 +14,7 @@ export class EquipmentComponent implements OnInit {
       this.equipments = [
         {
           name: 'Siemens - MV Switchgear Station',
-          img: '/assets/images/company/equipment/Siemens - MV Switchgear Station.JPG',
+          img: 'assets/images/company/equipment/Siemens - MV Switchgear Station.JPG',
           contents: [
             {
               key: 'Thiết bị thí nghiệm: ',
@@ -36,7 +36,7 @@ export class EquipmentComponent implements OnInit {
         },
         {
           name: 'ABB Transformer Substation',
-          img: '/assets/images/company/equipment/ABB Transformer Substation.JPG',
+          img: 'assets/images/company/equipment/ABB Transformer Substation.JPG',
           contents: [
             {
               key: 'Thiết bị thí nghiệm: ',
@@ -56,7 +56,7 @@ export class EquipmentComponent implements OnInit {
         },
         {
           name: 'Schneider LV Switchboard',
-          img: '/assets/images/company/equipment/Schneider LV Switchboard.JPG',
+          img: 'assets/images/company/equipment/Schneider LV Switchboard.JPG',
           contents: [
             {
               key: 'Thiết bị thí nghiệm: ',

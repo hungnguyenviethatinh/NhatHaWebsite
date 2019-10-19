@@ -19,7 +19,7 @@ export class IrissUltrsoundComponent implements OnInit {
   tabs = [
     {
       name: 'SẢN PHẨM CBM',
-      img: '/assets/images/products/02/02/tab-home.png',
+      img: 'assets/images/products/02/02/tab-home.png',
       style: {
         ...this.style,
         'border-right': '1px dashed #096dd9'
@@ -28,7 +28,7 @@ export class IrissUltrsoundComponent implements OnInit {
     },
     {
       name: 'IRISS SONUS XT',
-      img: '/assets/images/products/02/02/tab-1.jpg',
+      img: 'assets/images/products/02/02/tab-1.jpg',
       style: {
         ...this.style,
       },
@@ -105,7 +105,7 @@ export class IrissUltrsoundComponent implements OnInit {
           'Phát hiện từ sớm các dấu hiệu cảnh bảo sự cố liên quan đến điện và cơ khí trước khi các hư hỏng có thể xảy ra.',
         ],
       ],
-      center: '/assets/images/products/02/02/1.png',
+      center: 'assets/images/products/02/02/1.png',
       right: [
         [
           'Tiết Kiệm Tuyệt Vời',
@@ -125,21 +125,21 @@ export class IrissUltrsoundComponent implements OnInit {
     detail: {
       demos: {
         img: [
-          '/assets/images/products/02/02/2.jpg',
-          '/assets/images/products/02/02/3.jpg',
-          '/assets/images/products/02/02/4.jpg',
-          '/assets/images/products/02/02/5.jpg',
-          '/assets/images/products/02/02/6.jpeg',
-          '/assets/images/products/02/02/7.jpeg',
-          '/assets/images/products/02/02/8.jpg',
-          '/assets/images/products/02/02/9.jpeg',
-          '/assets/images/products/02/02/10.jpg',
-          '/assets/images/products/02/02/11.jpg',
-          '/assets/images/products/02/02/12.jpg',
-          '/assets/images/products/02/02/13.jpg',
-          '/assets/images/products/02/02/14.jpg',
+          'assets/images/products/02/02/2.jpg',
+          'assets/images/products/02/02/3.jpg',
+          'assets/images/products/02/02/4.jpg',
+          'assets/images/products/02/02/5.jpg',
+          'assets/images/products/02/02/6.jpeg',
+          'assets/images/products/02/02/7.jpeg',
+          'assets/images/products/02/02/8.jpg',
+          'assets/images/products/02/02/9.jpeg',
+          'assets/images/products/02/02/10.jpg',
+          'assets/images/products/02/02/11.jpg',
+          'assets/images/products/02/02/12.jpg',
+          'assets/images/products/02/02/13.jpg',
+          'assets/images/products/02/02/14.jpg',
         ],
-        video: '/assets/images/products/02/02/video.mp4',
+        video: 'assets/images/products/02/02/video.mp4',
       },
       documents: [
         'Product Data Sheet – Sonus XT',

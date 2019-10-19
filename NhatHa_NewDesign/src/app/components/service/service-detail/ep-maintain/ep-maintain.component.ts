@@ -8,14 +8,14 @@ import { Component, OnInit } from '@angular/core';
 export class EpMaintainComponent implements OnInit {
   service = {
     heading: {
-      img: '/assets/images/services/04/1.JPG',
+      img: 'assets/images/services/04/1.JPG',
       title: 'CHƯƠNG TRÌNH BẢO TRÌ ĐIỆN',
     },
     contents: [
       {
         img: [
-          '/assets/images/services/04/2.jpg',
-          '/assets/images/services/04/3.JPG',
+          'assets/images/services/04/2.jpg',
+          'assets/images/services/04/3.JPG',
         ],
         title: 'I. TẠI SAO CẦN PHẢI TIẾN HÀNH BẢO TRÌ ĐIỆN THƯỜNG XUYÊN?',
         paragraphs: [
@@ -42,10 +42,10 @@ export class EpMaintainComponent implements OnInit {
       },
       {
         img: [
-          '/assets/images/services/04/4.jpg',
-          '/assets/images/services/04/5.jpg',
-          '/assets/images/services/04/6.JPG',
-          '/assets/images/services/04/7.jpg',
+          'assets/images/services/04/4.jpg',
+          'assets/images/services/04/5.jpg',
+          'assets/images/services/04/6.JPG',
+          'assets/images/services/04/7.jpg',
         ],
         title: 'II. CHƯƠNG TRÌNH BẢO TRÌ ĐIỆN LÀ GÌ?',
         paragraphs: [
@@ -102,10 +102,10 @@ export class EpMaintainComponent implements OnInit {
       },
       {
         img: [
-          '/assets/images/services/04/8.jpg',
-          '/assets/images/services/04/9.JPG',
-          '/assets/images/services/04/10.JPG',
-          '/assets/images/services/04/11.JPG',
+          'assets/images/services/04/8.jpg',
+          'assets/images/services/04/9.JPG',
+          'assets/images/services/04/10.JPG',
+          'assets/images/services/04/11.JPG',
         ],
         title: 'III. CHÚNG TÔI TIẾN HÀNH DỊCH VỤ BẢO TRÌ NHƯ THẾ NÀO?',
         paragraphs: [
@@ -155,9 +155,9 @@ export class EpMaintainComponent implements OnInit {
       },
       {
         img: [
-          '/assets/images/services/04/12.JPG',
-          '/assets/images/services/04/13.JPG',
-          '/assets/images/services/04/14.JPG',
+          'assets/images/services/04/12.JPG',
+          'assets/images/services/04/13.JPG',
+          'assets/images/services/04/14.JPG',
         ],
         title: 'IV. ĐIỀU GÌ KHIẾN DỊCH VỤ CỦA CHÚNG TÔI KHÁC BIỆT?',
         paragraphs: [

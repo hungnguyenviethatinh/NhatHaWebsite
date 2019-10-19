@@ -19,7 +19,7 @@ export class CordexCameraComponent implements OnInit {
   tabs = [
     {
       name: 'SẢN PHẨM CBM',
-      img: '/assets/images/products/02/01/tab-home.png',
+      img: 'assets/images/products/02/01/tab-home.png',
       contents: [],
       style: {
         ...this.style,
@@ -29,18 +29,18 @@ export class CordexCameraComponent implements OnInit {
     },
     {
       name: 'MÁY CHỤP NHIỆT CORDEX',
-      img: '/assets/images/products/02/01/tab-1.gif',
+      img: 'assets/images/products/02/01/tab-1.gif',
       contents: [
         {
           href: '/san-pham/may-chup-hinh-nhiet-cordex/chi-tiet',
           fragment: 'toughpix-digiherm',
-          img: '/assets/images/products/02/01/1.jpg',
+          img: 'assets/images/products/02/01/1.jpg',
           text: 'TOUGHPIX DIGITHERM',
         },
         {
           href: '/san-pham/may-chup-hinh-nhiet-cordex/chi-tiet',
           fragment: 'infrared-camera-tc7150',
-          img: '/assets/images/products/02/01/2.jpg',
+          img: 'assets/images/products/02/01/2.jpg',
           text: 'INFRARED CAMERA – TC7150',
         },
       ],

@@ -39,25 +39,25 @@ export class CameraDetailComponent implements OnInit, AfterViewInit {
         ],
       },
       right: {
-        img: '/assets/images/products/02/01/01/1.PNG',
+        img: 'assets/images/products/02/01/01/1.PNG',
       }
     },
     detail: {
       demo: {
         img: [
-          '/assets/images/products/02/01/01/2.jpg',
-          '/assets/images/products/02/01/01/3.jpg',
-          '/assets/images/products/02/01/01/4.gif',
-          '/assets/images/products/02/01/01/5.png',
-          '/assets/images/products/02/01/01/6.jpg',
-          '/assets/images/products/02/01/01/7.jpg',
-          '/assets/images/products/02/01/01/8.jpg',
-          '/assets/images/products/02/01/01/9.jpg',
-          '/assets/images/products/02/01/01/10.jpg',
-          '/assets/images/products/02/01/01/11.jpg',
-          '/assets/images/products/02/01/01/12.jpg',
+          'assets/images/products/02/01/01/2.jpg',
+          'assets/images/products/02/01/01/3.jpg',
+          'assets/images/products/02/01/01/4.gif',
+          'assets/images/products/02/01/01/5.png',
+          'assets/images/products/02/01/01/6.jpg',
+          'assets/images/products/02/01/01/7.jpg',
+          'assets/images/products/02/01/01/8.jpg',
+          'assets/images/products/02/01/01/9.jpg',
+          'assets/images/products/02/01/01/10.jpg',
+          'assets/images/products/02/01/01/11.jpg',
+          'assets/images/products/02/01/01/12.jpg',
         ],
-        video: '/assets/images/products/02/01/01/video.mp4',
+        video: 'assets/images/products/02/01/01/video.mp4',
       },
       documents: [
         'Brochure – ToughPix DigiTherm Camera',
@@ -84,22 +84,22 @@ export class CameraDetailComponent implements OnInit, AfterViewInit {
         ],
       },
       right: {
-        img: '/assets/images/products/02/01/02/1.PNG',
+        img: 'assets/images/products/02/01/02/1.PNG',
       }
     },
     detail: {
       demo: {
         img: [
-          '/assets/images/products/02/01/02/2.jpg',
-          '/assets/images/products/02/01/02/3.jpg',
-          '/assets/images/products/02/01/02/4.jpg',
-          '/assets/images/products/02/01/02/5.jpg',
-          '/assets/images/products/02/01/02/6.jpg',
-          '/assets/images/products/02/01/02/7.jpg',
-          '/assets/images/products/02/01/02/8.jpg',
-          '/assets/images/products/02/01/02/9.jpg',
+          'assets/images/products/02/01/02/2.jpg',
+          'assets/images/products/02/01/02/3.jpg',
+          'assets/images/products/02/01/02/4.jpg',
+          'assets/images/products/02/01/02/5.jpg',
+          'assets/images/products/02/01/02/6.jpg',
+          'assets/images/products/02/01/02/7.jpg',
+          'assets/images/products/02/01/02/8.jpg',
+          'assets/images/products/02/01/02/9.jpg',
         ],
-        video: '/assets/images/products/02/01/02/video.mp4',
+        video: 'assets/images/products/02/01/02/video.mp4',
       },
       documents: [
         'Brochure – TC7150 Thermal Camera',
@@ -112,7 +112,7 @@ export class CameraDetailComponent implements OnInit, AfterViewInit {
     {
       active: false,
       name: 'SẢN PHẨM CBM',
-      img: '/assets/images/products/02/01/tab-home.png',
+      img: 'assets/images/products/02/01/tab-home.png',
       style: {
         ...this.style,
         'border-right': '1px dashed #ffa500',
@@ -122,7 +122,7 @@ export class CameraDetailComponent implements OnInit, AfterViewInit {
     {
       active: false,
       name: 'MÁY CHỤP NHIỆT CORDEX',
-      img: '/assets/images/products/02/01/tab-1.gif',
+      img: 'assets/images/products/02/01/tab-1.gif',
       style: {
         ...this.style,
         'border-right': '1px dashed #ffa500',
@@ -133,7 +133,7 @@ export class CameraDetailComponent implements OnInit, AfterViewInit {
       active: true,
       id: 'toughpix-digiherm',
       name: 'TOUGHPIX DIGITHERM',
-      img: '/assets/images/products/02/01/tab-2.jpg',
+      img: 'assets/images/products/02/01/tab-2.jpg',
       content: { ...this.toughpix },
       style: {
         ...this.style,
@@ -153,7 +153,7 @@ export class CameraDetailComponent implements OnInit, AfterViewInit {
       active: false,
       id: 'infrared-camera-tc7150',
       name: 'TC7150 INFRARED CAMERA',
-      img: '/assets/images/products/02/01/tab-3.jpg',
+      img: 'assets/images/products/02/01/tab-3.jpg',
       content: { ...this.tc7150 },
       style: {
         ...this.style,

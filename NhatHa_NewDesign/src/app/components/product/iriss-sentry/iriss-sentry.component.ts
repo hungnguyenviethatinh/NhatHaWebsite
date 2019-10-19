@@ -19,7 +19,7 @@ export class IrissSentryComponent implements OnInit {
   tabs = [
     {
       name: 'SẢN PHẨM CBM',
-      img: '/assets/images/products/03/04/tab-home.png',
+      img: 'assets/images/products/03/04/tab-home.png',
       style: {
         ...this.style,
         'border-right': '1px dashed #4472c4'
@@ -28,7 +28,7 @@ export class IrissSentryComponent implements OnInit {
     },
     {
       name: 'IRISS E SENTRY CONNECT',
-      img: '/assets/images/products/03/04/tab-1.jpg',
+      img: 'assets/images/products/03/04/tab-1.jpg',
       style: {
         ...this.style,
       },
@@ -104,7 +104,7 @@ export class IrissSentryComponent implements OnInit {
           + 'đến các thiết bị phụ trợ như cửa sổ hồng ngoại, mức độ năng lượng hồ qquang điện, các yêu cầu về bảo hộ lao động,v.v…',
         ],
       ],
-      center: '/assets/images/products/03/04/2.png',
+      center: 'assets/images/products/03/04/2.png',
       right: [
         [
           'Ghi nhận và Lưu trữ các thông tin kiểm tra',
@@ -144,7 +144,7 @@ export class IrissSentryComponent implements OnInit {
           + 'bởi người quản lý nhằm dự đoán thiết bị cần được tiến hành bảo trì hoặc giám sát nhiệt nghiêm ngặt liên tục.',
         ],
       ],
-      center: '/assets/images/products/03/04/3.png',
+      center: 'assets/images/products/03/04/3.png',
       right: [
         [
           'Xây dựng và Phân công công việc',
@@ -171,14 +171,14 @@ export class IrissSentryComponent implements OnInit {
     detail: {
       demos: {
         img: [
-          '/assets/images/products/03/04/5.jpg',
-          '/assets/images/products/03/04/6.png',
-          '/assets/images/products/03/04/7.png',
-          '/assets/images/products/03/04/8.jpg',
-          '/assets/images/products/03/04/9.png',
-          '/assets/images/products/03/04/10.jpg',
+          'assets/images/products/03/04/5.jpg',
+          'assets/images/products/03/04/6.png',
+          'assets/images/products/03/04/7.png',
+          'assets/images/products/03/04/8.jpg',
+          'assets/images/products/03/04/9.png',
+          'assets/images/products/03/04/10.jpg',
         ],
-        video: '/assets/images/products/03/04/video.mp4',
+        video: 'assets/images/products/03/04/video.mp4',
       },
       documents: [
         'Product Data Sheet – E Sentry Connect',

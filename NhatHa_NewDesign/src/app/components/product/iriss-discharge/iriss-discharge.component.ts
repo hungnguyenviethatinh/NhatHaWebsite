@@ -19,7 +19,7 @@ export class IrissDischargeComponent implements OnInit {
   tabs = [
     {
       name: 'SẢN PHẨM CBM',
-      img: '/assets/images/products/02/03/tab-home.png',
+      img: 'assets/images/products/02/03/tab-home.png',
       style: {
         ...this.style,
         'border-right': '1px dashed #096dd9'
@@ -28,7 +28,7 @@ export class IrissDischargeComponent implements OnInit {
     },
     {
       name: 'IRISS SONUS PD',
-      img: '/assets/images/products/02/03/tab-1.jpg',
+      img: 'assets/images/products/02/03/tab-1.jpg',
       style: {
         ...this.style,
       },
@@ -107,7 +107,7 @@ export class IrissDischargeComponent implements OnInit {
           'Phát hiện từ sớm các dấu hiệu cảnh bảo sự cố liên quan đến điện và cơ khí trước khi các hư hỏng có thể xảy ra.',
         ],
       ],
-      center: '/assets/images/products/02/03/1.png',
+      center: 'assets/images/products/02/03/1.png',
       right: [
         [
           'Kết Nối Đồng Bộ Dữ Liệu',
@@ -126,14 +126,14 @@ export class IrissDischargeComponent implements OnInit {
     detail: {
       demos: {
         img: [
-          '/assets/images/products/02/03/2.jpg',
-          '/assets/images/products/02/03/3.jpg',
-          '/assets/images/products/02/03/4.jpg',
-          '/assets/images/products/02/03/5.jpg',
-          '/assets/images/products/02/03/6.jpg',
-          '/assets/images/products/02/03/7.jpg',
+          'assets/images/products/02/03/2.jpg',
+          'assets/images/products/02/03/3.jpg',
+          'assets/images/products/02/03/4.jpg',
+          'assets/images/products/02/03/5.jpg',
+          'assets/images/products/02/03/6.jpg',
+          'assets/images/products/02/03/7.jpg',
         ],
-        video: '/assets/images/products/02/03/video.mp4',
+        video: 'assets/images/products/02/03/video.mp4',
       },
       documents: [
         'Product Data Sheet – Sonus PD',

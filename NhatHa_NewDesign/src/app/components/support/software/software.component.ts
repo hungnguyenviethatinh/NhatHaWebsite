@@ -7,12 +7,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SoftwareComponent implements OnInit {
   banners = [
-    '/assets/images/supports/software/Engineering Softwares.JPG',
+    'assets/images/supports/software/Engineering Softwares.JPG',
   ];
 
   softwares = [
     {
-      logo: '/assets/images/abb-logo.png',
+      logo: 'assets/images/abb-logo.png',
       name: 'e-Design Suite',
       descriptions: [
         'e-Design, bộ phần mềm kỹ thuật hỗ trợ công tác thiết kế hệ thống điện với '
@@ -21,7 +21,7 @@ export class SoftwareComponent implements OnInit {
       ],
     },
     {
-      logo: '/assets/images/abb-logo.png',
+      logo: 'assets/images/abb-logo.png',
       name: 'Protection and Control IED Manager (PCM600)',
       descriptions: [
         'Phần mềm hỗ trợ việc quản lý các thiết bị điều khiển và bảo vệ bao gồm '
@@ -29,7 +29,7 @@ export class SoftwareComponent implements OnInit {
       ],
     },
     {
-      logo: '/assets/images/schneider-logo.png',
+      logo: 'assets/images/schneider-logo.png',
       name: 'Ecodial Advance Calculation',
       descriptions: [
         'Ecodial Advanced Calculation hỗ trợ việc tối ưu hóa trong lựa chọn thiết bị và giảm thiểu '
@@ -37,7 +37,7 @@ export class SoftwareComponent implements OnInit {
       ],
     },
     {
-      logo: '/assets/images/schneider-logo.png',
+      logo: 'assets/images/schneider-logo.png',
       name: 'Sepam Protection Relay – SFT2841 & SFT2826',
       descriptions: [
         'SFT2841 là phần mềm quản lý cấu hình cho tất cả sản phẩm rơ-le bảo vệ Sepam của hãng Schneider.',
@@ -45,7 +45,7 @@ export class SoftwareComponent implements OnInit {
       ],
     },
     {
-      logo: '/assets/images/schneider-logo.png',
+      logo: 'assets/images/schneider-logo.png',
       name: 'Easergy Studio',
       descriptions: [
         'Easergy Studio khiến việc cấu hình, tích hợp và '
@@ -53,14 +53,14 @@ export class SoftwareComponent implements OnInit {
       ],
     },
     {
-      logo: '/assets/images/siemens-logo.png',
+      logo: 'assets/images/siemens-logo.png',
       name: 'SIMARIS Design',
       descriptions: [
         'Phần mềm hỗ trợ tính toán dòng ngắn mạch, trào lưu công suất, rơi áp và cân bằng pha trong hệ thống phân phối.',
       ],
     },
     {
-      logo: '/assets/images/siemens-logo.png',
+      logo: 'assets/images/siemens-logo.png',
       name: 'SIMARIS Curves',
       descriptions: [
         'Phần mềm trình bày các đặc tuyến và dải định mức và các thông số cài đặt khác nhau cho các thiết bị '
@@ -68,7 +68,7 @@ export class SoftwareComponent implements OnInit {
       ],
     },
     {
-      logo: '/assets/images/siemens-logo.png',
+      logo: 'assets/images/siemens-logo.png',
       name: 'DIGSI 4',
       descriptions: [
         'Các sản phẩm SIPROTEC của Siemens có thể được cấu hình và đánh giá bằng phần mềm DIGSI 4 '
@@ -76,7 +76,7 @@ export class SoftwareComponent implements OnInit {
       ],
     },
     {
-      logo: '/assets/images/siemens-logo.png',
+      logo: 'assets/images/siemens-logo.png',
       name: 'SIGRA 4',
       descriptions: [
         'Phần mềm SIGRA 4 giúp mô phỏng các tình huống sự cố được ghi nhận bởi thiết bị bảo vệ với '
@@ -84,7 +84,7 @@ export class SoftwareComponent implements OnInit {
       ],
     },
     {
-      logo: '/assets/images/qcad-logo.png',
+      logo: 'assets/images/qcad-logo.png',
       name: 'QCAD',
       descriptions: [
         'QCAD là một phần mềm hỗ trợ vẽ kỹ thuật miễn phí ở dạng mở dạng hai chiều (2D). '
@@ -92,7 +92,7 @@ export class SoftwareComponent implements OnInit {
       ],
     },
     {
-      logo: '/assets/images/dialux-logo.png',
+      logo: 'assets/images/dialux-logo.png',
       name: 'DIALux',
       descriptions: [
         'Phần mềm DIALux là phần mềm hàng đầu phục vụ cho việc thiết kế, tính toán và '

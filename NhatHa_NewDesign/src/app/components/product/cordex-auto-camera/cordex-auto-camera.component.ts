@@ -19,7 +19,7 @@ export class CordexAutoCameraComponent implements OnInit {
   tabs = [
     {
       name: 'SẢN PHẨM CBM',
-      img: '/assets/images/products/03/02/tab-home.png',
+      img: 'assets/images/products/03/02/tab-home.png',
       style: {
         ...this.style,
         'border-right': '1px dashed #ffa500'
@@ -28,7 +28,7 @@ export class CordexAutoCameraComponent implements OnInit {
     },
     {
       name: 'DÒNG CORDEX MN',
-      img: '/assets/images/products/03/02/tab-1.PNG',
+      img: 'assets/images/products/03/02/tab-1.PNG',
       style: {
         ...this.style,
       },
@@ -39,12 +39,12 @@ export class CordexAutoCameraComponent implements OnInit {
   products = [
     {
       href: '/san-pham/cordex-automated-camera/cordex-mn4000',
-      img: '/assets/images/products/03/02/2.jpg',
+      img: 'assets/images/products/03/02/2.jpg',
       name: 'PANEL MOUNTED IMAGER – MN4000',
     },
     {
       href: '/san-pham/cordex-automated-camera/cordex-mn4100',
-      img: '/assets/images/products/03/02/3.png',
+      img: 'assets/images/products/03/02/3.png',
       name: 'AUTOMATION IMAGER – MN4100',
     },
   ];

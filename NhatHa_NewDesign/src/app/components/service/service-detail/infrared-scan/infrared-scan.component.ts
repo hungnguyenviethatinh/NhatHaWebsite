@@ -8,13 +8,13 @@ import { Component, OnInit } from '@angular/core';
 export class InfraredScanComponent implements OnInit {
   service = {
     heading: {
-      img: '/assets/images/services/05/01/1.jpg',
+      img: 'assets/images/services/05/01/1.jpg',
       title: 'QUÉT NHIỆT HỒNG NGOẠI THIẾT BỊ ĐIỆN',
     },
     contents: [
       {
         img: [
-          '/assets/images/services/05/01/2.JPG',
+          'assets/images/services/05/01/2.JPG',
         ],
         title: 'I. CHÚNG TA CÓ CẦN QUÉT NHIỆT HỒNG NGOẠI THIẾT BỊ ĐIỆN?',
         paragraphs: [
@@ -33,13 +33,13 @@ export class InfraredScanComponent implements OnInit {
       },
       {
         img: [
-          '/assets/images/services/05/01/3.JPG',
-          '/assets/images/services/05/01/4.jpg',
-          '/assets/images/services/05/01/5.jpg',
-          '/assets/images/services/05/01/6.jpg',
-          '/assets/images/services/05/01/7.jpg',
-          '/assets/images/services/05/01/8.jpg',
-          '/assets/images/services/05/01/9.jpg',
+          'assets/images/services/05/01/3.JPG',
+          'assets/images/services/05/01/4.jpg',
+          'assets/images/services/05/01/5.jpg',
+          'assets/images/services/05/01/6.jpg',
+          'assets/images/services/05/01/7.jpg',
+          'assets/images/services/05/01/8.jpg',
+          'assets/images/services/05/01/9.jpg',
         ],
         title: 'II. DỊCH VỤ QUÉT NHIỆT HỒNG NGOẠI THIẾT BỊ ĐIỆN',
         paragraphs: [

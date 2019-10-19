@@ -9,12 +9,12 @@ export class ShortCircuitComponent implements OnInit {
 
   service = {
     heading: {
-      img: '/assets/images/services/01/01/1.jpg',
+      img: 'assets/images/services/01/01/1.jpg',
       title: 'TÍNH TOÁN NGẮN MẠCH – PHỐI HỢP BẢO VỆ HỆ THỐNG',
     },
     contents: [
       {
-        img: '/assets/images/services/01/01/2.jpg',
+        img: 'assets/images/services/01/01/2.jpg',
         title: 'I. NGẮN MẠCH LÀ GÌ?',
         paragraphs: [
           'Hiện tượng ngắn mạch xảy ra khi dòng điện được truyền theo một đường dẫn bất thường không có '
@@ -29,7 +29,7 @@ export class ShortCircuitComponent implements OnInit {
         ],
       },
       {
-        img: '/assets/images/services/01/01/3.jpg',
+        img: 'assets/images/services/01/01/3.jpg',
         title: 'II. MỤC TIÊU CỦA TÍNH TOÁN PHỐI HỢP BẢO VỆ',
         paragraphs: [
           'Tính toán phối hợp bảo vệ là một quy trình bao gôm việc chọn lựa và sắp xếp thứ tự giữa các '
@@ -42,7 +42,7 @@ export class ShortCircuitComponent implements OnInit {
         ],
       },
       {
-        img: '/assets/images/services/01/01/4.jpg',
+        img: 'assets/images/services/01/01/4.jpg',
         title: 'III. QUY ĐỊNH VỀ TÍNH TOÁN PHỐI HỢP BẢO VỆ',
         paragraphs: [
           'Tính toán phối hợp bảo vệ được yêu cầu thực hiện nhằm đảm bảo sự an toàn của người vận hành, '
@@ -55,7 +55,7 @@ export class ShortCircuitComponent implements OnInit {
         ],
       },
       {
-        img: '/assets/images/services/01/01/5.jpg',
+        img: 'assets/images/services/01/01/5.jpg',
         title: 'IV. DỊCH VỤ TÍNH TOÁN NGẮN MẠCH VÀ PHỐI HỢP BẢO VỆ',
         paragraphs: [
           'Để thực hiện tính toán ngắn mạch và phối hợp bảo vệ, cần xác lập tình huống ngắn mạch xảy ra giữa pha '

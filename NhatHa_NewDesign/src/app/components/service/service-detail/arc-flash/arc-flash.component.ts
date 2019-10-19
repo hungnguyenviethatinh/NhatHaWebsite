@@ -8,13 +8,13 @@ import { Component, OnInit } from '@angular/core';
 export class ArcFlashComponent implements OnInit {
   service = {
     heading: {
-      img: ['/assets/images/services/01/02/1.jpg'],
+      img: ['assets/images/services/01/02/1.jpg'],
       title: 'PHÂN TÍCH NGUY CƠ HỒ QUANG ĐIỆN',
     },
     contents: [
       {
         type: 'p',
-        img: ['/assets/images/services/01/02/2.gif'],
+        img: ['assets/images/services/01/02/2.gif'],
         title: 'I. THỐNG KÊ VỀ CÁC SỰ CỐ NỔ HỒ QUANG ĐIỆN',
         paragraphs: [
           'Bạn có biết theo thống kê có từ năm (5) đến mười (10) sự cố nổ hồ quang điện đối với thiết bị xảy ra '
@@ -26,7 +26,7 @@ export class ArcFlashComponent implements OnInit {
       },
       {
         type: 'p',
-        img: ['/assets/images/services/01/02/3.jpg'],
+        img: ['assets/images/services/01/02/3.jpg'],
         title: 'II. HỒ QUANG ĐIỆN LÀ GÌ?',
         paragraphs: [
           'Hồ quang điện là một vụ nổ điện gây ra bởi lỗi trong hệ thống hoặc trường hợp ngắn mạch chập chạm '
@@ -42,7 +42,7 @@ export class ArcFlashComponent implements OnInit {
       },
       {
         type: 'li-circle',
-        img: ['/assets/images/services/01/02/4.jpg'],
+        img: ['assets/images/services/01/02/4.jpg'],
         title: 'III. NGUYÊN NHÂN GÂY RA HỒ QUANG ĐIỆN',
         paragraphs: [
           'Thiết bị không được bảo dưỡng thường xuyên',
@@ -58,9 +58,9 @@ export class ArcFlashComponent implements OnInit {
       {
         type: 'p',
         img: [
-          '/assets/images/services/01/02/5.jpg',
-          '/assets/images/services/01/02/6.jpg',
-          '/assets/images/services/01/02/7.jpg',
+          'assets/images/services/01/02/5.jpg',
+          'assets/images/services/01/02/6.jpg',
+          'assets/images/services/01/02/7.jpg',
         ],
         title: 'IV. TUÂN THỦ NGUYÊN TẮC AN TOÀN VỀ HỒ QUANG ĐIỆN ',
         paragraphs: [
@@ -84,8 +84,8 @@ export class ArcFlashComponent implements OnInit {
       {
         type: 'li-number',
         img: [
-          '/assets/images/services/01/02/8.gif',
-          '/assets/images/services/01/02/9.jpg',
+          'assets/images/services/01/02/8.gif',
+          'assets/images/services/01/02/9.jpg',
         ],
         title: 'IV. TUÂN THỦ NGUYÊN TẮC AN TOÀN VỀ HỒ QUANG ĐIỆN ',
         paragraphs: [

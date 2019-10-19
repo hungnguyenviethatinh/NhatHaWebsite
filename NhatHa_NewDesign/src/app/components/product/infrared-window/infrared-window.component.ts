@@ -11,7 +11,7 @@ export class InfraredWindowComponent implements OnInit {
       href: '/san-pham/san-pham-iriss',
       name: 'Cửa sổ hồng ngoại Iriss',
       img: [
-        '/assets/images/products/01/1.jpg',
+        'assets/images/products/01/1.jpg',
       ],
       description: 'Cửa sổ hồng ngoại của IRISS là thiết bị đặc biệt được cấu tạo bằng tấm phim polyme hồng ngoại '
       + 'cho phép truyền dẫn phần lớn sóng hồng ngoại mà không bị thất thoát. Cửa sổ hồng ngoại dạng polyme bền bỉ '
@@ -22,8 +22,8 @@ export class InfraredWindowComponent implements OnInit {
       href: '/san-pham/cua-so-hong-ngoai-cordex',
       name: 'Của sổ hồng ngoại Cordex',
       img: [
-        '/assets/images/products/01/2.png',
-        '/assets/images/products/01/3.jpg',
+        'assets/images/products/01/2.png',
+        'assets/images/products/01/3.jpg',
       ],
       description: 'Hãy bảo vệ thiết bị, nhà máy và nhân viên của bạn bằng cách sử dụng sản phẩm mới nhất là '
       + 'cửa sổ hồng ngoại thông minh của CorDEX Instruments. Dòng cửa sổ hồng ngoại IW có thể hoạt động với '

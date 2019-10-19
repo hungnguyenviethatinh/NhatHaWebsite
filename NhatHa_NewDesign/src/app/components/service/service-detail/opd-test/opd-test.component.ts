@@ -8,15 +8,15 @@ import { Component, OnInit } from '@angular/core';
 export class OpdTestComponent implements OnInit {
   service = {
     heading: {
-      img: '/assets/images/services/05/02/1.JPG',
+      img: 'assets/images/services/05/02/1.JPG',
       title: 'ĐO PHÓNG ĐIỆN CỤC BỘ',
     },
     contents: [
       {
         img: [
-          '/assets/images/services/05/02/2.JPG',
-          '/assets/images/services/05/02/3.jpg',
-          '/assets/images/services/05/02/4.jpg',
+          'assets/images/services/05/02/2.JPG',
+          'assets/images/services/05/02/3.jpg',
+          'assets/images/services/05/02/4.jpg',
         ],
         title: 'I. PHÓNG ĐIỆN CỤC BỘ LÀ GÌ?',
         paragraphs: [
@@ -36,17 +36,17 @@ export class OpdTestComponent implements OnInit {
           },
           {
             type: 'img',
-            img: '/assets/images/services/05/02/p1.jpg',
+            img: 'assets/images/services/05/02/p1.jpg',
           },
         ],
       },
       {
         img: [
-          '/assets/images/services/05/02/5.JPG',
-          '/assets/images/services/05/02/6.gif',
-          '/assets/images/services/05/02/7.jpg',
-          '/assets/images/services/05/02/8.jpg',
-          '/assets/images/services/05/02/9.jpg',
+          'assets/images/services/05/02/5.JPG',
+          'assets/images/services/05/02/6.gif',
+          'assets/images/services/05/02/7.jpg',
+          'assets/images/services/05/02/8.jpg',
+          'assets/images/services/05/02/9.jpg',
         ],
         title: 'II. GIẢI PHÁP PHỨC HỢP KIỂM TRA PHÓNG ĐIỆN CỤC BỘ',
         paragraphs: [
@@ -128,8 +128,8 @@ export class OpdTestComponent implements OnInit {
       },
       {
         img: [
-          '/assets/images/services/05/02/10.jpg',
-          '/assets/images/services/05/02/11.jpg',
+          'assets/images/services/05/02/10.jpg',
+          'assets/images/services/05/02/11.jpg',
         ],
         title: 'III. TẠI SAO DỊCH VỤ CỦA CHÚNG TÔI LẠI KHÁC BIỆT?',
         paragraphs: [

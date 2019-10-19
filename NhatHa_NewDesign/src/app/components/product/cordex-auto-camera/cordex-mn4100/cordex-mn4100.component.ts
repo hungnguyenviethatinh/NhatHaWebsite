@@ -19,7 +19,7 @@ export class CordexMn4100Component implements OnInit {
   tabs = [
     {
       name: 'SẢN PHẨM CBM',
-      img: '/assets/images/products/03/02/tab-home.png',
+      img: 'assets/images/products/03/02/tab-home.png',
       style: {
         ...this.style,
         'border-right': '1px dashed #ed7d31'
@@ -28,7 +28,7 @@ export class CordexMn4100Component implements OnInit {
     },
     {
       name: 'CORDEX MN4100',
-      img: '/assets/images/products/03/02/tab-mn4100.png',
+      img: 'assets/images/products/03/02/tab-mn4100.png',
       style: {
         ...this.style,
       },
@@ -91,7 +91,7 @@ export class CordexMn4100Component implements OnInit {
   content = {
     cover: {
       title: 'Mô Tả Sản Phẩm',
-      img: '/assets/images/products/03/02/02/1.PNG',
+      img: 'assets/images/products/03/02/02/1.PNG',
       paragraphs: [
         'Được thiết kế cho ứng dụng điều khiển và tự động, MN4100 bao gồm hai loại cảm biến nhiệt '
         + 'và hình ảnh cung cấp đến 4800 điểm đo nhiệt độ với các mức cảnh báo có thể cài đặt được '
@@ -110,14 +110,14 @@ export class CordexMn4100Component implements OnInit {
     detail: {
       demos: {
         img: [
-          '/assets/images/products/03/02/02/2.png',
-          '/assets/images/products/03/02/02/3.png',
-          '/assets/images/products/03/02/02/4.jpg',
-          '/assets/images/products/03/02/02/5.png',
-          '/assets/images/products/03/02/02/6.png',
-          '/assets/images/products/03/02/02/7.jpg',
+          'assets/images/products/03/02/02/2.png',
+          'assets/images/products/03/02/02/3.png',
+          'assets/images/products/03/02/02/4.jpg',
+          'assets/images/products/03/02/02/5.png',
+          'assets/images/products/03/02/02/6.png',
+          'assets/images/products/03/02/02/7.jpg',
         ],
-        video: '/assets/images/products/03/02/02/video.mp4',
+        video: 'assets/images/products/03/02/02/video.mp4',
       },
       documents:[
         'Product Data Sheet – MN4100',

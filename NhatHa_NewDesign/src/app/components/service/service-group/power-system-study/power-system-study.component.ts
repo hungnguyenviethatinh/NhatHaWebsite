@@ -10,7 +10,7 @@ export class PowerSystemStudyComponent implements OnInit {
     name: 'Phân tích hệ thống điện',
     data: {
       banners: [
-        '/assets/images/services/01/Power System Study.jpg',
+        'assets/images/services/01/Power System Study.jpg',
       ],
       subject: 'PHÂN TÍCH HỆ THỐNG ĐIỆN – ĐỘ TIN CẬY VÀ SỰ AN TOÀN',
       body: [
@@ -46,12 +46,12 @@ export class PowerSystemStudyComponent implements OnInit {
         title: 'Nhật Hạ Electric có thể cung cấp các dịch vụ phân tích đánh giá hệ thống điện như sau:',
         links: [
           {
-            img: '/assets/images/services/01/link-1.jpg',
+            img: 'assets/images/services/01/link-1.jpg',
             title: 'TÍNH TOÁN NGẮN MẠCH – PHỐI HỢP BẢO VỆ HỆ THỐNG',
             href: '/dich-vu/tinh-toan-ngan-mach-phoi-hop-bao-ve',
           },
           {
-            img: '/assets/images/services/01/link-2.jpg',
+            img: 'assets/images/services/01/link-2.jpg',
             title: 'PHÂN TÍCH NGUY CƠ HỒ QUANG ĐIỆN',
             href: '/dich-vu/phan-tich-nguy-co-ho-quang-dien',
           },
