@@ -1,9 +1,11 @@
 <div class="page-wrapper">
     <nh-header 
-        [language]="language" 
+        [language]="language"
+        [selectedMenuIndex]="selectedMenuIndex"
         (useLanguage)="useLanguage($event)" 
         (navigateTo)="navigateTo($event)"
         (openSideBarEvent)="openSideBar()"
+        (setSelectedMenuIndexEvent)="setSelectedMenuIndex($event)"
     >
     </nh-header>
     <div class="main-wrapper">
@@ -12,7 +14,9 @@
                 <router-outlet></router-outlet>
             </div>
             <div nz-col nzSpan="24">
-                <nh-footer></nh-footer>
+                <nh-footer
+                    (setSelectedMenuIndexEvent)="setSelectedMenuIndex($event)"
+                ></nh-footer>
             </div>
         </div>
     </div>

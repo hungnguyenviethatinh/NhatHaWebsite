@@ -10,6 +10,7 @@ import { TranslateService } from '@ngx-translate/core';
 export class AppComponent {
   language = 'vn';
   sideBarVisible = false;
+  selectedMenuIndex = 0;
 
   constructor(private router: Router, private translate: TranslateService) {
     translate.setDefaultLang(this.language);
@@ -25,6 +26,10 @@ export class AppComponent {
 
   closeSideBar = () => {
     this.sideBarVisible = false;
+  }
+
+  setSelectedMenuIndex = (index: number) => {
+    this.selectedMenuIndex = index;
   }
 
   useLanguage = (language: string) => {

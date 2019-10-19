@@ -1,70 +1,70 @@
 <ul id="menu" nz-menu [nzMode]="menuMode" [ngStyle]="style">
-    <li nz-menu-item nzSelected>
-        <a (click)="closeSideBar($event)" [routerLink]="['/trang-chu']">
+    <li nz-menu-item [nzSelected]="selectedMenuIndex === 0">
+        <a (click)="closeSideBar($event, 0)" [routerLink]="['/trang-chu']">
             {{'Giới thiệu' | translate}}
         </a>
     </li>
     <li nz-submenu nzMenuClassName="submenu-company" [nzTitle]="'Doanh Nghiệp' | translate"
-        (click)="switchRouter('/doanh-nghiep/tamnhin-sumenh-giatri', $event)">
+        (click)="switchRouter('/doanh-nghiep/tamnhin-sumenh-giatri', $event, 1)">
         <ul>
-            <li nz-menu-item>
-                <a (click)="closeSideBar($event)" [routerLink]="['/doanh-nghiep/tamnhin-sumenh-giatri']">
+            <li nz-menu-item [nzSelected]="selectedMenuIndex === 1">
+                <a (click)="closeSideBar($event, 1)" [routerLink]="['/doanh-nghiep/tamnhin-sumenh-giatri']">
                     {{'Tầm nhìn - Sứ mệnh - Giá trị' | translate}}
                 </a>
             </li>
-            <li nz-menu-item>
-                <a (click)="closeSideBar($event)" [routerLink]="['/doanh-nghiep/thiet-bi']">
+            <li nz-menu-item [nzSelected]="selectedMenuIndex === 2">
+                <a (click)="closeSideBar($event, 2)" [routerLink]="['/doanh-nghiep/thiet-bi']">
                     {{'Thiết bị' | translate}}
                 </a>
             </li>
         </ul>
     </li>
     <li nz-submenu nzMenuClassName="submenu-service" [nzTitle]="'Dịch Vụ Kỹ Thuật' | translate"
-        (click)="switchRouter('/dich-vu', $event)">
+        (click)="switchRouter('/dich-vu', $event, 3)">
         <ul>
-            <li (click)="switchRouter('/dich-vu/phan-tich-he-thong-dien', $event)" nz-submenu
+            <li (click)="switchRouter('/dich-vu/phan-tich-he-thong-dien', $event, 3)" nz-submenu
                 [nzTitle]="'Phân Tích Hệ Thống Điện' | translate">
                 <ul>
-                    <li nz-menu-item>
-                        <a (click)="closeSideBar($event)"
+                    <li nz-menu-item [nzSelected]="selectedMenuIndex === 3">
+                        <a (click)="closeSideBar($event, 3)"
                             [routerLink]="['/dich-vu/tinh-toan-ngan-mach-phoi-hop-bao-ve']" translate>
                             Tính Toán Ngắn Mạch – Phối Hợp Bảo Vệ Hệ Thống
                         </a>
                     </li>
-                    <li nz-menu-item>
-                        <a (click)="closeSideBar($event)" [routerLink]="['/dich-vu/phan-tich-nguy-co-ho-quang-dien']"
+                    <li nz-menu-item [nzSelected]="selectedMenuIndex === 4">
+                        <a (click)="closeSideBar($event, 4)" [routerLink]="['/dich-vu/phan-tich-nguy-co-ho-quang-dien']"
                             translate>
                             Phân Tích Nguy Cơ Hồ Quang Điện
                         </a>
                     </li>
                 </ul>
             </li>
-            <li nz-menu-item>
-                <a (click)="closeSideBar($event)" [routerLink]="['/dich-vu/thu-nghiem-va-nghiem-thu']" translate>
+            <li nz-menu-item [nzSelected]="selectedMenuIndex === 5">
+                <a (click)="closeSideBar($event, 5)" [routerLink]="['/dich-vu/thu-nghiem-va-nghiem-thu']" translate>
                     Thử Nghiệm và Nghiệm Thu
                 </a>
             </li>
-            <li nz-menu-item>
-                <a (click)="closeSideBar($event)" [routerLink]="['/dich-vu/phan-tich-chat-luong-dien-nang']" translate>
+            <li nz-menu-item [nzSelected]="selectedMenuIndex === 6">
+                <a (click)="closeSideBar($event, 6)" [routerLink]="['/dich-vu/phan-tich-chat-luong-dien-nang']" translate>
                     Phân Tích Chất Lượng Điện Năng
                 </a>
             </li>
-            <li nz-menu-item>
-                <a (click)="closeSideBar($event)" [routerLink]="['/dich-vu/chuong-trinh-bao-tri-dien']" translate>
+            <li nz-menu-item [nzSelected]="selectedMenuIndex === 7">
+                <a (click)="closeSideBar($event, 7)" [routerLink]="['/dich-vu/chuong-trinh-bao-tri-dien']" translate>
                     Chương Trình Bảo Trì Điện
                 </a>
             </li>
-            <li (click)="switchRouter('/dich-vu/bao-tri-theo-tinh-trang', $event);" nz-submenu
+            <li (click)="switchRouter('/dich-vu/bao-tri-theo-tinh-trang', $event, 8);" nz-submenu
                 [nzTitle]="'Bảo Trì Theo Tình Trạng' | translate">
                 <ul>
-                    <li nz-menu-item>
-                        <a (click)="closeSideBar($event)"
+                    <li nz-menu-item [nzSelected]="selectedMenuIndex === 8">
+                        <a (click)="closeSideBar($event, 8)"
                             [routerLink]="['/dich-vu/quet-nhiet-hong-ngoai-thiet-bi-dien']" translate>
                             Quét Nhiệt Hồng Ngoại Thiết Bị Điện
                         </a>
                     </li>
-                    <li nz-menu-item>
-                        <a (click)="closeSideBar($event)" [routerLink]="['/dich-vu/do-phong-dien-cuc-bo']" translate>
+                    <li nz-menu-item [nzSelected]="selectedMenuIndex === 9">
+                        <a (click)="closeSideBar($event, 9)" [routerLink]="['/dich-vu/do-phong-dien-cuc-bo']" translate>
                             Đo Phóng Điện Cục Bộ
                         </a>
                     </li>
@@ -73,54 +73,54 @@
         </ul>
     </li>
     <li nz-submenu nzMenuClassName="submenu-product" [nzTitle]="'Sản Phẩm' | translate"
-        (click)="switchRouter('/san-pham', $event)">
+        (click)="switchRouter('/san-pham', $event, 10)">
         <ul>
             <li nz-submenu [nzTitle]="'Cửa Sổ Hồng Ngoại' | translate"
-                (click)="switchRouter('/san-pham/cua-so-hong-ngoai', $event)">
+                (click)="switchRouter('/san-pham/cua-so-hong-ngoai', $event, 10)">
                 <ul>
                     <li nz-submenu [nzTitle]="'Sản Phẩm IRISS' | translate"
-                        (click)="switchRouter('/san-pham/san-pham-iriss', $event)">
+                        (click)="switchRouter('/san-pham/san-pham-iriss', $event, 10)">
                         <ul>
-                            <li nz-menu-item>
-                                <a (click)="closeSideBar($event)" [routerLink]="['/san-pham/san-pham-iriss/chi-tiet']"
+                            <li nz-menu-item [nzSelected]="selectedMenuIndex === 10">
+                                <a (click)="closeSideBar($event, 10)" [routerLink]="['/san-pham/san-pham-iriss/chi-tiet']"
                                     fragment="dong-vpt" translate>Dòng VPT</a>
                             </li>
-                            <li nz-menu-item>
-                                <a (click)="closeSideBar($event)" [routerLink]="['/san-pham/san-pham-iriss/chi-tiet']"
+                            <li nz-menu-item [nzSelected]="selectedMenuIndex === 11">
+                                <a (click)="closeSideBar($event, 11)" [routerLink]="['/san-pham/san-pham-iriss/chi-tiet']"
                                     fragment="dong-cap-ct" translate>Dòng CAP CT</a>
                             </li>
-                            <li nz-menu-item>
-                                <a (click)="closeSideBar($event)" [routerLink]="['/san-pham/san-pham-iriss/chi-tiet']"
+                            <li nz-menu-item [nzSelected]="selectedMenuIndex === 12">
+                                <a (click)="closeSideBar($event, 12)" [routerLink]="['/san-pham/san-pham-iriss/chi-tiet']"
                                     fragment="dong-cap-env" translate>Dòng CAP ENV</a>
                             </li>
-                            <li nz-menu-item>
-                                <a (click)="closeSideBar($event)" [routerLink]="['/san-pham/san-pham-iriss/chi-tiet']"
+                            <li nz-menu-item [nzSelected]="selectedMenuIndex === 13">
+                                <a (click)="closeSideBar($event, 13)" [routerLink]="['/san-pham/san-pham-iriss/chi-tiet']"
                                     fragment="dong-flex-ir" translate>Dòng FLEX IR</a>
                             </li>
                         </ul>
                     </li>
-                    <li nz-menu-item>
-                        <a (click)="closeSideBar($event)" [routerLink]="['/san-pham/cua-so-hong-ngoai-cordex']"
+                    <li nz-menu-item [nzSelected]="selectedMenuIndex === 14">
+                        <a (click)="closeSideBar($event, 14)" [routerLink]="['/san-pham/cua-so-hong-ngoai-cordex']"
                             translate>Sản Phẩm
                             Cordex</a>
                     </li>
                 </ul>
             </li>
             <li nz-submenu [nzTitle]="'Máy Dò Trình Trạng Thiết Bị' | translate"
-                (click)="switchRouter('/san-pham/may-do-tinh-trang-thiet-bi', $event)">
+                (click)="switchRouter('/san-pham/may-do-tinh-trang-thiet-bi', $event, 15)">
                 <ul>
                     <li nz-submenu [nzTitle]="'Máy Chụp Hình Nhiệt Cordex' | translate"
-                        (click)="switchRouter('/san-pham/may-chup-hinh-nhiet-cordex', $event)">
+                        (click)="switchRouter('/san-pham/may-chup-hinh-nhiet-cordex', $event, 15)">
                         <ul>
-                            <li nz-menu-item>
-                                <a (click)="closeSideBar($event)"
+                            <li nz-menu-item [nzSelected]="selectedMenuIndex === 15">
+                                <a (click)="closeSideBar($event, 15)"
                                     [routerLink]="['/san-pham/may-chup-hinh-nhiet-cordex/chi-tiet']"
                                     fragment="toughpix-digiherm" translate>
                                     Máy Cordex Toughpix Digitherm
                                 </a>
                             </li>
-                            <li nz-menu-item>
-                                <a (click)="closeSideBar($event)"
+                            <li nz-menu-item [nzSelected]="selectedMenuIndex === 16">
+                                <a (click)="closeSideBar($event, 16)"
                                     [routerLink]="['/san-pham/may-chup-hinh-nhiet-cordex/chi-tiet']"
                                     fragment="infrared-camera-tc7150" translate>
                                     Máy Cordex TC7150
@@ -131,8 +131,8 @@
                     <li (click)="$event.stopPropagation();" nz-submenu
                         [nzTitle]="'Máy Dò Sóng Siêu Âm IRISS' | translate">
                         <ul>
-                            <li nz-menu-item>
-                                <a (click)="closeSideBar($event)"
+                            <li nz-menu-item [nzSelected]="selectedMenuIndex === 17">
+                                <a (click)="closeSideBar($event, 17)"
                                     [routerLink]="['/san-pham/may-do-song-sieu-am-iriss']">Iriss Sonus
                                     XT</a>
                             </li>
@@ -141,8 +141,8 @@
                     <li (click)="$event.stopPropagation();" nz-submenu
                         [nzTitle]="'Máy Đo Phóng Điện Cục Bộ IRISS' | translate">
                         <ul>
-                            <li nz-menu-item>
-                                <a (click)="closeSideBar($event)"
+                            <li nz-menu-item [nzSelected]="selectedMenuIndex === 18">
+                                <a (click)="closeSideBar($event, 18)"
                                     [routerLink]="['/san-pham/may-do-phong-dien-cuc-bo-iriss']">Iriss
                                     Sonus PD</a>
                             </li>
@@ -151,65 +151,65 @@
                 </ul>
             </li>
             <li nz-submenu [nzTitle]="'Giải Pháp Giám Sát Liên Tục' | translate"
-                (click)="switchRouter('/san-pham/giai-phap-giam-sat-lien-tuc', $event)">
+                (click)="switchRouter('/san-pham/giai-phap-giam-sat-lien-tuc', $event, 19)">
                 <ul>
-                    <li nz-menu-item>
-                        <a (click)="closeSideBar($event)" [routerLink]="['/san-pham/emerson-intellisaw']">Emerson
+                    <li nz-menu-item [nzSelected]="selectedMenuIndex === 19">
+                        <a (click)="closeSideBar($event, 19)" [routerLink]="['/san-pham/emerson-intellisaw']">Emerson
                             Intellisaw</a>
                     </li>
                     <li nz-submenu nzTitle="Cordex Automated Camera"
-                        (click)="switchRouter('/san-pham/cordex-automated-camera', $event)">
+                        (click)="switchRouter('/san-pham/cordex-automated-camera', $event, 20)">
                         <ul>
-                            <li nz-menu-item>
-                                <a (click)="closeSideBar($event)"
+                            <li nz-menu-item [nzSelected]="selectedMenuIndex === 20">
+                                <a (click)="closeSideBar($event, 20)"
                                     [routerLink]="['/san-pham/cordex-automated-camera/cordex-mn4000']">MN4000</a>
                             </li>
-                            <li nz-menu-item>
-                                <a (click)="closeSideBar($event)"
+                            <li nz-menu-item [nzSelected]="selectedMenuIndex === 21">
+                                <a (click)="closeSideBar($event, 21)"
                                     [routerLink]="['/san-pham/cordex-automated-camera/cordex-mn4100']">MN4100</a>
                             </li>
                         </ul>
                     </li>
-                    <li nz-menu-item>
-                        <a (click)="closeSideBar($event)" [routerLink]="['/san-pham/iriss-delta-t-alert']">Iriss Delta T
+                    <li nz-menu-item [nzSelected]="selectedMenuIndex === 22">
+                        <a (click)="closeSideBar($event, 22)" [routerLink]="['/san-pham/iriss-delta-t-alert']">Iriss Delta T
                             Alert</a>
                     </li>
-                    <li nz-menu-item>
-                        <a (click)="closeSideBar($event)" [routerLink]="['/san-pham/iriss-e-sentry-connect']">Iriss E
+                    <li nz-menu-item [nzSelected]="selectedMenuIndex === 23">
+                        <a (click)="closeSideBar($event, 23)" [routerLink]="['/san-pham/iriss-e-sentry-connect']">Iriss E
                             Sentry</a>
                     </li>
                 </ul>
             </li>
         </ul>
     </li>
-    <li nz-menu-item>
-        <a (click)="closeSideBar($event)" [routerLink]="['/doi-tac']" translate>Đối Tác</a>
+    <li nz-menu-item [nzSelected]="selectedMenuIndex === 24">
+        <a (click)="closeSideBar($event, 24)" [routerLink]="['/doi-tac']" translate>Đối Tác</a>
     </li>
-    <li nz-menu-item>
-        <a (click)="closeSideBar($event)" [routerLink]="['/du-an']" translate>Dự Án</a>
+    <li nz-menu-item [nzSelected]="selectedMenuIndex === 25">
+        <a (click)="closeSideBar($event, 25)" [routerLink]="['/du-an']" translate>Dự Án</a>
     </li>
-    <li (click)="switchRouter('/ho-tro/phan-mem', $event)" nz-submenu nzMenuClassName="submenu-support"
+    <li (click)="switchRouter('/ho-tro/phan-mem', $event, 26)" nz-submenu nzMenuClassName="submenu-support"
         [nzTitle]="'Hỗ Trợ' | translate">
         <ul>
-            <li nz-menu-item>
-                <a (click)="closeSideBar($event)" [routerLink]="['/ho-tro/phan-mem']">
+            <li nz-menu-item [nzSelected]="selectedMenuIndex === 26">
+                <a (click)="closeSideBar($event, 26)" [routerLink]="['/ho-tro/phan-mem']">
                     {{'Phần Mềm' | translate}}
                 </a>
             </li>
-            <li nz-menu-item>
-                <a (click)="closeSideBar($event)" [routerLink]="['/ho-tro/nghien-cuu']" translate>Tình Huống Nghiên
+            <li nz-menu-item [nzSelected]="selectedMenuIndex === 27">
+                <a (click)="closeSideBar($event, 27)" [routerLink]="['/ho-tro/nghien-cuu']" translate>Tình Huống Nghiên
                     Cứu</a>
             </li>
         </ul>
     </li>
-    <li (click)="switchRouter('/lien-he', $event)" nz-submenu nzMenuClassName="submenu-contact"
+    <li (click)="switchRouter('/lien-he', $event, 28)" nz-submenu nzMenuClassName="submenu-contact"
         [nzTitle]="'Liên Hệ' | translate">
         <ul>
-            <li nz-menu-item>
-                <a (click)="closeSideBar($event)" [routerLink]="['/lien-he']" translate>Thông Tin Liên Hệ</a>
+            <li nz-menu-item [nzSelected]="selectedMenuIndex === 28">
+                <a (click)="closeSideBar($event, 28)" [routerLink]="['/lien-he']" translate>Thông Tin Liên Hệ</a>
             </li>
-            <li nz-menu-item>
-                <a (click)="closeSideBar($event)" [routerLink]="['/lien-he/tuyen-dung']" translate>Việc Làm</a>
+            <li nz-menu-item [nzSelected]="selectedMenuIndex === 29">
+                <a (click)="closeSideBar($event, 29)" [routerLink]="['/lien-he/tuyen-dung']" translate>Việc Làm</a>
             </li>
         </ul>
     </li>

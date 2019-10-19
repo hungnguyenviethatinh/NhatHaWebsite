@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'nh-footer',
@@ -6,11 +6,17 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./footer.component.less']
 })
 export class FooterComponent implements OnInit {
+  @Output() setSelectedMenuIndexEvent = new EventEmitter<number>();
+
   year = new Date().getFullYear();
 
   constructor() { }
 
   ngOnInit() {
+  }
+
+  setSelectedMenuIndex = (index: number) => {
+    this.setSelectedMenuIndexEvent.emit(index);
   }
 
 }

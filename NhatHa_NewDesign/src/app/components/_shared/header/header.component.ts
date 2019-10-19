@@ -7,9 +7,11 @@ import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
   @Input() language: string;
+  @Input() selectedMenuIndex: number;
   @Output() useLanguage = new EventEmitter<string>();
   @Output() navigateTo = new EventEmitter<string>();
   @Output() openSideBarEvent = new EventEmitter();
+  @Output() setSelectedMenuIndexEvent = new EventEmitter<number>();
 
   constructor() { }
 
@@ -18,6 +20,10 @@ export class HeaderComponent implements OnInit {
 
   openSideBar = () => {
     this.openSideBarEvent.emit();
+  }
+
+  setSelectedMenuIndex = (index: number) => {
+    this.setSelectedMenuIndexEvent.emit(index);
   }
 
   switchRouter = (route: string) => {

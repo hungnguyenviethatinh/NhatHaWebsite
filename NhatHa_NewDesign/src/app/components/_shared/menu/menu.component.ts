@@ -7,8 +7,10 @@ import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 })
 export class MenuComponent implements OnInit {
   @Input() menuMode: string;
+  @Input() selectedMenuIndex: number;
   @Output() switchRouterEvent = new EventEmitter<string>();
   @Output() closeSideBarEvent = new EventEmitter();
+  @Output() setSelectedMenuIndexEvent = new EventEmitter<number>();
 
   style = { };
 
@@ -25,14 +27,20 @@ export class MenuComponent implements OnInit {
     }
   }
 
-  switchRouter = (route: string, event: any) => {
+  setSelectedMenuIndex = (index: number) => {
+    this.setSelectedMenuIndexEvent.emit(index);
+  }
+
+  switchRouter = (route: string, event: any, index: number) => {
     this.switchRouterEvent.emit(route);
     this.closeSideBarEvent.emit();
+    this.setSelectedMenuIndex(index);
     event.stopPropagation();
   }
 
-  closeSideBar = (event: any) => {
+  closeSideBar = (event: any, index: number) => {
     this.closeSideBarEvent.emit();
+    this.setSelectedMenuIndex(index);
     event.stopPropagation();
   }
 }

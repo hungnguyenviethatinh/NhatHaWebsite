@@ -50,7 +50,13 @@
     </div>
     <div id="menu" nz-row>
         <div nz-col nzSpan="24">
-            <nh-menu [menuMode]="'horizontal'" (switchRouterEvent)="switchRouter($event)"></nh-menu>
+            <nh-menu 
+                [menuMode]="'horizontal'"
+                [selectedMenuIndex]="selectedMenuIndex" 
+                (switchRouterEvent)="switchRouter($event)"
+                (setSelectedMenuIndexEvent)="setSelectedMenuIndex($event)"
+            >
+            </nh-menu>
         </div>
     </div>
 </header>
