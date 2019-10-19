@@ -10,10 +10,10 @@ export class HomeComponent implements OnInit {
   banners = [
     '/assets/images/banners/1.JPG',
     '/assets/images/banners/2.JPG',
-    '/assets/images/banners/3.JPG',
-    '/assets/images/banners/4.JPG',
-    '/assets/images/banners/5.JPG',
-    '/assets/images/banners/6.JPG',
+    // '/assets/images/banners/3.JPG',
+    // '/assets/images/banners/4.JPG',
+    // '/assets/images/banners/5.JPG',
+    // '/assets/images/banners/6.JPG',
   ];
 
   services = [
