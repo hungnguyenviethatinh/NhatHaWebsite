@@ -7,7 +7,7 @@ import {
   NzAffixModule, NzAnchorModule, NzCarouselModule, NzDividerModule,
   NzButtonModule, NzFormModule, NzTableModule, NzDrawerModule,
   NzBackTopModule, NzGridModule, NzIconModule, NzInputModule,
-  NzMenuModule, NzTypographyModule,
+  NzMenuModule, NzTypographyModule, NzMessageModule,
 } from 'ng-zorro-antd';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
@@ -38,6 +38,7 @@ import { MenuComponent } from './menu/menu.component';
     NzInputModule,
     NzMenuModule,
     NzTypographyModule,
+    NzMessageModule,
     ReactiveFormsModule,
     TranslateModule,
   ],
@@ -62,6 +63,7 @@ import { MenuComponent } from './menu/menu.component';
     NzInputModule,
     NzMenuModule,
     NzTypographyModule,
+    NzMessageModule,
     ReactiveFormsModule,
     TranslateModule
   ],

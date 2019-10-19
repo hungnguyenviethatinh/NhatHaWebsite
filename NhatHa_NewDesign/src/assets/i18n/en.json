@@ -233,16 +233,16 @@
     "software.name10":"DIALux",
     "descriptionSoftware100":"DIAL develops DIALux - the world's leading software for planning, calculation and visualization of indoor and outdoor lighting. ",
     "CÔNG TY TNHH THƯƠNG MẠI KỸ THUẬT NHẬT HẠ" : "NHAT HA TRADING - TECHNICAL SERVICE CO. LTD.",
-    "Tầng 4, Tòa nhà Thủy Lợi 4, 205 Nguyễn Xí P. 24, Q. Bình Thạnh, TP. Hồ Chí Minh, Việt Nam" : "Tầng 4, Tòa nhà Thủy Lợi 4, 205 Nguyễn Xí P. 24, Q. Bình Thạnh, TP. Hồ Chí Minh, Việt Nam",
+    "Tầng 4, Tòa nhà Thủy Lợi 4, 205 Nguyễn Xí P. 24, Q. Bình Thạnh, TP. Hồ Chí Minh, Việt Nam" : "The 4th Floor, Thủy Lợi 4 Building, 205 Nguyễn Xí, Ward. 24, Dist. Bình Thạnh, Hồ Chí Minh City, Việt Nam",
     "Họ tên": "Full name",
-    "Vui lòng nhập họ và tên!" : "Input full name,please!",
-    "Vui lòng nhập một email hợp lệ!":"Input valid email,please!",
-    "Vui lòng nhập email!":"Input email,please!",
-    "Số điện thoại":"Phone",
-    "Vui lòng nhập số điện thoại!":"Input phone number,please!",
-    "Nội dung yêu cầu":"Inquiries",
-    "Vui lòng nhập nội dung yêu cầu!":"Input Inquiries,please!",
-    "Gửi":"Send",
+    "Vui lòng nhập họ và tên!" : "Please fill in your full name!",
+    "Vui lòng nhập một email hợp lệ!": "Please fill in a valid email!",
+    "Vui lòng nhập email!": "Please fill in an email",
+    "Số điện thoại": "Phone",
+    "Vui lòng nhập số điện thoại!": "Please fill in your phone number!",
+    "Nội dung yêu cầu": "Inquiries",
+    "Vui lòng nhập nội dung yêu cầu!": "Please fill in your inquiries!",
+    "Gửi": "Send",
     "bannerjob.caption":"Wanted: Engineers with Passion and Attitude",
     "Các cơ hội hiện tại":"Current Opportunities",
     "hr.poster.title": "WE ARE PROUD OF BUILDING YOUR CAREER",
@@ -1418,32 +1418,4 @@
     "tab_sentry_detail.name1":"CERTIFICATIONS",
     "tab_sentry_detail.name2":"VIDEO - PICTURE",
     "tab_sentry_detail.name3":"DOCUMENTATIONS"
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    
-
 }
-    
