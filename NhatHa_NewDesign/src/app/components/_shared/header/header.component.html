@@ -24,16 +24,16 @@
     </div>
     <div id="desktopHeader" nz-row nzType="flex" nzJustify="space-between" nzAlign="middle">
         <div nz-col nzXs="24" nzSm="8" nzMd="8" nzLg="5" nzXl="5" nzXXl="4">
-            <a [routerLink]="['/trang-chu']" id="logo">
+            <a (click)="setSelectedMenuIndex(0)" [routerLink]="['/trang-chu']" id="logo">
                 <img src="assets/images/nhatha-logo.png"
                     [alt]="'Công ty Kỹ thuật Điện - Năng lượng Nhật Hạ' | translate">
             </a>
         </div>
         <div nz-col nzXs="24" nzSm="16" nzMd="16" nzLg="19" nzXl="19" nzXXl="20">
-            <h4 nz-title translate>
-                Công ty Kỹ thuật Điện - Năng lượng Nhật Hạ</h4>
-            <h3 nz-title translate>
-                Nơi Khách Hàng Đặt Niềm Tin</h3>
+            <h4 nz-title>
+                {{'Công ty Kỹ thuật Điện - Năng lượng Nhật Hạ' | translate}}</h4>
+            <h3 nz-title>
+                {{'Nơi Khách Hàng Đặt Niềm Tin' | translate}}</h3>
         </div>
     </div>
     <div id="mobileHeader" nz-row nzType="flex" nzJustify="space-between" nzAlign="middle">

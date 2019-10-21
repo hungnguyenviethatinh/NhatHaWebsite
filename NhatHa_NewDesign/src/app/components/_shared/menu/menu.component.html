@@ -27,31 +27,30 @@
                 <ul>
                     <li nz-menu-item [nzSelected]="selectedMenuIndex === 3">
                         <a (click)="closeSideBar($event, 3)"
-                            [routerLink]="['/dich-vu/tinh-toan-ngan-mach-phoi-hop-bao-ve']" translate>
-                            Tính Toán Ngắn Mạch – Phối Hợp Bảo Vệ Hệ Thống
+                            [routerLink]="['/dich-vu/tinh-toan-ngan-mach-phoi-hop-bao-ve']">
+                            {{'Tính Toán Ngắn Mạch – Phối Hợp Bảo Vệ Hệ Thống' | translate}}
                         </a>
                     </li>
                     <li nz-menu-item [nzSelected]="selectedMenuIndex === 4">
-                        <a (click)="closeSideBar($event, 4)" [routerLink]="['/dich-vu/phan-tich-nguy-co-ho-quang-dien']"
-                            translate>
-                            Phân Tích Nguy Cơ Hồ Quang Điện
+                        <a (click)="closeSideBar($event, 4)" [routerLink]="['/dich-vu/phan-tich-nguy-co-ho-quang-dien']">
+                            {{'Phân Tích Nguy Cơ Hồ Quang Điện' | translate}}
                         </a>
                     </li>
                 </ul>
             </li>
             <li nz-menu-item [nzSelected]="selectedMenuIndex === 5">
-                <a (click)="closeSideBar($event, 5)" [routerLink]="['/dich-vu/thu-nghiem-va-nghiem-thu']" translate>
-                    Thử Nghiệm và Nghiệm Thu
+                <a (click)="closeSideBar($event, 5)" [routerLink]="['/dich-vu/thu-nghiem-va-nghiem-thu']">
+                    {{'Thử Nghiệm và Nghiệm Thu' | translate}}
                 </a>
             </li>
             <li nz-menu-item [nzSelected]="selectedMenuIndex === 6">
-                <a (click)="closeSideBar($event, 6)" [routerLink]="['/dich-vu/phan-tich-chat-luong-dien-nang']" translate>
-                    Phân Tích Chất Lượng Điện Năng
+                <a (click)="closeSideBar($event, 6)" [routerLink]="['/dich-vu/phan-tich-chat-luong-dien-nang']">
+                    {{'Phân Tích Chất Lượng Điện Năng' | translate}}
                 </a>
             </li>
             <li nz-menu-item [nzSelected]="selectedMenuIndex === 7">
-                <a (click)="closeSideBar($event, 7)" [routerLink]="['/dich-vu/chuong-trinh-bao-tri-dien']" translate>
-                    Chương Trình Bảo Trì Điện
+                <a (click)="closeSideBar($event, 7)" [routerLink]="['/dich-vu/chuong-trinh-bao-tri-dien']">
+                    {{'Chương Trình Bảo Trì Điện' | translate}}
                 </a>
             </li>
             <li (click)="switchRouter('/dich-vu/bao-tri-theo-tinh-trang', $event, 8);" nz-submenu
@@ -59,13 +58,13 @@
                 <ul>
                     <li nz-menu-item [nzSelected]="selectedMenuIndex === 8">
                         <a (click)="closeSideBar($event, 8)"
-                            [routerLink]="['/dich-vu/quet-nhiet-hong-ngoai-thiet-bi-dien']" translate>
-                            Quét Nhiệt Hồng Ngoại Thiết Bị Điện
+                            [routerLink]="['/dich-vu/quet-nhiet-hong-ngoai-thiet-bi-dien']">
+                            {{'Quét Nhiệt Hồng Ngoại Thiết Bị Điện' | translate}}
                         </a>
                     </li>
                     <li nz-menu-item [nzSelected]="selectedMenuIndex === 9">
-                        <a (click)="closeSideBar($event, 9)" [routerLink]="['/dich-vu/do-phong-dien-cuc-bo']" translate>
-                            Đo Phóng Điện Cục Bộ
+                        <a (click)="closeSideBar($event, 9)" [routerLink]="['/dich-vu/do-phong-dien-cuc-bo']">
+                            {{'Đo Phóng Điện Cục Bộ' | translate}}
                         </a>
                     </li>
                 </ul>
