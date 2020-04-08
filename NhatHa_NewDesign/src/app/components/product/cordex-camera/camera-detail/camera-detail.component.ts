@@ -1,4 +1,4 @@
-import { Component, OnInit, HostListener, AfterViewInit } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { Router, ActivatedRoute } from '@angular/router';
 
 @Component({
@@ -6,14 +6,15 @@ import { Router, ActivatedRoute } from '@angular/router';
   templateUrl: './camera-detail.component.html',
   styleUrls: ['./camera-detail.component.less']
 })
-export class CameraDetailComponent implements OnInit, AfterViewInit {
+export class CameraDetailComponent implements OnInit {
   style = {
     'text-align': 'center',
     cursor: 'pointer',
   };
 
   open = {
-    opacity: 1,
+    display: 'block',
+    // opacity: 1,
   };
 
   nzGutter = {
@@ -244,28 +245,28 @@ export class CameraDetailComponent implements OnInit, AfterViewInit {
     }
   }
 
-  ngAfterViewInit() {
-    const sectionId = document.getElementById(this.fragment);
-    const offsetTop = sectionId.offsetTop;
-    window.scrollTo(0, offsetTop + 10);
-  }
+  // ngAfterViewInit() {
+  //   const sectionId = document.getElementById(this.fragment);
+  //   const offsetTop = sectionId.offsetTop;
+  //   window.scrollTo(0, offsetTop + 10);
+  // }
 
-  @HostListener('window:scroll', ['$event'])
-  onScroll(event: any) {
-    const tabIds = this.tabs.map(t => t.id).filter(i => i !== undefined);
-    tabIds.forEach(id => {
-      const offsetTop = document.getElementById(id).getBoundingClientRect().top;
-      if (offsetTop <= 200) {
-        const activeTab = this.tabs.find(t => t.active && t.id !== id);
-        if (activeTab) {
-          activeTab.active = false;
-          this.tabs.find(t => t.id === id).active = true;
-          this.router.navigate(['/san-pham/may-chup-hinh-nhiet-cordex/chi-tiet'], {
-            fragment: id,
-          });
-        }
-      }
-    });
-  }
+  // @HostListener('window:scroll', ['$event'])
+  // onScroll(event: any) {
+  //   const tabIds = this.tabs.map(t => t.id).filter(i => i !== undefined);
+  //   tabIds.forEach(id => {
+  //     const offsetTop = document.getElementById(id).getBoundingClientRect().top;
+  //     if (offsetTop <= 200) {
+  //       const activeTab = this.tabs.find(t => t.active && t.id !== id);
+  //       if (activeTab) {
+  //         activeTab.active = false;
+  //         this.tabs.find(t => t.id === id).active = true;
+  //         this.router.navigate(['/san-pham/may-chup-hinh-nhiet-cordex/chi-tiet'], {
+  //           fragment: id,
+  //         });
+  //       }
+  //     }
+  //   });
+  // }
 
 }

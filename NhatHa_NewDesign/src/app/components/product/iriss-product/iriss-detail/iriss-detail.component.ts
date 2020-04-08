@@ -1,20 +1,20 @@
-import { Component, OnInit, AfterViewInit, HostListener } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { Router, ActivatedRoute } from '@angular/router';
-import { ViewportScroller } from '@angular/common';
 
 @Component({
   selector: 'nh-iriss-detail',
   templateUrl: './iriss-detail.component.html',
   styleUrls: ['./iriss-detail.component.less']
 })
-export class IrissDetailComponent implements OnInit, AfterViewInit {
+export class IrissDetailComponent implements OnInit {
   style = {
     'text-align': 'center',
     cursor: 'pointer',
   };
 
   open = {
-    opacity: 1,
+    display: 'block',
+    // opacity: 1,
   };
 
   nzGutter = {
@@ -1363,28 +1363,28 @@ export class IrissDetailComponent implements OnInit, AfterViewInit {
     }
   }
 
-  ngAfterViewInit() {
-    const sectionId = document.getElementById(this.fragment);
-    const offsetTop = sectionId.offsetTop;
-    window.scrollTo(0, offsetTop + 10);
-  }
+  // ngAfterViewInit() {
+  //   const sectionId = document.getElementById(this.fragment);
+  //   const offsetTop = sectionId.offsetTop;
+  //   window.scrollTo(0, offsetTop + 10);
+  // }
 
-  @HostListener('window:scroll', ['$event'])
-  onScroll(event: any) {
-    const tabIds = this.tabs.map(t => t.id).filter(i => i !== undefined);
-    tabIds.forEach(id => {
-      const offsetTop = document.getElementById(id).getBoundingClientRect().top;
-      if (offsetTop <= 200) {
-        const activeTab = this.tabs.find(t => t.active && t.id !== id);
-        if (activeTab) {
-          activeTab.active = false;
-          this.tabs.find(t => t.id === id).active = true;
-          this.router.navigate(['/san-pham/san-pham-iriss/chi-tiet'], {
-            fragment: id,
-          });
-        }
-      }
-    });
-  }
+  // @HostListener('window:scroll', ['$event'])
+  // onScroll(event: any) {
+  //   const tabIds = this.tabs.map(t => t.id).filter(i => i !== undefined);
+  //   tabIds.forEach(id => {
+  //     const offsetTop = document.getElementById(id).getBoundingClientRect().top;
+  //     if (offsetTop <= 200) {
+  //       const activeTab = this.tabs.find(t => t.active && t.id !== id);
+  //       if (activeTab) {
+  //         activeTab.active = false;
+  //         this.tabs.find(t => t.id === id).active = true;
+  //         this.router.navigate(['/san-pham/san-pham-iriss/chi-tiet'], {
+  //           fragment: id,
+  //         });
+  //       }
+  //     }
+  //   });
+  // }
 
 }

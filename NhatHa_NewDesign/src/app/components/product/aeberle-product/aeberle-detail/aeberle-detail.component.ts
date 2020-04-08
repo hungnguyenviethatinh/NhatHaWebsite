@@ -123,7 +123,6 @@ export class AeberleDetailComponent implements OnInit {
         this.router.navigate(['/san-pham/may-phan-tich-chat-luong-dien-nang-aeberle/chi-tiet'], {
           fragment: 'pqbox50',
         });
-        this.scrollToTop();
       },
     },
     {
@@ -144,7 +143,6 @@ export class AeberleDetailComponent implements OnInit {
         this.router.navigate(['/san-pham/may-phan-tich-chat-luong-dien-nang-aeberle/chi-tiet'], {
           fragment: 'pqbox150',
         });
-        this.scrollToTop();
       },
     },
     {
@@ -165,7 +163,6 @@ export class AeberleDetailComponent implements OnInit {
         this.router.navigate(['/san-pham/may-phan-tich-chat-luong-dien-nang-aeberle/chi-tiet'], {
           fragment: 'pqbox200',
         });
-        this.scrollToTop();
       },
     },
     {
@@ -186,15 +183,11 @@ export class AeberleDetailComponent implements OnInit {
         this.router.navigate(['/san-pham/may-phan-tich-chat-luong-dien-nang-aeberle/chi-tiet'], {
           fragment: 'pqbox300',
         });
-        this.scrollToTop();
       },
     },
   ];
 
   fragment: string;
-  scrollToTop() {
-    window.scrollTo(0, 0);
-  }
 
   constructor(private router: Router, private route: ActivatedRoute) { }
 
