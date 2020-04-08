@@ -1,0 +1,42 @@
+<div class="main-container">
+    <div class="clearfix" id="product">
+        <div id="cordex-product" class="product-wrap">
+            <nz-affix>
+                <div class="tab" style="background: #fff; padding: 10px 0;" nz-row nzType="flex" [nzGutter]="nzGutter"
+                    nzJustify="start" nzAlign="middle">
+                    <div nz-col *ngFor="let tab_aeberle_detail of tabs; let i=index"
+                        [ngStyle]="tab_aeberle_detail.style"
+                        [ngClass]="tab_aeberle_detail.active ? 'active' : 'inactive'"
+                        (click)="tab_aeberle_detail.click()">
+                        <img [src]="tab_aeberle_detail.img" alt="">
+                        <p>{{'tab_aeberle_detail.name' + i | translate}}</p>
+                    </div>
+                </div>
+            </nz-affix>
+            <div class="tab-content">
+                <div nz-row nzType="flex" [nzGutter]="nzGutter" nzJustify="start" *ngFor="let tab of tabs; let j=index">
+                    <ng-container *ngIf="tab.id && tab.content">
+                        <div nz-col nzSpan="24" [ngStyle]="tab.active ? open: null" id="{{tab.id}}" class="tab-hide">
+                            <div nz-row nzType="flex" [nzGutter]="nzGutter" nzJustify="space-between">
+                                <div nz-col nzXs="24" nzSm="24" nzMd="16">
+                                    <h3>{{'productDescription' | translate}}</h3>
+                                    <p *ngIf="tab.content.p1">{{tab.id + 'p1' | translate}}</p>
+                                    <p style="font-weight: bold;" *ngIf="tab.content.ul">{{tab.id + 'ul' | translate}}
+                                    </p>
+                                    <ul>
+                                        <li *ngFor="let li of tab.content.li; let k = index">
+                                            {{tab.id + 'li' + k | translate}}</li>
+                                    </ul>
+                                    <p *ngIf="tab.content.p2">{{tab.id + 'p2' | translate}}</p>
+                                </div>
+                                <div nz-col nzXs="24" nzSm="24" nzMd="8">
+                                    <img [src]="tab.content.img" alt="tab.name">
+                                </div>
+                            </div>
+                        </div>
+                    </ng-container>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

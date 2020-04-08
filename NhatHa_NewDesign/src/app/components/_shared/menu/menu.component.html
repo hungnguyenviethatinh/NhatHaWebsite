@@ -1,4 +1,4 @@
-<ul id="menu" nz-menu [nzMode]="menuMode" [ngStyle]="style">
+<ul id="menu" nz-menu [nzMode]="menuMode" [ngStyle]="style" nzTheme="light">
     <li nz-menu-item [nzSelected]="selectedMenuIndex === 0">
         <a (click)="closeSideBar($event, 0)" [routerLink]="['/trang-chu']">
             {{'Giới thiệu' | translate}}
@@ -32,7 +32,8 @@
                         </a>
                     </li>
                     <li nz-menu-item [nzSelected]="selectedMenuIndex === 4">
-                        <a (click)="closeSideBar($event, 4)" [routerLink]="['/dich-vu/phan-tich-nguy-co-ho-quang-dien']">
+                        <a (click)="closeSideBar($event, 4)"
+                            [routerLink]="['/dich-vu/phan-tich-nguy-co-ho-quang-dien']">
                             {{'Phân Tích Nguy Cơ Hồ Quang Điện' | translate}}
                         </a>
                     </li>
@@ -81,20 +82,24 @@
                         (click)="switchRouter('/san-pham/san-pham-iriss', $event, 10)">
                         <ul>
                             <li nz-menu-item [nzSelected]="selectedMenuIndex === 10">
-                                <a (click)="closeSideBar($event, 10)" [routerLink]="['/san-pham/san-pham-iriss/chi-tiet']"
-                                    fragment="dong-vpt" translate>Dòng VPT</a>
+                                <a (click)="closeSideBar($event, 10)"
+                                    [routerLink]="['/san-pham/san-pham-iriss/chi-tiet']" fragment="dong-vpt"
+                                    translate>Dòng VPT</a>
                             </li>
                             <li nz-menu-item [nzSelected]="selectedMenuIndex === 11">
-                                <a (click)="closeSideBar($event, 11)" [routerLink]="['/san-pham/san-pham-iriss/chi-tiet']"
-                                    fragment="dong-cap-ct" translate>Dòng CAP CT</a>
+                                <a (click)="closeSideBar($event, 11)"
+                                    [routerLink]="['/san-pham/san-pham-iriss/chi-tiet']" fragment="dong-cap-ct"
+                                    translate>Dòng CAP CT</a>
                             </li>
                             <li nz-menu-item [nzSelected]="selectedMenuIndex === 12">
-                                <a (click)="closeSideBar($event, 12)" [routerLink]="['/san-pham/san-pham-iriss/chi-tiet']"
-                                    fragment="dong-cap-env" translate>Dòng CAP ENV</a>
+                                <a (click)="closeSideBar($event, 12)"
+                                    [routerLink]="['/san-pham/san-pham-iriss/chi-tiet']" fragment="dong-cap-env"
+                                    translate>Dòng CAP ENV</a>
                             </li>
                             <li nz-menu-item [nzSelected]="selectedMenuIndex === 13">
-                                <a (click)="closeSideBar($event, 13)" [routerLink]="['/san-pham/san-pham-iriss/chi-tiet']"
-                                    fragment="dong-flex-ir" translate>Dòng FLEX IR</a>
+                                <a (click)="closeSideBar($event, 13)"
+                                    [routerLink]="['/san-pham/san-pham-iriss/chi-tiet']" fragment="dong-flex-ir"
+                                    translate>Dòng FLEX IR</a>
                             </li>
                         </ul>
                     </li>
@@ -147,6 +152,39 @@
                             </li>
                         </ul>
                     </li>
+                    <li nz-submenu [nzTitle]="'pqa_aeberle' | translate"
+                        (click)="switchRouter('/san-pham/may-phan-tich-chat-luong-dien-nang-aeberle', $event, 30)">
+                        <ul>
+                            <li nz-menu-item [nzSelected]="selectedMenuIndex === 30">
+                                <a (click)="closeSideBar($event, 30)"
+                                    [routerLink]="['/san-pham/may-phan-tich-chat-luong-dien-nang-aeberle/chi-tiet']"
+                                    fragment="pqbox50" translate>
+                                    PQ BOX 50
+                                </a>
+                            </li>
+                            <li nz-menu-item [nzSelected]="selectedMenuIndex === 31">
+                                <a (click)="closeSideBar($event, 31)"
+                                    [routerLink]="['/san-pham/may-phan-tich-chat-luong-dien-nang-aeberle/chi-tiet']"
+                                    fragment="pqbox150" translate>
+                                    PQ BOX 150
+                                </a>
+                            </li>
+                            <li nz-menu-item [nzSelected]="selectedMenuIndex === 32">
+                                <a (click)="closeSideBar($event, 32)"
+                                    [routerLink]="['/san-pham/may-phan-tich-chat-luong-dien-nang-aeberle/chi-tiet']"
+                                    fragment="pqbox200" translate>
+                                    PQ BOX 200
+                                </a>
+                            </li>
+                            <li nz-menu-item [nzSelected]="selectedMenuIndex === 33">
+                                <a (click)="closeSideBar($event, 33)"
+                                    [routerLink]="['/san-pham/may-phan-tich-chat-luong-dien-nang-aeberle/chi-tiet']"
+                                    fragment="pqbox300" translate>
+                                    PQ BOX 300
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
                 </ul>
             </li>
             <li nz-submenu [nzTitle]="'Giải Pháp Giám Sát Liên Tục' | translate"
@@ -170,11 +208,13 @@
                         </ul>
                     </li>
                     <li nz-menu-item [nzSelected]="selectedMenuIndex === 22">
-                        <a (click)="closeSideBar($event, 22)" [routerLink]="['/san-pham/iriss-delta-t-alert']">Iriss Delta T
+                        <a (click)="closeSideBar($event, 22)" [routerLink]="['/san-pham/iriss-delta-t-alert']">Iriss
+                            Delta T
                             Alert</a>
                     </li>
                     <li nz-menu-item [nzSelected]="selectedMenuIndex === 23">
-                        <a (click)="closeSideBar($event, 23)" [routerLink]="['/san-pham/iriss-e-sentry-connect']">Iriss E
+                        <a (click)="closeSideBar($event, 23)" [routerLink]="['/san-pham/iriss-e-sentry-connect']">Iriss
+                            E
                             Sentry</a>
                     </li>
                 </ul>

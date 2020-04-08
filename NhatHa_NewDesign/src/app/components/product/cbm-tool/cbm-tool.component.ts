@@ -25,6 +25,12 @@ export class CbmToolComponent implements OnInit {
       img: 'assets/images/products/02/3.png',
       description: 'MÁY ĐO PHÓNG ĐIỆN CỤC BỘ',
     },
+    {
+      href: '/san-pham/may-phan-tich-chat-luong-dien-nang-aeberle',
+      name: 'MÁY PHÂN TÍCH CHẤT LƯỢNG ĐIỆN NĂNG',
+      img: 'assets/images/products/02/4.png',
+      description: 'MÁY PHÂN TÍCH CHẤT LƯỢNG ĐIỆN NĂNG',
+    },
   ];
 
   constructor() { }

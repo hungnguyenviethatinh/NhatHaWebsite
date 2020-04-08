@@ -1,0 +1,25 @@
+<div class="main-container">
+    <div class="clearfix" id="product">
+        <div class="product-wrap">
+            <div class="tab">
+                <div nz-row nzType="flex" [nzGutter]="nzGutter" nzJustify="start" nzAlign="middle">
+                    <div nz-col *ngFor="let tab_aeberle_product of tabs; let i=index"
+                        [ngStyle]="tab_aeberle_product.style" (click)="tab_aeberle_product.click()">
+                        <img [src]="tab_aeberle_product.img" alt="">
+                        <p>{{('tab_aeberle_product.name'+i)|translate}}</p>
+                    </div>
+                </div>
+                <div class="tab-content">
+                    <div nz-row nzType="flex" nzJustify="space-between" nzAlign="middle" *ngFor="let tab of tabs">
+                        <div nz-col nzXs="24" nzSm="24" nzMd="6" *ngFor="let content of tab.contents">
+                            <a routerLink="{{content.href}}" fragment="{{content.fragment}}">
+                                <img [src]="content.img" alt="">
+                                <h3>{{content.text}}</h3>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

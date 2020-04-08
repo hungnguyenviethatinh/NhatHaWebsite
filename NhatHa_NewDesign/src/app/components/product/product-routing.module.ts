@@ -39,6 +39,10 @@ const productRoutes: Routes = [
     path: 'may-do-phong-dien-cuc-bo-iriss', component: IrissDischargeComponent,
   },
   {
+    path: 'may-phan-tich-chat-luong-dien-nang-aeberle',
+    loadChildren: () => import('./aeberle-product/aeberle-product.module').then(mod => mod.AeberleProductModule),
+  },
+  {
     path: 'giai-phap-giam-sat-lien-tuc', component: OnlineMonitorComponent,
   },
   {
