@@ -1,10 +1,11 @@
 <div class="main-container">
     <div class="clearfix" id="product">
-        <div id="cordex-product" class="product-wrap">
+        <div id="intellisaw-product" class="product-wrap">
             <nz-affix>
                 <div class="tab" style="background: #fff; padding: 10px 0;" nz-row nzType="flex" [nzGutter]="nzGutter"
                     nzJustify="start" nzAlign="middle">
-                    <div nz-col *ngFor="let tab_emer_inte of tabs; let i=index" [ngStyle]="tab_emer_inte.style" (click)="tab_emer_inte.click()">
+                    <div nz-col *ngFor="let tab_emer_inte of tabs; let i=index" [ngStyle]="tab_emer_inte.style"
+                        (click)="tab_emer_inte.click()">
                         <img [src]="tab_emer_inte.img" alt="">
                         <p>{{('tab_emer_inte.name'+i)|translate}}</p>
                     </div>
@@ -61,7 +62,7 @@
                         </h2>
                     </div>
                     <div nz-col nzSpan="24">
-                        <nz-table nzBordered>
+                        <nz-table nzBordered nzSize="small">
                             <thead>
                                 <tr>
                                     <th nzAlign="center" style="background: #ccffcc;">
@@ -152,7 +153,8 @@
                                 </tr>
                                 <tr>
                                     <td></td>
-                                    <td style="color: #ff0000">{{'Đầu tư chi phí đào tạo người thực hiện công việc'|translate}}
+                                    <td style="color: #ff0000">
+                                        {{'Đầu tư chi phí đào tạo người thực hiện công việc'|translate}}
                                     </td>
                                     <td></td>
                                     <td style="color: #00b050">
@@ -164,10 +166,14 @@
                                 </tr>
                             </tbody>
                         </nz-table>
+                        <img *ngIf="currentLanguage === 'en'" style="width: 100%; height: auto;"
+                            src="assets/images/products/03/01/tech_innovation_en.png" alt="Tech Evolution">
+                        <img *ngIf="currentLanguage === 'vi'" style="width: 100%; height: auto;"
+                            src="assets/images/products/03/01/tech_innovation_vi.png" alt="Bước Tiến Hóa Của Công Nghệ">
                     </div>
-                    <div nz-col nzSpan="24">
+                    <!-- <div nz-col nzSpan="24">
                         <img src="assets/images/products/03/01/tech_innovation.PNG" alt="">
-                    </div>
+                    </div> -->
                 </div>
 
                 <div id="page-4" nz-row nzType="flex" nzJustify="space-between" nzAlign="middle">

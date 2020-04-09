@@ -36,7 +36,7 @@
                                 </div>
                             </div>
                             <div id="feature-{{tab.id}}" class="tab" nz-row nzType="flex" nzJustify="start"
-                                nzAlign="middle" style="background: #096dd9; margin-top: 2em;">
+                                nzAlign="middle" style="background: #4f81bd; margin-top: 2em;">
                                 <div nz-col nzSpan="4" *ngFor="let tab_iriss_detail of secondTabs; let j=index;" [ngStyle]="tab_iriss_detail.style"
                                     [ngClass]="(tab_iriss_detail.active || tab_iriss_detail.id === 0) ?  'active' : 'inactive'"
                                     (click)="tab_iriss_detail.click()">
@@ -62,7 +62,7 @@
                                     </nz-table>
                                 </div>
                                 <div id="certificate-{{tab.id}}" class="tab" nz-row nzType="flex" nzJustify="start"
-                                    nzAlign="middle" style="background: #096dd9; margin-top: 2em;">
+                                    nzAlign="middle" style="background: #4f81bd; margin-top: 2em;">
                                     <div nz-col nzSpan="4" *ngFor="let tab_iriss_detail of secondTabs; let j=index" [ngStyle]="tab_iriss_detail.style"
                                         [ngClass]="(tab_iriss_detail.active || tab_iriss_detail.id === 1) ?  'active' : 'inactive'"
                                         (click)="tab_iriss_detail.click()">
@@ -72,7 +72,7 @@
                                 <div class="certificates">
                                     <div nz-row nzType="flex" [nzGutter]="nzGutter" nzJustify="space-between"
                                         nzAlign="middle" style="padding: 24px;">
-                                        <div nz-col nzXs="24" nzSm="24" [nzMd]="i === 3 ? 8 : 4"
+                                        <div nz-col nzXs="24" nzSm="24" [nzMd]="4"
                                             *ngFor="let img of tab.contents.detail.certificates.img">
                                             <img [src]="img" alt="">
                                         </div>
@@ -107,7 +107,7 @@
                                     </nz-table>
                                 </div>
                                 <div id="demo-{{tab.id}}" class="tab" nz-row nzType="flex" nzJustify="start"
-                                    nzAlign="middle" style="background: #096dd9; margin-top: 2em;">
+                                    nzAlign="middle" style="background: #4f81bd; margin-top: 2em;">
                                     <div nz-col nzSpan="4" *ngFor="let tab_iriss_detail of secondTabs; let j=index" [ngStyle]="tab_iriss_detail.style"
                                         [ngClass]="(tab_iriss_detail.active || tab_iriss_detail.id === 2) ?  'active' : 'inactive'"
                                         (click)="tab_iriss_detail.click()">
@@ -134,7 +134,7 @@
                                     </div>
                                 </div>
                                 <div id="document-{{tab.id}}" class="tab" nz-row nzType="flex" nzJustify="start"
-                                    nzAlign="middle" style="background: #096dd9; margin-top: 2em;">
+                                    nzAlign="middle" style="background: #4f81bd; margin-top: 2em;">
                                     <div nz-col nzSpan="4" *ngFor="let tab_iriss_detail of secondTabs; let j=index" [ngStyle]="tab_iriss_detail.style"
                                         [ngClass]="(tab_iriss_detail.active || tab_iriss_detail.id === 3) ? 'active' : 'inactive'"
                                         (click)="tab_iriss_detail.click()">

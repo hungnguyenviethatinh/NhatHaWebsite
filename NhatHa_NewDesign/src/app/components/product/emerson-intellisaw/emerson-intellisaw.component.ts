@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { TranslateService, LangChangeEvent } from '@ngx-translate/core';
+import Constants from 'src/app/helpers/constants';
 
 @Component({
   selector: 'nh-emerson-intellisaw',
@@ -56,7 +58,13 @@ export class EmersonIntellisawComponent implements OnInit {
     'assets/images/products/03/01/34.png',
   ];
 
-  constructor(private router: Router) { }
+  currentLanguage = localStorage.getItem(Constants.CurrentLanguage) || 'vi';
+
+  constructor(private router: Router, private translateService: TranslateService) {
+    translateService.onLangChange.subscribe((event: LangChangeEvent) => {
+      this.currentLanguage = event.lang;
+    });
+  }
 
   ngOnInit() {
   }
