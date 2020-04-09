@@ -1,6 +1,7 @@
 <nz-drawer [nzClosable]="false" [nzVisible]="visible" [nzTitle]="nzTitle" (nzOnClose)="close()" nzPlacement="left"
     nzWidth="100%" nzWrapClassName="mobileSideBar">
-    <nh-menu [menuMode]="'inline'" (switchRouterEvent)="switchRouter($event)" (closeSideBarEvent)="close()">
+    <nh-menu [menuMode]="'inline'" [selectedMenuIndex]="selectedMenuIndex" (switchRouterEvent)="switchRouter($event)"
+        (setSelectedMenuIndexEvent)="setSelectedMenuIndex($event)" (closeSideBarEvent)="close()">
     </nh-menu>
     <ng-template #nzTitle>
         <div nz-row nzType="flex" nzJustify="flex-end" nzAlign="middle">

@@ -8,9 +8,11 @@ import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 export class SidebarComponent implements OnInit {
   @Input() visible: boolean;
   @Input() language: string;
+  @Input() selectedMenuIndex: number;
   @Output() useLanguage = new EventEmitter<string>();
   @Output() closeSideBarEvent = new EventEmitter();
   @Output() navigateTo = new EventEmitter<string>();
+  @Output() setSelectedMenuIndexEvent = new EventEmitter<number>();
 
   constructor() { }
 
@@ -19,6 +21,10 @@ export class SidebarComponent implements OnInit {
 
   close = () => {
     this.closeSideBarEvent.emit();
+  }
+
+  setSelectedMenuIndex = (index: number) => {
+    this.setSelectedMenuIndexEvent.emit(index);
   }
 
   switchLanguage = (language: string) => {

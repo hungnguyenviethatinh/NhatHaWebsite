@@ -10,17 +10,16 @@
             <div class="project" nz-row nzType="flex" nzJustify="space-between" nzAlign="top">
                 <div nz-col nzXs="24" nzSm="24" nzMd="5">
                     <nz-anchor nzOffsetTop="30">
-                        <nz-link *ngFor="let project of projects; let i = index" 
-                        nzHref="#{{project.id}}"
-                        nzTitle="{{('project.group'+i)|translate}}"></nz-link>
+                        <nz-link *ngFor="let project of projects; let i = index" nzHref="#{{project.id}}"
+                            nzTitle="{{('project.group'+i)|translate}}"></nz-link>
                     </nz-anchor>
                 </div>
                 <div nz-col nzXs="24" nzSm="24" nzMd="18">
                     <div nz-row nzType="flex" nzJustify="space-between" nzAlign="top"
-                    *ngFor="let project of projects; let i=index" id="{{project.id}}">
+                        *ngFor="let project of projects; let i=index" id="{{project.id}}">
                         <div nz-col nzSpan="24">
-                            <div nz-row nzType="flex" nzJustify="space-between" nzAlign="top"
-                            *ngFor="let p of project.projects; let j=index">
+                            <div class="project-item" nz-row nzType="flex" nzJustify="space-between"
+                                *ngFor="let p of project.projects; let j=index">
                                 <div nz-col nzXs="24" nzSm="24" nzMd="4">
                                     <img [src]="p.img" alt="">
                                 </div>
@@ -39,3 +38,4 @@
             </div>
         </div>
     </div>
+</div>

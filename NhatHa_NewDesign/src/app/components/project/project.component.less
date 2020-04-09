@@ -1,7 +1,7 @@
-@text-blue: #096dd9;
+@text-blue: #4f81bd; // #096dd9;
 @text-white: #ffffff;
 @bg-white: #ffffff;
-@bg-blue: #096dd9;
+@bg-blue: #4f81bd; // #096dd9;
 
 
 [nz-carousel-content] {
@@ -32,6 +32,12 @@
     }
 }
 
+nz-anchor {
+    @media screen and (max-width: 767px) {
+        display: none;
+    }
+}
+
 .main-container {
     padding: 0;
     background: #fff;
@@ -50,6 +56,11 @@
 
             .project {
                 margin-bottom: 24px;
+
+                .project-item {
+                    align-items: stretch;
+                    margin-bottom: 1rem;
+                }
             }
 
             img {

@@ -11,7 +11,7 @@ import Constants from '../helpers/constants';
 export class AppComponent implements OnInit {
   language = localStorage.getItem(Constants.CurrentLanguage) || 'vi';
   sideBarVisible = false;
-  selectedMenuIndex = 0;
+  selectedMenuIndex = localStorage.getItem(Constants.CurrentMenuIndex) || 0;
 
   constructor(private router: Router, private translate: TranslateService) {
     translate.setDefaultLang(this.language);
@@ -19,6 +19,7 @@ export class AppComponent implements OnInit {
 
   ngOnInit() {
     localStorage.setItem(Constants.CurrentLanguage, this.language);
+    localStorage.setItem(Constants.CurrentMenuIndex, `${this.selectedMenuIndex}`);
   }
 
   navigateTo = (route: string) => {
@@ -35,6 +36,7 @@ export class AppComponent implements OnInit {
 
   setSelectedMenuIndex = (index: number) => {
     this.selectedMenuIndex = index;
+    localStorage.setItem(Constants.CurrentMenuIndex, `${this.selectedMenuIndex}`);
   }
 
   useLanguage = (language: string) => {

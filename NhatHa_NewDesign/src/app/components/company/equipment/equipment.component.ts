@@ -13,6 +13,7 @@ export class EquipmentComponent implements OnInit {
   constructor() {
       this.equipments = [
         {
+          groupName: 'Thiết bị thí nghiệm tủ Trung thế',
           name: 'Siemens - MV Switchgear Station',
           img: 'assets/images/company/equipment/Siemens - MV Switchgear Station.JPG',
           contents: [
@@ -35,6 +36,7 @@ export class EquipmentComponent implements OnInit {
           ],
         },
         {
+          groupName: 'Thiết bị thí nghiệm Máy biến áp lực',
           name: 'ABB Transformer Substation',
           img: 'assets/images/company/equipment/ABB Transformer Substation.JPG',
           contents: [
@@ -55,6 +57,7 @@ export class EquipmentComponent implements OnInit {
           ],
         },
         {
+          groupName: 'Thiết bị thí nghiệm tủ Hạ thế',
           name: 'Schneider LV Switchboard',
           img: 'assets/images/company/equipment/Schneider LV Switchboard.JPG',
           contents: [

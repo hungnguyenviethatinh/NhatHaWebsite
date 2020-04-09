@@ -1467,5 +1467,8 @@
     "pqbox300li6": "TFT color display",
     "pqbox300li7": "Software WinPQ mobile for configuration and data evaluation (PQ-Box 50, 150, 200 and 300)",
     "pqbox300li8": "Option: WiFi interface",
-    "pqa_aeberle": "A-EBERLE POWER QUALITY ANALYZER"
+    "pqa_aeberle": "A-EBERLE POWER QUALITY ANALYZER",
+    "equipmentGroupName0": "Thiết bị thí nghiệm tủ Trung thế",
+    "equipmentGroupName1": "Thiết bị thí nghiệm Máy biến áp lực",
+    "equipmentGroupName2": "Thiết bị thí nghiệm tủ Hạ thế"
 }
