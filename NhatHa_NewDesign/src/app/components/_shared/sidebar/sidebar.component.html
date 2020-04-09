@@ -19,9 +19,21 @@
                                     </a>
                                 </li> -->
                     <li nz-menu-item id="switchLanguage">
-                        <button nz-button nzSize="small" nzShape="round" (click)="switchLanguage($event)">
-                            {{language === 'vn' ? 'English' : 'Tiếng Việt'}}
-                        </button>
+                        <!-- <button nz-button nzSize="small" nzShape="round" (click)="switchLanguage($event)">
+                            {{language === 'vi' ? 'English' : 'Tiếng Việt'}}
+                        </button> -->
+                        <div nz-row nzType="flex" style="justify-content: space-evenly;">
+                            <div nzCol>
+                                <a (click)="switchLanguage('en')" title="English">
+                                    <img class="flag" src="assets/images/lang/gb.png" alt="English">
+                                </a>
+                            </div>
+                            <div nzCol>
+                                <a (click)="switchLanguage('vi')" title="Tiếng Việt">
+                                    <img class="flag" src="assets/images/lang/vi.png" alt="Vietnamese">
+                                </a>
+                            </div>
+                        </div>
                     </li>
                     <li nz-menu-item id="hideSideBar">
                         <i (click)="close()" style="vertical-align: middle;" nz-icon nzType="menu-fold"

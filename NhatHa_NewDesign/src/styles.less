@@ -23,10 +23,13 @@
 @bg-blue: #096dd9;
 @bg-orange: #ffa500;
 
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
 .cdk-overlay-container {
     ul.ant-menu-sub {
-        &.submenu-company,
-        &.submenu-product {
+        &.submenu-company, &.submenu-product {
             min-width: 250px;
         }
 
@@ -40,12 +43,20 @@
 
         ul {
             > li {
-                text-transform: @text-uppercase;
-                color: @text-blue;
+                text-transform: uppercase;
+                color: #ffffff;
+
+                &.ant-menu-item:hover, &.ant-menu-item-selected,
+                &ant-menu-submenu:hover, &.ant-menu-submenu-selected,
+                &ant-menu-submenu-active, &.ant-menu-submenu-open {
+                    color: #ffffff;
+                    background-color: #273c75;
+                    border-left: 2px solid #ffffff;
+                }
 
                 > a {
-                    text-transform: @text-uppercase;
-                    color: @text-blue;
+                    text-transform: uppercase;
+                    color: #ffffff;
                 }
             }
         }
@@ -53,17 +64,51 @@
 
 }
 
+.ant-menu-submenu {
+    > .ant-menu {
+        background-color: #273c75;
+        border-radius: 0;
+    }
+}
+
+.ant-menu-submenu-title:hover {
+    color: #ffffff;
+}
+
 .ant-menu-submenu-title .ant-menu-submenu-arrow::after {
-    background-image: linear-gradient(to right, @text-blue, @text-blue) !important;   
+    // background-image: linear-gradient(to right, @text-blue, @text-blue) !important;
+    display: none !important;
 }
 
 .ant-menu-submenu-title .ant-menu-submenu-arrow::before {
-    background-image: linear-gradient(to right, @text-blue, @text-blue) !important;   
+    // background-image: linear-gradient(to right, @text-blue, @text-blue) !important;
+    display: none !important; 
 }
-
 
 .ant-table-placeholder {
     display: none !important;
+}
+
+.ant-drawer-header {
+    box-shadow: 0 2px 8px #f0f1f2;
+    -moz-box-shadow: 0 2px 8px #f0f1f2;
+    -webkit-box-shadow: 0 2px 8px #f0f1f2;
+    -o-box-shadow: 0 2px 8px #f0f1f2;
+    -ms-box-shadow: 0 2px 8px #f0f1f2;
+}
+
+.ant-drawer-title {
+    text-align: center;
+    
+    h4, h5 {
+        color: @text-blue;
+    }
+}
+
+.ant-drawer-body {
+    background-color: #273c75;
+    height: 100%;
+    padding: 0;
 }
 
 li:not(.ant-menu-submenu) {
@@ -148,22 +193,6 @@ li:not(.ant-menu-submenu) {
     [nz-carousel-content] {
         height: 300px;
         margin: 24px 0;
-    }
-}
-
-.ant-drawer-header {
-    box-shadow: 0 2px 8px #f0f1f2;
-    -moz-box-shadow: 0 2px 8px #f0f1f2;
-    -webkit-box-shadow: 0 2px 8px #f0f1f2;
-    -o-box-shadow: 0 2px 8px #f0f1f2;
-    -ms-box-shadow: 0 2px 8px #f0f1f2;
-}
-
-.ant-drawer-title {
-    text-align: center;
-    
-    h4, h5 {
-        color: @text-blue;
     }
 }
 

@@ -30,7 +30,7 @@ export class HeaderComponent implements OnInit {
     this.navigateTo.emit(route);
   }
 
-  switchLanguage = (event: any) => {
-    this.useLanguage.emit(event.target.innerText);
+  switchLanguage = (language: string) => {
+    this.useLanguage.emit(language);
   }
 }

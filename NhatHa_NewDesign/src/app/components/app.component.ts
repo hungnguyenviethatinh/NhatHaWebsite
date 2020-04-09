@@ -1,19 +1,24 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { TranslateService } from '@ngx-translate/core';
+import Constants from '../helpers/constants';
 
 @Component({
   selector: 'nh-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.less']
 })
-export class AppComponent {
-  language = 'vn';
+export class AppComponent implements OnInit {
+  language = localStorage.getItem(Constants.CurrentLanguage) || 'vi';
   sideBarVisible = false;
   selectedMenuIndex = 0;
 
   constructor(private router: Router, private translate: TranslateService) {
     translate.setDefaultLang(this.language);
+  }
+
+  ngOnInit() {
+    localStorage.setItem(Constants.CurrentLanguage, this.language);
   }
 
   navigateTo = (route: string) => {
@@ -33,7 +38,8 @@ export class AppComponent {
   }
 
   useLanguage = (language: string) => {
-    this.language = language === 'English' ? 'en' : 'vn';
+    this.language = language;
     this.translate.use(this.language);
+    localStorage.setItem(Constants.CurrentLanguage, this.language);
   }
 }

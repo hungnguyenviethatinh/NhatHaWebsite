@@ -1,8 +1,8 @@
 <header class="clearfix" id="header">
-    <div nz-row>
+    <!-- <div nz-row>
         <div nz-col nzSpan="24">
             <ul id="top-bar" nz-menu nzMode="horizontal">
-                <!-- <li nz-menu-item>
+                <li nz-menu-item>
                         <a href="tel:(+84 28) 6258 1796">
                             <i nz-icon nzType="phone" nzTheme="outline"></i>
                             (+84 28) 6258 1796
@@ -13,27 +13,41 @@
                             <i nz-icon nzType="mail" nzTheme="outline"></i>
                             sale@nhatha-electric.com
                         </a>
-                    </li> -->
+                    </li>
                 <li nz-menu-item id="switchLanguage">
                     <button nz-button nzSize="small" nzShape="round" (click)="switchLanguage($event)">
-                        {{language === 'vn' ? 'English' : 'Tiếng Việt'}}
+                        {{language === 'vi' ? 'English' : 'Tiếng Việt'}}
                     </button>
                 </li>
             </ul>
         </div>
-    </div>
+    </div> -->
     <div id="desktopHeader" nz-row nzType="flex" nzJustify="space-between" nzAlign="middle">
-        <div nz-col nzXs="24" nzSm="8" nzMd="8" nzLg="5" nzXl="5" nzXXl="4">
+        <div nz-col nzXs="24" nzSm="8" nzMd="8" nzLg="3" nzXl="3" nzXXl="3">
             <a (click)="setSelectedMenuIndex(0)" [routerLink]="['/trang-chu']" id="logo">
                 <img src="assets/images/nhatha-logo.png"
                     [alt]="'Công ty Kỹ thuật Điện - Năng lượng Nhật Hạ' | translate">
             </a>
         </div>
-        <div nz-col nzXs="24" nzSm="16" nzMd="16" nzLg="19" nzXl="19" nzXXl="20">
+        <div nz-col nzXs="24" nzSm="12" nzMd="12" nzLg="19" nzXl="19" nzXXl="19" style="padding-left: 1rem;">
             <h4 nz-title>
                 {{'Công ty Kỹ thuật Điện - Năng lượng Nhật Hạ' | translate}}</h4>
             <h3 nz-title>
                 {{'Nơi Khách Hàng Đặt Niềm Tin' | translate}}</h3>
+        </div>
+        <div nz-col nzXs="24" nzSm="4" nzMd="4" nzLg="2" nzXl="2" nzXXl="2">
+            <div nz-row nzType="flex" style="justify-content: space-evenly;">
+                <div nzCol>
+                    <a (click)="switchLanguage('en')" title="English">
+                        <img class="flag" src="assets/images/lang/gb.png" alt="English">
+                    </a>
+                </div>
+                <div nzCol>
+                    <a (click)="switchLanguage('vi')" title="Tiếng Việt">
+                        <img class="flag" src="assets/images/lang/vi.png" alt="Vietnamese">
+                    </a>
+                </div>
+            </div>
         </div>
     </div>
     <div id="mobileHeader" nz-row nzType="flex" nzJustify="space-between" nzAlign="middle">
@@ -50,12 +64,8 @@
     </div>
     <div id="menu" nz-row>
         <div nz-col nzSpan="24">
-            <nh-menu 
-                [menuMode]="'horizontal'"
-                [selectedMenuIndex]="selectedMenuIndex" 
-                (switchRouterEvent)="switchRouter($event)"
-                (setSelectedMenuIndexEvent)="setSelectedMenuIndex($event)"
-            >
+            <nh-menu [menuMode]="'horizontal'" [selectedMenuIndex]="selectedMenuIndex"
+                (switchRouterEvent)="switchRouter($event)" (setSelectedMenuIndexEvent)="setSelectedMenuIndex($event)">
             </nh-menu>
         </div>
     </div>

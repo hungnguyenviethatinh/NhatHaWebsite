@@ -10,7 +10,7 @@
     position: relative;
     z-index: 10;
     max-width: 100%;
-    padding: 1rem;
+    padding: 1rem 0 0 0;
 
     h3, h4 {
         margin: 0;
@@ -74,6 +74,16 @@
         @media screen and (min-width: 992px){
             display: flex;
         }
+
+        padding: 0;
+
+        @media screen and (min-width: 992px) {
+            padding: 0 3rem;
+        }
+
+        @media screen and (min-width: 1200px) {
+            padding: 0 10rem;
+        }
     }
 
     
@@ -84,6 +94,8 @@
         @media screen and (min-width: 992px){
             display: none;
         }
+
+        padding: 0 1rem 1rem 1rem;
     }
 
 
@@ -95,11 +107,8 @@
         }
     }
 
-    @media screen and (min-width: 992px) {
-        padding: 0 3rem;
-    }
-
-    @media screen and (min-width: 1200px) {
-        padding: 0 10rem;
+    .flag {
+        width: 30px;
+        height: auto;
     }
 }

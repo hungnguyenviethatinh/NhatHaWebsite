@@ -21,8 +21,8 @@ export class SidebarComponent implements OnInit {
     this.closeSideBarEvent.emit();
   }
 
-  switchLanguage = (event: any) => {
-    this.useLanguage.emit(event.target.innerText);
+  switchLanguage = (language: string) => {
+    this.useLanguage.emit(language);
   }
 
   switchRouter = (route: string) => {
