@@ -49,11 +49,17 @@
                         &.title {
                             text-align: left;
                             color: @text-blue;
+                            font-size: 1.21em;
                         }
                     }
 
                     p {
                         text-align: justify;
+                        font-size: 16px;
+                    }
+
+                    li {
+                        font-size: 16px;
                     }
 
                     .li-circle {
@@ -68,13 +74,16 @@
 
                     img {
                         margin-bottom: 1em;
+                        &:last-child {
+                            margin-bottom: 0;
+                        }
                     }
                 }
             }
 
             img {
                 width: 100%;
-                height: 200px;
+                height: 180px;
                 -o-object-fit: cover;
                 object-fit: cover;
             }

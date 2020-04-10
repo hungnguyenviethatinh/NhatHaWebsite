@@ -3,7 +3,7 @@
         <div nz-row nzType="flex" nzJustify="space-between">
             <div nz-col nzXs="24" nzSm="24" nzMd="9">
                 <div class="footer-center">
-                    <h3 translate>Dịch Vụ Kỹ Thuật</h3>
+                    <h3 style="text-transform: uppercase;" translate>Dịch Vụ Kỹ Thuật</h3>
                     <div nz-col nzSpan="24">
                         <a (click)="setSelectedMenuIndex(3)"
                             [routerLink]="['/dich-vu/tinh-toan-ngan-mach-phoi-hop-bao-ve']" translate>Tính Toán Ngắn
@@ -44,7 +44,7 @@
             </div>
             <div nz-col nzXs="24" nzSm="24" nzMd="9">
                 <div class="footer-center">
-                    <h3 translate>Sản Phẩm</h3>
+                    <h3 style="text-transform: uppercase;" translate>Sản Phẩm</h3>
                     <div nz-col nzSpan="24">
                         <a (click)="setSelectedMenuIndex(14)" [routerLink]="['/san-pham/cua-so-hong-ngoai-cordex']"
                             translate>Cửa Sổ Hồng
@@ -98,8 +98,8 @@
                 </div>
             </div>
             <div nz-col nzXs="24" nzSm="24" nzMd="6">
-                <div class="footer-center">
-                    <h3 translate>Công Ty</h3>
+                <div class="footer-center" style="margin-bottom: 1em;">
+                    <h3 style="text-transform: uppercase;" translate>Công Ty</h3>
                     <div nz-col nzSpan="24">
                         <a (click)="setSelectedMenuIndex(1)" [routerLink]="['/doanh-nghiep/tamnhin-sumenh-giatri']"
                             translate>Tầm Nhìn –
@@ -113,8 +113,8 @@
                         <a (click)="setSelectedMenuIndex(28)" [routerLink]="['/lien-he']" translate>Liên Hệ</a>
                     </div>
                 </div>
-                <div class="footer-center">
-                    <h3 translate>Đối Tác Dịch Vụ</h3>
+                <!-- <div class="footer-center">
+                    <h3 style="text-transform: uppercase;" translate>Đối Tác Dịch Vụ</h3>
                     <div nz-row nzType="flex" nzJustify="space-between" nzAlign="middle">
                         <div nz-col nzXs="10" nzSm="10" nzMd="10">
                             <a (click)="setSelectedMenuIndex(24)" [routerLink]="['/doi-tac']">
@@ -127,23 +127,35 @@
                             </a>
                         </div>
                     </div>
-                </div>
+                </div> -->
                 <div class="footer-center">
-                    <h3 translate>Đối Tác Sản Phẩm</h3>
+                    <h3 style="text-transform: uppercase; margin-bottom: 10px;" translate>Các đối tác chính</h3>
+                    <div nz-row nzType="flex" nzJustify="space-between" nzAlign="middle">
+                        <div nz-col nzXs="10" nzSm="10" nzMd="10">
+                            <a (click)="setSelectedMenuIndex(24)" [routerLink]="['/doi-tac']" title="Schneider">
+                                <img class="service-partner" src="assets/images/schneider-logo.png" alt="Schneider">
+                            </a>
+                        </div>
+                        <div nz-col nzXs="10" nzSm="10" nzMd="10">
+                            <a (click)="setSelectedMenuIndex(24)" [routerLink]="['/doi-tac']" title="ABB">
+                                <img class="service-partner" src="assets/images/abb-logo.png" alt="Abb">
+                            </a>
+                        </div>
+                    </div>
                     <div nz-row nzType="flex" nzJustify="space-between">
                         <div nz-col nzXs="6" nzSm="6" nzMd="6">
-                            <a (click)="setSelectedMenuIndex(24)" [routerLink]="['/doi-tac']">
-                                <img src="assets/images/aeberle-logo.png" alt="A-Eberle">
+                            <a (click)="setSelectedMenuIndex(24)" [routerLink]="['/doi-tac']" title="A-Eberle">
+                                <img class="product-partner" src="assets/images/aeberle-logo.png" alt="A-Eberle">
                             </a>
                         </div>
                         <div nz-col nzXs="6" nzSm="6" nzMd="6">
-                            <a (click)="setSelectedMenuIndex(24)" [routerLink]="['/doi-tac']">
-                                <img src="assets/images/intellisaw-logo.png" alt="Intellisaw">
+                            <a (click)="setSelectedMenuIndex(24)" [routerLink]="['/doi-tac']" title="Intellisaw">
+                                <img class="product-partner" src="assets/images/intellisaw-logo.png" alt="Intellisaw">
                             </a>
                         </div>
                         <div nz-col nzXs="6" nzSm="6" nzMd="6">
-                            <a (click)="setSelectedMenuIndex(24)" [routerLink]="['/doi-tac']">
-                                <img src="assets/images/iriss-logo.png" alt="Iriss">
+                            <a (click)="setSelectedMenuIndex(24)" [routerLink]="['/doi-tac']" title="Iriss">
+                                <img class="product-partner" src="assets/images/iriss-logo.png" alt="Iriss">
                             </a>
                         </div>
                     </div>

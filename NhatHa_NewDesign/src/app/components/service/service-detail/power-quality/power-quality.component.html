@@ -10,7 +10,7 @@
                 </div>
             </div>
             <div class="clearfix" id="content">
-                <div class="content" nz-row nzType="flex" nzJustify="space-between" nzAlign="top"
+                <!-- <div class="content" nz-row nzType="flex" nzJustify="space-between" nzAlign="top"
                     *ngFor="let content_power_quality of service.contents; let i=index">
                     <div class="text-content" nz-col nzXs="24" nzSm="24" nzMd="18">
                         <h3 class="title">{{('content_power_quality.title'+i)|translate}}</h3>
@@ -67,6 +67,72 @@
                         <div *ngFor="let img of content_power_quality.img; let i = index">
                             <img [id]="'img-' + i" [src]="img" alt="">
                         </div>
+                    </div>
+                </div> -->
+                <div class="content" nz-row nzType="flex" nzJustify="space-between" style="align-items: stretch;">
+                    <div class="text-content" nz-col nzXs="24" nzSm="24" nzMd="18">
+                        <ng-container *ngFor="let content_power_quality of service.contents; let i=index">
+                            <h3 class="title">{{('content_power_quality.title'+i)|translate}}</h3>
+                            <ng-container
+                                *ngFor="let paragraph_power_quality of content_power_quality.paragraphs; let j=index">
+                                <ng-container *ngIf="paragraph_power_quality.type === 'p'">
+                                    <p *ngFor="let text_power_quality of paragraph_power_quality.texts;let z=index">
+                                        {{('text_power_quality'+i+j+z) | translate}}
+                                    </p>
+                                </ng-container>
+                                <ng-container *ngIf="paragraph_power_quality.type === 'li'">
+                                    <ul>
+                                        <li
+                                            *ngFor="let text_power_quality of paragraph_power_quality.texts;let z=index">
+                                            {{('text_power_quality'+i+j+z) | translate}}
+                                        </li>
+                                    </ul>
+                                </ng-container>
+                                <ng-container *ngIf="paragraph_power_quality.type === 'sub'">
+                                    <h4>{{('paragraph_power_quality.title'+i+j) |translate}}</h4>
+                                </ng-container>
+                                <ng-container *ngIf="paragraph_power_quality.type === 'table'">
+                                    <div class="table-reponsive">
+                                        <nz-table class="table" nzBordered>
+                                            <thead>
+                                                <tr>
+                                                    <th
+                                                        *ngFor="let column_power_quality of paragraph_power_quality.columns;let z=index;">
+                                                        {{('column_power_quality'+i+j+z)|translate}}
+                                                    </th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr
+                                                    *ngFor="let row_power_quality of paragraph_power_quality.rows; let z=index;">
+                                                    <td>{{('row_power_quality.col_0'+i+j+z) | translate}}</td>
+                                                    <td>
+                                                        <img [src]="row_power_quality.col_1" alt="">
+                                                    </td>
+                                                    <td>
+                                                        <p style="text-align: justify">
+                                                            <strong translate>Nguyên nhân:</strong>
+                                                            {{('row_power_quality.col_2.reason'+j+j+z) | translate}}
+                                                        </p>
+                                                        <p style="text-align: justify">
+                                                            <strong translate>Hệ quả:</strong>
+                                                            {{('row_power_quality.col_2.result'+i+j+z) | translate}}
+                                                        </p>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </nz-table>
+                                    </div>
+                                </ng-container>
+                            </ng-container>
+                        </ng-container>
+                    </div>
+                    <div nz-col nzXs="24" nzSm="24" nzMd="6">
+                        <ng-container *ngFor="let content_power_quality of service.contents; let i=index">
+                            <ng-container *ngFor="let img of content_power_quality.img; let j = index">
+                                <img [id]="'img-' + i + j" [src]="img" alt="{{'img-' + i + j}}">
+                            </ng-container>
+                        </ng-container>
                     </div>
                 </div>
             </div>

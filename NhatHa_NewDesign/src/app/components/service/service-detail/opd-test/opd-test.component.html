@@ -10,7 +10,7 @@
                 </div>
             </div>
             <div class="clearfix" id="content">
-                <div class="content" nz-row nzType="flex" nzJustify="space-between" nzAlign="top"
+                <!-- <div class="content" nz-row nzType="flex" nzJustify="space-between" nzAlign="top"
                     *ngFor="let content_opd of service.contents; let i = index">
                     <div class="text-content" nz-col nzXs="24" nzSm="24" nzMd="18">
                         <h3 class="title">{{('content_opd.title'+i)|translate}}</h3>
@@ -42,6 +42,44 @@
                         <div *ngFor="let img of content_opd.img; let j = index">
                             <img [id]="'content' + i + '-img-' + j" [src]="img" alt="">
                         </div>
+                    </div>
+                </div> -->
+                <div class="content" nz-row nzType="flex" nzJustify="space-between" style="align-items: stretch;">
+                    <div class="text-content" nz-col nzXs="24" nzSm="24" nzMd="18">
+                        <ng-container *ngFor="let content_opd of service.contents; let i = index">
+                            <h3 class="title">{{('content_opd.title'+i)|translate}}</h3>
+                            <ng-container *ngFor="let paragraph_opd of content_opd.paragraphs; let j=index">
+                                <ng-container *ngIf="paragraph_opd.type === 'p'">
+                                    <p *ngFor="let text_opd of paragraph_opd.texts; let z=index">
+                                        {{('text_opd'+i+j+z)|translate}}
+                                    </p>
+                                </ng-container>
+                                <ng-container *ngIf="paragraph_opd.type === 'img'">
+                                    <img [src]="paragraph_opd.img" alt="" />
+                                </ng-container>
+                                <ng-container
+                                    *ngIf="paragraph_opd.type === 'blue' || paragraph_opd.type === 'yellow' || paragraph_opd.type === 'orange' || paragraph_opd.type === 'red'">
+                                    <h4 [ngStyle]="{'color': paragraph_opd.type}">
+                                        {{('paragraph_opd.text'+i+j)|translate}}
+                                    </h4>
+                                </ng-container>
+                                <ng-container *ngIf="paragraph_opd.type === 'li-number'">
+                                    <ul>
+                                        <li [ngClass]="paragraph_opd.type"
+                                            *ngFor="let text_opd of paragraph_opd.texts; let z=index">
+                                            {{('text_opd'+i+j+z)|translate}}
+                                        </li>
+                                    </ul>
+                                </ng-container>
+                            </ng-container>
+                        </ng-container>
+                    </div>
+                    <div nz-col nzXs="24" nzSm="24" nzMd="6">
+                        <ng-container *ngFor="let content_opd of service.contents; let i = index">
+                            <ng-container *ngFor="let img of content_opd.img; let j = index">
+                                <img [id]="'content' + i + '-img-' + j" [src]="img" [alt]="'content' + i + '-img-' + j">
+                            </ng-container>
+                        </ng-container>
                     </div>
                 </div>
             </div>

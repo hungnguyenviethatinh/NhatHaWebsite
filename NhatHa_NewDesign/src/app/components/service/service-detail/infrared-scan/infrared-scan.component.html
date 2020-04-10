@@ -10,7 +10,7 @@
                 </div>
             </div>
             <div class="clearfix" id="content">
-                <div class="content" nz-row nzType="flex" nzJustify="space-between" nzAlign="top"
+                <!-- <div class="content" nz-row nzType="flex" nzJustify="space-between" nzAlign="top"
                     *ngFor="let content_infa of service.contents; let i = index">
                     <div class="text-content" nz-col nzXs="24" nzSm="24" nzMd="18">
                         <h3 class="title">{{('content_infa.title'+i)|translate}}</h3>
@@ -39,6 +39,42 @@
                         <div *ngFor="let img of content_infa.img; let j = index">
                             <img [id]="'content' + i + '-img-' + j" [src]="img" alt="">
                         </div>
+                    </div>
+                </div> -->
+                <div class="content" nz-row nzType="flex" nzJustify="space-between" style="align-items: stretch;">
+                    <div class="text-content" nz-col nzXs="24" nzSm="24" nzMd="18">
+                        <ng-container *ngFor="let content_infa of service.contents; let i = index">
+                            <h3 class="title">{{('content_infa.title'+i)|translate}}</h3>
+                            <ng-container *ngFor="let paragraph_infa of content_infa.paragraphs; let j=index">
+                                <ng-container *ngIf="paragraph_infa.type === 'p'">
+                                    <p *ngFor="let text_infa of paragraph_infa.texts; let z=index">
+                                        {{('text_infa'+i+j+z)|translate}}
+                                    </p>
+                                </ng-container>
+                                <ng-container *ngIf="paragraph_infa.type === 'h4'">
+                                    <h4 *ngFor="let text_infa of paragraph_infa.texts; let z=index">
+                                        {{('text_infa'+i+j+z)|translate}}
+                                    </h4>
+                                </ng-container>
+                                <ng-container
+                                    *ngIf="paragraph_infa.type === 'li-circle' || paragraph_infa.type === 'li-number' || paragraph_infa.type === 'li-alpha' || paragraph_infa.type === 'li-square'">
+                                    <ul
+                                        [ngStyle]="{'padding-inline-start': (paragraph_infa.type === 'li-alpha' || paragraph_infa.type === 'li-square') ? '80px' : '40px'}">
+                                        <li [ngClass]="paragraph_infa.type"
+                                            *ngFor="let text_infa of paragraph_infa.texts; let z=index">
+                                            {{('text_infa'+i+j+z)|translate}}
+                                        </li>
+                                    </ul>
+                                </ng-container>
+                            </ng-container>
+                        </ng-container>
+                    </div>
+                    <div nz-col nzXs="24" nzSm="24" nzMd="6">
+                        <ng-container *ngFor="let content_infa of service.contents; let i = index">
+                            <ng-container *ngFor="let img of content_infa.img; let j = index">
+                                <img [id]="'content' + i + '-img-' + j" [src]="img" [alt]="'content' + i + '-img-' + j">
+                            </ng-container>
+                        </ng-container>
                     </div>
                 </div>
             </div>

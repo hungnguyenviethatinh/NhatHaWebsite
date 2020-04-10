@@ -29,8 +29,9 @@
                             </ul>
                         </div>
                         <div nz-row nzType="flex" nzJustify="center" nzAlign="middle"
-                        *ngIf="bodypowerSystem.figures.length > 0">
-                            <div class="figure" nz-col nzXs="24" nzSm="24" nzMd="10" *ngFor='let figure of bodypowerSystem.figures'>
+                            *ngIf="bodypowerSystem.figures.length > 0">
+                            <div class="figure" nz-col nzXs="24" nzSm="24" nzMd="10"
+                                *ngFor='let figure of bodypowerSystem.figures'>
                                 <img [src]="figure" [alt]="bodypowerSystem.title">
                             </div>
                         </div>
@@ -40,7 +41,7 @@
             <div class="clearfix" id="footer">
                 <p translate>{{'service.data.footer.title'}}</p>
                 <div class="link" nz-row nzType="flex" nzJustify="space-between" nzAlign="middle"
-                *ngFor="let link of service.data.footer.links; let i=index">
+                    *ngFor="let link of service.data.footer.links; let i=index">
                     <div nz-col nzXs="24" nzSm="24" nzMd="4">
                         <img [src]="link.img" [alt]="link.title">
                     </div>

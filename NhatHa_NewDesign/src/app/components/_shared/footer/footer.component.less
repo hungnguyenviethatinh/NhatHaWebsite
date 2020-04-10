@@ -21,7 +21,7 @@
 
             h3 {
                 color: @text-white;
-                font-size: 18px;
+                font-size: 1.21em;
                 margin: 0 auto 24px;
                 font-weight: 500;
                 position: relative;
@@ -29,13 +29,24 @@
 
             a {
                 color: #ffffffe6;
+                font-size: 15px;
 
                 > img {
-                    max-width: 100%;
-                    max-height: 80px;
+                    // max-width: 100%;
+                    // max-height: 80px;
                     margin: 0 auto 12px;
                     -o-object-fit: cover;
                     object-fit: cover;
+
+                    &.service-partner {
+                        max-width: 100%;
+                        max-height: 56px;
+                    }
+
+                    &.product-partner {
+                        max-width: 100%;
+                        max-height: 33px;
+                    }
                 }
             }
         }

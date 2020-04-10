@@ -2,8 +2,7 @@
     <div class="clearfix" id="service">
         <div class="service-wrap">
             <div class="clearfix" id="banner" nz-row nzType="flex" nzJustify="space-between" nzAlign="middle">
-                <div class="banner" nz-col nzXs="24" nzSm="24" [nzMd]="7"
-                    *ngFor="let banner of service.data.banners">
+                <div class="banner" nz-col nzXs="24" nzSm="24" [nzMd]="7" *ngFor="let banner of service.data.banners">
                     <img [src]="banner" [alt]="service.name">
                 </div>
             </div>
@@ -18,20 +17,23 @@
                     <div nz-col nzSpan="24">
                         <h3 class="title">{{('body_conditional_maintain.title'+i)|translate}}</h3>
                         <div *ngIf="body_conditional_maintain.contentType === 0" class="content">
-                            <p *ngFor="let content_conditional_maintain of body_conditional_maintain.contents; let j=index">
+                            <p
+                                *ngFor="let content_conditional_maintain of body_conditional_maintain.contents; let j=index">
                                 {{('content_conditional_maintain'+i+j)|translate}}
                             </p>
                         </div>
                         <div *ngIf="body_conditional_maintain.contentType === 1" class="content">
                             <ul>
-                                <li *ngFor="let content_conditional_maintain of body_conditional_maintain.contents; let j=index">
+                                <li
+                                    *ngFor="let content_conditional_maintain of body_conditional_maintain.contents; let j=index">
                                     {{('content_conditional_maintain'+i+j)|translate}}
                                 </li>
                             </ul>
                         </div>
                         <div nz-row nzType="flex" nzJustify="center" nzAlign="middle"
-                        *ngIf="body_conditional_maintain.figures.length > 0">
-                            <div class="figure" nz-col nzXs="24" nzSm="24" nzMd="10" *ngFor='let figure of body_conditional_maintain.figures'>
+                            *ngIf="body_conditional_maintain.figures.length > 0">
+                            <div class="figure" nz-col nzXs="24" nzSm="24" nzMd="10"
+                                *ngFor='let figure of body_conditional_maintain.figures'>
                                 <img [src]="figure" [alt]="body_conditional_maintain.title">
                             </div>
                         </div>
@@ -41,7 +43,7 @@
             <div class="clearfix" id="footer">
                 <p translate>{{'service.data.footer.title_conditional_maintain'}}</p>
                 <div class="link" nz-row nzType="flex" nzJustify="space-between" nzAlign="middle"
-                *ngFor="let link_conditional_maintain of service.data.footer.links; let i=index">
+                    *ngFor="let link_conditional_maintain of service.data.footer.links; let i=index">
                     <div nz-col nzXs="24" nzSm="24" nzMd="4">
                         <img [src]="link_conditional_maintain.img" [alt]="link_conditional_maintain.title">
                     </div>

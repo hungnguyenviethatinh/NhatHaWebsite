@@ -10,7 +10,7 @@
                 </div>
             </div>
             <div class="clearfix" id="content">
-                <div class="content" nz-row nzType="flex" nzJustify="space-between" nzAlign="top"
+                <!-- <div class="content" nz-row nzType="flex" nzJustify="space-between" nzAlign="top"
                     *ngFor="let contentarc of service.contents; let i=index">
                     <div class="text-content" nz-col nzXs="24" nzSm="24" nzMd="18">
                         <h3 class="title">{{('contentarc.title'+i)|translate}}</h3>
@@ -31,6 +31,33 @@
                         <div class="img" *ngFor="let img of contentarc.img">
                             <img [src]="img" alt="">
                         </div>
+                    </div>
+                </div> -->
+                <div class="content" nz-row nzType="flex" nzJustify="space-between" style="align-items: stretch;">
+                    <div class="text-content" nz-col nzXs="24" nzSm="24" nzMd="18">
+                        <ng-container *ngFor="let contentarc of service.contents; let i=index">
+                            <h3 class="title">{{('contentarc.title'+i)|translate}}</h3>
+                            <ng-container *ngIf="contentarc.type === 'p'">
+                                <p *ngFor="let paragrapharc of contentarc.paragraphs; let j=index">
+                                    {{('paragrapharc'+i+j)|translate}}
+                                </p>
+                            </ng-container>
+                            <ng-container *ngIf="contentarc.type === 'li-circle' || contentarc.type === 'li-number'">
+                                <ul>
+                                    <li [ngClass]="contentarc.type"
+                                        *ngFor="let paragrapharc of contentarc.paragraphs; let j=index">
+                                        {{('paragrapharc'+i+j)|translate}}
+                                    </li>
+                                </ul>
+                            </ng-container>
+                        </ng-container>
+                    </div>
+                    <div nz-col nzXs="24" nzSm="24" nzMd="6">
+                        <ng-container *ngFor="let contentarc of service.contents; let i = index">
+                            <ng-container *ngFor="let img of contentarc.img; let j = index">
+                                <img [src]="img" alt="{{'Photo' + i + j}}">
+                            </ng-container>
+                        </ng-container>
                     </div>
                 </div>
             </div>
