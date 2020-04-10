@@ -4,8 +4,9 @@
             <nz-affix>
                 <div class="tab" style="background: #fff; padding: 10px 0;" nz-row nzType="flex" [nzGutter]="nzGutter"
                     nzJustify="start" nzAlign="middle">
-                    <div nz-col *ngFor="let tab_cordex_auto of tabs; let i=index" [ngStyle]="tab_cordex_auto.style" (click)="tab_cordex_auto.click()">
-                        <img [src]="tab_cordex_auto.img" alt="">
+                    <div nz-col *ngFor="let tab_cordex_auto of tabs; let i=index" [ngStyle]="tab_cordex_auto.style"
+                        (click)="tab_cordex_auto.click()">
+                        <img [src]="tab_cordex_auto.img" alt="Cordex Auto Camera">
                         <p>{{('tab_cordex_auto.name'+i)|translate}}</p>
                     </div>
                 </div>
@@ -19,7 +20,7 @@
                         <h4 translate>Không bao giờ bỏ qua sự cố với giám sát 24x7x365</h4>
                     </div>
                     <div nz-col nzXs="24" nzSm="24" nzMd="12">
-                        <img src="assets/images/products/03/02/1.PNG" alt="SẢN PHẨM IRISS DELTA T">
+                        <img src="assets/images/products/03/02/1.PNG" alt="Cordex Auto Camera">
                     </div>
                 </div>
                 <div id="prouct-list" nz-row nzType="flex" nzJustify="center" nzAlign="middle">
@@ -30,7 +31,6 @@
                         </a>
                     </div>
                 </div>
-                
             </div>
         </div>
     </div>

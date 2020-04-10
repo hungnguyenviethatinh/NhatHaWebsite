@@ -4,8 +4,9 @@
             <nz-affix>
                 <div class="tab" style="background: #fff; padding: 10px 0;" nz-row nzType="flex" [nzGutter]="nzGutter"
                     nzJustify="start" nzAlign="middle">
-                    <div nz-col *ngFor="let tab_sentry of tabs; let i=index" [ngStyle]="tab_sentry.style" (click)="tab_sentry.click()">
-                        <img [src]="tab_sentry.img" alt="">
+                    <div nz-col *ngFor="let tab_sentry of tabs; let i=index" [ngStyle]="tab_sentry.style"
+                        (click)="tab_sentry.click()">
+                        <img [src]="tab_sentry.img" alt="IRISS E SENTRY">
                         <p>{{('tab_sentry.name'+i)|translate}}</p>
                     </div>
                 </div>
@@ -22,7 +23,7 @@
                         <h4>{{'Công nghệ thẻ thông minh giao tiếp NFC không dây'|translate}}
                         </h4>
                     </div>
-                    <div nz-col nzXs="24" nzSm="24" nzMd="12">
+                    <div nz-col nzXs="24" nzSm="24" nzMd="10">
                         <img src="assets/images/products/03/04/1.PNG" alt="SẢN PHẨM IRISS E SENTRY">
                     </div>
                 </div>
@@ -37,7 +38,7 @@
                                 </ng-container>
                             </div>
                             <div id="center" nz-col nzXs="24" nzSm="24" nzMd="8">
-                                <img [src]="content.page1.center" alt="">
+                                <img [src]="content.page1.center" alt="IRISS E SENTRY">
                             </div>
                             <div id="right" nz-col nzXs="24" nzSm="24" nzMd="8">
                                 <ng-container *ngFor="let right_iriss_sentry of content.page1.right; let i=index">
@@ -74,8 +75,10 @@
 
                 <div id="delta-t-demo" class="tab" nz-row nzType="flex" nzJustify="start" nzAlign="middle"
                     style="background: #4472c4; margin-top: 2em;">
-                    <div nz-col nzSpan="4" *ngFor="let tab_sentry_detail of secondTabs; let i=index" [ngStyle]="tab_sentry_detail.style"
-                        [ngClass]="(tab_sentry_detail.active || tab_sentry_detail.id === 2) ?  'active' : 'inactive'" (click)="tab_sentry_detail.click()">
+                    <div nz-col nzSpan="4" *ngFor="let tab_sentry_detail of secondTabs; let i=index"
+                        [ngStyle]="tab_sentry_detail.style"
+                        [ngClass]="(tab_sentry_detail.active || tab_sentry_detail.id === 2) ?  'active' : 'inactive'"
+                        (click)="tab_sentry_detail.click()">
                         <p style="color: #fff; text-align: center;">{{('tab_sentry_detail.name'+i)|translate}}</p>
                     </div>
                 </div>
@@ -98,8 +101,10 @@
                 </div>
                 <div id="delta-t-document" class="tab" nz-row nzType="flex" nzJustify="center" nzAlign="middle"
                     style="background: #4472c4; margin-top: 2em;">
-                    <div nz-col nzSpan="4" *ngFor="let tab_sentry_detail of secondTabs; let i=index" [ngStyle]="tab_sentry_detail.style"
-                        [ngClass]="(tab_sentry_detail.active || tab_sentry_detail.id === 3) ?  'active' : 'inactive'" (click)="tab_sentry_detail.click()">
+                    <div nz-col nzSpan="4" *ngFor="let tab_sentry_detail of secondTabs; let i=index"
+                        [ngStyle]="tab_sentry_detail.style"
+                        [ngClass]="(tab_sentry_detail.active || tab_sentry_detail.id === 3) ?  'active' : 'inactive'"
+                        (click)="tab_sentry_detail.click()">
                         <p style="color: #fff; text-align: center;">{{('tab_sentry_detail.name'+i)|translate}}</p>
                     </div>
                 </div>

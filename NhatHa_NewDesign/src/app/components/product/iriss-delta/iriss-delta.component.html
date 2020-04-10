@@ -4,8 +4,9 @@
             <nz-affix>
                 <div class="tab" style="background: #fff; padding: 10px 0;" nz-row nzType="flex" [nzGutter]="nzGutter"
                     nzJustify="start" nzAlign="middle">
-                    <div nz-col *ngFor="let tab_delta of tabs; let i=index" [ngStyle]="tab_delta.style" (click)="tab_delta.click()">
-                        <img [src]="tab_delta.img" alt="">
+                    <div nz-col *ngFor="let tab_delta of tabs; let i=index" [ngStyle]="tab_delta.style"
+                        (click)="tab_delta.click()">
+                        <img [src]="tab_delta.img" alt="IRISS DELTA T">
                         <p>{{('tab_delta.name'+i)|translate}}</p>
                     </div>
                 </div>
@@ -19,7 +20,7 @@
                         <h4 translate>Không cần nguồn, không dây và liên tục 24/7</h4>
                     </div>
                     <div nz-col nzXs="24" nzSm="24" nzMd="12">
-                        <img src="assets/images/products/03/03/1.PNG" alt="SẢN PHẨM IRISS DELTA T">
+                        <img src="assets/images/products/03/03/1.PNG" alt="IRISS DELTA T">
                     </div>
                 </div>
                 <div id="page-1" nz-row nzType="flex" [nzGutter]="nzGutter" nzJustify="center" nzAlign="middle">
@@ -30,7 +31,7 @@
                         </ng-container>
                     </div>
                     <div id="center" nz-col nzXs="24" nzSm="24" nzMd="8">
-                        <img [src]="content.page1.center" alt="">
+                        <img [src]="content.page1.center" alt="IRISS Delta-T">
                     </div>
                     <div id="right" nz-col nzXs="24" nzSm="24" nzMd="8">
                         <ng-container *ngFor="let right_delta of content.page1.right; let i=index">
@@ -41,8 +42,10 @@
                 </div>
                 <div id="delta-t-feature" class="tab" nz-row nzType="flex" nzJustify="start" nzAlign="middle"
                     style="background: #4472c4; margin-top: 2em;">
-                    <div nz-col nzSpan="4" *ngFor="let tab_delta_detail of secondTabs; let i=index" [ngStyle]="tab_delta_detail.style"
-                        [ngClass]="(tab_delta_detail.active || tab_delta_detail.id === 0) ?  'active' : 'inactive'" (click)="tab_delta_detail.click()">
+                    <div nz-col nzSpan="4" *ngFor="let tab_delta_detail of secondTabs; let i=index"
+                        [ngStyle]="tab_delta_detail.style"
+                        [ngClass]="(tab_delta_detail.active || tab_delta_detail.id === 0) ?  'active' : 'inactive'"
+                        (click)="tab_delta_detail.click()">
                         <p style="color: #fff; text-align: center;">{{('tab_delta_detail.name'+i)|translate}}</p>
                     </div>
                 </div>
@@ -52,12 +55,12 @@
                         <nz-table nzBordered>
                             <thead>
                                 <tr>
-                                    <th nzWidth="300px" [attr.colspan]="2" >{{'TÍNH NĂNG'|translate}}</th>
+                                    <th nzWidth="300px" [attr.colspan]="2">{{'TÍNH NĂNG'|translate}}</th>
                                 </tr>
                             </thead>
                             <tbody>
                                 <tr>
-                                    <td >{{'Sử dụng ngoài trời'|translate}}</td>
+                                    <td>{{'Sử dụng ngoài trời'|translate}}</td>
                                     <td>{{'Không'|translate}}
                                     </td>
                                 </tr>
@@ -68,7 +71,7 @@
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td >{{'Khoảng cách giao tiếp (điểm đến điểm)'|translate}}
+                                    <td>{{'Khoảng cách giao tiếp (điểm đến điểm)'|translate}}
                                     </td>
                                     <td translate>Up to 300 feet
                                     </td>
@@ -80,18 +83,18 @@
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td >{{'Thời gian pin sử dụng'|translate}}
+                                    <td>{{'Thời gian pin sử dụng'|translate}}
                                     </td>
-                                    <td >{{'18-24 tháng'|translate}}
+                                    <td>{{'18-24 tháng'|translate}}
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td >{{'Nâng cấp trực tiếp online'|translate}}                                    </td>
+                                    <td>{{'Nâng cấp trực tiếp online'|translate}} </td>
                                     <td>{{'Có'|translate}}
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td >{{'Số lượng báo cáo hàng ngày'|translate}}
+                                    <td>{{'Số lượng báo cáo hàng ngày'|translate}}
                                     </td>
                                     <td translate>Up to 8
                                     </td>
@@ -206,8 +209,10 @@
 
                 <div id="delta-t-certificate" class="tab" nz-row nzType="flex" nzJustify="start" nzAlign="middle"
                     style="background: #4472c4; margin-top: 2em;">
-                    <div nz-col nzSpan="4" *ngFor="let tab_delta_detail of secondTabs; let i=index" [ngStyle]="tab_delta_detail.style"
-                        [ngClass]="(tab_delta_detail.active || tab_delta_detail.id === 1) ?  'active' : 'inactive'" (click)="tab_delta_detail.click()">
+                    <div nz-col nzSpan="4" *ngFor="let tab_delta_detail of secondTabs; let i=index"
+                        [ngStyle]="tab_delta_detail.style"
+                        [ngClass]="(tab_delta_detail.active || tab_delta_detail.id === 1) ?  'active' : 'inactive'"
+                        (click)="tab_delta_detail.click()">
                         <p style="color: #fff; text-align: center;">{{('tab_delta_detail.name'+i)|translate}}</p>
                     </div>
                 </div>
@@ -219,8 +224,10 @@
 
                 <div id="delta-t-demo" class="tab" nz-row nzType="flex" nzJustify="start" nzAlign="middle"
                     style="background: #4472c4; margin-top: 2em;">
-                    <div nz-col nzSpan="4" *ngFor="let tab_delta_detail of secondTabs; let i=index" [ngStyle]="tab_delta_detail.style"
-                        [ngClass]="(tab_delta_detail.active || tab_delta_detail.id === 2) ?  'active' : 'inactive'" (click)="tab_delta_detail.click()">
+                    <div nz-col nzSpan="4" *ngFor="let tab_delta_detail of secondTabs; let i=index"
+                        [ngStyle]="tab_delta_detail.style"
+                        [ngClass]="(tab_delta_detail.active || tab_delta_detail.id === 2) ?  'active' : 'inactive'"
+                        (click)="tab_delta_detail.click()">
                         <p style="color: #fff; text-align: center;">{{('tab_delta_detail.name'+i)|translate}}</p>
                     </div>
                 </div>
@@ -243,8 +250,10 @@
                 </div>
                 <div id="delta-t-document" class="tab" nz-row nzType="flex" nzJustify="center" nzAlign="middle"
                     style="background: #4472c4; margin-top: 2em;">
-                    <div nz-col nzSpan="4" *ngFor="let tab_delta_detail of secondTabs;let i=index" [ngStyle]="tab_delta_detail.style"
-                        [ngClass]="(tab_delta_detail.active || tab_delta_detail.id === 3) ?  'active' : 'inactive'" (click)="tab_delta_detail.click()">
+                    <div nz-col nzSpan="4" *ngFor="let tab_delta_detail of secondTabs;let i=index"
+                        [ngStyle]="tab_delta_detail.style"
+                        [ngClass]="(tab_delta_detail.active || tab_delta_detail.id === 3) ?  'active' : 'inactive'"
+                        (click)="tab_delta_detail.click()">
                         <p style="color: #fff; text-align: center;">{{('tab_delta_detail.name'+i)|translate}}</p>
                     </div>
                 </div>
