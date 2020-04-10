@@ -30,6 +30,7 @@
     "Dòng FLEX IR": "Iriss - FLEX IR Series",
     "Sản Phẩm Cordex": "Cordex IR Window",
     "Máy Dò Trình Trạng Thiết Bị": "Condition Based Monitoring Tool",
+    "Sản Phẩm IRISS": "IRISS PRODUCTS",
     "Máy Chụp Hình Nhiệt Cordex": "Cordex - Thermal Camera",
     "Máy Cordex Toughpix Digitherm": "Cordex - Toughpix Digitherm Camera",
     "Máy Cordex TC7150": "Cordex - TC7150 Camera",
@@ -1468,8 +1469,11 @@
     "pqbox300li7": "Software WinPQ mobile for configuration and data evaluation (PQ-Box 50, 150, 200 and 300)",
     "pqbox300li8": "Option: WiFi interface",
     "pqa_aeberle": "A-EBERLE POWER QUALITY ANALYZER",
+    "pqa_aeberle_cap": "A-Eberle Power Quality Analyzer",
     "equipmentGroupName0": "Testing equipment for MV switchgear",
     "equipmentGroupName1": "Testing equipment for power transformer",
     "equipmentGroupName2": "Testing equipment for LV switchgear",
-    "Các đối tác chính": "Our partners"
+    "Các đối tác chính": "Our partners",
+    "Phân Tích Hồ Quang Điện": "Arc Flash Study",
+    "Quét Nhiệt Hồng Ngoại": "Infrared Scanning"
 }

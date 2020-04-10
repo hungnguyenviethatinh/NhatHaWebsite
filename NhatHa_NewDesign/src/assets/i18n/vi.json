@@ -1475,8 +1475,11 @@
     "pqbox300li7": "Phần mềm để cài đặt và phân tích dữ liệu đồng nhất cho các thiết bị PQ-Box 50, 150, 200 và 300",
     "pqbox300li8": "Lựa chọn mở rộng: Giao thức kết nối không dây (Wifi)",
     "pqa_aeberle": "MÁY PHÂN TÍCH CHẤT LƯỢNG ĐIỆN NĂNG A-EBERLE",
+    "pqa_aeberle_cap": "Máy Phân Tích Chất Lượng Điện Năng A-Eberle",
     "equipmentGroupName0": "Thiết bị thí nghiệm tủ Trung thế",
     "equipmentGroupName1": "Thiết bị thí nghiệm Máy biến áp lực",
     "equipmentGroupName2": "Thiết bị thí nghiệm tủ Hạ thế",
-    "Các đối tác chính": "Các đối tác chính"
+    "Các đối tác chính": "Các đối tác chính",
+    "Phân Tích Hồ Quang Điện": "Phân Tích Hồ Quang Điện",
+    "Quét Nhiệt Hồng Ngoại": "Quét Nhiệt Hồng Ngoại"
 }
