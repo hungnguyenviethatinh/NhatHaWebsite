@@ -1,30 +1,7 @@
 <header class="clearfix" id="header">
-    <!-- <div nz-row>
-        <div nz-col nzSpan="24">
-            <ul id="top-bar" nz-menu nzMode="horizontal">
-                <li nz-menu-item>
-                        <a href="tel:(+84 28) 6258 1796">
-                            <i nz-icon nzType="phone" nzTheme="outline"></i>
-                            (+84 28) 6258 1796
-                        </a>
-                    </li>
-                    <li nz-menu-item>
-                        <a href="mailto:sale@nhatha-electric.com">
-                            <i nz-icon nzType="mail" nzTheme="outline"></i>
-                            sale@nhatha-electric.com
-                        </a>
-                    </li>
-                <li nz-menu-item id="switchLanguage">
-                    <button nz-button nzSize="small" nzShape="round" (click)="switchLanguage($event)">
-                        {{language === 'vi' ? 'English' : 'Tiếng Việt'}}
-                    </button>
-                </li>
-            </ul>
-        </div>
-    </div> -->
     <div id="desktopHeader" nz-row nzType="flex" nzJustify="space-between" nzAlign="middle">
         <div nz-col nzXs="24" nzSm="8" nzMd="8" nzLg="3" nzXl="3" nzXXl="3">
-            <a (click)="setSelectedMenuIndex(0)" [routerLink]="['/trang-chu']" id="logo">
+            <a (click)="setSelectedMenuIndex(0)" [routerLink]="['/']" id="logo">
                 <img src="assets/images/nhatha-logo.png"
                     [alt]="'Công ty Kỹ thuật Điện - Năng lượng Nhật Hạ' | translate">
             </a>
@@ -52,7 +29,7 @@
     </div>
     <div id="mobileHeader" nz-row nzType="flex" nzJustify="space-between" nzAlign="middle">
         <div nz-col nzSpan="12">
-            <a [routerLink]="['/trang-chu']" id="logo">
+            <a [routerLink]="['/']" id="logo">
                 <img style="height: 60px;" src="assets/images/nhatha-logo.png"
                     [alt]="'Công ty Kỹ thuật Điện - Năng lượng Nhật Hạ' | translate">
             </a>

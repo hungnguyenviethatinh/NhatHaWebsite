@@ -4,11 +4,11 @@
             <div class="contact-us" nz-row nzType="flex" nzJustify="space-between" nzAlign="top">
                 <div nz-col nzXs="24" nzSm="24" nzMd="11">
                     <div class="contact-us-info">
-                        <h3>{{'CÔNG TY TNHH THƯƠNG MẠI KỸ THUẬT NHẬT HẠ' | translate}}</h3>
+                        <h3>{{'companyName' | translate}}</h3>
                         <div nz-col nzSpan="24">
-                            <a href="https://goo.gl/maps/ZcVioBtJC5shtB3GA">
+                            <a href="https://goo.gl/maps/ZcVioBtJC5shtB3GA" target="_blank">
                                 <i nz-icon nzType="global" nzTheme="outline"></i>
-                                {{'Tầng 4, Tòa nhà Thủy Lợi 4, 205 Nguyễn Xí P. 24, Q. Bình Thạnh, TP. Hồ Chí Minh, Việt Nam' | translate}}
+                                {{'companyAddress' | translate}}
                             </a>
                         </div>
                         <div nz-col nzSpan="24">
@@ -24,7 +24,7 @@
                             </a>
                         </div>
                         <div nz-col nzSpan="24">
-                            <a [routerLink]="['/trang-chu']">
+                            <a [routerLink]="['/']">
                                 <i nz-icon nzType="google" nzTheme="outline"></i>
                                 www.nhatha-electric.com
                             </a>
@@ -35,10 +35,10 @@
                     <form nz-form [formGroup]="validateForm" (ngSubmit)="submitForm(validateForm.value)">
                         <nz-form-item>
                             <nz-form-control [nzSpan]="24" nzHasFeedback [nzErrorTip]="nameErrorTpl">
-                                <input nz-input formControlName="name" [placeholder]="'Họ tên'|translate" />
+                                <input nz-input formControlName="name" [placeholder]="'fullName' | translate" />
                                 <ng-template #nameErrorTpl let-control>
                                     <ng-container *ngIf="control.hasError('required')">
-                                       {{'Vui lòng nhập họ và tên!' | translate}}
+                                       {{'validFullNameMessage' | translate}}
                                     </ng-container>
                                 </ng-template>
                             </nz-form-control>
@@ -48,20 +48,20 @@
                                 <input nz-input formControlName="email" placeholder="Email" type="email" />
                                 <ng-template #emailErrorTpl let-control>
                                     <ng-container *ngIf="control.hasError('email')">
-                                        {{'Vui lòng nhập một email hợp lệ!' | translate}}
+                                        {{'validEmailMessage' | translate}}
                                     </ng-container>
                                     <ng-container *ngIf="control.hasError('required')">
-                                        {{'Vui lòng nhập email!' | translate}}
+                                        {{'blankEmailMessage' | translate}}
                                     </ng-container>
                                 </ng-template>
                             </nz-form-control>
                         </nz-form-item>
                         <nz-form-item>
                             <nz-form-control [nzSpan]="24" nzHasFeedback [nzErrorTip]="phoneErrorTpl">
-                                <input nz-input formControlName="phone" [placeholder]="'Số điện thoại'|translate" />
+                                <input nz-input formControlName="phone" [placeholder]="'phone' | translate" />
                                 <ng-template #phoneErrorTpl let-control>
                                     <ng-container *ngIf="control.hasError('required')">
-                                        {{'Vui lòng nhập số điện thoại!' | translate}}
+                                        {{'validPhoneMessage' | translate}}
                                     </ng-container>
                                 </ng-template>
                             </nz-form-control>
@@ -69,10 +69,10 @@
                         <nz-form-item>
                             <nz-form-control [nzSpan]="24" [nzErrorTip]="inquiryErrorTpl">
                                 <textarea formControlName="inquiry" nz-input rows="3"
-                                    [placeholder]="'Nội dung yêu cầu'|translate"></textarea>
+                                    [placeholder]="'inquiries' | translate"></textarea>
                                 <ng-template #inquiryErrorTpl let-control>
                                     <ng-container *ngIf="control.hasError('required')">
-                                        {{'Vui lòng nhập nội dung yêu cầu!' | translate}}
+                                        {{'validInquiriesMessage' | translate}}
                                     </ng-container>
                                 </ng-template>
                             </nz-form-control>
@@ -80,7 +80,7 @@
                         <nz-form-item>
                             <nz-form-control [nzOffset]="20" [nzSpan]="4">
                                 <button nz-button nzType="primary" nzBlock [disabled]="!validateForm.valid">
-                                    {{'Gửi' | translate}}
+                                    {{'send' | translate}}
                                 </button>
                             </nz-form-control>
                         </nz-form-item>

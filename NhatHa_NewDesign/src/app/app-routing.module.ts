@@ -1,11 +1,10 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { HomeComponent } from './components/home/home.component';
 import { PageNotFoundComponent } from './components/page-not-found/page-not-found.component';
 
 const routes: Routes = [
   {
-    path: 'trang-chu',
+    path: '',
     loadChildren: () => import('./components/home/home.module').then(mod => mod.HomeModule),
   },
   {
@@ -38,17 +37,12 @@ const routes: Routes = [
     path: 'lien-he',
     loadChildren: () => import('./components/contact/contact.module').then(mod => mod.ContactModule),
   },
-  {
-    path: '', redirectTo: '/trang-chu', pathMatch: 'full',
-  },
   { path: '**', component: PageNotFoundComponent, }
 ];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes, {
     scrollPositionRestoration: 'enabled',
-    // anchorScrolling: 'enabled',
-    // scrollOffset: [0, 120],
   })],
   exports: [RouterModule]
 })

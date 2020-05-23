@@ -5,7 +5,7 @@ import { Component, OnInit } from '@angular/core';
     <div class="page-not-found">
       <h1 nz-title>404</h1>
       <h2 nz-title>{{'NotFound' | translate}}</h2>
-      <a [routerLink]="['/trang-chu']">
+      <a [routerLink]="['/']">
         <i nz-icon nzType="left-circle" nzTheme="outline"></i>
         {{'BackHome' | translate}}
       </a>
