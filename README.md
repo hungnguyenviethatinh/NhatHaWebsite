@@ -1,27 +1,15 @@
-# ClientApp
+## Introduction
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.3.
+This a project that I got the deal from an electric equipment supply and construction company owner.
 
-## Development server
+He wanna build a website to broadcast his company as a reputable electric equipment supplier, construction and maintenance services.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+This website would introduce all about his company information, their history, missions and values, services and projects. Especially, their customers could browser their products with images, details, functions and installation guides. The website could be displayed in two languages Vietnamese and English.
 
-## Code scaffolding
+This was a static website. My partner and I decided to build it with [Angular v8](https://angular.io/).
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+This project lasted in two week, started from mid September 2019 to December 2019. After that, I was still in charge of enhancing new features and maintaining this website until May 2020.
 
-## Build
+## Demo
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+Please visit [Nhat Ha Electric](https://nhatha-electric.netlify.app/) for a look!
